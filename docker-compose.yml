@@ -26,7 +26,8 @@ x-backend-env: &backend-env
   JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET in .env}
   JWT_ALGORITHM: ${JWT_ALGORITHM:-HS256}
   JWT_TTL_MINUTES: ${JWT_TTL_MINUTES:-480}
-  OFFICER_ACCOUNTS: ${OFFICER_ACCOUNTS:-}
+  # OFFICER_ACCOUNTS is intentionally NOT listed here: it arrives via
+  # env_file above, un-interpolated, so its bcrypt '$' characters survive.
   CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173,http://localhost:8080}
   AGMARKNET_API_KEY: ${AGMARKNET_API_KEY:-}
   AGMARKNET_RESOURCE_ID: ${AGMARKNET_RESOURCE_ID:-9ef84268-d588-465a-a308-a864a43d0070}
@@ -48,6 +49,12 @@ x-backend-base: &backend-base
   build:
     context: .
     dockerfile: backend/Dockerfile
+  # env_file values reach the container verbatim -- Compose performs no
+  # variable interpolation on them. This matters for OFFICER_ACCOUNTS, whose
+  # bcrypt hashes are full of '$' and would otherwise be mangled into a
+  # truncated, unverifiable hash.
+  env_file:
+    - .env
   environment: *backend-env
   volumes:
     # Model artifacts and reference configs, editable without a rebuild.

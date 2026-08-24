@@ -103,10 +103,26 @@ docker compose up -d --build
 Create an officer account:
 
 ```bash
-make officer PASS=your-password
-# paste the hash into OFFICER_ACCOUNTS as  username:$2b$12$...
-docker compose restart backend
+docker compose exec backend python -m backend.security hash your-password
 ```
+
+Paste the result into `OFFICER_ACCOUNTS` as `username:hash` — **doubling every
+`$`**:
+
+```bash
+# correct
+OFFICER_ACCOUNTS=pavan:$$2b$$12$$Kix8n0PqR....
+# wrong - Compose eats the dollars and stores a truncated, unverifiable hash
+OFFICER_ACCOUNTS=pavan:$2b$12$Kix8n0PqR....
+```
+
+Docker Compose performs variable substitution on `.env`, so an unescaped
+`$2b$12$Kix...` has `$2b`, `$12` and `$Kix...` read as variable names and
+replaced with empty strings. The seeder now rejects any hash that is not
+exactly 60 characters and logs why, rather than storing a broken one that
+would produce a permanent silent 401.
+
+Then `docker compose up -d --force-recreate backend`.
 
 On a fresh install every district shows `🔴 UNVALIDATED DISTRICT`. That is
 correct: no ground truth has been loaded yet.

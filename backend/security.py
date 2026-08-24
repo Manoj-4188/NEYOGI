@@ -31,6 +31,9 @@ bearer_scheme = HTTPBearer(auto_error=False)
 
 ROLE_HIERARCHY = {"officer": 1, "admin": 2}
 
+#: bcrypt hashes are fixed-width; anything else means the value was mangled.
+BCRYPT_HASH_LENGTH = 60
+
 
 @dataclass(frozen=True)
 class Principal:
@@ -167,6 +170,21 @@ async def seed_officer_accounts() -> int:
                 "Skipping OFFICER_ACCOUNTS entry for %r: value must be a bcrypt hash, "
                 "not a plaintext password.",
                 username,
+            )
+            continue
+        # A bcrypt hash is always exactly 60 characters. A shorter one means
+        # the '$' signs were eaten by variable interpolation somewhere between
+        # .env and this process -- most often Docker Compose, which expands
+        # "$2b$12$Abc..." unless the dollars are escaped as "$$". Storing the
+        # truncated value would produce a silent, permanent 401, so refuse it.
+        if len(password_hash) != BCRYPT_HASH_LENGTH:
+            logger.error(
+                "Skipping OFFICER_ACCOUNTS entry for %r: bcrypt hash is %d chars, "
+                "expected %d. The '$' characters were probably consumed by "
+                "variable interpolation -- escape each '$' as '$$' in .env.",
+                username,
+                len(password_hash),
+                BCRYPT_HASH_LENGTH,
             )
             continue
         changed = await db.execute(
