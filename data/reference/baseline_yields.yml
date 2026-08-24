@@ -1,0 +1,125 @@
+# ==========================================================================
+# NEYOGI -- Baseline regional yields (MT/ha)
+#
+#   Total Projected Volume (MT) = Classified Area (ha) x Baseline Yield (MT/ha)
+#
+# READ THIS BEFORE EDITING
+# ------------------------
+# This file ships with every value NULL and `verified: false`. That is
+# deliberate, not an oversight. The yield constant is the single multiplier
+# that converts a measured area into a production claim, and a plausible-
+# looking number invented here would propagate straight into an oversupply
+# warning shown to farmers.
+#
+# While an entry is unverified, `ml_pipeline.supply_estimation` refuses to
+# compute a volume for that crop and the API returns
+# `YIELD_BASELINE_UNAVAILABLE`, which the UI renders as an explicit status
+# badge. Classified area is still reported -- it is measured. Only the
+# derived tonnage is withheld.
+#
+# HOW TO FILL AN ENTRY
+# --------------------
+# 1. Take the figure from a citable official release. In order of preference:
+#      * Karnataka Department of Horticulture, district-wise area & production
+#        statistics (https://horticulture.karnataka.gov.in)
+#      * Directorate of Economics & Statistics, Karnataka -- district at a
+#        glance / season and crop reports
+#      * National Horticulture Board, "Horticultural Statistics at a Glance"
+#        (state-level; use only when no district figure exists)
+# 2. Compute yield as (production MT / area ha) for that district and crop, for
+#    the stated year. Do not average across unrelated years.
+# 3. Fill `value_mt_ha`, `source`, `source_url`, `reference_year`.
+# 4. Set `verified: true` only after a second person has checked the figure
+#    against the cited document.
+#
+# District entries override `defaults`. A district with its own verified value
+# uses it; otherwise the crop's default applies, and if that is unverified too,
+# the volume is reported as unavailable.
+#
+# Fallow/Non-Crop deliberately has no yield: it produces nothing.
+# ==========================================================================
+
+schema_version: 1
+
+units:
+  yield: "MT/ha"          # metric tonnes per hectare
+  area: "ha"
+  volume: "MT"
+
+# Applied when a district has no verified override of its own.
+defaults:
+  Tomato:
+    value_mt_ha: null
+    verified: false
+    source: ""
+    source_url: ""
+    reference_year: null
+    notes: >-
+      Karnataka is a leading tomato producer and Kolar is its largest single
+      market. Use the district figure where one exists; the state average
+      understates the irrigated Kolar belt.
+
+  Onion:
+    value_mt_ha: null
+    verified: false
+    source: ""
+    source_url: ""
+    reference_year: null
+    notes: >-
+      Distinguish kharif from rabi onion if the source separates them -- the
+      yields differ materially and this model does not currently split by
+      season.
+
+  Potato:
+    value_mt_ha: null
+    verified: false
+    source: ""
+    source_url: ""
+    reference_year: null
+    notes: >-
+      Hassan and Chikkamagaluru dominate potato in this belt. Late-blight years
+      depress yield sharply; prefer a multi-year official figure over a single
+      anomalous season, and record which you used here.
+
+  Leafy Greens:
+    value_mt_ha: null
+    verified: false
+    source: ""
+    source_url: ""
+    reference_year: null
+    notes: >-
+      This is an aggregate class (amaranth, spinach, coriander, fenugreek) with
+      several harvests per season. Any single yield constant is a coarse
+      approximation -- state the basis explicitly in `source` and treat the
+      resulting volume as indicative only.
+
+  Fallow/Non-Crop:
+    value_mt_ha: 0.0
+    verified: true
+    source: "Definitional -- fallow and non-crop land has no harvested output."
+    source_url: ""
+    reference_year: null
+    notes: >-
+      The one entry that needs no external citation. Present so that the class
+      is handled explicitly rather than falling through as missing data.
+
+# Per-district overrides. Same field shape as `defaults`.
+districts:
+  Kolar:
+    Tomato:
+      value_mt_ha: null
+      verified: false
+      source: ""
+      source_url: ""
+      reference_year: null
+      notes: >-
+        Kolar hosts Asia's second-largest tomato mandi; a district-specific
+        figure matters most here.
+
+  Chikkaballapur: {}
+  Bengaluru Rural: {}
+  Ramanagara: {}
+  Tumakuru: {}
+  Hassan: {}
+  Mandya: {}
+  Chikkamagaluru: {}

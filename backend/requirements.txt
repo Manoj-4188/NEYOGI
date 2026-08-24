@@ -1,0 +1,37 @@
+# NEYOGI backend (FastAPI + Celery worker) dependencies.
+# The worker image uses this same file, so it also pulls the ml_pipeline stack.
+
+# --- Web framework ---------------------------------------------------------
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+python-multipart>=0.0.12          # Twilio posts form-encoded webhooks
+
+# --- Database --------------------------------------------------------------
+psycopg[binary,pool]>=3.2.0
+
+# --- HTTP client (AGMARKNET) ----------------------------------------------
+httpx>=0.27.0
+
+# --- Auth ------------------------------------------------------------------
+PyJWT>=2.9.0
+bcrypt>=4.2.0
+
+# --- Messaging -------------------------------------------------------------
+twilio>=9.3.0
+
+# --- Background jobs -------------------------------------------------------
+celery>=5.4.0
+redis>=5.1.0
+
+# --- Shared with ml_pipeline (the API imports it directly) -----------------
+earthengine-api>=1.4.0
+numpy>=1.26,<3.0
+scikit-learn>=1.5.0
+joblib>=1.4.0
+PyYAML>=6.0.1
+
+# --- Development / test ----------------------------------------------------
+pytest>=8.0.0
+pytest-asyncio>=0.24.0

@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Secrets & credentials
+.env
+.env.local
+*.pem
+service_account.json
+gee_service_account.json
+
+# Data artifacts (large / regenerable). Reference configs ARE tracked.
+data/models/*.joblib
+data/models/*.json
+data/exports/*.geojson
+data/cache/*
+!data/**/.gitkeep
+!data/reference/*.yml
+!data/ground_truth/*.md
+!data/ground_truth/schema.json
+
+# OS
+.DS_Store
+Thumbs.db

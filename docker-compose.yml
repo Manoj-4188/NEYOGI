@@ -1,0 +1,165 @@
+# ==========================================================================
+# NEYOGI — full stack.
+#
+#   docker compose up -d --build
+#
+# Services:
+#   postgis   PostgreSQL 16 + PostGIS 3.4, schema applied on first start
+#   redis     Celery broker and result backend
+#   backend   FastAPI (uvicorn) on :8000
+#   worker    Celery worker — ingestion, prices, classification, WhatsApp retry
+#   beat      Celery beat — the schedule in backend/workers/celery_app.py
+#   frontend  nginx serving the Vite build, proxying /api to the backend
+#
+# Copy .env.example to .env and fill it before starting. The Earth Engine
+# service-account JSON is mounted read-only from ./secrets/.
+# ==========================================================================
+
+name: neyogi
+
+x-backend-env: &backend-env
+  DATABASE_URL: postgresql://${POSTGRES_USER:-neyogi}:${POSTGRES_PASSWORD:-neyogi}@postgis:5432/${POSTGRES_DB:-neyogi}
+  REDIS_URL: redis://redis:6379/0
+  CELERY_BROKER_URL: redis://redis:6379/0
+  CELERY_RESULT_BACKEND: redis://redis:6379/1
+  ENVIRONMENT: ${ENVIRONMENT:-development}
+  JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET in .env}
+  JWT_ALGORITHM: ${JWT_ALGORITHM:-HS256}
+  JWT_TTL_MINUTES: ${JWT_TTL_MINUTES:-480}
+  OFFICER_ACCOUNTS: ${OFFICER_ACCOUNTS:-}
+  CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173,http://localhost:8080}
+  AGMARKNET_API_KEY: ${AGMARKNET_API_KEY:-}
+  AGMARKNET_RESOURCE_ID: ${AGMARKNET_RESOURCE_ID:-9ef84268-d588-465a-a308-a864a43d0070}
+  AGMARKNET_STATE: ${AGMARKNET_STATE:-Karnataka}
+  TWILIO_ACCOUNT_SID: ${TWILIO_ACCOUNT_SID:-}
+  TWILIO_AUTH_TOKEN: ${TWILIO_AUTH_TOKEN:-}
+  TWILIO_WHATSAPP_FROM: ${TWILIO_WHATSAPP_FROM:-whatsapp:+14155238886}
+  TWILIO_VALIDATE_SIGNATURE: ${TWILIO_VALIDATE_SIGNATURE:-true}
+  PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-http://localhost:8000}
+  GEE_PROJECT_ID: ${GEE_PROJECT_ID:-}
+  GEE_SERVICE_ACCOUNT_EMAIL: ${GEE_SERVICE_ACCOUNT_EMAIL:-}
+  GEE_SERVICE_ACCOUNT_KEY_FILE: /run/secrets/gee_service_account.json
+  SATELLITE_CACHE_MAX_AGE_DAYS: ${SATELLITE_CACHE_MAX_AGE_DAYS:-30}
+  MARKET_CACHE_MAX_AGE_DAYS: ${MARKET_CACHE_MAX_AGE_DAYS:-30}
+  GEE_SEED_LOOKBACK_DAYS: ${GEE_SEED_LOOKBACK_DAYS:-60}
+  COMPOSITE_PERIOD_DAYS: ${COMPOSITE_PERIOD_DAYS:-16}
+
+x-backend-base: &backend-base
+  build:
+    context: .
+    dockerfile: backend/Dockerfile
+  environment: *backend-env
+  volumes:
+    # Model artifacts and reference configs, editable without a rebuild.
+    - ./data:/app/data
+    # Earth Engine service-account key. Create ./secrets/ and drop the JSON in.
+    - ./secrets:/run/secrets:ro
+  depends_on:
+    postgis:
+      condition: service_healthy
+    redis:
+      condition: service_healthy
+  restart: unless-stopped
+
+services:
+  postgis:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-neyogi}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-neyogi}
+      POSTGRES_DB: ${POSTGRES_DB:-neyogi}
+      # Deterministic collation so ORDER BY on district names is stable.
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --locale=C"
+    volumes:
+      - postgis_data:/var/lib/postgresql/data
+      # Applied once, on an empty data directory. The backend also applies it
+      # idempotently at start-up, which covers upgrades to an existing volume.
+      - ./backend/sql:/docker-entrypoint-initdb.d:ro
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-neyogi} -d ${POSTGRES_DB:-neyogi}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--appendonly", "yes", "--save", "60", "1"]
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+
+  backend:
+    <<: *backend-base
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    command:
+      - uvicorn
+      - backend.main:app
+      - --host
+      - "0.0.0.0"
+      - --port
+      - "8000"
+      - --proxy-headers
+
+  worker:
+    <<: *backend-base
+    command:
+      - celery
+      - -A
+      - backend.workers.celery_app.celery_app
+      - worker
+      - --loglevel=info
+      # Earth Engine work is IO-bound and the free quota is modest; two
+      # processes is plenty and keeps memory predictable.
+      - --concurrency=2
+    healthcheck:
+      test: ["CMD-SHELL", "celery -A backend.workers.celery_app.celery_app inspect ping -d celery@$$HOSTNAME || exit 1"]
+      interval: 60s
+      timeout: 15s
+      retries: 3
+      start_period: 45s
+
+  beat:
+    <<: *backend-base
+    command:
+      - celery
+      - -A
+      - backend.workers.celery_app.celery_app
+      - beat
+      - --loglevel=info
+      - --schedule=/tmp/celerybeat-schedule
+    depends_on:
+      postgis:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      backend:
+        condition: service_started
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      args:
+        # Empty: the bundle calls same-origin /api, which nginx proxies to the
+        # backend service. Set a full URL only when serving the SPA elsewhere.
+        VITE_API_BASE_URL: ""
+    ports:
+      - "${FRONTEND_PORT:-8080}:80"
+    depends_on:
+      backend:
+        condition: service_started
+    restart: unless-stopped
+
+volumes:
+  postgis_data:
+  redis_data:

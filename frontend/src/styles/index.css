@@ -1,0 +1,97 @@
+@import 'leaflet/dist/leaflet.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-parchment text-forest-900 antialiased;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  /* Kannada glyphs need a taller line box than the Latin default. */
+  :lang(kn) {
+    line-height: 1.75;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-xl border border-parchment-300 bg-white shadow-panel;
+  }
+
+  .panel-header {
+    @apply flex items-center justify-between gap-3 border-b border-parchment-200 px-4 py-3;
+  }
+
+  .panel-title {
+    @apply text-sm font-semibold uppercase tracking-wide text-forest;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-3.5 py-2
+           text-sm font-medium transition focus:outline-none focus-visible:ring-2
+           focus-visible:ring-sage focus-visible:ring-offset-2
+           disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply btn bg-forest text-parchment hover:bg-forest-700;
+  }
+
+  .btn-secondary {
+    @apply btn border border-parchment-300 bg-white text-forest hover:bg-parchment;
+  }
+
+  .btn-danger {
+    @apply btn bg-terracotta text-white hover:bg-terracotta-600;
+  }
+
+  .field-label {
+    @apply mb-1 block text-xs font-semibold uppercase tracking-wide text-sage-600;
+  }
+
+  .field {
+    @apply w-full rounded-lg border border-parchment-300 bg-white px-3 py-2 text-sm
+           text-forest-900 placeholder:text-forest-900/40
+           focus:border-sage focus:outline-none focus:ring-2 focus:ring-sage/30;
+  }
+
+  .stat-value {
+    @apply font-mono text-2xl font-semibold tabular-nums text-forest;
+  }
+
+  .stat-label {
+    @apply text-xs uppercase tracking-wide text-sage-600;
+  }
+
+  /* Reserved for values the system deliberately withholds. Rendering a dash in
+     terracotta rather than a zero keeps "unknown" visually distinct from
+     "measured as nothing". */
+  .value-withheld {
+    @apply font-mono text-lg font-semibold text-terracotta;
+  }
+}
+
+/* Leaflet sits under our panels and popups. */
+.leaflet-container {
+  @apply h-full w-full rounded-xl;
+  background: #e7ebe0;
+  font-family: inherit;
+  z-index: 0;
+}
+
+.leaflet-popup-content-wrapper {
+  @apply rounded-xl shadow-panel;
+}
+
+.leaflet-popup-content {
+  @apply m-0 w-auto;
+}
