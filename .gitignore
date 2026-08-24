@@ -20,6 +20,10 @@ dist/
 service_account.json
 gee_service_account.json
 
+# Mounted read-only into the containers; never commit its contents.
+secrets/*
+!secrets/README.txt
+
 # Data artifacts (large / regenerable). Reference configs ARE tracked.
 data/models/*.joblib
 data/models/*.json
