@@ -3,10 +3,14 @@
 
 FROM python:3.12-slim AS base
 
+# PYTHONPATH=/app: running "python scripts/foo.py" puts /app/scripts on
+# sys.path, not /app, so backend and ml_pipeline would not be importable
+# from a diagnostic script without it.
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     PIP_NO_CACHE_DIR=1 \
-    PIP_DISABLE_PIP_VERSION_CHECK=1
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    PYTHONPATH=/app
 
 # libpq for psycopg, curl for the container healthcheck.
 RUN apt-get update \
