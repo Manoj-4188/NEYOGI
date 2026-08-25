@@ -1,0 +1,6 @@
+{
+  "worktree": {
+    "bgIsolation": "none"
+  },
+  "_comment_worktree": "Background agents edit this checkout directly instead of a detached git worktree. The running docker compose stack bind-mounts ./data and ./secrets from here, so edits made in a worktree would never reach the containers."
+}
