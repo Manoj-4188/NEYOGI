@@ -28,6 +28,10 @@ COPY ml_pipeline ./ml_pipeline
 # ./data so a model trained on the host is picked up without a rebuild.
 COPY data ./data
 
+# Operational diagnostics (scripts/README.md documents them). Small, and they
+# are referenced by path in the docs, so they belong in the image.
+COPY scripts ./scripts
+
 # Run unprivileged.
 RUN useradd --create-home --uid 10001 neyogi \
     && chown -R neyogi:neyogi /app
