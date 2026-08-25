@@ -37,3 +37,6 @@ data/cache/*
 # OS
 .DS_Store
 Thumbs.db
+
+# Transient agent worktrees (OneDrive can hold locks; safe to delete manually).
+.claude/worktrees/
