@@ -169,13 +169,39 @@ takes responsibility for a claim.
 
 ### Dynamic district resolution
 
-GAUL 2015 still spells several Karnataka districts the old way — *Bangalore
-Rural*, *Tumkur*, *Chikmagalur*. Hard-coding a mapping would silently query the
-wrong polygon the day GAUL is republished. `gee_districts.resolve_districts()`
-pulls the live `ADM2_NAME` list at runtime and matches by exact key, then known
-transliteration alias, then fuzzy ratio above 0.82. Anything below that is
-returned as **unresolved** and skipped — never matched to a neighbouring
-district. The mapping is auditable with `make districts`.
+Two problems stand between a modern district name and a polygon.
+
+**Spelling.** GAUL 2015 still spells several Karnataka districts the old way —
+*Bangalore Rural*, *Tumkur*, *Chikmagalur*. Hard-coding a mapping would
+silently query the wrong polygon the day GAUL is republished.
+`gee_districts.resolve_districts()` pulls the live `ADM2_NAME` list at runtime
+and matches by exact key, then known transliteration alias, then fuzzy ratio
+above 0.82. Anything below that is **unresolved** and skipped — never matched
+to a neighbouring district.
+
+**Vintage.** GAUL's snapshot predates the 2007 Karnataka reorganisation. It
+carries 27 ADM2 features for the state, and neither **Chikkaballapura** (split
+from Kolar) nor **Ramanagara** (split from Bangalore Rural) is among them.
+This is not a spelling problem and no alias fixes it: the polygons do not
+exist. Falling back to the parent district would have been worse than failing,
+because Kolar's GAUL polygon still contains Chikkaballapura's territory — the
+query would succeed and every number derived from it would be wrong.
+
+So resolution runs two passes: GAUL first, then **geoBoundaries CGAZ ADM2**
+(CC-BY 4.0, William & Mary geoLab) for whatever GAUL could not place.
+geoBoundaries has no state attribute on its ADM2 features, so candidates are
+narrowed by intersecting the state's GAUL ADM1 polygon — which also prevents
+matching a same-named district in another state.
+
+Both fallback polygons were checked against published figures before the source
+was adopted: Chikkaballapura 4,242 km² (published ~4,208) and Ramanagara
+3,521 km² (published ~3,556), each ~97% inside the GAUL parent it was carved
+from. `scripts/verify_boundary_fix.py` re-runs those checks.
+
+Every district records which dataset supplied its polygon, and that provenance
+travels into the API and the officer console. Set `USE_BOUNDARY_FALLBACK=false`
+to disable the second pass and leave post-2007 districts unresolved. The whole
+mapping is auditable with `make districts`.
 
 ### Native-resolution aggregation
 
@@ -300,15 +326,19 @@ are simply out of scope for the suite.
 - **AGMARKNET commodity filtering** queries one commodity per request, so the
   `Leafy Greens` aggregate is covered primarily by the unfiltered district
   sweep.
-- **GAUL 2015 predates some district reorganisations.** Districts created after
-  that snapshot will not resolve and are reported as unresolved rather than
-  approximated.
+- **Mixed boundary vintages.** Six districts use GAUL 2015; Chikkaballapura and
+  Ramanagara use geoBoundaries, because GAUL predates their 2007 creation. The
+  two datasets generalise coastlines and borders slightly differently, so areas
+  are not exactly comparable across that boundary. The source is recorded per
+  district and shown in the officer console.
 
 ---
 
 ## Data sources
 
 - **Sentinel-2 L2A** — `COPERNICUS/S2_SR_HARMONIZED` via Google Earth Engine (ESA Copernicus)
-- **District boundaries** — `FAO/GAUL/2015/level2`
+- **District boundaries** — `FAO/GAUL/2015/level2`, with
+  [geoBoundaries](https://www.geoboundaries.org) CGAZ ADM2 (CC-BY 4.0) as the
+  fallback for districts GAUL predates
 - **Mandi prices** — AGMARKNET, republished on [data.gov.in](https://data.gov.in)
 - **Yield baselines** — operator-supplied, from Karnataka Dept of Horticulture / DES / NHB

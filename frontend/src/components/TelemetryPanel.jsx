@@ -55,7 +55,7 @@ export function TileHealth({ tiles }) {
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-parchment-200 text-left">
-              {['District', 'Newest composite', 'Age', 'Composites', 'Tile cache', 'Status'].map(
+              {['District', 'Boundary', 'Newest composite', 'Age', 'Composites', 'Tile cache', 'Status'].map(
                 (heading) => (
                   <th
                     key={heading}
@@ -72,6 +72,18 @@ export function TileHealth({ tiles }) {
               <tr key={tile.district} className="hover:bg-parchment">
                 <td className="whitespace-nowrap px-4 py-2 font-medium text-forest-900">
                   {tile.district}
+                </td>
+                <td className="whitespace-nowrap px-4 py-2">
+                  {tile.boundary?.is_fallback_source ? (
+                    <span
+                      className="rounded-full bg-amber-50 px-2 py-0.5 text-[11px] font-semibold text-amber-900"
+                      title={`GAUL 2015 predates this district; boundary from ${tile.boundary.source} as ${tile.boundary.resolved_name}`}
+                    >
+                      geoBoundaries
+                    </span>
+                  ) : (
+                    <span className="text-[11px] text-forest-900/50">GAUL</span>
+                  )}
                 </td>
                 <td className="whitespace-nowrap px-4 py-2 text-forest-900/80">
                   {tile.newest_composite || '—'}

@@ -39,7 +39,34 @@ STATE_NAME = os.getenv("GAUL_STATE_NAME", "Karnataka")
 COUNTRY_NAME = os.getenv("GAUL_COUNTRY_NAME", "India")
 
 GAUL_LEVEL2 = "FAO/GAUL/2015/level2"
+GAUL_LEVEL1 = "FAO/GAUL/2015/level1"
 S2_COLLECTION = "COPERNICUS/S2_SR_HARMONIZED"
+
+# --------------------------------------------------------------------------
+# Boundary sources
+#
+# GAUL is primary. Its 2015 snapshot predates several Indian district
+# reorganisations, though: Karnataka created Chikkaballapura (from Kolar) and
+# Ramanagara (from Bangalore Rural) in 2007, and GAUL carries neither -- only
+# 27 ADM2 features exist for the state.
+#
+# geoBoundaries CGAZ is the documented fallback for exactly those cases. It is
+# open data (CC-BY 4.0, William & Mary geoLab) and current enough to include
+# both districts. It is a *fallback*, not a replacement: a district that
+# resolves against GAUL keeps the GAUL polygon, so the primary source stays
+# authoritative and any substitution is visible in the resolution report.
+# --------------------------------------------------------------------------
+GEOBOUNDARIES_ADM2 = "projects/sat-io/open-datasets/geoboundaries/CGAZ_ADM2"
+
+#: Country code used by geoBoundaries' ``shapeGroup`` property (ISO 3166-1 a3).
+GEOBOUNDARIES_COUNTRY = os.getenv("GEOBOUNDARIES_COUNTRY", "IND")
+
+#: Set false to disable the fallback and leave post-2007 districts unresolved.
+USE_BOUNDARY_FALLBACK = os.getenv("USE_BOUNDARY_FALLBACK", "true").lower() not in {
+    "0",
+    "false",
+    "no",
+}
 
 # Sentinel-2 native resolution for the 10 m bands. reduceRegions runs at this
 # scale so that parcel statistics are computed from real pixels rather than a
