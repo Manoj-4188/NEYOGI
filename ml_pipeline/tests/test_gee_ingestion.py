@@ -75,9 +75,18 @@ def test_seed_lookback_default_is_sixty_days() -> None:
 # --------------------------------------------------------------------------
 
 
-def test_source_bands_cover_every_index() -> None:
+def test_source_bands_cover_every_index_and_the_classifier() -> None:
+    """SOURCE_BANDS is the union of index inputs and classifier features.
+
+    B12 feeds no vegetation index here, but the spectral classifier takes it as
+    one of its 17 features, so it has to be fetched even though nothing else
+    reads it.
+    """
     assert len(gi.COMPUTED_INDICES) == 11
-    assert set(gi.SOURCE_BANDS) == {"B2", "B3", "B4", "B5", "B6", "B8", "B8A", "B11"}
+    index_bands = {"B2", "B3", "B4", "B5", "B6", "B8", "B8A", "B11"}
+    assert index_bands.issubset(set(gi.SOURCE_BANDS))
+    assert "B12" in gi.SOURCE_BANDS
+    assert set(gi.SOURCE_BANDS) == index_bands | {"B12"}
 
 
 def test_scl_mask_classes_are_shadow_cloud_and_cirrus() -> None:

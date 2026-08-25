@@ -28,11 +28,11 @@ CANDIDATE_DISTRICTS: tuple[str, ...] = (
     "Kolar",
     "Chikkaballapur",
     "Bengaluru Rural",
-    "Ramanagara",
     "Tumakuru",
     "Hassan",
     "Mandya",
-    "Chikkamagaluru",
+    "Mysuru",
+    "Belagavi",
 )
 
 STATE_NAME = os.getenv("GAUL_STATE_NAME", "Karnataka")

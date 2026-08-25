@@ -317,6 +317,14 @@ REQUIRED_BANDS: tuple[str, ...] = tuple(
     sorted({band for spec in INDEX_SPECS for band in spec.bands})
 )
 
+#: Bands the spectral classifier consumes directly, on top of the indices.
+#: B12 (SWIR 2, 2190 nm) feeds no index here but is one of the model's 17
+#: features, so it has to be fetched even though nothing else uses it.
+CLASSIFIER_BANDS: tuple[str, ...] = ("B2", "B3", "B4", "B8", "B11", "B12")
+
+#: Union of everything downstream needs from a Sentinel-2 scene.
+ALL_BANDS: tuple[str, ...] = tuple(sorted(set(REQUIRED_BANDS) | set(CLASSIFIER_BANDS)))
+
 
 def compute_all(bands: Mapping[str, ArrayLike]) -> dict[str, np.ndarray]:
     """Compute every index whose bands are present in ``bands``.
