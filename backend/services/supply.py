@@ -69,6 +69,44 @@ async def daily_series(
     ]
 
 
+async def _spectral_area_by_crop(district: str) -> tuple[dict, dict]:
+    """Crop areas from the latest spectral classification.
+
+    Returns ``({crop: hectares}, {crop: sample_count})`` using the platform's
+    canonical crop names, so the yield lookup keys line up. The model's
+    ``other`` class is dropped -- it is not a marketable crop and has no yield
+    baseline.
+    """
+    display = {
+        "tomato": "Tomato",
+        "onion": "Onion",
+        "potato": "Potato",
+        "leafy_greens": "Leafy Greens",
+    }
+    try:
+        rows = await db.fetch_all(
+            """
+            SELECT crop, area_ha, sample_count
+            FROM district_classification_latest
+            WHERE district = %s
+            """,
+            (district,),
+        )
+    except db.DatabaseUnavailable as exc:
+        logger.warning("Spectral area lookup failed for %s: %s", district, exc)
+        return {}, {}
+
+    areas: dict[str, float] = {}
+    counts: dict[str, int] = {}
+    for crop, area_ha, sample_count in rows:
+        name = display.get(str(crop))
+        if not name:
+            continue
+        areas[name] = float(area_ha)
+        counts[name] = int(sample_count)
+    return areas, counts
+
+
 async def district_forecast(
     district: str, window_days: int | None = None
 ) -> dict:
@@ -79,17 +117,32 @@ async def district_forecast(
     validation = await parcels.district_validation(district)
     badges = status.StatusSet().add(validation.badge())
 
-    if not validation.is_validated:
-        # No verified ground truth -> no classified area -> no supply claim.
-        forecast = se.forecast_district(
-            district, area_by_crop={}, window_days=window_days, as_of=as_of
-        )
-        payload = forecast.to_dict()
-        payload["status"] = badges.to_dict()
-        payload["daily_series"] = {}
-        return payload
-
+    # Verified parcels are the preferred basis. Where none exist, fall back to
+    # the spectral model's sample-extrapolated district areas so the forecast
+    # is not silently blocked on a field survey that may never happen. The two
+    # are never combined, and `area_basis` records which one produced the
+    # numbers so the caller can weight them accordingly.
     area_by_crop, parcel_counts = await parcels.classified_area_by_crop(district)
+    area_basis = "verified_parcels"
+
+    if not area_by_crop:
+        area_by_crop, parcel_counts = await _spectral_area_by_crop(district)
+        area_basis = "spectral_model"
+        if area_by_crop:
+            badges.add(
+                status.StatusBadge(
+                    source=status.SourceKind.MODEL,
+                    status=status.SourceStatus.CACHED,
+                    severity=status.Severity.WARN,
+                    label="SPECTRAL AREA",
+                    detail=(
+                        "Crop areas come from the spectral model's point sample, "
+                        "not from field-verified parcels. Field verification "
+                        "pending."
+                    ),
+                    is_fallback=True,
+                )
+            )
     marketable = [c for c in area_by_crop if c != "Fallow/Non-Crop"]
     arrivals = await arrivals_by_crop(district, marketable, window_days)
 
@@ -138,4 +191,5 @@ async def district_forecast(
     payload["status"] = badges.to_dict()
     payload["daily_series"] = series
     payload["window_days"] = window_days
+    payload["area_basis"] = area_basis
     return payload

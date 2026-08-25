@@ -35,10 +35,16 @@ CREATE TABLE IF NOT EXISTS supply_alerts (
 
     created_at     TIMESTAMPTZ NOT NULL DEFAULT now(),
 
+    -- Stored as its own column rather than derived from created_at. Casting a
+    -- timestamptz to date depends on the session TimeZone, so it is not
+    -- IMMUTABLE and Postgres will not index it -- and the deduplication below
+    -- needs an index.
+    alert_date     DATE NOT NULL DEFAULT CURRENT_DATE,
+
     -- One alert per district/crop/day: re-running the forecast must not spam
     -- the log with duplicates of the same standing condition.
-    CONSTRAINT supply_alert_unique
-        UNIQUE (district, crop, (created_at::date))
+    CONSTRAINT supply_alert_daily_unique
+        UNIQUE (district, crop, alert_date)
 );
 
 CREATE INDEX IF NOT EXISTS supply_alerts_recent_idx

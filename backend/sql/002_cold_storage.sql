@@ -88,7 +88,13 @@ CREATE TRIGGER cold_storage_touch_updated_at
 -- `facility_count` so the UI can say "12 facilities, 9 mapped" rather than
 -- silently dropping the three without coordinates.
 -- --------------------------------------------------------------------------
-CREATE OR REPLACE VIEW cold_storage_by_district AS
+-- DROP first: 004 widens this view, and on a re-run CREATE OR REPLACE
+-- would try to narrow it back, which Postgres rejects with "cannot drop
+-- columns from view". Dropping makes the file idempotent regardless of
+-- which migrations have already run.
+DROP VIEW IF EXISTS cold_storage_by_district;
+
+CREATE VIEW cold_storage_by_district AS
 SELECT
     district,
     COUNT(*)                                          AS facility_count,

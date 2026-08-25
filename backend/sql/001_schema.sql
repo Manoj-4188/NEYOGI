@@ -287,7 +287,9 @@ CREATE TRIGGER farmers_touch_updated_at
 -- "UNVALIDATED DISTRICT" badge -- a district with zero verified parcels is
 -- shown as NDVI basemap only, with no crop classification.
 -- --------------------------------------------------------------------------
-CREATE OR REPLACE VIEW district_validation_status AS
+DROP VIEW IF EXISTS district_validation_status;
+
+CREATE VIEW district_validation_status AS
 SELECT
     district,
     COUNT(*)                                          AS parcel_count,

@@ -60,7 +60,9 @@ COMMENT ON COLUMN district_classifications.area_ha IS
 -- --------------------------------------------------------------------------
 -- Latest classification per district, which is what the dashboard reads.
 -- --------------------------------------------------------------------------
-CREATE OR REPLACE VIEW district_classification_latest AS
+DROP VIEW IF EXISTS district_classification_latest;
+
+CREATE VIEW district_classification_latest AS
 SELECT dc.*
 FROM district_classifications dc
 JOIN (

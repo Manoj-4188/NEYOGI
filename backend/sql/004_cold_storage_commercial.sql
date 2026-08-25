@@ -38,7 +38,12 @@ COMMENT ON COLUMN cold_storage_facilities.crops_supported IS
 
 -- Rebuild the rollup to carry the tariff range, so the UI can show what a
 -- district costs without a second query.
-CREATE OR REPLACE VIEW cold_storage_by_district AS
+-- DROP first, not CREATE OR REPLACE: replacing a view can only append
+-- columns, and the two tariff columns land before newest_source_year.
+-- Postgres rejects that with "cannot change name of view column".
+DROP VIEW IF EXISTS cold_storage_by_district;
+
+CREATE VIEW cold_storage_by_district AS
 SELECT
     district,
     COUNT(*)                                          AS facility_count,
