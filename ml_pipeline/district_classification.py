@@ -57,6 +57,13 @@ MIN_CROPLAND_NDVI = 0.25
 #: NDWI above this is standing water (McFeeters 1996).
 MAX_CROPLAND_NDWI = 0.0
 
+#: Below this many successfully classified points, the class shares are too
+#: noisy to extrapolate to a district. Monsoon cloud can leave a district
+#: with a handful of usable pixels, and one sample scaled to 300,000 ha is
+#: a fabricated number wearing a real one's clothes. The run reports the
+#: shortfall instead of publishing an area.
+MIN_CLASSIFIED_SAMPLES = 30
+
 #: Sampling scale. Coarser than the 10 m native grid on purpose: a 20 m sample
 #: point averages a small neighbourhood, which suppresses single-pixel noise
 #: without materially blurring field-scale boundaries.
@@ -271,6 +278,18 @@ def classify_district(
                 share_stderr=stderr,
             )
         )
+
+    if classified < MIN_CLASSIFIED_SAMPLES:
+        # Keep the sample count visible, but publish no areas: extrapolating a
+        # district from a handful of points would look like a measurement.
+        result.crops = []
+        result.notes.append(
+            f"Only {classified} sample point(s) could be classified, below the "
+            f"{MIN_CLASSIFIED_SAMPLES} needed to extrapolate district areas. "
+            "This usually means heavy cloud cover in the composite window. No "
+            "crop areas are reported."
+        )
+        return result
 
     dropped = len(rows) - classified
     if dropped:
