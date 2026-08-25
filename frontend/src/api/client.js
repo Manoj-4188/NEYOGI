@@ -130,6 +130,9 @@ export const api = {
   parcelSeries: ({ parcelId, index, since }) =>
     request(`/api/v1/parcel/${parcelId}/ndvi`, { params: { index, since } }),
 
+  coldStorage: ({ district }) =>
+    request('/api/v1/infrastructure/cold-storage', { params: { district } }),
+
   /* -----------------------------------------------------------------------
    * Officer endpoints (bearer token required)
    * -------------------------------------------------------------------- */

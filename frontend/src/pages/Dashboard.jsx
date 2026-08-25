@@ -4,16 +4,21 @@
  * Layout: district picker, a system-wide fallback banner, the parcel map, the
  * 21-day supply-versus-arrivals chart, and the mandi price table.
  *
- * The banner is driven entirely by the `status` objects the API attaches to
- * each response, so the page cannot show stale data without saying so.
+ * The banner and every badge are driven by the `status` objects the API
+ * attaches to each response, so the page cannot show stale data without saying
+ * so. Where a panel has nothing to show it explains which input is missing,
+ * rather than rendering blank — see components/EmptyState.jsx.
  */
 
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import api from '../api/client.js';
+import ColdStoragePanel from '../components/ColdStoragePanel.jsx';
 import CropMap from '../components/CropMap.jsx';
+import EmptyState, { Icon, SkeletonPanel } from '../components/EmptyState.jsx';
 import ParcelDetails from '../components/ParcelPopup.jsx';
 import PriceTable from '../components/PriceTable.jsx';
+import SetupProgress from '../components/SetupProgress.jsx';
 import SupplyChart, { SupplySummary } from '../components/SupplyChart.jsx';
 import { FallbackBanner, StatusBadgeRow } from '../components/StatusBadge.jsx';
 
@@ -66,7 +71,9 @@ export default function Dashboard() {
   const [crop, setCrop] = useState('Tomato');
   const [selectedParcel, setSelectedParcel] = useState(null);
 
+  const healthState = useAsync(() => api.health().catch(() => null), []);
   const districtsState = useAsync(() => api.districts(), []);
+
   // Memoised: a fresh `[]` on every render would re-fire the default-district
   // effect below on every render.
   const districts = useMemo(
@@ -94,10 +101,15 @@ export default function Dashboard() {
     () => (district ? api.mandiPrices({ district, crop }) : Promise.resolve(null)),
     [district, crop],
   );
+  const coldStorageState = useAsync(
+    () => (district ? api.coldStorage({ district }) : Promise.resolve(null)),
+    [district],
+  );
 
   const collection = cropsState.data;
   const forecast = forecastState.data;
   const prices = pricesState.data;
+  const health = healthState.data;
 
   // Merge every response's badges into one banner so the user sees the whole
   // system's state, not one endpoint's.
@@ -128,8 +140,30 @@ export default function Dashboard() {
   const handleSelectParcel = useCallback((props) => setSelectedParcel(props), []);
 
   const validation = collection?.properties?.validation;
-  const errors = [districtsState.error, cropsState.error, forecastState.error, pricesState.error]
-    .filter(Boolean);
+  const isValidated = Boolean(validation?.is_validated);
+  const anyValidated = districts.some((d) => d.is_validated);
+  const hasPrices = (prices?.quote_count || 0) > 0;
+  const agmarknetReady = Boolean(health?.configured?.agmarknet);
+  const setupIncomplete =
+    !anyValidated || !agmarknetReady || !health?.configured?.earth_engine;
+
+  const loadCommand = [
+    'python -m ml_pipeline.load_ground_truth \\',
+    `  data/ground_truth/<file>.geojson --district ${district || 'Kolar'} \\`,
+    '  --verified-by "Name, Dept" --compute-indices',
+  ].join('\n');
+
+  const refreshCommand = [
+    'docker compose exec worker python -c \\',
+    '  "from backend.workers.tasks import refresh_prices; print(refresh_prices())"',
+  ].join('\n');
+
+  const errors = [
+    districtsState.error,
+    cropsState.error,
+    forecastState.error,
+    pricesState.error,
+  ].filter(Boolean);
 
   return (
     <div className="mx-auto max-w-[100rem] px-4 py-6 lg:px-8">
@@ -152,11 +186,11 @@ export default function Dashboard() {
                 key={name}
                 type="button"
                 onClick={() => setCrop(name)}
-                className={`rounded-md px-3 py-1.5 text-sm font-medium transition ${
+                className={
                   crop === name
-                    ? 'bg-forest text-parchment'
-                    : 'text-forest-900/70 hover:bg-parchment'
-                }`}
+                    ? 'rounded-md bg-forest px-3 py-1.5 text-sm font-medium text-parchment shadow-sm transition'
+                    : 'rounded-md px-3 py-1.5 text-sm font-medium text-forest-900/70 transition hover:bg-parchment'
+                }
               >
                 {name}
               </button>
@@ -197,36 +231,46 @@ export default function Dashboard() {
             </div>
             <StatusBadgeRow status={collection?.properties?.status} />
           </header>
+
           <div className="h-[30rem]">
             {cropsState.loading ? (
-              <div className="flex h-full items-center justify-center text-sm text-sage-600">
-                Loading parcels…
-              </div>
-            ) : (
+              <SkeletonPanel label="Loading parcels…" />
+            ) : collection?.features?.length ? (
               <CropMap
                 collection={collection}
                 basemapTile={collection?.properties?.basemap_tile}
+                coldStores={coldStorageState.data?.facilities}
                 onSelectParcel={handleSelectParcel}
               />
+            ) : (
+              <div className="flex h-full items-center justify-center px-6">
+                <EmptyState
+                  icon="map"
+                  tone="blocked"
+                  title={`No parcels loaded for ${district || 'this district'}`}
+                  body="The map draws digitised field boundaries. None have been ingested for this district yet, so there is nothing to render — NEYOGI will not synthesise plots to fill the view."
+                  command={loadCommand}
+                  footnote="Format and a worked example: data/ground_truth/README.md"
+                />
+              </div>
             )}
           </div>
         </section>
 
         <div className="space-y-5">
           {selectedParcel ? (
-            <ParcelDetails
-              parcel={selectedParcel}
-              onClose={() => setSelectedParcel(null)}
-            />
-          ) : (
-            <section className="panel px-4 py-6">
-              <h2 className="panel-title mb-2">Parcel detail</h2>
-              <p className="text-sm text-sage-600">
-                Select a parcel on the map to see its crop attribution, measured
-                spectral indices and NDVI history.
-              </p>
-            </section>
-          )}
+            <ParcelDetails parcel={selectedParcel} onClose={() => setSelectedParcel(null)} />
+          ) : null}
+
+          {setupIncomplete ? (
+            <SetupProgress health={health} districts={districts} />
+          ) : null}
+
+          <ColdStoragePanel
+            payload={coldStorageState.data}
+            loading={coldStorageState.loading}
+            district={district}
+          />
 
           {forecast?.crops?.length ? (
             <div className="space-y-3">
@@ -241,22 +285,44 @@ export default function Dashboard() {
 
       <section className="panel mt-5">
         <header className="panel-header">
-          <div>
-            <h2 className="panel-title">
-              {crop} — supply vs mandi arrivals ({forecast?.window_days || 21} days)
-            </h2>
-            {forecast?.notes?.length ? (
-              <p className="mt-0.5 max-w-3xl text-xs text-forest-900/60">
-                {forecast.notes.join(' ')}
-              </p>
-            ) : null}
+          <div className="flex items-center gap-2">
+            <Icon name="chart" className="h-4 w-4 shrink-0 text-sage-600" />
+            <div>
+              <h2 className="panel-title">
+                {crop} — supply vs mandi arrivals ({forecast?.window_days || 21} days)
+              </h2>
+              {forecast?.notes?.length ? (
+                <p className="mt-0.5 max-w-3xl text-xs text-forest-900/60">
+                  {forecast.notes.join(' ')}
+                </p>
+              ) : null}
+            </div>
           </div>
         </header>
+
         <div className="px-4 py-4">
           {forecastState.loading ? (
-            <div className="flex h-64 items-center justify-center text-sm text-sage-600">
-              Loading forecast…
-            </div>
+            <SkeletonPanel label="Loading forecast…" />
+          ) : !isValidated ? (
+            <EmptyState
+              icon="seedling"
+              tone="blocked"
+              title="Supply projection needs verified ground truth"
+              body={`${district || 'This district'} has no field-verified parcels, so there is no classified area to project from. A crop label is never inferred from spectral data alone — that is the rule this system is built around.`}
+              footnote="Load parcels, then run the classifier to populate this chart."
+            />
+          ) : !forecast?.daily_series?.[crop]?.length ? (
+            <EmptyState
+              icon="rupee"
+              tone={agmarknetReady ? 'info' : 'blocked'}
+              title={`No mandi arrivals recorded for ${crop}`}
+              body={
+                agmarknetReady
+                  ? 'AGMARKNET published no arrival tonnage for this district and crop in the window. Days without a quote are left as gaps rather than drawn as zero arrivals.'
+                  : 'No AGMARKNET API key is configured, so no price or arrival data can be fetched.'
+              }
+              command={agmarknetReady ? undefined : 'AGMARKNET_API_KEY=your_key_here'}
+            />
           ) : (
             <SupplyChart
               series={forecast?.daily_series?.[crop]}
@@ -268,7 +334,44 @@ export default function Dashboard() {
       </section>
 
       <div className="mt-5">
-        <PriceTable payload={prices} crop={crop} />
+        {pricesState.loading ? (
+          <section className="panel">
+            <header className="panel-header">
+              <h2 className="panel-title">Mandi prices</h2>
+            </header>
+            <SkeletonPanel label="Loading prices…" />
+          </section>
+        ) : hasPrices ? (
+          <PriceTable payload={prices} crop={crop} />
+        ) : (
+          <section className="panel">
+            <header className="panel-header">
+              <div className="flex items-center gap-2">
+                <Icon name="rupee" className="h-4 w-4 shrink-0 text-sage-600" />
+                <h2 className="panel-title">Mandi prices</h2>
+              </div>
+              <StatusBadgeRow status={prices?.status} />
+            </header>
+            <div className="px-4 py-4">
+              <EmptyState
+                icon="rupee"
+                tone="blocked"
+                title={`No quotes cached for ${crop} in ${district || 'this district'}`}
+                body={
+                  agmarknetReady
+                    ? 'The AGMARKNET feed was queried and returned nothing usable, and the local cache is empty. Prices appear here as soon as the feed responds — the daily resource is published irregularly and is sometimes unreachable for hours at a time.'
+                    : 'No AGMARKNET API key is configured. Register free at data.gov.in, set AGMARKNET_API_KEY, then recreate the backend.'
+                }
+                command={agmarknetReady ? refreshCommand : 'AGMARKNET_API_KEY=your_key_here'}
+                footnote={
+                  agmarknetReady
+                    ? 'A key is configured — this is an upstream availability gap, not a setup problem.'
+                    : undefined
+                }
+              />
+            </div>
+          </section>
+        )}
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ from ml_pipeline import config
 
 logger = logging.getLogger(__name__)
 
-SCHEMA_PATH = config.REPO_ROOT / "backend" / "sql" / "001_schema.sql"
+SCHEMA_DIR = config.REPO_ROOT / "backend" / "sql"
 
 
 class DatabaseUnavailable(RuntimeError):
@@ -76,12 +76,18 @@ def connect(autocommit: bool = False) -> Iterator[Any]:
 
 
 def apply_schema(path: Path | None = None) -> None:
-    """Apply the idempotent schema file."""
-    path = path or SCHEMA_PATH
-    sql = path.read_text(encoding="utf-8")
+    """Apply every idempotent schema file, in filename order.
+
+    Pass ``path`` to apply a single file instead of the whole directory.
+    """
+    files = [path] if path else sorted(SCHEMA_DIR.glob("*.sql"))
+    if not files:
+        logger.warning("No schema files found in %s", SCHEMA_DIR)
+        return
     with connect() as conn, conn.cursor() as cur:
-        cur.execute(sql)
-    logger.info("Applied schema from %s", path)
+        for sql_file in files:
+            cur.execute(sql_file.read_text(encoding="utf-8"))
+            logger.info("Applied schema from %s", sql_file.name)
 
 
 # --------------------------------------------------------------------------

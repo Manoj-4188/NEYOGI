@@ -100,10 +100,17 @@ async def apply_schema() -> None:
     """Apply the idempotent schema file at start-up."""
     from pathlib import Path
 
-    schema_path = Path(__file__).resolve().parent / "sql" / "001_schema.sql"
-    if not schema_path.exists():  # pragma: no cover - packaging guard
-        logger.warning("Schema file not found at %s; skipping", schema_path)
+    # Every *.sql in the directory, in filename order, so a new migration is
+    # picked up by adding a file rather than by editing this function. All of
+    # them are written to be idempotent, so re-running on an existing database
+    # is a no-op.
+    schema_dir = Path(__file__).resolve().parent / "sql"
+    files = sorted(schema_dir.glob("*.sql"))
+    if not files:  # pragma: no cover - packaging guard
+        logger.warning("No schema files found in %s; skipping", schema_dir)
         return
+
     async with cursor() as cur:
-        await cur.execute(schema_path.read_text(encoding="utf-8"))
-    logger.info("Schema applied from %s", schema_path)
+        for path in files:
+            await cur.execute(path.read_text(encoding="utf-8"))
+            logger.info("Schema applied from %s", path.name)
