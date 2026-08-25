@@ -1,20 +1,20 @@
 /**
  * Officer console — role-gated.
  *
- * Shows pipeline telemetry, the model confusion matrix, GEE tile status, and
- * the manual parcel verification toggle. Verification is the one write on this
- * page, and it is the gate on the whole classification path: marking a parcel
- * verified asserts that a human attributed that polygon to that crop, and the
- * API records who did it.
+ * Pipeline telemetry, model diagnostics, the alert log and the manual parcel
+ * verification toggle. Verification is the one write on this page and it is
+ * the gate on the ground-truth classification path, so the API records who
+ * did it.
  */
 
 import { useCallback, useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import api from '../api/client.js';
-import ConfusionMatrix from '../components/ConfusionMatrix.jsx';
+import AlertLog from '../components/AlertLog.jsx';
+import ModelCard from '../components/ModelCard.jsx';
 import {
   GroundTruthAudit,
-  PipelineRuns,
   ServiceHealth,
   TileHealth,
   YieldBaselineCoverage,
@@ -25,52 +25,39 @@ const CROP_CLASSES = ['Tomato', 'Onion', 'Potato', 'Leafy Greens', 'Fallow/Non-C
 
 function VerificationRow({ parcel, onToggle, busy }) {
   const [cropLabel, setCropLabel] = useState(parcel.crop_label || '');
-
   const needsLabel = !parcel.verified && !parcel.crop_label && !cropLabel;
 
   return (
-    <tr className="hover:bg-parchment">
-      <td className="px-4 py-2 font-mono text-xs text-forest-900/70">{parcel.parcel_uid}</td>
-      <td className="px-4 py-2">
+    <tr>
+      <td className="font-mono text-xs text-muted">{parcel.parcel_uid}</td>
+      <td>
         <select
-          className="field py-1 text-xs"
+          className="field py-1 text-sm"
           value={cropLabel}
-          onChange={(event) => setCropLabel(event.target.value)}
+          onChange={(e) => setCropLabel(e.target.value)}
           disabled={busy}
         >
           <option value="">— no label —</option>
-          {CROP_CLASSES.map((crop) => (
-            <option key={crop} value={crop}>
-              {crop}
+          {CROP_CLASSES.map((c) => (
+            <option key={c} value={c}>
+              {c}
             </option>
           ))}
         </select>
       </td>
-      <td className="px-4 py-2 font-mono tabular-nums text-xs text-forest-900/70">
+      <td className="num text-muted">
         {parcel.area_ha != null ? `${parcel.area_ha.toFixed(2)} ha` : '—'}
       </td>
-      <td className="px-4 py-2 text-xs text-forest-900/60">{parcel.verified_by || '—'}</td>
-      <td className="px-4 py-2">
-        {parcel.verified ? (
-          <span className="rounded-full bg-sage-100 px-2 py-0.5 text-xs font-semibold text-forest">
-            verified
-          </span>
-        ) : (
-          <span className="rounded-full bg-parchment-200 px-2 py-0.5 text-xs font-semibold text-forest-900/60">
-            unverified
-          </span>
-        )}
+      <td className="text-muted">{parcel.verified_by || '—'}</td>
+      <td style={{ color: parcel.verified ? '#1a5c2a' : '#6b7280' }}>
+        {parcel.verified ? 'verified' : 'unverified'}
       </td>
-      <td className="px-4 py-2 text-right">
+      <td className="text-right">
         <button
           type="button"
-          className={parcel.verified ? 'btn-secondary px-2.5 py-1 text-xs' : 'btn-primary px-2.5 py-1 text-xs'}
+          className="btn text-xs"
           disabled={busy || (!parcel.verified && needsLabel)}
-          title={
-            needsLabel
-              ? 'Choose a crop label first — a parcel cannot be verified without one.'
-              : undefined
-          }
+          title={needsLabel ? 'Choose a crop label first' : undefined}
           onClick={() =>
             onToggle(parcel.id, !parcel.verified, cropLabel || parcel.crop_label || null)
           }
@@ -87,6 +74,7 @@ export default function OfficerConsole() {
 
   const [telemetry, setTelemetry] = useState(null);
   const [model, setModel] = useState(null);
+  const [alerts, setAlerts] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -95,16 +83,18 @@ export default function OfficerConsole() {
   const [busyParcel, setBusyParcel] = useState(null);
   const [notice, setNotice] = useState(null);
 
-  const loadTelemetry = useCallback(async () => {
+  const load = useCallback(async () => {
     setLoading(true);
     setError(null);
     try {
-      const [telemetryPayload, modelPayload] = await Promise.all([
+      const [t, m, a] = await Promise.all([
         api.telemetry(),
         api.model(),
+        api.alerts({ limit: 10 }).catch(() => null),
       ]);
-      setTelemetry(telemetryPayload);
-      setModel(modelPayload);
+      setTelemetry(t);
+      setModel(m);
+      setAlerts(a);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -114,17 +104,16 @@ export default function OfficerConsole() {
 
   const loadParcels = useCallback(async (name) => {
     try {
-      const payload = await api.reviewParcels({ district: name, limit: 200 });
-      setParcels(payload.parcels || []);
+      const p = await api.reviewParcels({ district: name, limit: 200 });
+      setParcels(p.parcels || []);
     } catch (err) {
       setError(err.message);
     }
   }, []);
 
   useEffect(() => {
-    loadTelemetry();
-  }, [loadTelemetry]);
-
+    load();
+  }, [load]);
   useEffect(() => {
     if (district) loadParcels(district);
   }, [district, loadParcels]);
@@ -135,146 +124,138 @@ export default function OfficerConsole() {
       setNotice(null);
       try {
         const updated = await api.setVerification({ parcelId, verified, cropLabel });
-        setParcels((current) =>
-          current.map((p) =>
+        setParcels((cur) =>
+          cur.map((p) =>
             p.id === parcelId
-              ? { ...p, verified: updated.verified, crop_label: updated.crop_label, verified_by: updated.verified_by }
+              ? {
+                  ...p,
+                  verified: updated.verified,
+                  crop_label: updated.crop_label,
+                  verified_by: updated.verified_by,
+                }
               : p,
           ),
         );
         setNotice(
           `Parcel ${updated.parcel_uid} marked ${updated.verified ? 'verified' : 'unverified'}.`,
         );
-        // Verification changes what the system may claim, so refresh the audit.
-        loadTelemetry();
+        load();
       } catch (err) {
         setError(err.message);
       } finally {
         setBusyParcel(null);
       }
     },
-    [loadTelemetry],
+    [load],
   );
 
   const districts = telemetry?.gee_tile_health?.map((t) => t.district) || [];
 
   return (
-    <div className="mx-auto max-w-[100rem] px-4 py-6 lg:px-8">
-      <header className="mb-5 flex flex-wrap items-end justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-bold tracking-tight text-forest">Officer Console</h1>
-          <p className="mt-1 text-sm text-forest-900/70">
-            Pipeline telemetry, model diagnostics and ground-truth verification.
-          </p>
+    <div className="flex h-full flex-col">
+      <header className="flex h-topbar shrink-0 items-center justify-between border-b border-line px-5">
+        <div className="flex items-baseline gap-3">
+          <NavLink to="/dashboard" className="text-md font-bold text-ink">
+            NEYOGI
+          </NavLink>
+          <span className="text-xs text-muted">Officer console</span>
         </div>
         <div className="flex items-center gap-3">
-          <span className="text-sm text-forest-900/70">
-            {principal?.username}
-            <span className="ml-1.5 rounded-full bg-sage-100 px-2 py-0.5 text-xs font-semibold text-forest">
-              {principal?.role}
-            </span>
+          <span className="text-xs text-muted">
+            {principal?.username} · {principal?.role}
           </span>
-          <button type="button" className="btn-secondary" onClick={loadTelemetry}>
+          <button type="button" className="btn text-xs" onClick={load}>
             Refresh
           </button>
-          <button type="button" className="btn-secondary" onClick={logout}>
+          <button type="button" className="btn text-xs" onClick={logout}>
             Sign out
           </button>
         </div>
       </header>
 
-      {error ? (
-        <div className="mb-4 rounded-xl border border-terracotta-200 bg-terracotta-100 px-4 py-3 text-sm text-terracotta-600">
-          {error}
-        </div>
-      ) : null}
-      {notice ? (
-        <div className="mb-4 rounded-xl border border-sage-200 bg-sage-100 px-4 py-3 text-sm text-forest">
-          {notice}
-        </div>
-      ) : null}
+      <div className="flex-1 overflow-y-auto">
+        {error ? (
+          <p className="border-b border-line px-5 py-3 text-base text-high">{error}</p>
+        ) : null}
+        {notice ? (
+          <p className="border-b border-line px-5 py-3 text-base text-accent">{notice}</p>
+        ) : null}
 
-      {loading && !telemetry ? (
-        <p className="py-12 text-center text-sm text-sage-600">Loading telemetry…</p>
-      ) : null}
+        {loading && !telemetry ? (
+          <p className="p-5 text-base text-muted">Loading telemetry…</p>
+        ) : null}
 
-      {telemetry ? (
-        <div className="space-y-5">
-          <div className="grid gap-5 lg:grid-cols-[20rem_minmax(0,1fr)]">
-            <div className="space-y-5">
+        {telemetry ? (
+          <>
+            <div className="grid grid-cols-1 lg:grid-cols-2 lg:divide-x lg:divide-line">
               <ServiceHealth services={telemetry.services} />
-              <YieldBaselineCoverage coverage={telemetry.yield_baseline_coverage} />
+              <GroundTruthAudit audit={telemetry.ground_truth_audit} />
             </div>
-            <GroundTruthAudit audit={telemetry.ground_truth_audit} />
-          </div>
 
-          <TileHealth tiles={telemetry.gee_tile_health} />
+            <AlertLog payload={alerts} loading={loading} onSent={load} />
 
-          <ConfusionMatrix model={model} />
+            <TileHealth tiles={telemetry.gee_tile_health} />
 
-          <section className="panel">
-            <header className="panel-header">
-              <div>
-                <h2 className="panel-title">Manual parcel verification</h2>
-                <p className="mt-0.5 text-xs text-forest-900/60">
-                  Verifying a parcel asserts a human-attributed crop label. Only
-                  verified parcels are ever classified.
+            <ModelCard model={model} />
+
+            <YieldBaselineCoverage coverage={telemetry.yield_baseline_coverage} />
+
+            <section className="card">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h2 className="card-title">Parcel Verification</h2>
+                  <p className="card-sub">
+                    Verifying asserts a human-attributed crop label. Only verified
+                    parcels reach the ground-truth model.
+                  </p>
+                </div>
+                <select
+                  className="field w-auto"
+                  value={district}
+                  onChange={(e) => setDistrict(e.target.value)}
+                >
+                  {districts.map((n) => (
+                    <option key={n} value={n}>
+                      {n}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {parcels.length === 0 ? (
+                <p className="mt-4 text-base text-muted">
+                  No parcels loaded for {district}.
                 </p>
-              </div>
-              <select
-                className="field w-auto min-w-[11rem]"
-                value={district}
-                onChange={(event) => setDistrict(event.target.value)}
-              >
-                {districts.map((name) => (
-                  <option key={name} value={name}>
-                    {name}
-                  </option>
-                ))}
-              </select>
-            </header>
-
-            {parcels.length === 0 ? (
-              <p className="px-4 py-6 text-sm text-sage-600">
-                No parcels loaded for {district}. Ingest ground truth with{' '}
-                <code className="font-mono text-xs">
-                  python -m ml_pipeline.load_ground_truth
-                </code>
-                .
-              </p>
-            ) : (
-              <div className="max-h-[32rem] overflow-auto">
-                <table className="w-full text-sm">
-                  <thead className="sticky top-0 bg-white">
-                    <tr className="border-b border-parchment-200 text-left">
-                      {['Parcel', 'Crop label', 'Area', 'Verified by', 'State', ''].map((h) => (
-                        <th
-                          key={h}
-                          className="px-4 py-2 text-xs uppercase tracking-wide text-sage-600"
-                        >
-                          {h}
-                        </th>
+              ) : (
+                <div className="mt-4 max-h-[26rem] overflow-y-auto">
+                  <table className="data-table">
+                    <thead>
+                      <tr>
+                        <th>Parcel</th>
+                        <th>Crop label</th>
+                        <th className="num">Area</th>
+                        <th>Verified by</th>
+                        <th>State</th>
+                        <th />
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {parcels.map((p) => (
+                        <VerificationRow
+                          key={p.id}
+                          parcel={p}
+                          onToggle={handleToggle}
+                          busy={busyParcel === p.id}
+                        />
                       ))}
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-parchment-200">
-                    {parcels.map((parcel) => (
-                      <VerificationRow
-                        key={parcel.id}
-                        parcel={parcel}
-                        onToggle={handleToggle}
-                        busy={busyParcel === parcel.id}
-                      />
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            )}
-          </section>
-
-          <PipelineRuns runs={telemetry.pipeline_runs} />
-        </div>
-      ) : null}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </section>
+          </>
+        ) : null}
+      </div>
     </div>
   );
 }

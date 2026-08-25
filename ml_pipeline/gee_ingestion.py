@@ -32,7 +32,7 @@ from typing import Any, Iterable, Iterator, Sequence
 
 from ml_pipeline import config
 from ml_pipeline.feature_engineering import (
-    REQUIRED_BANDS,
+    ALL_BANDS,
     add_index_bands,
     indices_available_for,
 )
@@ -49,7 +49,7 @@ PARCEL_BATCH_SIZE = 250
 # need, so nothing is downloaded that is never used. B2/B3/B4/B8 are 10 m;
 # B5/B6/B8A/B11 are 20 m and Earth Engine resamples them onto the 10 m analysis
 # grid at reduce time.
-SOURCE_BANDS: tuple[str, ...] = REQUIRED_BANDS
+SOURCE_BANDS: tuple[str, ...] = ALL_BANDS
 
 # Indices computable from SOURCE_BANDS. Resolved once at import so the band
 # list, the composite and the database rows can never disagree.

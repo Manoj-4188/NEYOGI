@@ -82,7 +82,7 @@ export function RequireOfficer({ children }) {
 
   if (checking) {
     return (
-      <div className="flex h-full items-center justify-center p-12 text-sm text-sage-600">
+      <div className="flex h-full items-center justify-center p-12 text-base text-muted">
         Checking your session…
       </div>
     );

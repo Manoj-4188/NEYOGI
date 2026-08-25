@@ -27,12 +27,64 @@ logging.basicConfig(
 logger = logging.getLogger("neyogi")
 
 
+async def _seed_cold_storage() -> None:
+    """Load the bundled cold storage roster if the table is empty.
+
+    Runs once, on an empty table only, so an operator who later replaces these
+    rows with an official register is not overwritten on the next restart.
+    Failure here is logged, not fatal: a missing roster degrades one panel, it
+    does not stop the service.
+    """
+    from pathlib import Path
+
+    try:
+        row = await db.fetch_one("SELECT COUNT(*) FROM cold_storage_facilities")
+        if row and int(row[0]) > 0:
+            logger.info("Cold storage already populated (%d rows); not seeding.", row[0])
+            return
+    except db.DatabaseUnavailable as exc:
+        logger.warning("Could not check the cold storage table: %s", exc)
+        return
+
+    csv_path = (
+        Path(__file__).resolve().parent.parent
+        / "data"
+        / "cold_storage"
+        / "karnataka_cold_storage.csv"
+    )
+    if not csv_path.exists():
+        logger.info("No bundled cold storage roster at %s; skipping seed.", csv_path)
+        return
+
+    try:
+        from anyio import to_thread
+
+        from ml_pipeline.load_cold_storage import parse_rows, read_rows, upsert
+
+        def _load() -> int:
+            rows = read_rows(csv_path)
+            facilities = parse_rows(
+                rows,
+                source_name=csv_path.name,
+                source="Operator-supplied roster (unverified)",
+                source_url=None,
+                source_year=None,
+            )
+            return upsert(facilities)
+
+        written = await to_thread.run_sync(_load)
+        logger.info("Seeded %d cold storage facility(ies) from %s", written, csv_path.name)
+    except Exception:  # noqa: BLE001 - a bad roster must not block start-up
+        logger.exception("Cold storage seed failed; the panel will show empty.")
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     await db.open_pool()
     try:
         await db.apply_schema()
         await security.seed_officer_accounts()
+        await _seed_cold_storage()
     except Exception:
         logger.exception("Start-up initialisation failed")
         await db.close_pool()

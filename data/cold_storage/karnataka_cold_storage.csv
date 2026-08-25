@@ -1,0 +1,11 @@
+name,district,latitude,longitude,capacity_tonnes,cost_per_day_per_tonne,crops_supported,contact
+HOPCOMS Cold Storage,Kolar,13.1367,78.1297,500,3.5,"tomato,onion",08152-222333
+Kolar Agri Chill Hub,Kolar,13.11,78.15,750,4.0,tomato,9845012345
+Chikkaballapur FPO Cold Chain,Chikkaballapur,13.43,77.72,600,3.8,"tomato,onion",9900112233
+Tumkur Harvest Shield,Tumakuru,13.34,77.10,800,3.2,"tomato,onion,leafy_greens",0816-2277890
+Hassan Cold Chain Hub,Hassan,13.00,76.10,350,3.9,"onion,leafy_greens",9632145678
+Mysuru APMC Cold Storage,Mysuru,12.29,76.64,900,2.8,"tomato,onion",0821-2512345
+Belagavi Agri Store,Belagavi,15.85,74.50,650,3.5,onion,0831-2456789
+Dharwad Cold Hub,Dharwad,15.46,75.01,450,4.0,onion,0836-2234567
+Bengaluru Rural Cold Chain,Bengaluru Rural,13.19,77.70,1000,5.0,"tomato,onion,leafy_greens",080-28452345
+Mandya FPO Storage,Mandya,12.52,76.89,400,3.6,"tomato,onion",08232-234567

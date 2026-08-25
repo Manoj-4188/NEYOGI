@@ -399,6 +399,129 @@ async def review_parcels(
     }
 
 
+@router.get("/alerts", summary="Recent oversupply alerts")
+async def alerts(
+    officer: OfficerDep,
+    limit: Annotated[int, Query(ge=1, le=100)] = 10,
+) -> dict:
+    """The alert log, newest first, plus whether anything is currently actionable."""
+    try:
+        rows = await db.fetch_all(
+            """
+            SELECT created_at, district, crop, ratio, level, action,
+                   recipients, acted_by
+            FROM supply_alerts
+            ORDER BY created_at DESC
+            LIMIT %s
+            """,
+            (limit,),
+        )
+        pending = await db.fetch_one(
+            """
+            SELECT COUNT(*) FROM supply_alerts
+            WHERE action = 'raised' AND level IN ('HIGH', 'CRITICAL')
+            """
+        )
+    except db.DatabaseUnavailable as exc:
+        raise HTTPException(
+            status_code=http_status.HTTP_503_SERVICE_UNAVAILABLE, detail=str(exc)
+        ) from exc
+
+    return {
+        "alerts": [
+            {
+                "date": r[0].date().isoformat(),
+                "district": r[1],
+                "crop": r[2],
+                "ratio": round(float(r[3]), 2),
+                "level": r[4],
+                "action": r[5],
+                "recipients": int(r[6]),
+                "acted_by": r[7],
+            }
+            for r in rows
+        ],
+        # Drives whether the console shows the dispatch button at all.
+        "dispatchable": int(pending[0]) if pending else 0,
+    }
+
+
+@router.post("/alerts/send", summary="Dispatch pending high-risk alerts")
+async def send_alerts(officer: OfficerDep) -> dict:
+    """Queue a WhatsApp advisory to farmers in each district with a pending alert.
+
+    Messages go through the same durable outbound queue as everything else, so
+    a Twilio outage delays delivery rather than losing it. The alert row is
+    marked either way, with the recipient count that was actually queued.
+    """
+    from backend.services import i18n, twilio_service
+
+    try:
+        pending = await db.fetch_all(
+            """
+            SELECT id, district, crop, ratio
+            FROM supply_alerts
+            WHERE action = 'raised' AND level IN ('HIGH', 'CRITICAL')
+            ORDER BY created_at
+            """
+        )
+    except db.DatabaseUnavailable as exc:
+        raise HTTPException(
+            status_code=http_status.HTTP_503_SERVICE_UNAVAILABLE, detail=str(exc)
+        ) from exc
+
+    if not pending:
+        return {"dispatched": 0, "recipients": 0, "detail": "No pending high-risk alerts."}
+
+    dispatched = 0
+    total_recipients = 0
+
+    for alert_id, district, crop, ratio in pending:
+        farmers = await twilio_service.opted_in_farmers(district=district)
+        queued = 0
+        for farmer in farmers:
+            lang = farmer.language
+            body = i18n.t(
+                "supply_oversupply_warning",
+                lang,
+                crop=i18n.crop_name(crop, lang),
+                ratio=f"{float(ratio):.2f}",
+            )
+            try:
+                await twilio_service.send_whatsapp(farmer.phone, body, farmer_id=farmer.id)
+                queued += 1
+            except Exception:  # noqa: BLE001 - one farmer must not stop the run
+                logger.exception("Alert delivery failed for farmer %s", farmer.id)
+
+        await db.execute(
+            """
+            UPDATE supply_alerts
+            SET action = %s, recipients = %s, acted_by = %s, acted_at = now()
+            WHERE id = %s
+            """,
+            ("sent" if queued else "failed", queued, officer.username, alert_id),
+        )
+        dispatched += 1
+        total_recipients += queued
+
+    logger.info(
+        "Officer %s dispatched %d alert(s) to %d farmer(s)",
+        officer.username,
+        dispatched,
+        total_recipients,
+    )
+    return {
+        "dispatched": dispatched,
+        "recipients": total_recipients,
+        "detail": (
+            f"{dispatched} alert(s) queued to {total_recipients} farmer(s)."
+            if total_recipients
+            else f"{dispatched} alert(s) marked, but no opted-in farmers are "
+            "registered in those districts."
+        ),
+    }
+
+
 @router.post("/parcels/{parcel_id}/verify", summary="Manual parcel verification toggle")
 async def verify_parcel(
     officer: OfficerDep,

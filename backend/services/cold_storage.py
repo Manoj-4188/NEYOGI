@@ -43,6 +43,11 @@ class ColdStore:
     source_url: str | None
     source_year: int | None
     verified_by: str | None
+    #: INR per tonne per day. None when the source did not state a tariff --
+    #: never 0, which would read as free storage.
+    cost_per_tonne_day: float | None = None
+    crops_supported: list = None
+    contact: str | None = None
 
     @property
     def is_mapped(self) -> bool:
@@ -68,6 +73,9 @@ class ColdStore:
             "source_url": self.source_url,
             "source_year": self.source_year,
             "verified_by": self.verified_by,
+            "cost_per_tonne_day": self.cost_per_tonne_day,
+            "crops_supported": list(self.crops_supported or []),
+            "contact": self.contact,
         }
 
 
@@ -88,6 +96,9 @@ def _row_to_store(row: tuple) -> ColdStore:
         source_url=row[12],
         source_year=row[13],
         verified_by=row[14],
+        cost_per_tonne_day=float(row[15]) if row[15] is not None else None,
+        crops_supported=list(row[16] or []),
+        contact=row[17],
     )
 
 
@@ -97,7 +108,8 @@ async def facilities_for_district(district: str, limit: int = 500) -> list[ColdS
         SELECT id, facility_uid, name, district, taluk, address,
                capacity_mt, commodity_focus, ownership,
                ST_X(geom), ST_Y(geom),
-               source, source_url, source_year, verified_by
+               source, source_url, source_year, verified_by,
+               cost_per_tonne_day, crops_supported, contact
         FROM cold_storage_facilities
         WHERE district = %s
         ORDER BY capacity_mt DESC NULLS LAST, name
@@ -112,7 +124,8 @@ async def district_summary(district: str) -> dict:
     row = await db.fetch_one(
         """
         SELECT facility_count, mapped_count, capacity_known_count,
-               licensed_capacity_mt, newest_source_year
+               licensed_capacity_mt, newest_source_year,
+               min_cost_per_tonne_day, max_cost_per_tonne_day
         FROM cold_storage_by_district
         WHERE district = %s
         """,
@@ -125,6 +138,8 @@ async def district_summary(district: str) -> dict:
             "capacity_known_count": 0,
             "licensed_capacity_mt": None,
             "newest_source_year": None,
+            "min_cost_per_tonne_day": None,
+            "max_cost_per_tonne_day": None,
         }
     return {
         "facility_count": int(row[0]),
@@ -134,6 +149,8 @@ async def district_summary(district: str) -> dict:
         # capacity: "unknown total" is not "zero tonnes of cold storage".
         "licensed_capacity_mt": float(row[3]) if row[3] is not None else None,
         "newest_source_year": row[4],
+        "min_cost_per_tonne_day": float(row[5]) if row[5] is not None else None,
+        "max_cost_per_tonne_day": float(row[6]) if row[6] is not None else None,
     }
 
 

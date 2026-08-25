@@ -133,6 +133,24 @@ export const api = {
   coldStorage: ({ district }) =>
     request('/api/v1/infrastructure/cold-storage', { params: { district } }),
 
+  classification: ({ district }) =>
+    request('/api/v1/classification/district', { params: { district } }),
+
+  runClassification: ({ district, samples }) =>
+    request('/api/v1/classification/run', {
+      method: 'POST',
+      params: { district, samples },
+    }),
+
+  priceHistory: ({ district, days = 90 }) =>
+    request('/api/v1/prices/history', { params: { district, days } }),
+
+  alerts: ({ limit = 10 } = {}) =>
+    request('/api/v1/officer/alerts', { params: { limit }, auth: true }),
+
+  sendAlerts: () =>
+    request('/api/v1/officer/alerts/send', { method: 'POST', auth: true }),
+
   /* -----------------------------------------------------------------------
    * Officer endpoints (bearer token required)
    * -------------------------------------------------------------------- */

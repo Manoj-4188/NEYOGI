@@ -1,4 +1,4 @@
-/** Officer sign-in. The public dashboard needs no account. */
+/** Officer sign-in. The dashboard is public; only this console is gated. */
 
 import { useState } from 'react';
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
@@ -15,7 +15,7 @@ export default function Login() {
   const [submitting, setSubmitting] = useState(false);
 
   if (!checking && principal) {
-    return <Navigate to={location.state?.from || '/officer/console'} replace />;
+    return <Navigate to={location.state?.from || '/officer'} replace />;
   }
 
   async function handleSubmit(event) {
@@ -23,63 +23,54 @@ export default function Login() {
     setSubmitting(true);
     const ok = await login(username, password);
     setSubmitting(false);
-    if (ok) navigate(location.state?.from || '/officer/console', { replace: true });
+    if (ok) navigate(location.state?.from || '/officer', { replace: true });
   }
 
   return (
-    <div className="flex min-h-[70vh] items-center justify-center px-4">
-      <form onSubmit={handleSubmit} className="panel w-full max-w-sm px-6 py-6">
-        <h1 className="text-lg font-bold text-forest">Officer sign-in</h1>
-        <p className="mt-1 text-sm text-forest-900/60">
-          The console exposes pipeline internals and the ground-truth
-          verification toggle.
-        </p>
+    <div className="flex h-full items-center justify-center">
+      <form
+        onSubmit={handleSubmit}
+        className="w-full max-w-[320px] border border-line p-6 shadow-card"
+        style={{ borderRadius: 4 }}
+      >
+        <p className="text-md font-bold text-ink">NEYOGI</p>
+        <p className="mt-0.5 text-xs text-muted">Officer console</p>
 
-        <div className="mt-5 space-y-4">
+        <div className="mt-5 space-y-3">
           <div>
-            <label className="field-label" htmlFor="username">
+            <label className="text-xs text-muted" htmlFor="username">
               Username
             </label>
             <input
               id="username"
-              className="field"
+              className="field mt-1"
               autoComplete="username"
               value={username}
-              onChange={(event) => setUsername(event.target.value)}
+              onChange={(e) => setUsername(e.target.value)}
               required
             />
           </div>
           <div>
-            <label className="field-label" htmlFor="password">
+            <label className="text-xs text-muted" htmlFor="password">
               Password
             </label>
             <input
               id="password"
               type="password"
-              className="field"
+              className="field mt-1"
               autoComplete="current-password"
               value={password}
-              onChange={(event) => setPassword(event.target.value)}
+              onChange={(e) => setPassword(e.target.value)}
               required
             />
           </div>
         </div>
 
-        {error ? (
-          <p className="mt-4 rounded-lg bg-terracotta-100 px-3 py-2 text-sm text-terracotta-600">
-            {error}
-          </p>
-        ) : null}
+        {error ? <p className="mt-4 text-sm text-high">{error}</p> : null}
 
-        <button type="submit" className="btn-primary mt-5 w-full" disabled={submitting}>
+        <button type="submit" className="btn mt-5 w-full" disabled={submitting}>
           {submitting ? 'Signing in…' : 'Sign in'}
         </button>
-
-        <p className="mt-4 border-t border-parchment-200 pt-3 text-xs text-forest-900/50">
-          Accounts are seeded from <code className="font-mono">OFFICER_ACCOUNTS</code>.
-          Generate a hash with{' '}
-          <code className="font-mono">python -m backend.security hash &lt;password&gt;</code>.
-        </p>
       </form>
     </div>
   );

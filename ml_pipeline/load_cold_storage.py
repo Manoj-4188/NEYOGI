@@ -52,8 +52,31 @@ CAPACITY_KEYS = (
 )
 COMMODITY_KEYS = ("commodity", "commodity_focus", "commodities", "produce")
 OWNERSHIP_KEYS = ("ownership", "sector", "type", "ownership_type")
+COST_KEYS = (
+    "cost_per_day_per_tonne",
+    "cost_per_tonne_day",
+    "cost_per_tonne_per_day",
+    "tariff",
+    "rate",
+)
+CROPS_KEYS = ("crops_supported", "crops", "accepted_crops")
+CONTACT_KEYS = ("contact", "phone", "mobile", "telephone", "contact_no")
 LAT_KEYS = ("latitude", "lat", "y")
 LON_KEYS = ("longitude", "lon", "lng", "long", "x")
+
+#: Crop names folded to the classifier's class vocabulary, so a facility can be
+#: matched against a predicted crop without a second mapping in between.
+CROP_VOCAB = {
+    "tomato": "tomato",
+    "tomatoes": "tomato",
+    "onion": "onion",
+    "onions": "onion",
+    "potato": "potato",
+    "leafy_greens": "leafy_greens",
+    "leafy greens": "leafy_greens",
+    "greens": "leafy_greens",
+    "spinach": "leafy_greens",
+}
 
 OWNERSHIP_ALIASES = {
     "private": "private",
@@ -108,6 +131,24 @@ def _normalise_ownership(value: Any) -> str:
         return "unknown"
     key = " ".join(str(value).strip().lower().split())
     return OWNERSHIP_ALIASES.get(key, "unknown")
+
+
+def _crops(value: Any) -> list[str]:
+    """Split a crop list, keeping only names the platform recognises.
+
+    An unrecognised crop is dropped rather than passed through: this field is
+    used to match a facility against a predicted crop, and an unknown token
+    would silently never match anything while looking like it might.
+    """
+    if value in (None, ""):
+        return []
+    out: list[str] = []
+    for token in str(value).replace("|", ",").replace(";", ",").split(","):
+        key = " ".join(token.strip().lower().split())
+        crop = CROP_VOCAB.get(key)
+        if crop and crop not in out:
+            out.append(crop)
+    return out
 
 
 def _coordinates(row: dict) -> tuple[float | None, float | None]:
@@ -194,6 +235,14 @@ def parse_rows(
                     else None
                 ),
                 "ownership": _normalise_ownership(_first(row, OWNERSHIP_KEYS)),
+                # NULL when not stated: a 0 tariff would read as free storage.
+                "cost_per_tonne_day": _to_float(_first(row, COST_KEYS)),
+                "crops_supported": _crops(_first(row, CROPS_KEYS)),
+                "contact": (
+                    str(_first(row, CONTACT_KEYS)).strip()
+                    if _first(row, CONTACT_KEYS)
+                    else None
+                ),
                 "longitude": lon,
                 "latitude": lat,
                 "source": source,
@@ -218,7 +267,8 @@ def upsert(facilities: Sequence[dict]) -> int:
             """
             INSERT INTO cold_storage_facilities
                 (facility_uid, name, district, taluk, address, capacity_mt,
-                 commodity_focus, ownership, geom, source, source_url, source_year)
+                 commodity_focus, ownership, geom, source, source_url, source_year,
+                 cost_per_tonne_day, crops_supported, contact)
             VALUES (
                 %(facility_uid)s, %(name)s, %(district)s, %(taluk)s, %(address)s,
                 %(capacity_mt)s, %(commodity_focus)s, %(ownership)s,
@@ -226,7 +276,8 @@ def upsert(facilities: Sequence[dict]) -> int:
                     WHEN %(longitude)s IS NULL OR %(latitude)s IS NULL THEN NULL
                     ELSE ST_SetSRID(ST_MakePoint(%(longitude)s, %(latitude)s), 4326)
                 END,
-                %(source)s, %(source_url)s, %(source_year)s
+                %(source)s, %(source_url)s, %(source_year)s,
+                %(cost_per_tonne_day)s, %(crops_supported)s, %(contact)s
             )
             ON CONFLICT (facility_uid, district) DO UPDATE SET
                 name            = EXCLUDED.name,
@@ -238,7 +289,10 @@ def upsert(facilities: Sequence[dict]) -> int:
                 geom            = COALESCE(EXCLUDED.geom, cold_storage_facilities.geom),
                 source          = EXCLUDED.source,
                 source_url      = EXCLUDED.source_url,
-                source_year     = EXCLUDED.source_year
+                source_year     = EXCLUDED.source_year,
+                cost_per_tonne_day = EXCLUDED.cost_per_tonne_day,
+                crops_supported = EXCLUDED.crops_supported,
+                contact         = EXCLUDED.contact
             """,
             list(facilities),
         )

@@ -21,7 +21,9 @@ FAKE_GAUL_DISTRICTS = (
     {"adm2_name": "Hassan", "adm2_code": 17688, "adm1_name": "Karnataka"},
     {"adm2_name": "Mandya", "adm2_code": 17691, "adm1_name": "Karnataka"},
     {"adm2_name": "Chikmagalur", "adm2_code": 17683, "adm1_name": "Karnataka"},
+    # GAUL uses the pre-rename spellings for these two as well.
     {"adm2_name": "Mysore", "adm2_code": 17692, "adm1_name": "Karnataka"},
+    {"adm2_name": "Belgaum", "adm2_code": 17681, "adm1_name": "Karnataka"},
 )
 
 # geoBoundaries is current enough to carry the two post-2007 districts.
