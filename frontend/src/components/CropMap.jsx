@@ -13,7 +13,7 @@
  */
 
 import { useEffect, useMemo } from 'react';
-import { GeoJSON, MapContainer, TileLayer, useMap } from 'react-leaflet';
+import { CircleMarker, GeoJSON, MapContainer, Popup, TileLayer, useMap } from 'react-leaflet';
 
 import { buildPopupHtml } from './ParcelPopup.jsx';
 
@@ -129,11 +129,73 @@ export function MapLegend({ renderMode, counts }) {
       <p className="mt-2 border-t border-parchment-200 pt-1.5 text-forest-900/60">
         Solid fill = field-verified label. Dashed = model prediction.
       </p>
+      <ColdStorageLegendRow />
     </div>
   );
 }
 
-export default function CropMap({ collection, basemapTile, onSelectParcel }) {
+function ColdStorageLegendRow() {
+  return (
+    <p className="mt-1.5 flex items-center gap-2 text-forest-900/60">
+      <span
+        className="inline-block h-3 w-3 rounded-full border-2"
+        style={{ backgroundColor: '#C89B3C', borderColor: '#1B3B2B' }}
+      />
+      Cold storage (licensed capacity)
+    </p>
+  );
+}
+
+/**
+ * Cold storage facilities as distinct markers.
+ *
+ * Only facilities the source register actually gave coordinates for are drawn.
+ * Rows without a location are counted in the side panel but never placed here,
+ * because a centroid-guessed pin would send someone to the wrong address.
+ */
+function ColdStorageMarkers({ stores }) {
+  const mapped = (stores || []).filter(
+    (s) => s.mapped && s.latitude != null && s.longitude != null,
+  );
+  if (!mapped.length) return null;
+
+  return mapped.map((store) => (
+    <CircleMarker
+      key={`cs-${store.id}`}
+      center={[store.latitude, store.longitude]}
+      radius={6}
+      pathOptions={{
+        color: '#1B3B2B',
+        weight: 2,
+        fillColor: '#C89B3C',
+        fillOpacity: 0.9,
+      }}
+    >
+      <Popup>
+        <div className="px-3 py-2 text-xs" style={{ fontFamily: 'inherit', minWidth: 170 }}>
+          <p className="text-sm font-bold text-forest">{store.name}</p>
+          <p className="mt-0.5 text-forest-900/60">
+            {[store.taluk, store.district].filter(Boolean).join(', ')}
+          </p>
+          <p className="mt-1.5">
+            <span className="text-sage-600">Licensed capacity: </span>
+            <span className="font-mono font-semibold">
+              {store.licensed_capacity_mt != null
+                ? `${Math.round(store.licensed_capacity_mt).toLocaleString()} MT`
+                : 'not published'}
+            </span>
+          </p>
+          <p className="mt-1 text-[10px] leading-snug text-terracotta">
+            Licensed capacity, not free space — live utilisation is not
+            published. Call ahead.
+          </p>
+        </div>
+      </Popup>
+    </CircleMarker>
+  ));
+}
+
+export default function CropMap({ collection, basemapTile, coldStores, onSelectParcel }) {
   const renderMode = collection?.properties?.render_mode || 'ndvi_basemap';
 
   const counts = useMemo(() => {
@@ -194,6 +256,8 @@ export default function CropMap({ collection, basemapTile, onSelectParcel }) {
             <FitToData collection={collection} />
           </>
         ) : null}
+
+        <ColdStorageMarkers stores={coldStores} />
       </MapContainer>
 
       <div className="pointer-events-none absolute bottom-4 right-4 z-[400]">

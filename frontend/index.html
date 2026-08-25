@@ -3,11 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1B3B2B" />
     <meta
       name="description"
-      content="NEYOGI — satellite-backed crop and market intelligence for Karnataka's perishable-crop belt."
+      content="NEYOGI - satellite-backed crop and market intelligence for Karnataka's perishable-crop belt."
     />
-    <title>NEYOGI — Perishable Crop Market Intelligence</title>
+
+    <!--
+      Inter is declared in tailwind.config.js but was never actually loaded, so
+      every page silently fell back to the platform UI font. Preconnect first:
+      the font files come from a second origin and that round trip is otherwise
+      paid during first paint.
+      Noto Sans Kannada carries the Kannada strings used in the advisory copy.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+Kannada:wght@400;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Inline SVG favicon: a sprout in the NEYOGI forest green. -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231B3B2B'/%3E%3Cpath d='M16 25V13' stroke='%234E8752' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M16 15c0-4 3-7 7-7 0 4-3 7-7 7z' fill='%234E8752'/%3E%3Cpath d='M16 19c0-3-2.5-5.5-5.5-5.5 0 3 2.5 5.5 5.5 5.5z' fill='%23C45A37'/%3E%3C/svg%3E"
+    />
+
+    <title>NEYOGI - Perishable Crop Market Intelligence</title>
   </head>
   <body>
     <div id="root"></div>
