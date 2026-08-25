@@ -79,6 +79,34 @@ async def district_validation(district: str) -> DistrictValidation:
     )
 
 
+async def boundary_sources() -> dict[str, dict]:
+    """Which boundary dataset backs each district, keyed by name.
+
+    Surfaced so the UI can mark a district whose polygon came from the fallback
+    source rather than GAUL -- a caveat the officer console should show, not
+    something the platform should quietly absorb.
+    """
+    try:
+        rows = await db.fetch_all(
+            "SELECT gaul_name, requested_name, source, adm2_code FROM districts"
+        )
+    except db.DatabaseUnavailable:
+        return {}
+
+    out: dict[str, dict] = {}
+    for gaul_name, requested_name, source, adm2_code in rows:
+        entry = {
+            "source": source,
+            "is_fallback_source": source != "FAO/GAUL/2015/level2",
+            "adm2_code": adm2_code,
+        }
+        # Keyed under both spellings: callers may hold either.
+        out[gaul_name] = entry
+        if requested_name:
+            out[requested_name] = entry
+    return out
+
+
 async def all_district_validations() -> list[DistrictValidation]:
     rows = await db.fetch_all(
         """

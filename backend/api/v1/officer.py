@@ -132,6 +132,24 @@ async def _tile_health() -> list[dict]:
     )
     tile_by_district = {t[0]: t for t in tiles}
 
+    # Which boundary dataset backs each district. A district measured against
+    # the fallback source is a caveat an officer should be able to see.
+    try:
+        boundary_rows = await db.fetch_all(
+            "SELECT requested_name, gaul_name, source FROM districts"
+        )
+    except db.DatabaseUnavailable:
+        boundary_rows = []
+    boundaries: dict[str, dict] = {}
+    for requested_name, gaul_name, source in boundary_rows:
+        entry = {
+            "source": source,
+            "resolved_name": gaul_name,
+            "is_fallback_source": source != "FAO/GAUL/2015/level2",
+        }
+        boundaries[requested_name] = entry
+        boundaries[gaul_name] = entry
+
     today = datetime.now(tz=timezone.utc).date()
     out: list[dict] = []
     for district in ml_config.CANDIDATE_DISTRICTS:
@@ -156,6 +174,7 @@ async def _tile_health() -> list[dict]:
                 "tile_generated_at": tile[2].isoformat() if tile else None,
                 "tile_expires_at": tile[3].isoformat() if tile and tile[3] else None,
                 "tile_scene_count": int(tile[4]) if tile else None,
+                "boundary": boundaries.get(district),
                 "status": badge.to_dict(),
             }
         )

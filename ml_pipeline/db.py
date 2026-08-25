@@ -106,9 +106,13 @@ def upsert_districts(resolution) -> int:
             d.requested_name,
             d.adm1_name,
             d.adm0_name,
-            d.adm2_code,
+            # geoBoundaries has no ADM2_CODE; the resolver marks that with -1,
+            # which is stored as NULL so the uniqueness index ignores it.
+            d.adm2_code if d.adm2_code and d.adm2_code > 0 else None,
             d.match_kind,
             d.match_score,
+            d.source,
+            d.source_key or None,
         )
         for d in resolution.resolved
     ]
@@ -120,14 +124,16 @@ def upsert_districts(resolution) -> int:
             """
             INSERT INTO districts
                 (gaul_name, requested_name, adm1_name, adm0_name,
-                 adm2_code, match_kind, match_score)
-            VALUES (%s, %s, %s, %s, %s, %s, %s)
+                 adm2_code, match_kind, match_score, source, source_key)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
             ON CONFLICT (gaul_name) DO UPDATE SET
                 requested_name = EXCLUDED.requested_name,
                 adm1_name      = EXCLUDED.adm1_name,
                 adm2_code      = EXCLUDED.adm2_code,
                 match_kind     = EXCLUDED.match_kind,
                 match_score    = EXCLUDED.match_score,
+                source         = EXCLUDED.source,
+                source_key     = EXCLUDED.source_key,
                 resolved_at    = now()
             """,
             rows,

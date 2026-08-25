@@ -83,8 +83,16 @@ async def districts() -> dict:
 
     from ml_pipeline import config as ml_config
 
+    sources = await parcels.boundary_sources()
     known = {v.district for v in validations}
-    payload = [dict(v.to_dict(), status=v.badge().to_dict()) for v in validations]
+    payload = [
+        dict(
+            v.to_dict(),
+            status=v.badge().to_dict(),
+            boundary=sources.get(v.district),
+        )
+        for v in validations
+    ]
 
     # Candidate districts with no parcels at all are still listed, explicitly
     # unvalidated, so the UI shows the full coverage picture rather than
@@ -100,6 +108,7 @@ async def districts() -> dict:
                     "last_verified_at": None,
                     "is_validated": False,
                     "status": status.district_unvalidated(candidate, 0).to_dict(),
+                    "boundary": sources.get(candidate),
                 }
             )
 
