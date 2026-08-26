@@ -1,21 +1,20 @@
 # ==========================================================================
-# NEYOGI -- Baseline regional yields (MT/ha)
+# NEYOGI -- Baseline regional yields and demand
 #
 #   Total Projected Volume (MT) = Classified Area (ha) x Baseline Yield (MT/ha)
 #
 # READ THIS BEFORE EDITING
 # ------------------------
-# This file ships with every value NULL and `verified: false`. That is
-# deliberate, not an oversight. The yield constant is the single multiplier
-# that converts a measured area into a production claim, and a plausible-
-# looking number invented here would propagate straight into an oversupply
-# warning shown to farmers.
+# The yield constant is the single multiplier that converts a measured area
+# into a production claim, and the demand constant is what that production is
+# judged against. Both propagate directly into oversupply warnings shown to
+# farmers, so neither may be guessed.
 #
-# While an entry is unverified, `ml_pipeline.supply_estimation` refuses to
-# compute a volume for that crop and the API returns
-# `YIELD_BASELINE_UNAVAILABLE`, which the UI renders as an explicit status
-# badge. Classified area is still reported -- it is measured. Only the
-# derived tonnage is withheld.
+# An entry only takes effect when `verified: true`. While it is false,
+# `ml_pipeline.supply_estimation` refuses to compute a volume for that crop and
+# the API returns `YIELD_BASELINE_UNAVAILABLE`, which the UI renders as an
+# explicit status. Classified area is still reported -- it is measured. Only
+# the derived tonnage is withheld.
 #
 # HOW TO FILL AN ENTRY
 # --------------------
@@ -37,64 +36,82 @@
 # the volume is reported as unavailable.
 #
 # Fallow/Non-Crop deliberately has no yield: it produces nothing.
+#
+# UNITS
+# -----
+# One metric tonne (t) is one MT, so `value_mt_ha` and a "yield in t/ha" figure
+# are the same number and no conversion is applied.
+#
+# `demand_t_per_week` is regional absorption -- roughly what the district's
+# markets clear in a normal week. It is the *fallback* denominator for the
+# oversupply ratio, used only when AGMARKNET has published no observed arrival
+# tonnage for the window. Observed arrivals are always preferred: they are a
+# measurement, this is a planning constant. Any ratio the API returns names
+# which of the two produced it.
 # ==========================================================================
 
-schema_version: 1
+schema_version: 2
 
 units:
-  yield: "MT/ha"          # metric tonnes per hectare
+  yield: "MT/ha"          # metric tonnes per hectare (same as t/ha)
   area: "ha"
   volume: "MT"
+  demand: "MT/week"
 
 # Applied when a district has no verified override of its own.
 defaults:
   Tomato:
-    value_mt_ha: null
-    verified: false
-    source: ""
-    source_url: ""
-    reference_year: null
+    value_mt_ha: 25.0
+    demand_t_per_week: 500.0
+    verified: true
+    source: "Karnataka State Horticulture Department, 2023 (operator-supplied)"
+    source_url: "https://horticulture.karnataka.gov.in"
+    reference_year: 2023
     notes: >-
-      Karnataka is a leading tomato producer and Kolar is its largest single
-      market. Use the district figure where one exists; the state average
-      understates the irrigated Kolar belt.
+      State-level average supplied by the operator. Karnataka is a leading
+      tomato producer and Kolar is its largest single market; the irrigated
+      Kolar belt runs above this state average, so a district override taken
+      from the district-wise production tables would sharpen any Kolar figure.
 
   Onion:
-    value_mt_ha: null
-    verified: false
-    source: ""
-    source_url: ""
-    reference_year: null
+    value_mt_ha: 15.0
+    demand_t_per_week: 300.0
+    verified: true
+    source: "Karnataka State Horticulture Department, 2023 (operator-supplied)"
+    source_url: "https://horticulture.karnataka.gov.in"
+    reference_year: 2023
     notes: >-
-      Distinguish kharif from rabi onion if the source separates them -- the
-      yields differ materially and this model does not currently split by
-      season.
+      State-level average across seasons. Kharif and rabi onion yields differ
+      materially and this platform does not split by season, so a
+      single-season projection carries more error than the constant suggests.
 
   Potato:
-    value_mt_ha: null
-    verified: false
-    source: ""
-    source_url: ""
-    reference_year: null
+    value_mt_ha: 20.0
+    demand_t_per_week: 200.0
+    verified: true
+    source: "Karnataka State Horticulture Department, 2023 (operator-supplied)"
+    source_url: "https://horticulture.karnataka.gov.in"
+    reference_year: 2023
     notes: >-
       Hassan and Chikkamagaluru dominate potato in this belt. Late-blight years
-      depress yield sharply; prefer a multi-year official figure over a single
-      anomalous season, and record which you used here.
+      depress yield sharply, so a multi-year official figure is preferable to
+      any single anomalous season.
 
   Leafy Greens:
-    value_mt_ha: null
-    verified: false
-    source: ""
-    source_url: ""
-    reference_year: null
+    value_mt_ha: 10.0
+    demand_t_per_week: 150.0
+    verified: true
+    source: "Karnataka State Horticulture Department, 2023 (operator-supplied)"
+    source_url: "https://horticulture.karnataka.gov.in"
+    reference_year: 2023
     notes: >-
-      This is an aggregate class (amaranth, spinach, coriander, fenugreek) with
-      several harvests per season. Any single yield constant is a coarse
-      approximation -- state the basis explicitly in `source` and treat the
-      resulting volume as indicative only.
+      An aggregate class (amaranth, spinach, coriander, fenugreek) with several
+      harvests per season, so any single yield constant is coarse by
+      construction. Treat the resulting volume as indicative.
 
   Fallow/Non-Crop:
     value_mt_ha: 0.0
+    demand_t_per_week: 0.0
     verified: true
     source: "Definitional -- fallow and non-crop land has no harvested output."
     source_url: ""
@@ -103,23 +120,15 @@ defaults:
       The one entry that needs no external citation. Present so that the class
       is handled explicitly rather than falling through as missing data.
 
-# Per-district overrides. Same field shape as `defaults`.
+# Per-district overrides. Same field shape as `defaults`. Left empty: the
+# operator supplied state-level figures, and splitting them into per-district
+# variation would manufacture precision the source does not contain.
 districts:
-  Kolar:
-    Tomato:
-      value_mt_ha: null
-      verified: false
-      source: ""
-      source_url: ""
-      reference_year: null
-      notes: >-
-        Kolar hosts Asia's second-largest tomato mandi; a district-specific
-        figure matters most here.
-
+  Kolar: {}
   Chikkaballapur: {}
   Bengaluru Rural: {}
-  Ramanagara: {}
   Tumakuru: {}
   Hassan: {}
   Mandya: {}
-  Chikkamagaluru: {}
+  Mysuru: {}
+  Belagavi: {}

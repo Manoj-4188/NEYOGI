@@ -22,6 +22,7 @@ import logging
 from dataclasses import dataclass
 
 from backend import db, status
+from backend.services.storage_economics import PRICE_RECOVERY_FACTOR
 
 logger = logging.getLogger(__name__)
 
@@ -154,8 +155,52 @@ async def district_summary(district: str) -> dict:
     }
 
 
-async def get_cold_storage(district: str) -> dict:
-    """Facilities plus a summary and an honest provenance badge."""
+async def _attach_economics(
+    payloads: list[dict], district: str, crop: str, quantity_t: float
+) -> dict:
+    """Add a hold-or-sell breakdown to each facility that quotes a tariff.
+
+    A facility with no published tariff gets no economics rather than a
+    guessed one -- the whole figure hinges on that number.
+    """
+    from backend.services import storage_economics as econ
+
+    try:
+        price, basis = await econ.current_price_per_quintal(district, crop)
+    except KeyError:
+        return {"available": False, "reason": f"No price basis for crop {crop!r}."}
+
+    priced = 0
+    for entry in payloads:
+        tariff = entry.get("cost_per_tonne_day")
+        if tariff is None:
+            entry["economics"] = None
+            continue
+        entry["economics"] = econ.net_benefit(
+            price_per_quintal=price,
+            cost_per_tonne_day=float(tariff),
+            quantity_t=quantity_t,
+        )
+        priced += 1
+
+    return {
+        "available": priced > 0,
+        "crop": crop,
+        "quantity_t": quantity_t,
+        "holding_days": econ.DEFAULT_HOLDING_DAYS,
+        "recovery_factor": econ.PRICE_RECOVERY_FACTOR,
+        "price_per_quintal": round(price, 2),
+        "price_basis": basis,
+        "facilities_priced": priced,
+    }
+
+
+async def get_cold_storage(
+    district: str,
+    crop: str = "tomato",
+    quantity_t: float = 1.0,
+) -> dict:
+    """Facilities plus a summary, hold-or-sell economics, and a status badge."""
     stores = await facilities_for_district(district)
     summary = await district_summary(district)
     badges = status.StatusSet()
@@ -192,10 +237,14 @@ async def get_cold_storage(district: str) -> dict:
             )
         )
 
+    facility_payloads = [s.to_dict() for s in stores]
+    economics = await _attach_economics(facility_payloads, district, crop, quantity_t)
+
     return {
         "district": district,
         "summary": summary,
-        "facilities": [s.to_dict() for s in stores],
+        "facilities": facility_payloads,
+        "economics": economics,
         # Read by the UI to decide whether it may speak about free space.
         # It never may; this makes that explicit rather than implicit.
         "utilisation_available": False,
@@ -208,5 +257,9 @@ async def get_cold_storage(district: str) -> dict:
             "India, so NEYOGI cannot and does not estimate free space.",
             "Facilities without coordinates in the source register are listed "
             "but not mapped; they are never placed at a district centroid.",
+            "Hold-or-sell figures assume prices recover to "
+            f"{PRICE_RECOVERY_FACTOR:.2f}x today's rate after the holding "
+            "period. That is a planning assumption, not a forecast, and "
+            "quality loss in store is not modelled.",
         ],
     }

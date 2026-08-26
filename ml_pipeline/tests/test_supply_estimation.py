@@ -152,16 +152,50 @@ def test_non_numeric_baseline_is_treated_as_unverified() -> None:
 
 def test_shipped_baseline_file_parses() -> None:
     document = se.load_baseline_document()
-    assert document["schema_version"] == 1
+    assert document["schema_version"] == 2
     assert "defaults" in document and "districts" in document
 
 
-def test_shipped_file_ships_unverified_so_volumes_are_withheld() -> None:
-    """The repository must not carry invented yield constants."""
+def test_shipped_constants_are_verified_and_cited() -> None:
+    """Operator-supplied constants are in force, and each names its source.
+
+    This file previously shipped every value unverified. It now carries the
+    Karnataka Horticulture Department figures the operator supplied, so the
+    guarantee under test changes: a constant may be in force, but only with a
+    citation attached. An unsourced number is the thing that must not exist.
+    """
     document = se.load_baseline_document()
     for crop in ("Tomato", "Onion", "Potato", "Leafy Greens"):
-        with pytest.raises(se.YieldBaselineUnavailable):
-            se.get_yield_baseline(crop, document=document)
+        baseline = se.get_yield_baseline(crop, document=document)
+        assert baseline.value_mt_ha > 0, crop
+        assert baseline.source.strip(), f"{crop} has no cited source"
+        assert baseline.reference_year, f"{crop} has no reference year"
+
+
+def test_an_unverified_entry_is_still_refused() -> None:
+    """The verification gate itself must keep working."""
+    doc = {
+        "defaults": {
+            "Tomato": {"value_mt_ha": 25.0, "verified": False, "source": "draft"}
+        }
+    }
+    with pytest.raises(se.YieldBaselineUnavailable):
+        se.get_yield_baseline("Tomato", document=doc)
+
+
+def test_shipped_demand_constants_are_present() -> None:
+    """demand_t_per_week backs the ratio when AGMARKNET publishes nothing."""
+    document = se.load_baseline_document()
+    for crop, weekly in (
+        ("Tomato", 500.0),
+        ("Onion", 300.0),
+        ("Potato", 200.0),
+        ("Leafy Greens", 150.0),
+    ):
+        baseline = se.get_yield_baseline(crop, document=document)
+        assert baseline.demand_t_per_week == pytest.approx(weekly), crop
+        # 21-day window is three weeks of absorption.
+        assert baseline.demand_over(21) == pytest.approx(weekly * 3)
 
 
 def test_fallow_is_the_only_verified_entry_and_it_is_zero() -> None:

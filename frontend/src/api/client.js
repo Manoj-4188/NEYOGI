@@ -130,8 +130,20 @@ export const api = {
   parcelSeries: ({ parcelId, index, since }) =>
     request(`/api/v1/parcel/${parcelId}/ndvi`, { params: { index, since } }),
 
-  coldStorage: ({ district }) =>
-    request('/api/v1/infrastructure/cold-storage', { params: { district } }),
+  coldStorage: ({ district, crop = 'tomato', quantityT = 1 }) =>
+    request('/api/v1/infrastructure/cold-storage', {
+      params: { district, crop, quantity_t: quantityT },
+    }),
+
+  bestMarkets: ({ district, cropType = 'tomato', quantityQuintals = 100, top = 3 }) =>
+    request('/api/v1/forecast/best-markets', {
+      params: {
+        district,
+        crop_type: cropType,
+        quantity_quintals: quantityQuintals,
+        top,
+      },
+    }),
 
   classification: ({ district }) =>
     request('/api/v1/classification/district', { params: { district } }),

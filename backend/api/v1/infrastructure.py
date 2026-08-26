@@ -25,9 +25,17 @@ router = APIRouter(prefix="/infrastructure", tags=["infrastructure"])
 @router.get("/cold-storage", summary="Cold storage facilities registered in a district")
 async def cold_storage_for_district(
     district: Annotated[str, Query(description="GAUL district name")],
+    crop: Annotated[
+        str, Query(description="Crop to price the hold-or-sell comparison against")
+    ] = "tomato",
+    quantity_t: Annotated[
+        float, Query(gt=0, le=10000, description="Quantity to store, in tonnes")
+    ] = 1.0,
 ) -> dict:
     try:
-        return await cold_storage.get_cold_storage(district)
+        return await cold_storage.get_cold_storage(
+            district, crop=crop, quantity_t=quantity_t
+        )
     except db.DatabaseUnavailable as exc:
         raise HTTPException(
             status_code=http_status.HTTP_503_SERVICE_UNAVAILABLE,
