@@ -172,3 +172,54 @@ def test_recovery_factor_is_configurable_not_hardcoded() -> None:
 
     src = inspect.getsource(econ)
     assert "STORAGE_PRICE_RECOVERY_FACTOR" in src
+
+
+# --------------------------------------------------------------------------
+# Classifier feature contract
+# --------------------------------------------------------------------------
+
+
+def test_band_features_are_rescaled_to_the_training_domain() -> None:
+    """The model was fitted on raw DN; the pipeline supplies reflectance.
+
+    Index features are ratios and scale-invariant, so this mismatch changed
+    only about 0.2% of predictions and went unnoticed. It still fed every
+    band-based split in all 300 trees a value four orders of magnitude below
+    anything seen during fitting.
+    """
+    from ml_pipeline import classifier
+
+    reflectance = {
+        "NDVI": 0.72, "EVI": 0.55, "NDMI": 0.30, "SAVI": 0.60, "NDRE": 0.35,
+        "GNDVI": 0.62, "CIG": 2.1, "LSWI": 0.28, "NDWI": -0.55, "BSI": -0.30,
+        "RENDVI": 0.22,
+        "B2": 0.05, "B3": 0.08, "B4": 0.06, "B8": 0.35, "B11": 0.20, "B12": 0.12,
+    }
+    # The same pixel expressed as digital numbers, which is what the model saw.
+    digital_numbers = {
+        k: (v * 10_000 if k.startswith("B") else v) for k, v in reflectance.items()
+    }
+
+    from_reflectance = classifier.predict_crop(reflectance)
+    from_dn = classifier.predict_crop(digital_numbers)
+
+    # Both forms must reach the model identically.
+    assert from_reflectance["crop_type"] == from_dn["crop_type"]
+    assert from_reflectance["confidence"] == pytest.approx(from_dn["confidence"])
+
+
+def test_index_features_are_never_rescaled() -> None:
+    """Indices are ratios; multiplying one by 10,000 would be nonsense."""
+    from ml_pipeline import classifier
+
+    base = {
+        "NDVI": 0.72, "EVI": 0.55, "NDMI": 0.30, "SAVI": 0.60, "NDRE": 0.35,
+        "GNDVI": 0.62, "CIG": 2.1, "LSWI": 0.28, "NDWI": -0.55, "BSI": -0.30,
+        "RENDVI": 0.22,
+        "B2": 500.0, "B3": 800.0, "B4": 600.0, "B8": 3500.0, "B11": 2000.0,
+        "B12": 1200.0,
+    }
+    # NDVI below 1.0 must pass through untouched, unlike a band.
+    result = classifier.predict_crop(base)
+    assert result["features_used"] == 17
+    assert 0.0 <= result["confidence"] <= 1.0

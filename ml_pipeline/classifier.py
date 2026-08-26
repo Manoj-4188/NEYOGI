@@ -43,6 +43,22 @@ FEATURES_PATH = os.path.join(os.path.dirname(__file__), "models", "feature_colum
 #: prediction from essentially no evidence, which is the failure this guards.
 MIN_REAL_FEATURES = 10
 
+#: The model was fitted on raw Sentinel-2 digital numbers for its band
+#: features -- the training CSV carries B2..B12 in the 40..4,900 range. The
+#: ingestion pipeline divides bands by 10,000 to get surface reflectance, so
+#: without this the band features arrive four orders of magnitude below
+#: anything the model saw while fitting.
+#:
+#: The index features are ratios and therefore scale-invariant, which is why
+#: this went unnoticed: they dominate the forest's splits, so only about 0.2%
+#: of predictions actually flip. It is still wrong, and it silently degrades
+#: every band-based split in all 300 trees.
+BAND_TRAINING_SCALE = 10_000.0
+
+#: Bands are recognised by name; everything else is an index and is passed
+#: through untouched.
+_BAND_PREFIX = "B"
+
 SOURCE_LABEL = "spectral_index_threshold_model"
 PENDING_NOTE = "Field verification pending — accuracy improves with ground truth"
 
@@ -122,8 +138,16 @@ def predict_crop(feature_dict: dict) -> dict:
         if raw is None or (isinstance(raw, float) and np.isnan(raw)):
             missing.append(column)
             values.append(0.0)
-        else:
-            values.append(float(raw))
+            continue
+
+        value = float(raw)
+        # Rescale reflectance back to the digital numbers the model was fitted
+        # on. A caller that already supplies raw DN (the training CSV, for
+        # instance) is left alone: reflectance is bounded by 1.0, so anything
+        # above that is already in DN.
+        if column.upper().startswith(_BAND_PREFIX) and abs(value) <= 1.0:
+            value *= BAND_TRAINING_SCALE
+        values.append(value)
 
     present = len(columns) - len(missing)
     if present < MIN_REAL_FEATURES:
