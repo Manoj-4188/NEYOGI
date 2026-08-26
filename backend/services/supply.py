@@ -9,6 +9,7 @@ measured inputs, calls the arithmetic, and attaches the badges.
 from __future__ import annotations
 
 import logging
+import os
 from datetime import date, datetime, timedelta, timezone
 
 from backend import db, status
@@ -17,6 +18,13 @@ from backend.services import agmarknet, parcels
 from ml_pipeline import supply_estimation as se
 
 logger = logging.getLogger(__name__)
+
+#: A spectral class must clear this mean confidence before its area is allowed
+#: to drive a projected tonnage. The classifier chooses between four classes,
+#: so chance alone scores 0.25; anything under this floor is close enough to a
+#: coin toss that multiplying it by a yield constant would manufacture a
+#: precise-looking number out of a guess.
+MIN_AREA_CONFIDENCE = float(os.getenv("MIN_AREA_CONFIDENCE", "0.5"))
 
 
 async def arrivals_by_crop(
@@ -86,7 +94,7 @@ async def _spectral_area_by_crop(district: str) -> tuple[dict, dict]:
     try:
         rows = await db.fetch_all(
             """
-            SELECT crop, area_ha, sample_count
+            SELECT crop, area_ha, sample_count, mean_confidence
             FROM district_classification_latest
             WHERE district = %s
             """,
@@ -98,10 +106,29 @@ async def _spectral_area_by_crop(district: str) -> tuple[dict, dict]:
 
     areas: dict[str, float] = {}
     counts: dict[str, int] = {}
-    for crop, area_ha, sample_count in rows:
+    for crop, area_ha, sample_count, mean_confidence in rows:
         name = display.get(str(crop))
         if not name:
             continue
+
+        # A tonnage claim inherits all the uncertainty of the area behind it.
+        # The classifier picks between four classes, so chance alone scores
+        # 0.25; below MIN_AREA_CONFIDENCE the class is barely better than a
+        # coin toss and its area must not become a supply projection someone
+        # acts on. The area itself is still shown on the classification card,
+        # with its confidence beside it -- it is only barred from driving a
+        # derived tonnage.
+        if float(mean_confidence) < MIN_AREA_CONFIDENCE:
+            logger.info(
+                "Excluding %s in %s from the supply forecast: mean confidence "
+                "%.2f is below the %.2f floor for a tonnage claim.",
+                crop,
+                district,
+                float(mean_confidence),
+                MIN_AREA_CONFIDENCE,
+            )
+            continue
+
         areas[name] = float(area_ha)
         counts[name] = int(sample_count)
     return areas, counts
