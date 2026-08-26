@@ -88,6 +88,12 @@ neyogi/
 
 ---
 
+## Running it
+
+See **[RUNNING.md](RUNNING.md)** for day-to-day operation: starting and
+stopping, running without Docker, pipeline commands, database queries and
+what to check when something looks wrong.
+
 ## Quick start
 
 ```bash
