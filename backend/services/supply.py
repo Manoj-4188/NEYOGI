@@ -77,7 +77,7 @@ async def daily_series(
     ]
 
 
-async def _spectral_area_by_crop(district: str) -> tuple[dict, dict]:
+async def _spectral_area_by_crop(district: str) -> tuple[dict, dict, list]:
     """Crop areas from the latest spectral classification.
 
     Returns ``({crop: hectares}, {crop: sample_count})`` using the platform's
@@ -102,10 +102,11 @@ async def _spectral_area_by_crop(district: str) -> tuple[dict, dict]:
         )
     except db.DatabaseUnavailable as exc:
         logger.warning("Spectral area lookup failed for %s: %s", district, exc)
-        return {}, {}
+        return {}, {}, []
 
     areas: dict[str, float] = {}
     counts: dict[str, int] = {}
+    low_confidence: list[tuple[str, float, float]] = []
     for crop, area_ha, sample_count, mean_confidence in rows:
         name = display.get(str(crop))
         if not name:
@@ -127,11 +128,14 @@ async def _spectral_area_by_crop(district: str) -> tuple[dict, dict]:
                 float(mean_confidence),
                 MIN_AREA_CONFIDENCE,
             )
+            low_confidence.append(
+                (str(crop), float(area_ha), float(mean_confidence))
+            )
             continue
 
         areas[name] = float(area_ha)
         counts[name] = int(sample_count)
-    return areas, counts
+    return areas, counts, low_confidence
 
 
 async def district_forecast(
@@ -153,7 +157,9 @@ async def district_forecast(
     area_basis = "verified_parcels"
 
     if not area_by_crop:
-        area_by_crop, parcel_counts = await _spectral_area_by_crop(district)
+        area_by_crop, parcel_counts, low_confidence = await _spectral_area_by_crop(
+            district
+        )
         area_basis = "spectral_model"
         if area_by_crop:
             badges.add(
@@ -178,6 +184,31 @@ async def district_forecast(
     except se.YieldBaselineUnavailable as exc:
         logger.error("Yield baseline document unusable: %s", exc)
         document = {"defaults": {}, "districts": {}}
+
+    # A district whose classes were all filtered out has classified area --
+    # it is just not confident enough to project from. Saying "no classified
+    # area" there would blame the wrong thing and send someone to collect
+    # imagery when the real need is a better-calibrated model.
+    if not area_by_crop and low_confidence:
+        forecast = se.forecast_district(
+            district, area_by_crop={}, window_days=window_days, as_of=as_of
+        )
+        forecast.notes = [
+            "Crop areas were classified for "
+            + ", ".join(f"{c} ({a:,.0f} ha)" for c, a, _ in low_confidence)
+            + ", but every class fell below the "
+            f"{MIN_AREA_CONFIDENCE:.2f} confidence floor required before an "
+            "area may drive a projected tonnage "
+            + "("
+            + ", ".join(f"{c} {conf:.2f}" for c, _, conf in low_confidence)
+            + "). The areas are shown on the classification card; only the "
+            "supply projection is withheld."
+        ]
+        payload = forecast.to_dict()
+        payload["status"] = badges.to_dict()
+        payload["daily_series"] = {}
+        payload["area_basis"] = "spectral_model_below_confidence_floor"
+        return payload
 
     forecast = se.forecast_district(
         district,

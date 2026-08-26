@@ -333,18 +333,24 @@ def get_yield_baseline(
             as a zero.
     """
     document = document if document is not None else load_baseline_document()
+    default_entry = (document.get("defaults") or {}).get(crop) or {}
 
     if district:
-        district_entry = (document.get("districts") or {}).get(district) or {}
-        resolved = _coerce_entry(
-            district_entry.get(crop), crop, district, scope="district"
-        )
-        if resolved:
-            return resolved
+        override = (document.get("districts") or {}).get(district) or {}
+        crop_override = override.get(crop)
+        if crop_override:
+            # Layer the override onto the default rather than replacing it. A
+            # district that only knows its own market throughput should not
+            # have to restate the yield and harvest spread to use it -- and
+            # silently losing them to an incomplete override is exactly the
+            # kind of gap that surfaces later as a withheld figure nobody can
+            # explain.
+            merged = {**default_entry, **crop_override}
+            resolved = _coerce_entry(merged, crop, district, scope="district")
+            if resolved:
+                return resolved
 
-    resolved = _coerce_entry(
-        (document.get("defaults") or {}).get(crop), crop, district, scope="default"
-    )
+    resolved = _coerce_entry(default_entry, crop, district, scope="default")
     if resolved:
         return resolved
 

@@ -520,3 +520,41 @@ def test_a_balanced_market_reports_near_one() -> None:
     # 6,154 ha x 25 / 8 weeks is about 19,231 MT/week, matching absorption.
     e = _est(6_154.0)
     assert e.oversupply_ratio == pytest.approx(1.0, rel=1e-3)
+
+
+def test_a_district_override_inherits_what_it_does_not_restate() -> None:
+    """An override naming only absorption must keep the default's other fields.
+
+    Kolar's entry states its market throughput and nothing else. If the
+    override replaced the default outright it would silently lose the harvest
+    spread, and the ratio would be withheld for the one district that has a
+    sourced absorption figure -- a gap that looks like missing data but is
+    really a merge bug.
+    """
+    document = se.load_baseline_document()
+    kolar = se.get_yield_baseline("Tomato", district="Kolar", document=document)
+    assert kolar.scope == "district"
+    assert kolar.absorption_t_per_week == pytest.approx(19231.0)
+    # Inherited from the crop default, not restated in the override.
+    assert kolar.harvest_spread_weeks == pytest.approx(8.0)
+    assert kolar.value_mt_ha == pytest.approx(25.0)
+
+
+def test_kolar_tomato_projects_end_to_end_at_a_realistic_area() -> None:
+    """The whole chain, on the one district with a sourced absorption figure."""
+    document = se.load_baseline_document()
+    e = se.estimate_crop_supply(
+        district="Kolar",
+        crop="Tomato",
+        classified_area_ha=15_000.0,
+        parcel_count=0,
+        observed_arrivals_mt=None,
+        window_start=date(2026, 8, 5),
+        window_end=date(2026, 8, 26),
+        document=document,
+    )
+    assert e.status == "OK_DISTRICT_ABSORPTION"
+    # 15,000 ha x 25 = 375,000 MT over 8 weeks = 46,875 MT/week.
+    assert e.weekly_arrival_mt == pytest.approx(46_875.0)
+    assert e.weekly_absorption_mt == pytest.approx(19_231.0)
+    assert e.oversupply_ratio == pytest.approx(2.44, rel=1e-2)
