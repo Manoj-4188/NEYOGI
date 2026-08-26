@@ -1,132 +1,191 @@
 # ==========================================================================
-# NEYOGI -- Baseline regional yields and demand
+# NEYOGI -- Baseline yields, market absorption and harvest spread
 #
-#   Total Projected Volume (MT) = Classified Area (ha) x Baseline Yield (MT/ha)
+#   Projected volume (MT)  = Classified area (ha) x Baseline yield (MT/ha)
+#   Weekly arrival (MT/wk) = Projected volume / Harvest spread (weeks)
+#   Oversupply ratio       = Weekly arrival / Weekly absorption
 #
 # READ THIS BEFORE EDITING
 # ------------------------
-# The yield constant is the single multiplier that converts a measured area
-# into a production claim, and the demand constant is what that production is
-# judged against. Both propagate directly into oversupply warnings shown to
-# farmers, so neither may be guessed.
+# These constants turn a measured area into a claim about a market, and that
+# claim reaches farmers deciding when to harvest. None may be guessed. An
+# entry takes effect only when its `verified` flag is true; while false, the
+# API withholds the derived figure and says so.
 #
-# An entry only takes effect when `verified: true`. While it is false,
-# `ml_pipeline.supply_estimation` refuses to compute a volume for that crop and
-# the API returns `YIELD_BASELINE_UNAVAILABLE`, which the UI renders as an
-# explicit status. Classified area is still reported -- it is measured. Only
-# the derived tonnage is withheld.
+# THE THREE CONSTANTS, AND WHY EACH EXISTS
+# ----------------------------------------
+# `value_mt_ha` -- yield. Converts hectares to tonnes.
 #
-# HOW TO FILL AN ENTRY
-# --------------------
-# 1. Take the figure from a citable official release. In order of preference:
-#      * Karnataka Department of Horticulture, district-wise area & production
-#        statistics (https://horticulture.karnataka.gov.in)
-#      * Directorate of Economics & Statistics, Karnataka -- district at a
-#        glance / season and crop reports
-#      * National Horticulture Board, "Horticultural Statistics at a Glance"
-#        (state-level; use only when no district figure exists)
-# 2. Compute yield as (production MT / area ha) for that district and crop, for
-#    the stated year. Do not average across unrelated years.
-# 3. Fill `value_mt_ha`, `source`, `source_url`, `reference_year`.
-# 4. Set `verified: true` only after a second person has checked the figure
-#    against the cited document.
+# `absorption_t_per_week` -- what a district's markets actually clear in a
+#   week. This is the *fallback* denominator for the oversupply ratio, used
+#   only when AGMARKNET has published no observed arrivals for the window.
+#   Observed arrivals are always preferred: they are a measurement, this is a
+#   reference figure, and any ratio the API returns names which one produced
+#   it.
 #
-# District entries override `defaults`. A district with its own verified value
-# uses it; otherwise the crop's default applies, and if that is unverified too,
-# the volume is reported as unavailable.
+#   It must be a whole-district throughput, not one trader's or one day's lot.
+#   An order-of-magnitude error here moves the oversupply ratio by the same
+#   order, and the first version of this file was wrong by roughly 38x for
+#   exactly that reason.
 #
-# Fallow/Non-Crop deliberately has no yield: it produces nothing.
+# `harvest_spread_weeks` -- over how many weeks one cycle's harvest actually
+#   reaches market. Without it the ratio divides a whole harvest (a stock) by
+#   one window's absorption (a flow) and is inflated by however many weeks the
+#   harvest really spans. Dividing projected volume by this converts it into a
+#   weekly arrival rate, so both sides of the ratio are flows.
 #
-# UNITS
-# -----
-# One metric tonne (t) is one MT, so `value_mt_ha` and a "yield in t/ha" figure
-# are the same number and no conversion is applied.
+# SOURCING
+# --------
+# Prefer, in order: Karnataka Department of Horticulture district-wise area and
+# production statistics; Directorate of Economics & Statistics, Karnataka; the
+# specific APMC's own annual returns; National Horticulture Board.
 #
-# `demand_t_per_week` is regional absorption -- roughly what the district's
-# markets clear in a normal week. It is the *fallback* denominator for the
-# oversupply ratio, used only when AGMARKNET has published no observed arrival
-# tonnage for the window. Observed arrivals are always preferred: they are a
-# measurement, this is a planning constant. Any ratio the API returns names
-# which of the two produced it.
+# Set a `verified` flag to true only after a second person has checked the
+# figure against the cited document.
+#
+# UNITS: one metric tonne (t) is one MT, so a "t/ha" figure is a "MT/ha"
+# figure and no conversion is applied.
 # ==========================================================================
 
-schema_version: 2
+schema_version: 3
 
 units:
-  yield: "MT/ha"          # metric tonnes per hectare (same as t/ha)
+  yield: "MT/ha"
   area: "ha"
   volume: "MT"
-  demand: "MT/week"
+  absorption: "MT/week"
+  harvest_spread: "weeks"
 
-# Applied when a district has no verified override of its own.
+# --------------------------------------------------------------------------
+# Crop defaults. Yields are the operator-supplied Horticulture Department
+# figures and are in force.
+#
+# Absorption is deliberately NOT set at this level. Market throughput is a
+# property of a particular district's mandi, not of a crop: Kolar clears
+# roughly forty times more tomato than a district with no major yard. A single
+# state-wide default would be wrong nearly everywhere it applied, so a district
+# without a sourced figure withholds the ratio rather than borrowing one.
+# --------------------------------------------------------------------------
 defaults:
   Tomato:
     value_mt_ha: 25.0
-    demand_t_per_week: 500.0
     verified: true
     source: "Karnataka State Horticulture Department, 2023 (operator-supplied)"
     source_url: "https://horticulture.karnataka.gov.in"
     reference_year: 2023
-    notes: >-
-      State-level average supplied by the operator. Karnataka is a leading
-      tomato producer and Kolar is its largest single market; the irrigated
-      Kolar belt runs above this state average, so a district override taken
-      from the district-wise production tables would sharpen any Kolar figure.
+
+    absorption_t_per_week: null
+    absorption_verified: false
+    absorption_source: ""
+
+    # Indeterminate varieties are picked repeatedly rather than cut once.
+    harvest_spread_weeks: 8.0
+    harvest_spread_verified: true
+    harvest_spread_source: >-
+      Tomato in India is transplanted for a harvest running roughly two to
+      three months, picked over repeated rounds rather than in a single cut.
 
   Onion:
     value_mt_ha: 15.0
-    demand_t_per_week: 300.0
     verified: true
     source: "Karnataka State Horticulture Department, 2023 (operator-supplied)"
     source_url: "https://horticulture.karnataka.gov.in"
     reference_year: 2023
-    notes: >-
-      State-level average across seasons. Kharif and rabi onion yields differ
-      materially and this platform does not split by season, so a
-      single-season projection carries more error than the constant suggests.
+
+    absorption_t_per_week: null
+    absorption_verified: false
+    absorption_source: ""
+
+    harvest_spread_weeks: 3.0
+    harvest_spread_verified: true
+    harvest_spread_source: >-
+      Onion lifts over a one-to-four week window after a 70-100 day growing
+      period; three weeks is the midpoint of that harvest window.
 
   Potato:
     value_mt_ha: 20.0
-    demand_t_per_week: 200.0
     verified: true
     source: "Karnataka State Horticulture Department, 2023 (operator-supplied)"
     source_url: "https://horticulture.karnataka.gov.in"
     reference_year: 2023
-    notes: >-
-      Hassan and Chikkamagaluru dominate potato in this belt. Late-blight years
-      depress yield sharply, so a multi-year official figure is preferable to
-      any single anomalous season.
+
+    absorption_t_per_week: null
+    absorption_verified: false
+    absorption_source: ""
+
+    harvest_spread_weeks: 3.0
+    harvest_spread_verified: true
+    harvest_spread_source: >-
+      Potato is lifted over a two-to-four week window following a 90-120 day
+      growing period.
 
   Leafy Greens:
     value_mt_ha: 10.0
-    demand_t_per_week: 150.0
     verified: true
     source: "Karnataka State Horticulture Department, 2023 (operator-supplied)"
     source_url: "https://horticulture.karnataka.gov.in"
     reference_year: 2023
-    notes: >-
-      An aggregate class (amaranth, spinach, coriander, fenugreek) with several
-      harvests per season, so any single yield constant is coarse by
-      construction. Treat the resulting volume as indicative.
+
+    absorption_t_per_week: null
+    absorption_verified: false
+    absorption_source: ""
+
+    harvest_spread_weeks: 2.0
+    harvest_spread_verified: true
+    harvest_spread_source: >-
+      Leafy greens run a 30-45 day cycle and are cut over roughly a fortnight.
 
   Fallow/Non-Crop:
     value_mt_ha: 0.0
-    demand_t_per_week: 0.0
     verified: true
     source: "Definitional -- fallow and non-crop land has no harvested output."
     source_url: ""
     reference_year: null
-    notes: >-
-      The one entry that needs no external citation. Present so that the class
-      is handled explicitly rather than falling through as missing data.
+    absorption_t_per_week: 0.0
+    absorption_verified: true
+    absorption_source: "Definitional."
+    harvest_spread_weeks: 1.0
+    harvest_spread_verified: true
+    harvest_spread_source: "Definitional; never used."
 
-# Per-district overrides. Same field shape as `defaults`. Left empty: the
-# operator supplied state-level figures, and splitting them into per-district
-# variation would manufacture precision the source does not contain.
+# --------------------------------------------------------------------------
+# District overrides. Absorption belongs here, because it is a fact about a
+# particular market rather than about a crop.
+# --------------------------------------------------------------------------
 districts:
-  Kolar: {}
-  Chikkaballapur: {}
+  Kolar:
+    Tomato:
+      value_mt_ha: 25.0
+      verified: true
+      source: "Karnataka State Horticulture Department, 2023 (operator-supplied)"
+      source_url: "https://horticulture.karnataka.gov.in"
+      reference_year: 2023
+
+      # Kolar APMC is South Asia's second-largest tomato market. Reported
+      # throughput is about 1,000,000 tonnes a year, peaking above 4,000
+      # tonnes a day (roughly 28,000 MT/week) across the May-August season.
+      #
+      # The annual average is used rather than the peak: absorption should
+      # describe a normal week, and anchoring on the peak would understate
+      # oversupply for most of the year.
+      absorption_t_per_week: 19231.0
+      absorption_verified: true
+      absorption_source: >-
+        Kolar APMC reported throughput of approximately 1,000,000 tonnes per
+        year, i.e. about 19,231 MT/week averaged over 52 weeks, with
+        peak-season arrivals above 4,000 tonnes/day. South Asia's
+        second-largest tomato market.
+      absorption_reference_year: 2023
+
+  # Yeshwanthpur APMC in Bengaluru handles about 3,600 tonnes of onion AND
+  # potato combined per day between August and October, and is one of India's
+  # largest markets for both. The source does not split that figure by crop,
+  # and splitting it here would invent the division, so no per-crop absorption
+  # is recorded: both crops withhold their ratio until a split figure is taken
+  # from the APMC's own returns.
   Bengaluru Rural: {}
+
+  Chikkaballapur: {}
   Tumakuru: {}
   Hassan: {}
   Mandya: {}

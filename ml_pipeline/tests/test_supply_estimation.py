@@ -13,7 +13,7 @@ import pytest
 from ml_pipeline import supply_estimation as se
 
 VERIFIED_DOC = {
-    "schema_version": 1,
+    "schema_version": 3,
     "defaults": {
         "Tomato": {
             "value_mt_ha": 24.0,
@@ -21,6 +21,8 @@ VERIFIED_DOC = {
             "source": "Test fixture",
             "source_url": "https://example.invalid/fixture",
             "reference_year": 2023,
+            "harvest_spread_weeks": 8.0,
+            "harvest_spread_verified": True,
         },
         "Onion": {
             "value_mt_ha": None,
@@ -45,6 +47,8 @@ VERIFIED_DOC = {
                 "source": "Test fixture (district override)",
                 "source_url": "https://example.invalid/kolar",
                 "reference_year": 2023,
+                "harvest_spread_weeks": 8.0,
+                "harvest_spread_verified": True,
             }
         },
         "Hassan": {},
@@ -152,7 +156,7 @@ def test_non_numeric_baseline_is_treated_as_unverified() -> None:
 
 def test_shipped_baseline_file_parses() -> None:
     document = se.load_baseline_document()
-    assert document["schema_version"] == 2
+    assert document["schema_version"] == 3
     assert "defaults" in document and "districts" in document
 
 
@@ -183,19 +187,35 @@ def test_an_unverified_entry_is_still_refused() -> None:
         se.get_yield_baseline("Tomato", document=doc)
 
 
-def test_shipped_demand_constants_are_present() -> None:
-    """demand_t_per_week backs the ratio when AGMARKNET publishes nothing."""
+def test_shipped_absorption_is_district_scoped_not_crop_scoped() -> None:
+    """Market throughput belongs to a mandi, so no crop-level default exists.
+
+    A single state-wide absorption figure would be wrong nearly everywhere it
+    applied -- Kolar clears roughly forty times the tomato of a district with
+    no major yard -- so a district without a sourced figure must withhold the
+    ratio rather than borrow one.
+    """
     document = se.load_baseline_document()
-    for crop, weekly in (
-        ("Tomato", 500.0),
-        ("Onion", 300.0),
-        ("Potato", 200.0),
-        ("Leafy Greens", 150.0),
+    for crop in ("Tomato", "Onion", "Potato", "Leafy Greens"):
+        default = se.get_yield_baseline(crop, document=document)
+        assert default.absorption_t_per_week is None, crop
+
+    kolar = se.get_yield_baseline("Tomato", district="Kolar", document=document)
+    assert kolar.absorption_t_per_week == pytest.approx(19231.0)
+    assert kolar.scope == "district"
+
+
+def test_shipped_harvest_spreads_are_verified() -> None:
+    """Without a spread the ratio compares a stock against a flow."""
+    document = se.load_baseline_document()
+    for crop, weeks in (
+        ("Tomato", 8.0),
+        ("Onion", 3.0),
+        ("Potato", 3.0),
+        ("Leafy Greens", 2.0),
     ):
         baseline = se.get_yield_baseline(crop, document=document)
-        assert baseline.demand_t_per_week == pytest.approx(weekly), crop
-        # 21-day window is three weeks of absorption.
-        assert baseline.demand_over(21) == pytest.approx(weekly * 3)
+        assert baseline.harvest_spread_weeks == pytest.approx(weeks), crop
 
 
 def test_fallow_is_the_only_verified_entry_and_it_is_zero() -> None:
@@ -234,9 +254,13 @@ def _estimate(crop: str, area: float, arrivals: float | None, district: str = "K
 def test_full_path_reports_ok_with_volume_and_ratio() -> None:
     estimate = _estimate("Tomato", area=100.0, arrivals=1575.0)
     assert estimate.status == "OK"
-    # 100 ha x 31.5 MT/ha (Kolar override) = 3150 MT; 3150/1575 = 2.0
+    # 100 ha x 31.5 MT/ha (Kolar override) = 3,150 MT of harvest, which over
+    # an 8-week spread arrives at 393.75 MT/week. The 1,575 MT observed over
+    # the 21-day window is 525 MT/week. Both sides are flows: 393.75 / 525.
     assert estimate.projected_volume_mt == pytest.approx(3150.0)
-    assert estimate.oversupply_ratio == pytest.approx(2.0)
+    assert estimate.weekly_arrival_mt == pytest.approx(393.75)
+    assert estimate.weekly_absorption_mt == pytest.approx(525.0)
+    assert estimate.oversupply_ratio == pytest.approx(0.75)
     assert estimate.yield_baseline.scope == "district"
 
 
@@ -329,73 +353,170 @@ def test_forecast_window_spans_the_requested_days() -> None:
 # Plausibility guard
 # --------------------------------------------------------------------------
 
-DEMAND_DOC = {
-    "schema_version": 2,
+ABSORPTION_DOC = {
+    "schema_version": 3,
     "defaults": {
         "Tomato": {
             "value_mt_ha": 25.0,
-            "demand_t_per_week": 500.0,
             "verified": True,
             "source": "Test fixture",
             "reference_year": 2023,
+            # No crop-level absorption: it belongs to a district's mandi.
+            "absorption_t_per_week": None,
+            "absorption_verified": False,
+            "harvest_spread_weeks": 8.0,
+            "harvest_spread_verified": True,
         },
     },
-    "districts": {},
+    "districts": {
+        "Kolar": {
+            "Tomato": {
+                "value_mt_ha": 25.0,
+                "verified": True,
+                "source": "Test fixture",
+                "reference_year": 2023,
+                "absorption_t_per_week": 19231.0,
+                "absorption_verified": True,
+                "harvest_spread_weeks": 8.0,
+                "harvest_spread_verified": True,
+            }
+        },
+        # A district with a yield but no sourced market throughput.
+        "Hassan": {},
+    },
 }
 
 
-def _est(area_ha, arrivals=None, days=21):
+def _est(area_ha, arrivals=None, days=21, district="Kolar"):
     return se.estimate_crop_supply(
-        district="Kolar",
+        district=district,
         crop="Tomato",
         classified_area_ha=area_ha,
         parcel_count=1,
         observed_arrivals_mt=arrivals,
         window_start=date(2024, 6, 1),
         window_end=date(2024, 6, 1) + timedelta(days=days),
-        document=DEMAND_DOC,
+        document=ABSORPTION_DOC,
     )
 
 
-def test_baseline_demand_backs_the_ratio_when_arrivals_are_absent() -> None:
-    """AGMARKNET silence must not block the ratio entirely."""
-    # 40 ha x 25 = 1,000 MT against 500/wk x 3 weeks = 1,500 MT -> 0.67
-    e = _est(40.0)
-    assert e.status == "OK_BASELINE_DEMAND"
-    assert e.demand_basis == "baseline_demand"
-    assert e.demand_mt == pytest.approx(1500.0)
-    assert e.oversupply_ratio == pytest.approx(1000.0 / 1500.0, rel=1e-6)
+# --------------------------------------------------------------------------
+# Flow-to-flow comparison
+# --------------------------------------------------------------------------
 
 
-def test_observed_arrivals_take_precedence_over_the_constant() -> None:
-    """A measurement always beats a planning figure."""
-    e = _est(40.0, arrivals=2000.0)
+def test_projected_volume_is_converted_to_a_weekly_arrival_rate() -> None:
+    """A whole harvest divided by its spread is what actually reaches market."""
+    # 1,000 ha x 25 = 25,000 MT over 8 weeks -> 3,125 MT/week.
+    e = _est(1_000.0)
+    assert e.projected_volume_mt == pytest.approx(25_000.0)
+    assert e.weekly_arrival_mt == pytest.approx(3_125.0)
+
+
+def test_district_absorption_backs_the_ratio_when_arrivals_are_absent() -> None:
+    e = _est(1_000.0)
+    assert e.status == "OK_DISTRICT_ABSORPTION"
+    assert e.demand_basis == "district_absorption"
+    assert e.weekly_absorption_mt == pytest.approx(19_231.0)
+    assert e.oversupply_ratio == pytest.approx(3_125.0 / 19_231.0, rel=1e-6)
+
+
+def test_observed_arrivals_take_precedence_and_are_rated_weekly() -> None:
+    """A measurement beats the reference figure, converted to matching units."""
+    # 21 days is 3 weeks, so 30,000 MT observed is 10,000 MT/week.
+    e = _est(1_000.0, arrivals=30_000.0)
     assert e.status == "OK"
     assert e.demand_basis == "observed_arrivals"
-    assert e.demand_mt == pytest.approx(2000.0)
+    assert e.weekly_absorption_mt == pytest.approx(10_000.0)
+    assert e.oversupply_ratio == pytest.approx(3_125.0 / 10_000.0, rel=1e-6)
 
 
-def test_an_absurd_ratio_is_withheld_rather_than_shown() -> None:
-    """78,000 ha of tomato in one district is a modelling error, not a glut."""
-    e = _est(78_334.0)
+def test_a_district_without_sourced_absorption_withholds_the_ratio() -> None:
+    """No crop-level default is borrowed for a district that has no figure."""
+    e = _est(1_000.0, district="Hassan")
+    assert e.status == "INSUFFICIENT_ARRIVAL_DATA"
+    assert e.oversupply_ratio is None
+    # The measured area and its tonnage still stand.
+    assert e.projected_volume_mt == pytest.approx(25_000.0)
+
+
+def test_missing_harvest_spread_blocks_the_ratio() -> None:
+    """Without a spread a stock cannot honestly meet a flow."""
+    doc = {
+        "defaults": {
+            "Tomato": {
+                "value_mt_ha": 25.0,
+                "verified": True,
+                "source": "fixture",
+                "absorption_t_per_week": 19231.0,
+                "absorption_verified": True,
+                "harvest_spread_weeks": 8.0,
+                "harvest_spread_verified": False,  # not yet sourced
+            }
+        },
+        "districts": {},
+    }
+    e = se.estimate_crop_supply(
+        district="Kolar",
+        crop="Tomato",
+        classified_area_ha=1_000.0,
+        parcel_count=1,
+        observed_arrivals_mt=None,
+        window_start=date(2024, 6, 1),
+        window_end=date(2024, 6, 22),
+        document=doc,
+    )
+    assert e.status == "HARVEST_SPREAD_UNKNOWN"
+    assert e.oversupply_ratio is None
+
+
+# --------------------------------------------------------------------------
+# Plausibility guard
+# --------------------------------------------------------------------------
+
+
+def test_the_ratio_bound_catches_a_wildly_wrong_numerator() -> None:
+    """Anything past the bound is a modelling error, not a market condition."""
+    # 500,000 ha x 25 / 8 weeks = 1.56M MT/week against 19,231 -> ~81x.
+    e = _est(500_000.0)
     assert e.status == "IMPLAUSIBLE_RATIO"
     assert e.oversupply_ratio is None
     # The measured area survives; only the derived ratio is withheld.
-    assert e.classified_area_ha == pytest.approx(78_334.0)
-    assert e.projected_volume_mt == pytest.approx(78_334.0 * 25)
+    assert e.classified_area_ha == pytest.approx(500_000.0)
     assert "withheld" in e.detail
 
 
-def test_the_guard_applies_to_observed_arrivals_too() -> None:
-    """A bad numerator is bad whichever denominator it meets."""
-    e = _est(78_334.0, arrivals=1500.0)
-    assert e.status == "IMPLAUSIBLE_RATIO"
-    assert e.oversupply_ratio is None
+def test_a_moderately_wrong_area_slips_past_the_ratio_bound() -> None:
+    """Documents why the ratio bound is not the only defence needed.
+
+    78,334 ha was what the spectral model actually assigned to tomato in
+    Kolar -- 20% of the district, and more than Karnataka's entire tomato
+    area. Under the flow model that produces about 12.7x, which is extreme
+    but not absurd enough for the ratio bound to reject.
+
+    So the bound alone would let a badly wrong area through wearing a
+    plausible number. What stops it is the confidence floor in
+    backend.services.supply, which bars a class from feeding a tonnage claim
+    at all when the classifier is barely better than chance -- and that area
+    carried a mean confidence of 0.43 against a 0.25 chance baseline.
+    """
+    e = _est(78_334.0)
+    assert e.status == "OK_DISTRICT_ABSORPTION"
+    assert 10 < e.oversupply_ratio < 20
+    from backend.services.supply import MIN_AREA_CONFIDENCE
+
+    assert MIN_AREA_CONFIDENCE > 0.43
 
 
 def test_a_genuine_glut_still_reports_normally() -> None:
     """The guard must not swallow the signal the platform exists to give."""
-    # 180 ha x 25 = 4,500 MT against 1,500 MT -> 3.0x, a real oversupply.
-    e = _est(180.0)
-    assert e.status == "OK_BASELINE_DEMAND"
-    assert e.oversupply_ratio == pytest.approx(3.0)
+    # 15,000 ha x 25 / 8 weeks = 46,875 MT/week against 19,231 -> 2.44x.
+    e = _est(15_000.0)
+    assert e.status == "OK_DISTRICT_ABSORPTION"
+    assert e.oversupply_ratio == pytest.approx(2.437, rel=1e-2)
+
+
+def test_a_balanced_market_reports_near_one() -> None:
+    # 6,154 ha x 25 / 8 weeks is about 19,231 MT/week, matching absorption.
+    e = _est(6_154.0)
+    assert e.oversupply_ratio == pytest.approx(1.0, rel=1e-3)
