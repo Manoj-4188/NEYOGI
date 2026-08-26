@@ -15,6 +15,10 @@ Two quantities, both arithmetic, neither modelled:
 
        ratio = projected volume (MT) / observed mandi arrivals (MT)
 
+   falling back to the reference file's ``demand_t_per_week``, pro-rated
+   over the window, when the feed published no arrivals. Which of the two
+   was used travels with the result as ``demand_basis``.
+
    over the same window. Above 1.0 means the belt is projected to produce more
    than the mandi has recently been absorbing.
 
@@ -22,6 +26,8 @@ Every failure mode is a named status rather than a silent zero, because the
 consumer of this number is a farmer deciding when to harvest:
 
 * ``OK`` -- both sides measured.
+* ``OK_BASELINE_DEMAND`` -- volume measured, but the denominator is the
+  reference file's demand constant because AGMARKNET published no arrivals.
 * ``YIELD_BASELINE_UNAVAILABLE`` -- area known, no verified yield constant.
 * ``INSUFFICIENT_ARRIVAL_DATA`` -- volume known, but AGMARKNET published no
   arrival tonnage for the window, so the ratio has no denominator.
@@ -64,12 +70,23 @@ class YieldBaseline:
     source_url: str
     reference_year: int | None
     scope: str  # "district" | "default"
+    #: Regional absorption in MT/week. Used as the oversupply denominator only
+    #: when no observed mandi arrivals exist for the window. None when the
+    #: reference file states no demand figure.
+    demand_t_per_week: float | None = None
+
+    def demand_over(self, days: int) -> float | None:
+        """Absorption over an arbitrary window, pro-rated from the weekly rate."""
+        if self.demand_t_per_week is None:
+            return None
+        return self.demand_t_per_week * (days / 7.0)
 
     def to_dict(self) -> dict:
         return {
             "crop": self.crop,
             "district": self.district,
             "value_mt_ha": self.value_mt_ha,
+            "demand_t_per_week": self.demand_t_per_week,
             "source": self.source,
             "source_url": self.source_url,
             "reference_year": self.reference_year,
@@ -92,6 +109,11 @@ class CropSupplyEstimate:
     oversupply_ratio: float | None = None
     window_start: date | None = None
     window_end: date | None = None
+    #: "observed_arrivals" (measured) or "baseline_demand" (planning constant).
+    #: None when no ratio could be computed at all.
+    demand_basis: str | None = None
+    #: The denominator actually used, in MT over the window.
+    demand_mt: float | None = None
     detail: str = ""
 
     def to_dict(self) -> dict:
@@ -118,6 +140,10 @@ class CropSupplyEstimate:
             ),
             "yield_baseline": (
                 self.yield_baseline.to_dict() if self.yield_baseline else None
+            ),
+            "demand_basis": self.demand_basis,
+            "demand_mt": (
+                round(self.demand_mt, 2) if self.demand_mt is not None else None
             ),
             "window": {
                 "start": self.window_start.isoformat() if self.window_start else None,
@@ -192,6 +218,27 @@ def _coerce_entry(
     if numeric < 0:
         logger.warning("Negative yield baseline for %s/%s; ignoring.", district, crop)
         return None
+
+    # Demand is optional and independent: a file may carry a verified yield
+    # with no demand figure, in which case the ratio simply has no fallback
+    # denominator. An unusable value is dropped rather than defaulted.
+    demand: float | None = None
+    raw_demand = entry.get("demand_t_per_week")
+    if raw_demand is not None:
+        try:
+            demand = float(raw_demand)
+        except (TypeError, ValueError):
+            logger.warning(
+                "Demand for %s/%s is not numeric (%r); ignoring it.",
+                district or "default",
+                crop,
+                raw_demand,
+            )
+        else:
+            if demand < 0:
+                logger.warning("Negative demand for %s/%s; ignoring.", district, crop)
+                demand = None
+
     return YieldBaseline(
         crop=crop,
         district=district if scope == "district" else None,
@@ -200,6 +247,7 @@ def _coerce_entry(
         source_url=str(entry.get("source_url") or ""),
         reference_year=entry.get("reference_year"),
         scope=scope,
+        demand_t_per_week=demand,
     )
 
 
@@ -345,20 +393,42 @@ def estimate_crop_supply(
         classified_area_ha, baseline.value_mt_ha
     )
 
+    # Observed arrivals first: they are a measurement of what the mandi
+    # actually absorbed. The baseline demand constant is a planning figure and
+    # is only consulted when the feed published nothing.
     ratio = oversupply_ratio(estimate.projected_volume_mt, observed_arrivals_mt)
-    if ratio is None:
-        estimate.status = "INSUFFICIENT_ARRIVAL_DATA"
+    if ratio is not None:
+        estimate.oversupply_ratio = ratio
+        estimate.demand_basis = "observed_arrivals"
+        estimate.demand_mt = observed_arrivals_mt
         estimate.detail = (
-            "Projected volume computed, but AGMARKNET published no arrival "
-            "tonnage for this district/crop in the window, so the supply-demand "
-            "ratio has no denominator."
+            f"Projected {estimate.projected_volume_mt:,.1f} MT against "
+            f"{observed_arrivals_mt:,.1f} MT of observed arrivals."
         )
         return estimate
 
-    estimate.oversupply_ratio = ratio
+    window_days = max((window_end - window_start).days, 1)
+    baseline_demand = baseline.demand_over(window_days)
+    ratio = oversupply_ratio(estimate.projected_volume_mt, baseline_demand)
+    if ratio is not None:
+        estimate.oversupply_ratio = ratio
+        estimate.demand_basis = "baseline_demand"
+        estimate.demand_mt = baseline_demand
+        estimate.status = "OK_BASELINE_DEMAND"
+        estimate.detail = (
+            f"Projected {estimate.projected_volume_mt:,.1f} MT against "
+            f"{baseline_demand:,.1f} MT of baseline absorption "
+            f"({baseline.demand_t_per_week:,.0f} MT/week over {window_days} days). "
+            "AGMARKNET published no arrivals for this window, so this ratio "
+            "rests on a planning constant rather than a measurement."
+        )
+        return estimate
+
+    estimate.status = "INSUFFICIENT_ARRIVAL_DATA"
     estimate.detail = (
-        f"Projected {estimate.projected_volume_mt:,.1f} MT against "
-        f"{observed_arrivals_mt:,.1f} MT of observed arrivals."
+        "Projected volume computed, but AGMARKNET published no arrival tonnage "
+        "for this district/crop in the window and the reference file states no "
+        "baseline demand for this crop, so the ratio has no denominator."
     )
     return estimate
 

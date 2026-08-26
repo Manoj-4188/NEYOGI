@@ -67,8 +67,18 @@ export default function SupplyPressureCard({ payload, loading, district }) {
 
           <p className="mt-3 text-xs text-muted">
             {Math.round(headline.projected_volume_mt).toLocaleString()} MT projected ·{' '}
-            {Math.round(headline.observed_arrivals_mt).toLocaleString()} MT arrivals
+            {Math.round(headline.demand_mt ?? headline.observed_arrivals_mt ?? 0).toLocaleString()}{' '}
+            MT {headline.demand_basis === 'baseline_demand' ? 'baseline demand' : 'arrivals'}
           </p>
+
+          {/* Which denominator produced the ratio changes how much weight it
+              carries, so it is stated rather than left to the reader. */}
+          {headline.demand_basis === 'baseline_demand' ? (
+            <p className="mt-1 text-xs" style={{ color: '#d4882a' }}>
+              Measured against the Horticulture Dept baseline absorption, not
+              observed mandi arrivals — AGMARKNET published none for this window.
+            </p>
+          ) : null}
         </>
       ) : (
         <>

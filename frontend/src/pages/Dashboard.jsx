@@ -10,6 +10,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import api from '../api/client.js';
+import BestMarketsCard from '../components/BestMarketsCard.jsx';
 import ColdStorageCard from '../components/ColdStorageCard.jsx';
 import CropClassificationCard from '../components/CropClassificationCard.jsx';
 import DistrictMap from '../components/DistrictMap.jsx';
@@ -69,8 +70,22 @@ export default function Dashboard() {
     [district],
   );
   const coldState = useAsync(
-    () => (district ? api.coldStorage({ district }) : Promise.resolve(null)),
-    [district],
+    () =>
+      district
+        ? api.coldStorage({ district, crop: 'tomato', quantityT: quintals / 10 })
+        : Promise.resolve(null),
+    [district, quintals],
+  );
+  const marketsState = useAsync(
+    () =>
+      district
+        ? api.bestMarkets({
+            district,
+            cropType: 'tomato',
+            quantityQuintals: quintals,
+          })
+        : Promise.resolve(null),
+    [district, quintals],
   );
   const priceState = useAsync(
     () => (district ? api.priceHistory({ district, days: 90 }) : Promise.resolve(null)),
@@ -161,6 +176,12 @@ export default function Dashboard() {
               loading={coldState.loading}
               district={district}
               origin={centroid}
+            />
+            <BestMarketsCard
+              payload={marketsState.data}
+              loading={marketsState.loading}
+              district={district}
+              onQuantityChange={setQuintals}
             />
           </div>
 
