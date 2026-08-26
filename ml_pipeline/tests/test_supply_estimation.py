@@ -6,7 +6,7 @@ nobody has verified must produce a status, not a number.
 
 from __future__ import annotations
 
-from datetime import date
+from datetime import date, timedelta
 
 import pytest
 
@@ -323,3 +323,79 @@ def test_forecast_window_spans_the_requested_days() -> None:
     assert forecast.window_start == date(2024, 6, 1)
     assert forecast.window_end == date(2024, 6, 22)
     assert (forecast.window_end - forecast.window_start).days == 21
+
+
+# --------------------------------------------------------------------------
+# Plausibility guard
+# --------------------------------------------------------------------------
+
+DEMAND_DOC = {
+    "schema_version": 2,
+    "defaults": {
+        "Tomato": {
+            "value_mt_ha": 25.0,
+            "demand_t_per_week": 500.0,
+            "verified": True,
+            "source": "Test fixture",
+            "reference_year": 2023,
+        },
+    },
+    "districts": {},
+}
+
+
+def _est(area_ha, arrivals=None, days=21):
+    return se.estimate_crop_supply(
+        district="Kolar",
+        crop="Tomato",
+        classified_area_ha=area_ha,
+        parcel_count=1,
+        observed_arrivals_mt=arrivals,
+        window_start=date(2024, 6, 1),
+        window_end=date(2024, 6, 1) + timedelta(days=days),
+        document=DEMAND_DOC,
+    )
+
+
+def test_baseline_demand_backs_the_ratio_when_arrivals_are_absent() -> None:
+    """AGMARKNET silence must not block the ratio entirely."""
+    # 40 ha x 25 = 1,000 MT against 500/wk x 3 weeks = 1,500 MT -> 0.67
+    e = _est(40.0)
+    assert e.status == "OK_BASELINE_DEMAND"
+    assert e.demand_basis == "baseline_demand"
+    assert e.demand_mt == pytest.approx(1500.0)
+    assert e.oversupply_ratio == pytest.approx(1000.0 / 1500.0, rel=1e-6)
+
+
+def test_observed_arrivals_take_precedence_over_the_constant() -> None:
+    """A measurement always beats a planning figure."""
+    e = _est(40.0, arrivals=2000.0)
+    assert e.status == "OK"
+    assert e.demand_basis == "observed_arrivals"
+    assert e.demand_mt == pytest.approx(2000.0)
+
+
+def test_an_absurd_ratio_is_withheld_rather_than_shown() -> None:
+    """78,000 ha of tomato in one district is a modelling error, not a glut."""
+    e = _est(78_334.0)
+    assert e.status == "IMPLAUSIBLE_RATIO"
+    assert e.oversupply_ratio is None
+    # The measured area survives; only the derived ratio is withheld.
+    assert e.classified_area_ha == pytest.approx(78_334.0)
+    assert e.projected_volume_mt == pytest.approx(78_334.0 * 25)
+    assert "withheld" in e.detail
+
+
+def test_the_guard_applies_to_observed_arrivals_too() -> None:
+    """A bad numerator is bad whichever denominator it meets."""
+    e = _est(78_334.0, arrivals=1500.0)
+    assert e.status == "IMPLAUSIBLE_RATIO"
+    assert e.oversupply_ratio is None
+
+
+def test_a_genuine_glut_still_reports_normally() -> None:
+    """The guard must not swallow the signal the platform exists to give."""
+    # 180 ha x 25 = 4,500 MT against 1,500 MT -> 3.0x, a real oversupply.
+    e = _est(180.0)
+    assert e.status == "OK_BASELINE_DEMAND"
+    assert e.oversupply_ratio == pytest.approx(3.0)

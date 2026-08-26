@@ -32,11 +32,15 @@ consumer of this number is a farmer deciding when to harvest:
 * ``INSUFFICIENT_ARRIVAL_DATA`` -- volume known, but AGMARKNET published no
   arrival tonnage for the window, so the ratio has no denominator.
 * ``NO_CLASSIFIED_AREA`` -- the district is unvalidated or nothing classified.
+* ``IMPLAUSIBLE_RATIO`` -- the arithmetic ran but produced a figure that
+  reports a modelling error rather than a market condition; see
+  :func:`_implausible`.
 """
 
 from __future__ import annotations
 
 import logging
+import os
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -53,6 +57,17 @@ DEFAULT_WINDOW_DAYS = 21
 #: One quintal is 100 kg; AGMARKNET reports arrivals in quintals or tonnes
 #: depending on the feed, and prices per quintal.
 QUINTALS_PER_TONNE = 10.0
+
+#: Above this, a ratio is reporting a modelling error rather than a market
+#: condition and must not be shown as actionable.
+#:
+#: A real glut runs at two or three times normal absorption; ten would be
+#: extraordinary. Ratios in the hundreds come from the stock-versus-flow
+#: mismatch described below, from an inflated classified area, or from both.
+#: Presenting one as "HIGH RISK" would put a number in front of a farmer that
+#: is wrong by three orders of magnitude, so the estimate reports
+#: IMPLAUSIBLE_RATIO and withholds it instead.
+MAX_PLAUSIBLE_RATIO = float(os.getenv("MAX_PLAUSIBLE_OVERSUPPLY_RATIO", "20"))
 
 
 class YieldBaselineUnavailable(RuntimeError):
@@ -350,6 +365,41 @@ def quintals_to_tonnes(quintals: float | None) -> float | None:
 # --------------------------------------------------------------------------
 
 
+def _implausible(estimate: "CropSupplyEstimate", ratio: float) -> "CropSupplyEstimate":
+    """Withhold a ratio that is reporting a modelling error, and say which.
+
+    Two known causes, both of which inflate the numerator rather than the
+    market:
+
+    **Stock versus flow.** ``projected_volume_mt`` is the whole harvest
+    obtainable from the standing area. The denominator is absorption over a
+    three-week window. Dividing one by the other is only meaningful if the
+    harvest actually arrives inside that window, and NEYOGI does not model crop
+    phenology, so it cannot say what share does. Even with a perfect area and a
+    perfect demand figure this ratio would be inflated by however many weeks
+    the harvest really spreads over.
+
+    **Inflated classified area.** The spectral model assigns crop classes at
+    modest confidence, and over-assignment scales the projected volume
+    directly.
+
+    The ratio is kept in ``detail`` for diagnosis but never surfaced as a
+    headline figure.
+    """
+    estimate.status = "IMPLAUSIBLE_RATIO"
+    estimate.oversupply_ratio = None
+    estimate.detail = (
+        f"Computed ratio {ratio:,.0f}x exceeds the plausibility bound of "
+        f"{MAX_PLAUSIBLE_RATIO:,.0f}x, so it is withheld. The projected volume "
+        "is a whole-harvest total while the denominator is absorption over the "
+        "window, and crop phenology is not modelled, so the two are not "
+        "directly comparable. A classified area larger than the district could "
+        "plausibly carry compounds the error. Treat the classified area as the "
+        "usable output here, not this ratio."
+    )
+    return estimate
+
+
 def estimate_crop_supply(
     district: str,
     crop: str,
@@ -398,9 +448,11 @@ def estimate_crop_supply(
     # is only consulted when the feed published nothing.
     ratio = oversupply_ratio(estimate.projected_volume_mt, observed_arrivals_mt)
     if ratio is not None:
-        estimate.oversupply_ratio = ratio
         estimate.demand_basis = "observed_arrivals"
         estimate.demand_mt = observed_arrivals_mt
+        if ratio > MAX_PLAUSIBLE_RATIO:
+            return _implausible(estimate, ratio)
+        estimate.oversupply_ratio = ratio
         estimate.detail = (
             f"Projected {estimate.projected_volume_mt:,.1f} MT against "
             f"{observed_arrivals_mt:,.1f} MT of observed arrivals."
@@ -411,9 +463,11 @@ def estimate_crop_supply(
     baseline_demand = baseline.demand_over(window_days)
     ratio = oversupply_ratio(estimate.projected_volume_mt, baseline_demand)
     if ratio is not None:
-        estimate.oversupply_ratio = ratio
         estimate.demand_basis = "baseline_demand"
         estimate.demand_mt = baseline_demand
+        if ratio > MAX_PLAUSIBLE_RATIO:
+            return _implausible(estimate, ratio)
+        estimate.oversupply_ratio = ratio
         estimate.status = "OK_BASELINE_DEMAND"
         estimate.detail = (
             f"Projected {estimate.projected_volume_mt:,.1f} MT against "

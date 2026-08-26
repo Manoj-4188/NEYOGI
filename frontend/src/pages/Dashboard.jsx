@@ -48,6 +48,9 @@ function useAsync(loader, deps) {
 
 export default function Dashboard() {
   const [district, setDistrict] = useState(null);
+  // One quantity drives both the market ranking and the hold-or-sell
+  // comparison, so the two cards always describe the same load.
+  const [quintals, setQuintals] = useState(100);
 
   const healthState = useAsync(() => api.health().catch(() => null), []);
   const districtsState = useAsync(() => api.districts(), []);
