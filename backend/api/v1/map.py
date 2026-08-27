@@ -84,12 +84,26 @@ async def districts() -> dict:
     from ml_pipeline import config as ml_config
 
     sources = await parcels.boundary_sources()
+
+    # Which districts have a stored classification. The sidebar shows a status
+    # dot per district, and without this it could only speak for the one
+    # currently selected -- every other district read as "nothing here" even
+    # when it had results.
+    try:
+        rows = await db.fetch_all(
+            "SELECT DISTINCT district FROM district_classification_latest"
+        )
+        classified = {r[0] for r in rows}
+    except db.DatabaseUnavailable:
+        classified = set()
+
     known = {v.district for v in validations}
     payload = [
         dict(
             v.to_dict(),
             status=v.badge().to_dict(),
             boundary=sources.get(v.district),
+            has_classification=v.district in classified,
         )
         for v in validations
     ]
@@ -109,6 +123,7 @@ async def districts() -> dict:
                     "is_validated": False,
                     "status": status.district_unvalidated(candidate, 0).to_dict(),
                     "boundary": sources.get(candidate),
+                    "has_classification": candidate in classified,
                 }
             )
 

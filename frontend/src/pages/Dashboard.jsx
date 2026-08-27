@@ -103,14 +103,17 @@ export default function Dashboard() {
   const hasLiveSatellite = Boolean(tile);
   const hasClassification = (classState.data?.crops?.length || 0) > 0;
 
-  // Districts carry a dot in the sidebar; enrich the list with what we know.
+  // The districts endpoint reports has_classification for every district, so
+  // the sidebar can speak for all of them rather than only the selected one.
+  // The live value still wins for the current district: a classification run
+  // in this session should light its dot without a page reload.
   const districtRows = useMemo(
     () =>
-      districts.map((d) => ({
-        ...d,
-        has_classification:
-          d.district === district ? hasClassification : Boolean(d.is_validated),
-      })),
+      districts.map((d) =>
+        d.district === district
+          ? { ...d, has_classification: hasClassification || d.has_classification }
+          : d,
+      ),
     [districts, district, hasClassification],
   );
 
