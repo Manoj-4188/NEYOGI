@@ -228,7 +228,12 @@ def classify_district(
     rows = _sample_district(geometry, composite, sample_size)
 
     result = DistrictClassification(
-        district=district.gaul_name,
+        # The platform's own name for the district, not the boundary dataset's.
+        # Every other table -- parcels, cold storage, mandi prices -- is keyed
+        # on the requested name, and the dashboard queries with it. Persisting
+        # the GAUL spelling here made three districts' classifications
+        # invisible to the UI: stored as "Belgaum", queried as "Belagavi".
+        district=district.requested_name,
         composite_start=start,
         composite_end=end,
         scene_count=scene_count,
