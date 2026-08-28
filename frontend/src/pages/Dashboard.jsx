@@ -130,8 +130,28 @@ export default function Dashboard() {
   );
 
   const tile = mapState.data?.properties?.basemap_tile;
-  const hasLive = Boolean(tile);
   const hasClass = (classState.data?.crops?.length || 0) > 0;
+
+  // The satellite badge is decided server-side and carries the composite's
+  // real age. The header used to show a bare yes/no, which called a fortnight
+  // -old picture "recent" whenever a tile existed at all.
+  const satBadge = useMemo(
+    () =>
+      (mapState.data?.properties?.status?.badges || []).find(
+        (b) => b.source === 'satellite',
+      ) || null,
+    [mapState.data],
+  );
+  const imageryAge = satBadge?.age_days ?? null;
+  const hasLive = Boolean(tile);
+  const imageryOk = satBadge?.severity === 'ok';
+
+  const imageryLabel = (() => {
+    if (!satBadge) return hasLive ? 'Imagery loaded' : 'No imagery';
+    if (imageryOk) return 'Recent imagery';
+    if (imageryAge === null) return 'No imagery available';
+    return `Imagery ${imageryAge} days old`;
+  })();
 
   const districtRows = useMemo(
     () =>
@@ -158,14 +178,14 @@ export default function Dashboard() {
         selected={district}
         onSelect={setDistrict}
         health={healthState.data}
-        satelliteState={hasLive ? 'ok' : 'degraded'}
+        satelliteState={imageryOk ? 'ok' : 'degraded'}
       />
 
       <main className="flex min-w-0 flex-1 flex-col overflow-y-auto">
         <header className="flex h-topbar shrink-0 items-center justify-between border-b border-line px-5">
           <h1 className="text-lg font-semibold text-ink">{district || '—'}</h1>
-          <span className="caps" style={{ color: hasLive ? '#1a5c2a' : '#d4882a' }}>
-            {hasLive ? 'Recent imagery' : 'No recent imagery'}
+          <span className="caps" style={{ color: imageryOk ? '#1a5c2a' : '#d4882a' }}>
+            {imageryLabel}
           </span>
           <span className="text-xs text-muted">
             {lastSynced ? `Updated ${lastSynced}` : '—'}
@@ -187,8 +207,12 @@ export default function Dashboard() {
             <div className="flex h-6 shrink-0 items-center border-b border-line px-4">
               <span className="text-xs text-muted">
                 {tile
-                  ? `${tile.scene_count} clear satellite pass${tile.scene_count === 1 ? '' : 'es'} · latest ${tile.composite_start}`
-                  : 'No clear satellite view of this district in the last fortnight'}
+                  ? `${tile.scene_count} clear satellite pass${tile.scene_count === 1 ? '' : 'es'} · newest ${tile.composite_start}${
+                      imageryAge && imageryAge > 16
+                        ? ` · ${imageryAge} days ago, cloud has blocked every pass since`
+                        : ''
+                    }`
+                  : satBadge?.detail || 'No clear satellite view of this district'}
               </span>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 lg:divide-x lg:divide-line">

@@ -98,16 +98,32 @@ async def cache_tile(layer: TileLayer, ttl_hours: int = TILE_TTL_HOURS) -> None:
     )
 
 
-async def cached_tile(district: str, index_name: str = "NDVI") -> TileLayer | None:
-    """Newest non-expired cached tile for a district."""
+async def cached_tile(
+    district: str, index_name: str = "NDVI", allow_expired: bool = False
+) -> TileLayer | None:
+    """Newest cached tile for a district.
+
+    The TTL exists so a stale handle is refreshed while Earth Engine is
+    reachable. It is the wrong rule when Earth Engine has nothing to give: a
+    fortnight of cloud outlives the twelve-hour TTL, so the fallback emptied
+    itself exactly in the weeks it was meant to cover, and the map went blank
+    rather than showing an older view.
+
+    With ``allow_expired`` the age bound moves to the badge, which already
+    reports the composite's real date and escalates to red past
+    ``SATELLITE_CACHE_MAX_AGE_DAYS``. An old picture clearly labelled as old
+    is more useful than no picture; an old picture labelled as current is not,
+    which is why this stays paired with the badge rather than replacing it.
+    """
+    expiry_clause = "" if allow_expired else "AND (expires_at IS NULL OR expires_at > now())"
     row = await db.fetch_one(
-        """
+        f"""
         SELECT district, index_name, composite_start, composite_end,
                tile_url_template, scene_count, vis_params
         FROM satellite_tile_cache
         WHERE district = %s
           AND index_name = %s
-          AND (expires_at IS NULL OR expires_at > now())
+          {expiry_clause}
         ORDER BY composite_start DESC
         LIMIT 1
         """,
@@ -216,7 +232,7 @@ async def get_tile_layer(
         logger.warning("Live tile build failed for %s: %s", district, exc)
 
     try:
-        layer = await cached_tile(district, index_name)
+        layer = await cached_tile(district, index_name, allow_expired=True)
     except db.DatabaseUnavailable as exc:
         return None, status.satellite_unavailable(
             f"{reason} The tile cache is also unreachable: {exc}"

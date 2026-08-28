@@ -90,6 +90,17 @@ _QUINTALS_PER_TONNE = 10.0
 FETCH_ATTEMPTS = int(os.getenv("AGMARKNET_FETCH_ATTEMPTS", "4"))
 
 #: Connect quickly -- a slow connect means the host is not answering at all.
+#: data.gov.in silently drops requests carrying httpx's default User-Agent.
+#: The connection is accepted and the TLS handshake completes, then no
+#: response ever arrives and the read times out -- which is why this looked
+#: for a long time like an unreliable feed rather than a rejected client.
+#: Measured from inside the container against the same URL and IP: the
+#: default agent times out after 21s on every attempt, while "curl/8.5.0" and
+#: an ordinary browser agent both answer in under a second. Any non-Python
+#: agent appears to pass, so this identifies the project honestly rather than
+#: impersonating a browser.
+REQUEST_USER_AGENT = "NEYOGI/1.0 (Karnataka crop market intelligence)"
+
 CONNECT_TIMEOUT = 8.0
 
 #: Backoff between attempts, doubling each time.
@@ -295,18 +306,14 @@ async def fetch_live(
 
     url = f"{settings.agmarknet_base_url}/{settings.agmarknet_resource_id}"
 
-    # The feed drops most requests rather than answering slowly: when it does
-    # respond it comes back in about two seconds, but a majority of attempts
-    # time out. Measured availability over a run of twelve probes was zero,
-    # and an hour earlier the same call succeeded. So retries matter far more
-    # than a longer timeout -- each attempt is a fresh roll of the dice.
     last_error: Exception | None = None
     for attempt in range(1, FETCH_ATTEMPTS + 1):
         try:
             async with httpx.AsyncClient(
                 timeout=httpx.Timeout(
                     settings.agmarknet_timeout_seconds, connect=CONNECT_TIMEOUT
-                )
+                ),
+                headers={"User-Agent": REQUEST_USER_AGENT},
             ) as client:
                 response = await client.get(url, params=params)
                 response.raise_for_status()

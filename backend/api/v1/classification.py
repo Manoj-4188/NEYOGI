@@ -44,10 +44,29 @@ async def run_classification(
     """
     from anyio import to_thread
 
+    from ml_pipeline.gee_ingestion import NoImageryAvailable
+
     try:
         return await to_thread.run_sync(
             classification.run_classification_sync, district, samples
         )
+    except NoImageryAvailable as exc:
+        # Not an error. Cloud covered the district for the whole window, so
+        # there is nothing to classify and the run correctly declined to
+        # invent a result. Returning 502 here made a working refusal look
+        # like a crashed server, which is the opposite of what it is.
+        logger.info("No imagery for %s: %s", district, exc)
+        return {
+            "district": district,
+            "status": "NO_CLEAR_IMAGERY",
+            "crops": [],
+            "detail": str(exc),
+            "reason": (
+                "No cloud-free satellite pass covered this district in the "
+                "search window. Nothing was classified, and no estimate was "
+                "produced from cloudy pixels."
+            ),
+        }
     except Exception as exc:  # noqa: BLE001 - ee and joblib raise many types
         logger.exception("Classification run failed for %s", district)
         raise HTTPException(
