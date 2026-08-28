@@ -61,6 +61,17 @@ SENESCENCE_DAYS: dict[str, int] = {
 #: cross-check the interval estimate against the observed decline.
 HARVEST_NDVI_FRACTION = 0.65
 
+#: Beyond this, projecting a decline rate forward stops meaning anything.
+#: The slope is fitted to a couple of months of fortnightly points, and a
+#: district curve is an average over staggered plantings, so extrapolating
+#: it half a year ahead produces a date with no support behind it.
+MAX_PROJECTION_DAYS = 60
+
+#: Uncertainty grows with how far ahead the projection reaches. A quarter
+#: of the projected distance is a blunt rule, but it beats quoting a
+#: fortnight of precision on a three-month extrapolation.
+PROJECTION_UNCERTAINTY_FRACTION = 0.25
+
 
 @dataclass
 class NdviPoint:
@@ -181,6 +192,7 @@ def estimate_harvest(
 
     # Primary estimate: a fixed interval after the peak.
     projected = peak.observed_on + timedelta(days=senescence)
+    projection_days = senescence
     method = f"peak ({peak.observed_on}) + {senescence} days of senescence"
 
     # Cross-check: where the curve is already falling, project the observed
@@ -195,13 +207,34 @@ def estimate_harvest(
             remaining = latest.ndvi - threshold
             if remaining <= 0:
                 projected = latest.observed_on
+                projection_days = 0
                 method = (
                     f"NDVI has already fallen to {latest.ndvi:.2f}, at or below "
                     f"{HARVEST_NDVI_FRACTION:.0%} of the {peak.ndvi:.2f} peak"
                 )
             else:
                 days_left = remaining / rate
-                projected = latest.observed_on + timedelta(days=round(days_left))
+                if days_left > MAX_PROJECTION_DAYS:
+                    # The decline is too slow to reach the threshold within a
+                    # meaningful horizon. On a district curve that usually
+                    # means the aggregate is flat because plantings are
+                    # staggered, not that the crop is months from ready.
+                    estimate.status = "DECLINE_TOO_SLOW"
+                    estimate.detail = (
+                        f"NDVI is falling at only {rate:.4f}/day, which would "
+                        f"take {days_left:.0f} days to reach harvest level -- "
+                        f"beyond the {MAX_PROJECTION_DAYS}-day horizon this "
+                        "projection is good for. A district curve averages "
+                        "staggered plantings and several crops, so a flat "
+                        "decline often means the district is mid-season rather "
+                        "than months from harvest."
+                    )
+                    estimate.peak_date = peak.observed_on
+                    estimate.peak_ndvi = peak.ndvi
+                    return estimate
+                days_left = round(days_left)
+                projected = latest.observed_on + timedelta(days=days_left)
+                projection_days = days_left
                 method = (
                     f"observed decline of {rate:.4f} NDVI/day since the "
                     f"{peak.observed_on} peak, projected to "
@@ -209,9 +242,16 @@ def estimate_harvest(
                 )
 
     estimate.estimated_harvest = projected
-    # The curve is sampled every 16 days, so the peak cannot be placed more
-    # precisely than half a period either way.
-    estimate.uncertainty_days = max(composite_period_days // 2, 1)
+    # Two sources of error compound. The curve is sampled fortnightly, so the
+    # peak cannot be placed finer than half a period. And the further the
+    # projection reaches, the less the fitted slope constrains it -- quoting
+    # a fortnight of precision on a two-month extrapolation would be a
+    # confident-looking fiction.
+    estimate.uncertainty_days = max(
+        composite_period_days // 2,
+        round(projection_days * PROJECTION_UNCERTAINTY_FRACTION),
+        1,
+    )
     estimate.method = method
     estimate.detail = (
         f"Peak greenness {peak.ndvi:.2f} on {peak.observed_on}; latest "

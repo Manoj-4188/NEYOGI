@@ -24,7 +24,7 @@ router = APIRouter(prefix="/analysis", tags=["analysis"])
 # --------------------------------------------------------------------------
 
 
-def _build_crop_map_sync(district_name: str, samples: int) -> dict:
+def _build_crop_map_sync(district_name: str, samples: int, window_days: int) -> dict:
     """Blocking Earth Engine work; call in a worker thread."""
     from ml_pipeline.crop_map import build_crop_map
     from ml_pipeline.gee_districts import resolve_districts
@@ -40,7 +40,9 @@ def _build_crop_map_sync(district_name: str, samples: int) -> dict:
         }
 
     try:
-        layer = build_crop_map(district, training_samples=samples)
+        layer = build_crop_map(
+            district, window_days=window_days, training_samples=samples
+        )
     except NoImageryAvailable as exc:
         return {"district": district_name, "status": "NO_IMAGERY", "detail": str(exc)}
     except ValueError as exc:
@@ -59,6 +61,18 @@ def _build_crop_map_sync(district_name: str, samples: int) -> dict:
 async def crop_map(
     district: Annotated[str, Query(description="District name")],
     samples: Annotated[int, Query(ge=500, le=10000)] = 3000,
+    window_days: Annotated[
+        int,
+        Query(
+            ge=16,
+            le=120,
+            description=(
+                "Days of imagery to composite. The 16-day default is the "
+                "standard cadence; widen it during the monsoon, when a "
+                "fortnight can be almost entirely cloud."
+            ),
+        ),
+    ] = 16,
 ) -> dict:
     """Classify every cropland pixel and return a tile layer plus its legend.
 
@@ -69,7 +83,9 @@ async def crop_map(
     from anyio import to_thread
 
     try:
-        return await to_thread.run_sync(_build_crop_map_sync, district, samples)
+        return await to_thread.run_sync(
+            _build_crop_map_sync, district, samples, window_days
+        )
     except Exception as exc:  # noqa: BLE001 - ee raises many concrete types
         logger.exception("Crop map failed for %s", district)
         raise HTTPException(

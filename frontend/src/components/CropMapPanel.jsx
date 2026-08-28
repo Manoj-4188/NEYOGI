@@ -79,6 +79,10 @@ export default function CropMapPanel({ district, center }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [bounds, setBounds] = useState(null);
+  // A fortnight of monsoon can be entirely cloud, so the compositing
+  // window is adjustable. Longer stacks more passes and fills the holes,
+  // at the cost of blurring anything that changed in between.
+  const [windowDays, setWindowDays] = useState(16);
 
   // A raster belongs to one district; drop it when the selection changes
   // rather than showing Kolar's pixels under Belagavi's name.
@@ -92,7 +96,7 @@ export default function CropMapPanel({ district, center }) {
     setLoading(true);
     setError(null);
     try {
-      const result = await api.cropMap({ district });
+      const result = await api.cropMap({ district, windowDays });
       if (result.status === 'OK') setLayer(result);
       else setError(result.detail || result.status);
     } catch (e) {
@@ -100,7 +104,7 @@ export default function CropMapPanel({ district, center }) {
     } finally {
       setLoading(false);
     }
-  }, [district]);
+  }, [district, windowDays]);
 
   return (
     <section className="p-5">
@@ -112,9 +116,24 @@ export default function CropMapPanel({ district, center }) {
             {layer ? ` · composite ${layer.composite_start}` : ''}
           </p>
         </div>
-        <button type="button" className="btn" onClick={build} disabled={loading || !district}>
-          {loading ? 'Building…' : layer ? 'Rebuild' : 'Build map'}
-        </button>
+        <div className="flex items-center gap-2">
+          <label className="flex items-center gap-1.5 text-xs text-muted">
+            Days of imagery
+            <select
+              className="field w-auto py-1 text-xs"
+              value={windowDays}
+              onChange={(e) => setWindowDays(Number(e.target.value))}
+            >
+              <option value={16}>16</option>
+              <option value={30}>30</option>
+              <option value={60}>60</option>
+              <option value={90}>90</option>
+            </select>
+          </label>
+          <button type="button" className="btn" onClick={build} disabled={loading || !district}>
+            {loading ? 'Building…' : layer ? 'Rebuild' : 'Build map'}
+          </button>
+        </div>
       </div>
 
       {error ? (
@@ -123,9 +142,11 @@ export default function CropMapPanel({ district, center }) {
 
       {!layer && !loading && !error ? (
         <p className="mt-4 max-w-2xl text-base text-muted">
-          This classifies each pixel in the district rather than sampling a few
-          hundred points, so you can see where crops sit and how fields are
-          laid out. It takes about half a minute to build.
+          This classifies each pixel in the district rather than sampling a
+          few hundred points, so you can see where crops sit and how fields are
+          laid out. It takes about half a minute to build. During the monsoon a
+          fortnight of imagery is often entirely cloud — widen the window to
+          stack more passes.
         </p>
       ) : null}
 

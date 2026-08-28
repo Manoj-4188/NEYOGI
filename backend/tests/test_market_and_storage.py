@@ -223,3 +223,90 @@ def test_index_features_are_never_rescaled() -> None:
     result = classifier.predict_crop(base)
     assert result["features_used"] == 17
     assert 0.0 <= result["confidence"] <= 1.0
+
+
+# --------------------------------------------------------------------------
+# Harvest timing
+# --------------------------------------------------------------------------
+
+
+def _series(pairs):
+    from datetime import date as _d
+
+    from ml_pipeline.harvest import NdviPoint
+
+    return [NdviPoint(observed_on=_d(*d), ndvi=v) for d, v in pairs]
+
+
+def test_a_rising_curve_refuses_to_predict() -> None:
+    """A curve that has not turned says nothing about when it will."""
+    from ml_pipeline.harvest import estimate_harvest
+
+    e = estimate_harvest(
+        "Kolar", "tomato",
+        _series([((2026, 5, 1), 0.30), ((2026, 5, 17), 0.40),
+                 ((2026, 6, 2), 0.52), ((2026, 6, 18), 0.61)]),
+    )
+    assert e.status == "PEAK_NOT_REACHED"
+    assert e.estimated_harvest is None
+
+
+def test_a_short_series_refuses_to_predict() -> None:
+    from ml_pipeline.harvest import estimate_harvest
+
+    e = estimate_harvest(
+        "Kolar", "tomato", _series([((2026, 6, 1), 0.5), ((2026, 6, 17), 0.4)])
+    )
+    assert e.status == "INSUFFICIENT_SERIES"
+    assert e.estimated_harvest is None
+
+
+def test_a_clear_decline_yields_a_date() -> None:
+    """Falling fast enough to reach harvest level inside the horizon."""
+    from ml_pipeline.harvest import estimate_harvest
+
+    e = estimate_harvest(
+        "Kolar", "tomato",
+        _series([((2026, 5, 1), 0.35), ((2026, 5, 17), 0.62), ((2026, 6, 2), 0.80),
+                 ((2026, 6, 18), 0.70), ((2026, 7, 4), 0.58)]),
+    )
+    assert e.status == "OK"
+    assert e.peak_ndvi == pytest.approx(0.80)
+    assert e.estimated_harvest is not None
+
+
+def test_a_near_flat_decline_is_refused_rather_than_extrapolated() -> None:
+    """A district curve averages staggered plantings, so it declines slowly.
+
+    Projecting that slope months ahead produces a confident-looking date with
+    nothing behind it, which is exactly what this guards.
+    """
+    from ml_pipeline.harvest import estimate_harvest
+
+    e = estimate_harvest(
+        "Kolar", "tomato",
+        _series([((2026, 3, 1), 0.40), ((2026, 4, 1), 0.44), ((2026, 5, 1), 0.46),
+                 ((2026, 6, 21), 0.4586), ((2026, 8, 8), 0.4006)]),
+    )
+    assert e.status == "DECLINE_TOO_SLOW"
+    assert e.estimated_harvest is None
+    assert "staggered" in e.detail
+
+
+def test_uncertainty_grows_with_projection_distance() -> None:
+    """A fortnight of precision on a long extrapolation would be a fiction."""
+    from ml_pipeline.harvest import (
+        PROJECTION_UNCERTAINTY_FRACTION,
+        estimate_harvest,
+    )
+
+    e = estimate_harvest(
+        "Kolar", "tomato",
+        _series([((2026, 5, 1), 0.35), ((2026, 5, 17), 0.62), ((2026, 6, 2), 0.80),
+                 ((2026, 6, 18), 0.72), ((2026, 7, 4), 0.66)]),
+    )
+    assert e.status == "OK"
+    days_ahead = (e.estimated_harvest - e.latest_date).days
+    if days_ahead > 32:
+        assert e.uncertainty_days >= round(days_ahead * PROJECTION_UNCERTAINTY_FRACTION)
+    assert e.uncertainty_days >= 1

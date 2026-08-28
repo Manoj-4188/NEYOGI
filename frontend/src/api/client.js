@@ -157,8 +157,10 @@ export const api = {
   priceHistory: ({ district, days = 90 }) =>
     request('/api/v1/prices/history', { params: { district, days } }),
 
-  cropMap: ({ district, samples = 3000 }) =>
-    request('/api/v1/analysis/crop-map', { params: { district, samples } }),
+  cropMap: ({ district, samples = 3000, windowDays = 16 }) =>
+    request('/api/v1/analysis/crop-map', {
+      params: { district, samples, window_days: windowDays },
+    }),
 
   harvest: ({ district, crop = 'tomato' }) =>
     request('/api/v1/analysis/harvest', { params: { district, crop } }),
