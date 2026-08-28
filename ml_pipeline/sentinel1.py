@@ -34,7 +34,14 @@ Processing notes
 * **Speckle filtering.** SAR is inherently grainy; a focal median over a small
   neighbourhood removes most of it without smearing field edges.
 * **dB to linear power before arithmetic.** The bands ship in decibels, which
-  are logarithmic, so summing or ratioing them directly is meaningless.
+  are logarithmic, so summing or ratioing them directly is meaningless. The
+  conversion is ``10 ** (dB / 10)``; writing it as ``(dB / 10) ** 10`` fails
+  silently and pins RVI near 4, so the arithmetic is isolated in
+  :func:`db_to_linear` where a test can reach it.
+* **A refusal, not a clamp.** RVI above :data:`MAX_PLAUSIBLE_RVI` is physically
+  impossible and means the chain is broken. Such a reading is dropped rather
+  than stored or clipped into range, since a clipped value still reads as a
+  measurement.
 """
 
 from __future__ import annotations
@@ -61,6 +68,14 @@ S1_SCALE_M = 10
 #: in the time series that reads as a real change in the crop.
 DEFAULT_ORBIT = "DESCENDING"
 
+#: Cross-polarised return is weaker than co-polarised for every natural
+#: surface, so VH < VV and RVI = 4*VH/(VV+VH) stays below 2. Real vegetation
+#: sits between roughly 0.2 and 1.0. Anything above this bound is not an
+#: unusual field; it is a unit or conversion error upstream, and it is refused
+#: rather than stored, because a stored 3.96 is indistinguishable from a
+#: measurement once it reaches a chart.
+MAX_PLAUSIBLE_RVI = 2.0
+
 
 @dataclass
 class RadarObservation:
@@ -84,14 +99,45 @@ class RadarObservation:
         }
 
 
-def _to_linear(image, band: str):
-    """Convert a decibel band to linear power.
+def db_to_linear(db: float) -> float:
+    """Linear power from decibels: ``10 ** (dB / 10)``.
 
-    GRD bands are logarithmic. Ratios and sums of decibels are not the ratios
-    and sums of the underlying powers, so every index has to be built after
-    this conversion.
+    Plain arithmetic, so it can be tested without Earth Engine. The Earth
+    Engine form below must mirror it exactly.
+
+    The order is easy to get backwards, and getting it backwards is quiet.
+    ``(dB / 10) ** 10`` is a different function that returns a positive number
+    for every input, so nothing raises and nothing looks obviously wrong: at
+    VV = -10 dB it gives 1.0 instead of 0.1, and at VH = -18 dB it gives 357
+    instead of 0.016. VH is the more negative band, so the error inflates it
+    far above VV and pins RVI near its ceiling of 4 whatever is on the ground.
     """
-    return image.select(band).divide(10).pow(10)
+    return 10.0 ** (db / 10.0)
+
+
+def rvi_from_linear(vv: float, vh: float) -> float:
+    """Dual-polarisation Radar Vegetation Index from linear powers.
+
+    ``RVI = 4 * VH / (VV + VH)``. Both arguments must already be linear power;
+    passing decibels gives a number rather than an error, which is why the
+    conversion lives in its own function above.
+    """
+    total = vv + vh
+    if total <= 0:
+        raise ValueError("backscatter powers must be positive linear values")
+    return 4.0 * vh / total
+
+
+def _to_linear(image, band: str):
+    """Earth Engine form of :func:`db_to_linear`.
+
+    ``ee.Image.pow`` raises the image to a constant exponent. Here the image
+    is the *exponent*, so the base has to be the constant 10 and the call
+    reads the other way round.
+    """
+    import ee
+
+    return ee.Image(10.0).pow(image.select(band).divide(10.0))
 
 
 def add_radar_indices(image):
@@ -218,9 +264,25 @@ def district_radar(
     if rvi is None:
         return None
 
+    # A reading outside the physical range means the processing chain is
+    # wrong, not that the field is unusual. Refuse it: an impossible number
+    # that reaches the series is plotted next to NDVI and read as a
+    # measurement by anyone looking at the chart.
+    rvi = float(rvi)
+    if not 0.0 < rvi < MAX_PLAUSIBLE_RVI:
+        logger.warning(
+            "Sentinel-1 RVI %.3f for %s (%s) is outside the physical range "
+            "(0, %.1f); discarding the reading rather than storing it.",
+            rvi,
+            start.isoformat(),
+            orbit,
+            MAX_PLAUSIBLE_RVI,
+        )
+        return None
+
     return RadarObservation(
         observed_on=start,
-        rvi=float(rvi),
+        rvi=rvi,
         vv_db=float(stats.get("VV") or 0.0),
         vh_db=float(stats.get("VH") or 0.0),
         scene_count=n,
