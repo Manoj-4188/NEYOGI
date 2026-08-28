@@ -115,7 +115,8 @@ async def harvest(
     try:
         rows = await db.fetch_all(
             """
-            SELECT observed_on, mean_ndvi, scene_count
+            SELECT observed_on, mean_ndvi, scene_count,
+                   rvi, radar_scene_count, radar_orbit
             FROM district_ndvi_series
             WHERE district = %s
             ORDER BY observed_on
@@ -128,11 +129,38 @@ async def harvest(
             detail=f"PostGIS is unreachable: {exc}",
         ) from exc
 
+    # Harvest estimation reads the optical curve only. Radar is a structure
+    # measurement, and feeding it into a greenness curve would put a step in
+    # the shape the estimator keys on.
     series = [
         NdviPoint(observed_on=r[0], ndvi=float(r[1]), scene_count=int(r[2]))
         for r in rows
+        if r[1] is not None
     ]
-    return estimate_harvest(district=district, crop=crop, series=series).to_dict()
+    payload = estimate_harvest(district=district, crop=crop, series=series).to_dict()
+
+    # The radar series travels alongside so the UI can plot both and show the
+    # weeks radar covered that optical missed.
+    payload["radar_series"] = [
+        {
+            "date": r[0].isoformat(),
+            "rvi": round(float(r[3]), 4),
+            "scene_count": int(r[4] or 0),
+            "orbit": r[5],
+        }
+        for r in rows
+        if r[3] is not None
+    ]
+    optical_dates = {r[0] for r in rows if r[1] is not None}
+    payload["radar_only_windows"] = sum(
+        1 for r in rows if r[3] is not None and r[0] not in optical_dates
+    )
+    payload["radar_note"] = (
+        "Radar measures canopy structure and moisture, not greenness. It is "
+        "shown beside NDVI rather than filling its gaps: the two diverge as a "
+        "crop dries, which is exactly when harvest timing is decided."
+    )
+    return payload
 
 
 @router.post("/harvest/build-series", summary="Rebuild a district's NDVI series")

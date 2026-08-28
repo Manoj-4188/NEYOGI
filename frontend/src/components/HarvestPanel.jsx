@@ -39,7 +39,12 @@ function ChartTip({ active, payload, label }) {
   return (
     <div className="border border-line bg-white px-3 py-2 text-xs">
       <p className="text-muted">{label}</p>
-      <p className="mt-0.5 text-ink tnum">NDVI {Number(payload[0].value).toFixed(3)}</p>
+      {payload.map((e) => (
+        <p key={e.dataKey} className="mt-0.5 text-ink tnum">
+          {e.dataKey === 'rvi' ? 'Radar' : 'Greenness'}{' '}
+          {Number(e.value).toFixed(3)}
+        </p>
+      ))}
     </div>
   );
 }
@@ -64,7 +69,22 @@ export default function HarvestPanel({ district, payload, loading, onRefresh }) 
   }, [district, onRefresh]);
 
   const series = payload?.series || [];
+  const radar = payload?.radar_series || [];
   const ready = payload?.status === 'OK';
+
+  // One row per date carrying whichever sensors saw that fortnight. Recharts
+  // leaves a missing key as a gap, which is what we want: a week radar covered
+  // and optical missed should show one line continuing and the other stopping.
+  const merged = (() => {
+    const byDate = new Map();
+    series.forEach((p) => byDate.set(p.date, { date: p.date, ndvi: p.ndvi }));
+    radar.forEach((p) => {
+      const row = byDate.get(p.date) || { date: p.date };
+      row.rvi = p.rvi;
+      byDate.set(p.date, row);
+    });
+    return [...byDate.values()].sort((a, b) => a.date.localeCompare(b.date));
+  })();
 
   return (
     <section className="p-5">
@@ -144,14 +164,28 @@ export default function HarvestPanel({ district, payload, loading, onRefresh }) 
         </div>
       )}
 
-      {series.length > 1 ? (
+      {merged.length > 1 ? (
         <div className="mt-5">
-          <p className="text-xs text-muted">
-            Greenness over time · {series.length} readings, one per 16 days
-          </p>
+          <div className="flex flex-wrap items-baseline justify-between gap-3">
+            <p className="text-xs text-muted">
+              Over time · one reading per 16 days
+            </p>
+            <div className="flex gap-3 text-xs text-muted">
+              <span className="flex items-center gap-1.5">
+                <span className="dot" style={{ backgroundColor: '#1a5c2a' }} />
+                Greenness ({series.length})
+              </span>
+              {radar.length ? (
+                <span className="flex items-center gap-1.5">
+                  <span className="dot" style={{ backgroundColor: '#d4882a' }} />
+                  Radar ({radar.length})
+                </span>
+              ) : null}
+            </div>
+          </div>
           <div className="mt-2 h-[220px] w-full">
             <ResponsiveContainer width="100%" height="100%">
-              <LineChart data={series} margin={{ top: 8, right: 12, bottom: 0, left: 0 }}>
+              <LineChart data={merged} margin={{ top: 8, right: 12, bottom: 0, left: 0 }}>
                 <CartesianGrid stroke="#e5e7eb" vertical={false} />
                 <XAxis
                   dataKey="date"
@@ -185,12 +219,36 @@ export default function HarvestPanel({ district, payload, loading, onRefresh }) 
                   dot={{ r: 2 }}
                   connectNulls={false}
                 />
+                {radar.length ? (
+                  <Line
+                    type="monotone"
+                    dataKey="rvi"
+                    stroke="#d4882a"
+                    strokeWidth={1.4}
+                    strokeDasharray="4 3"
+                    dot={{ r: 2 }}
+                    connectNulls={false}
+                  />
+                ) : null}
               </LineChart>
             </ResponsiveContainer>
           </div>
-          <p className="mt-1 text-xs text-muted">
-            Gaps are fortnights with no clear satellite view. They are left
-            empty rather than filled in.
+          <p className="mt-1 max-w-3xl text-xs leading-relaxed text-muted">
+            Gaps in the green line are fortnights too cloudy for the optical
+            satellite. They are left empty rather than filled in.
+            {radar.length ? (
+              <>
+                {' '}
+                Radar sees through cloud and covered{' '}
+                {payload.radar_only_windows > 0
+                  ? `${payload.radar_only_windows} fortnight${payload.radar_only_windows === 1 ? '' : 's'} the optical satellite missed`
+                  : 'the same fortnights'}
+                . It measures how the canopy is built rather than how green it
+                is, so it sits beside the greenness line rather than patching
+                it — the two part company as a crop dries, which is exactly
+                when harvest timing is decided.
+              </>
+            ) : null}
           </p>
         </div>
       ) : null}
