@@ -135,6 +135,32 @@ def _age_days(as_of: date | None) -> int | None:
 
 
 def satellite_live(observed_on: date) -> StatusBadge:
+    """Badge for a composite Earth Engine built for us just now.
+
+    "Live" describes the fetch, not the picture. During the monsoon the newest
+    cloud-free scene in the search window can be weeks old, and a freshly
+    built composite over old scenes was still labelled green and LIVE -- which
+    tells a reader the opposite of the truth. Past one composite period the
+    badge reports the imagery's actual age instead.
+    """
+    age = _age_days(observed_on) or 0
+    if age > settings.composite_period_days:
+        return StatusBadge(
+            source=SourceKind.SATELLITE,
+            status=SourceStatus.CACHED,
+            severity=Severity.WARN,
+            label=f"🟡 NEWEST CLEAR VIEW IS {age} DAYS OLD "
+            f"({observed_on.isoformat()})",
+            detail=(
+                f"Fetched from Earth Engine just now, but the newest "
+                f"cloud-free Sentinel-2 scene it could find is {age} days "
+                f"old. Cloud has blocked every pass since."
+            ),
+            as_of=observed_on,
+            age_days=age,
+            is_fallback=False,
+        )
+
     return StatusBadge(
         source=SourceKind.SATELLITE,
         status=SourceStatus.LIVE,
@@ -142,7 +168,7 @@ def satellite_live(observed_on: date) -> StatusBadge:
         label=f"🟢 LIVE SATELLITE ({observed_on.isoformat()})",
         detail="Composite built from Sentinel-2 L2A imagery fetched just now.",
         as_of=observed_on,
-        age_days=_age_days(observed_on),
+        age_days=age,
         is_fallback=False,
     )
 

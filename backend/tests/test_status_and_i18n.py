@@ -92,11 +92,35 @@ def test_age_days_is_reported_on_dated_badges() -> None:
 
 
 def test_status_set_is_not_degraded_when_everything_is_live() -> None:
+    """Both sources current -- the only case that should read as healthy.
+
+    The dates have to be recent: satellite_live now grades on the composite's
+    age, so a fixed calendar date silently became stale as time passed.
+    """
     badges = status.StatusSet()
-    badges.add(status.satellite_live(date(2024, 6, 1)))
-    badges.add(status.market_live(date(2024, 6, 1)))
+    badges.add(status.satellite_live(_days_ago(1)))
+    badges.add(status.market_live(_days_ago(1)))
     assert not badges.degraded
     assert badges.worst_severity is status.Severity.OK
+
+
+def test_freshly_fetched_but_old_imagery_is_not_reported_as_live() -> None:
+    """A composite built just now over weeks-old scenes is not "live".
+
+    During the monsoon Earth Engine answers immediately with the newest
+    cloud-free scene it can find, which may be a fortnight back. Calling that
+    green told the reader the opposite of the truth.
+    """
+    badge = status.satellite_live(_days_ago(18))
+    assert badge.severity is status.Severity.WARN
+    assert badge.age_days == 18
+    assert "18 DAYS OLD" in badge.label
+
+
+def test_recent_imagery_still_reads_as_live() -> None:
+    badge = status.satellite_live(_days_ago(3))
+    assert badge.severity is status.Severity.OK
+    assert badge.status is status.SourceStatus.LIVE
 
 
 def test_any_fallback_makes_the_set_degraded() -> None:
