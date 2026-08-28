@@ -157,6 +157,23 @@ export const api = {
   priceHistory: ({ district, days = 90 }) =>
     request('/api/v1/prices/history', { params: { district, days } }),
 
+  cropMap: ({ district, samples = 3000 }) =>
+    request('/api/v1/analysis/crop-map', { params: { district, samples } }),
+
+  harvest: ({ district, crop = 'tomato' }) =>
+    request('/api/v1/analysis/harvest', { params: { district, crop } }),
+
+  buildNdviSeries: ({ district, lookbackDays = 180 }) =>
+    request('/api/v1/analysis/harvest/build-series', {
+      method: 'POST',
+      params: { district, lookback_days: lookbackDays },
+    }),
+
+  yearOnYear: ({ district, windowDays = 21 }) =>
+    request('/api/v1/analysis/year-on-year', {
+      params: { district, window_days: windowDays },
+    }),
+
   alerts: ({ limit = 10 } = {}) =>
     request('/api/v1/officer/alerts', { params: { limit }, auth: true }),
 
