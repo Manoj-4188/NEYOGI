@@ -49,6 +49,18 @@ class TileLayer:
     tile_url_template: str
     scene_count: int
     vis_params: dict
+    #: Acquisition date of the newest scene that went into the composite, when
+    #: known. This is the date a reader actually cares about. composite_start
+    #: is only the start of the search window, so for a live build it is always
+    #: exactly ``window_days`` old regardless of when the satellite last saw
+    #: the ground -- dating the badge from it made a fortnight of cloud
+    #: indistinguishable from a clear pass this morning.
+    newest_scene: date | None = None
+
+    @property
+    def observed_on(self) -> date:
+        """The date to report. Real acquisition if known, else window start."""
+        return self.newest_scene or self.composite_start
 
     def to_dict(self) -> dict:
         return {
@@ -56,6 +68,7 @@ class TileLayer:
             "index_name": self.index_name,
             "composite_start": self.composite_start.isoformat(),
             "composite_end": self.composite_end.isoformat(),
+            "newest_scene": self.newest_scene.isoformat() if self.newest_scene else None,
             "tile_url_template": self.tile_url_template,
             "scene_count": self.scene_count,
             "vis_params": self.vis_params,
@@ -205,7 +218,23 @@ def _build_live_tile(district_name: str, index_name: str, window_days: int) -> T
         tile_url_template=map_id["tile_fetcher"].url_format,
         scene_count=scene_count,
         vis_params=NDVI_VIS,
+        newest_scene=_newest_acquisition(collection),
     )
+
+
+def _newest_acquisition(collection) -> date | None:
+    """Acquisition date of the most recent scene in a collection.
+
+    Returns None rather than guessing if Earth Engine cannot answer; the
+    caller falls back to the window start, which is the old behaviour.
+    """
+    try:
+        millis = collection.aggregate_max("system:time_start").getInfo()
+    except Exception:  # noqa: BLE001 - ee raises many types
+        return None
+    if not millis:
+        return None
+    return datetime.fromtimestamp(millis / 1000.0, tz=timezone.utc).date()
 
 
 async def get_tile_layer(
@@ -226,7 +255,7 @@ async def get_tile_layer(
             await cache_tile(layer)
         except db.DatabaseUnavailable as exc:
             logger.warning("Built a live tile but could not cache it: %s", exc)
-        return layer, status.satellite_live(layer.composite_start)
+        return layer, status.satellite_live(layer.observed_on)
     except Exception as exc:  # noqa: BLE001 - ee and network raise many types
         reason = f"Earth Engine unavailable: {exc}"
         logger.warning("Live tile build failed for %s: %s", district, exc)
@@ -239,7 +268,7 @@ async def get_tile_layer(
         )
 
     if layer is not None:
-        return layer, status.satellite_cached(layer.composite_start, reason=reason)
+        return layer, status.satellite_cached(layer.observed_on, reason=reason)
 
     # No tile handle cached, but parcel composites may still exist. Report the
     # newest composite date we hold so the user knows how current the vector
