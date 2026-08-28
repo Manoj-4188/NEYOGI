@@ -111,6 +111,25 @@ async def cache_tile(layer: TileLayer, ttl_hours: int = TILE_TTL_HOURS) -> None:
     )
 
 
+def _name_variants(district: str) -> list[str]:
+    """Every known spelling of a district, lower-cased, for a cache lookup.
+
+    Reuses the transliteration table the boundary resolver matches on, so the
+    two cannot drift apart. Returns the name itself even when unknown.
+    """
+    from ml_pipeline.gee_districts import TRANSLITERATION_ALIASES, normalise
+
+    key = normalise(district)
+    variants = {key, district.lower(), *TRANSLITERATION_ALIASES.get(key, ())}
+    # The table maps current name -> historical spellings; also walk it
+    # backwards so a GAUL name resolves to its modern equivalent.
+    for modern, olds in TRANSLITERATION_ALIASES.items():
+        if key in olds:
+            variants.add(modern)
+            variants.update(olds)
+    return sorted(variants)
+
+
 async def cached_tile(
     district: str, index_name: str = "NDVI", allow_expired: bool = False
 ) -> TileLayer | None:
@@ -129,18 +148,24 @@ async def cached_tile(
     which is why this stays paired with the badge rather than replacing it.
     """
     expiry_clause = "" if allow_expired else "AND (expires_at IS NULL OR expires_at > now())"
+    # Tiles are cached under the GAUL spelling the boundary dataset uses
+    # (Tumkur, Chikkaballapura, Bangalore Rural, Belgaum, Mysore) while the UI
+    # asks by the district's current name. Matching on one spelling left four
+    # of eight districts with no fallback tile, which looked like missing data
+    # rather than a naming difference.
+    names = _name_variants(district)
     row = await db.fetch_one(
         f"""
         SELECT district, index_name, composite_start, composite_end,
                tile_url_template, scene_count, vis_params
         FROM satellite_tile_cache
-        WHERE district = %s
+        WHERE lower(district) = ANY(%s)
           AND index_name = %s
           {expiry_clause}
         ORDER BY composite_start DESC
         LIMIT 1
         """,
-        (district, index_name),
+        (names, index_name),
     )
     if not row:
         return None
