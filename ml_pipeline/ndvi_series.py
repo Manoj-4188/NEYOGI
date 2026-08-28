@@ -29,6 +29,86 @@ logger = logging.getLogger(__name__)
 NDVI_SCALE_M = 100
 
 
+def composite_observation(
+    district: ResolvedDistrict, start: date, end: date, with_radar: bool = True
+) -> dict | None:
+    """Optical and radar readings for one window.
+
+    Returns None only when *neither* sensor saw the district. A window with
+    radar but no optical still produces a row, which is the point of adding
+    radar: those are exactly the weeks the optical series was blank.
+    """
+    optical = composite_ndvi(district, start, end)
+    radar = None
+
+    if with_radar:
+        try:
+            radar = _composite_radar(district, start, end)
+        except EarthEngineUnavailable as exc:
+            logger.warning("Radar failed for %s %s: %s", district.gaul_name, start, exc)
+
+    if optical is None and radar is None:
+        return None
+
+    merged: dict = {
+        "observed_on": start,
+        "mean_ndvi": None,
+        "stddev_ndvi": None,
+        "cropland_px": None,
+        "scene_count": 0,
+        "rvi": None,
+        "vv_db": None,
+        "vh_db": None,
+        "radar_scene_count": 0,
+        "radar_orbit": None,
+    }
+    if optical:
+        merged.update(optical)
+    if radar:
+        merged.update(
+            {
+                "rvi": radar.rvi,
+                "vv_db": radar.vv_db,
+                "vh_db": radar.vh_db,
+                "radar_scene_count": radar.scene_count,
+                "radar_orbit": radar.orbit,
+            }
+        )
+    return merged
+
+
+def _composite_radar(district: ResolvedDistrict, start: date, end: date):
+    """Mean cropland RVI for one window, masked to farmland.
+
+    The cropland mask is built from the optical composite where one exists.
+    Where cloud left none, the radar mean covers the whole district -- radar
+    responds strongly to buildings and open water, so that figure is noisier
+    and the caller can tell the difference by the absent NDVI beside it.
+    """
+    from ml_pipeline.feature_engineering import add_index_bands
+    from ml_pipeline.gee_ingestion import SOURCE_BANDS, sentinel2_collection
+    from ml_pipeline.sentinel1 import district_radar
+
+    geometry = district_geometry(district)
+
+    cropland = None
+    try:
+        optical = sentinel2_collection(geometry, start, end)
+        if int(optical.size().getInfo()) > 0:
+            composite = add_index_bands(
+                optical.median().clip(geometry), available_bands=SOURCE_BANDS
+            )
+            cropland = composite.select("NDVI").gte(MIN_CROPLAND_NDVI).And(
+                composite.select("NDWI").lte(MAX_CROPLAND_NDWI)
+            )
+    except Exception:  # noqa: BLE001 - an absent mask is a degraded case, not fatal
+        cropland = None
+
+    return district_radar(
+        geometry, start, end, cropland_mask=cropland, scale=NDVI_SCALE_M
+    )
+
+
 def composite_ndvi(district: ResolvedDistrict, start: date, end: date) -> dict | None:
     """Mean cropland NDVI for one window, or None when there is no imagery."""
     from ml_pipeline.feature_engineering import add_index_bands
@@ -107,7 +187,7 @@ def build_series(
     points: list[dict] = []
     for window in build_composite_windows(start, end, period_days):
         try:
-            point = composite_ndvi(district, window.start, window.end)
+            point = composite_observation(district, window.start, window.end)
         except EarthEngineUnavailable as exc:
             logger.warning("Window %s failed for %s: %s", window, district.gaul_name, exc)
             continue
@@ -116,11 +196,13 @@ def build_series(
             continue
         points.append(point)
         logger.info(
-            "%s %s: NDVI %.3f from %d scene(s)",
+            "%s %s: NDVI %s from %d optical scene(s); RVI %s from %d radar pass(es)",
             district.gaul_name,
             window.start,
-            point["mean_ndvi"],
+            f"{point['mean_ndvi']:.3f}" if point["mean_ndvi"] is not None else "--",
             point["scene_count"],
+            f"{point['rvi']:.3f}" if point["rvi"] is not None else "--",
+            point["radar_scene_count"],
         )
     return points
 
@@ -134,10 +216,15 @@ def persist(district: str, points: list[dict]) -> int:
         (
             district,
             p["observed_on"],
-            p["mean_ndvi"],
-            p["stddev_ndvi"],
-            p["cropland_px"],
-            p["scene_count"],
+            p.get("mean_ndvi"),
+            p.get("stddev_ndvi"),
+            p.get("cropland_px"),
+            p.get("scene_count", 0),
+            p.get("rvi"),
+            p.get("vv_db"),
+            p.get("vh_db"),
+            p.get("radar_scene_count", 0),
+            p.get("radar_orbit"),
         )
         for p in points
     ]
@@ -145,13 +232,19 @@ def persist(district: str, points: list[dict]) -> int:
         cur.executemany(
             """
             INSERT INTO district_ndvi_series
-                (district, observed_on, mean_ndvi, stddev_ndvi, cropland_px, scene_count)
-            VALUES (%s, %s, %s, %s, %s, %s)
+                (district, observed_on, mean_ndvi, stddev_ndvi, cropland_px,
+                 scene_count, rvi, vv_db, vh_db, radar_scene_count, radar_orbit)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             ON CONFLICT (district, observed_on) DO UPDATE SET
                 mean_ndvi   = EXCLUDED.mean_ndvi,
                 stddev_ndvi = EXCLUDED.stddev_ndvi,
                 cropland_px = EXCLUDED.cropland_px,
                 scene_count = EXCLUDED.scene_count,
+                rvi               = EXCLUDED.rvi,
+                vv_db             = EXCLUDED.vv_db,
+                vh_db             = EXCLUDED.vh_db,
+                radar_scene_count = EXCLUDED.radar_scene_count,
+                radar_orbit       = EXCLUDED.radar_orbit,
                 ingested_at = now()
             """,
             rows,
