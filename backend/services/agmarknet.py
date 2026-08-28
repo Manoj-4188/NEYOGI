@@ -20,7 +20,9 @@ never inferred from price movement.
 
 from __future__ import annotations
 
+import asyncio
 import logging
+import os
 import re
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
@@ -82,6 +84,16 @@ FIELD_ALIASES: dict[str, str] = {
 }
 
 _QUINTALS_PER_TONNE = 10.0
+
+#: Attempts per fetch. The feed answers perhaps one call in ten, so a single
+#: try reports "down" for a service that is merely flaky.
+FETCH_ATTEMPTS = int(os.getenv("AGMARKNET_FETCH_ATTEMPTS", "4"))
+
+#: Connect quickly -- a slow connect means the host is not answering at all.
+CONNECT_TIMEOUT = 8.0
+
+#: Backoff between attempts, doubling each time.
+RETRY_BASE_SECONDS = 2.0
 
 # Date formats the feed has used.
 _DATE_FORMATS = ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%Y", "%d/%m/%y", "%Y/%m/%d")
@@ -283,21 +295,52 @@ async def fetch_live(
 
     url = f"{settings.agmarknet_base_url}/{settings.agmarknet_resource_id}"
 
-    try:
-        async with httpx.AsyncClient(timeout=settings.agmarknet_timeout_seconds) as client:
-            response = await client.get(url, params=params)
-            response.raise_for_status()
-            payload = response.json()
-    except httpx.HTTPStatusError as exc:
-        raise AgmarknetUnavailable(
-            f"AGMARKNET returned HTTP {exc.response.status_code}"
-        ) from exc
-    except httpx.HTTPError as exc:
-        raise AgmarknetUnavailable(f"AGMARKNET request failed: {exc}") from exc
-    except ValueError as exc:
-        raise AgmarknetUnavailable(f"AGMARKNET returned non-JSON: {exc}") from exc
+    # The feed drops most requests rather than answering slowly: when it does
+    # respond it comes back in about two seconds, but a majority of attempts
+    # time out. Measured availability over a run of twelve probes was zero,
+    # and an hour earlier the same call succeeded. So retries matter far more
+    # than a longer timeout -- each attempt is a fresh roll of the dice.
+    last_error: Exception | None = None
+    for attempt in range(1, FETCH_ATTEMPTS + 1):
+        try:
+            async with httpx.AsyncClient(
+                timeout=httpx.Timeout(
+                    settings.agmarknet_timeout_seconds, connect=CONNECT_TIMEOUT
+                )
+            ) as client:
+                response = await client.get(url, params=params)
+                response.raise_for_status()
+                payload = response.json()
+        except httpx.HTTPStatusError as exc:
+            # A 4xx will not fix itself on retry; a 5xx might.
+            if 400 <= exc.response.status_code < 500:
+                raise AgmarknetUnavailable(
+                    f"AGMARKNET returned HTTP {exc.response.status_code}"
+                ) from exc
+            last_error = exc
+        except (httpx.HTTPError, ValueError) as exc:
+            last_error = exc
+        else:
+            if attempt > 1:
+                logger.info("AGMARKNET answered on attempt %d", attempt)
+            return parse_payload(payload)
 
-    return parse_payload(payload)
+        if attempt < FETCH_ATTEMPTS:
+            delay = RETRY_BASE_SECONDS * (2 ** (attempt - 1))
+            logger.debug(
+                "AGMARKNET attempt %d/%d failed (%s); retrying in %ss",
+                attempt,
+                FETCH_ATTEMPTS,
+                type(last_error).__name__,
+                delay,
+            )
+            await asyncio.sleep(delay)
+
+    raise AgmarknetUnavailable(
+        f"AGMARKNET did not answer in {FETCH_ATTEMPTS} attempts "
+        f"({type(last_error).__name__ if last_error else 'unknown'}). The feed "
+        "is intermittently unreachable; the scheduled poller keeps trying."
+    )
 
 
 # --------------------------------------------------------------------------

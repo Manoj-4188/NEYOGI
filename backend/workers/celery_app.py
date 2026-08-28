@@ -51,11 +51,14 @@ celery_app.conf.beat_schedule = {
         "task": "neyogi.ingest_composites",
         "schedule": crontab(hour=2, minute=30),
     },
-    # AGMARKNET publishes through the day; refresh in the evening so the cache
-    # holds a complete day before the morning briefings.
+    # AGMARKNET answers roughly one request in ten, so a once-daily poll will
+    # usually find it down and leave the cache empty for another 24 hours.
+    # Polling every 30 minutes costs almost nothing -- the payload is small and
+    # the failures are fast -- and turns an unreliable feed into one that fills
+    # the cache within a couple of hours of coming back.
     "refresh-mandi-prices": {
         "task": "neyogi.refresh_prices",
-        "schedule": crontab(hour=19, minute=0),
+        "schedule": crontab(minute="*/30"),
     },
     "classify-verified-parcels": {
         "task": "neyogi.classify_districts",
