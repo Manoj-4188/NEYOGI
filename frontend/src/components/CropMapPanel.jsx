@@ -82,7 +82,7 @@ export default function CropMapPanel({ district, center }) {
   // A fortnight of monsoon can be entirely cloud, so the compositing
   // window is adjustable. Longer stacks more passes and fills the holes,
   // at the cost of blurring anything that changed in between.
-  const [windowDays, setWindowDays] = useState(16);
+  const [windowDays, setWindowDays] = useState(30);
 
   // A raster belongs to one district; drop it when the selection changes
   // rather than showing Kolar's pixels under Belagavi's name.

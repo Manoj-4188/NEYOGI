@@ -60,7 +60,11 @@ def _build_crop_map_sync(district_name: str, samples: int, window_days: int) -> 
 @router.get("/crop-map", summary="Per-pixel crop classification raster")
 async def crop_map(
     district: Annotated[str, Query(description="District name")],
-    samples: Annotated[int, Query(ge=500, le=10000)] = 3000,
+    # 1,500 over 30 days completes comfortably. Larger requests are
+    # available but a 3,000-sample 90-day composite exceeded the request
+    # timeout in testing -- Earth Engine has to sample, fit and render
+    # before it answers.
+    samples: Annotated[int, Query(ge=500, le=10000)] = 1500,
     window_days: Annotated[
         int,
         Query(
@@ -72,7 +76,7 @@ async def crop_map(
                 "fortnight can be almost entirely cloud."
             ),
         ),
-    ] = 16,
+    ] = 30,
 ) -> dict:
     """Classify every cropland pixel and return a tile layer plus its legend.
 
