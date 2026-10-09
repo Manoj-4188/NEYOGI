@@ -1,0 +1,3705 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.11519930155288,
+              12.971952067793808
+            ],
+            [
+              76.11575736542108,
+              12.971987345749534
+            ],
+            [
+              76.11584798115868,
+              12.97288038130811
+            ],
+            [
+              76.11512301109734,
+              12.97288038130811
+            ],
+            [
+              76.11519930155288,
+              12.971952067793808
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1000",
+        "district": "Hassan",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.11614483328685,
+              13.03846060565119
+            ],
+            [
+              76.11702935707922,
+              13.038472939057414
+            ],
+            [
+              76.1171197999222,
+              13.039112486239144
+            ],
+            [
+              76.11607906577044,
+              13.039112486239144
+            ],
+            [
+              76.11614483328685,
+              13.03846060565119
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1001",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.1399097823786,
+              13.039422895637255
+            ],
+            [
+              76.14065376474328,
+              13.03948046008375
+            ],
+            [
+              76.14071187039015,
+              13.040092047004157
+            ],
+            [
+              76.13987561374822,
+              13.040092047004157
+            ],
+            [
+              76.1399097823786,
+              13.039422895637255
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1002",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.0501457443825,
+              13.033086338902487
+            ],
+            [
+              76.05071069848954,
+              13.03315043664975
+            ],
+            [
+              76.0507343936173,
+              13.033729437453808
+            ],
+            [
+              76.0501369906598,
+              13.033729437453808
+            ],
+            [
+              76.0501457443825,
+              13.033086338902487
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1003",
+        "district": "Hassan",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.07385158914019,
+              13.013852522631659
+            ],
+            [
+              76.0748293030039,
+              13.013886974281151
+            ],
+            [
+              76.07492490037814,
+              13.01483281207769
+            ],
+            [
+              76.07380806474396,
+              13.01483281207769
+            ],
+            [
+              76.07385158914019,
+              13.013852522631659
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1004",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.13027283541422,
+              12.980282068398472
+            ],
+            [
+              76.13107227011282,
+              12.980329764922352
+            ],
+            [
+              76.13109771434623,
+              12.981027094044988
+            ],
+            [
+              76.13026342994374,
+              12.981027094044988
+            ],
+            [
+              76.13027283541422,
+              12.980282068398472
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1005",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.0897498152858,
+              13.049417385356461
+            ],
+            [
+              76.09040835654324,
+              13.049457088783273
+            ],
+            [
+              76.09046383025989,
+              13.050249498139815
+            ],
+            [
+              76.08972642161625,
+              13.050249498139815
+            ],
+            [
+              76.0897498152858,
+              13.049417385356461
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1006",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.08543779319879,
+              13.027755381291026
+            ],
+            [
+              76.08624781108372,
+              13.027785855622456
+            ],
+            [
+              76.08626458858468,
+              13.028570303875048
+            ],
+            [
+              76.08543355822528,
+              13.028570303875048
+            ],
+            [
+              76.08543779319879,
+              13.027755381291026
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1007",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.07043115295788,
+              12.989217867122857
+            ],
+            [
+              76.07094589670669,
+              12.989224567305577
+            ],
+            [
+              76.07099014375073,
+              12.99012705008017
+            ],
+            [
+              76.07036671621081,
+              12.99012705008017
+            ],
+            [
+              76.07043115295788,
+              12.989217867122857
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1008",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.13512565964244,
+              12.951806421045546
+            ],
+            [
+              76.13600293754314,
+              12.951872559662629
+            ],
+            [
+              76.13606990238958,
+              12.952376229272577
+            ],
+            [
+              76.13509637432583,
+              12.952376229272577
+            ],
+            [
+              76.13512565964244,
+              12.951806421045546
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1009",
+        "district": "Hassan",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.08504869032784,
+              12.967832045235099
+            ],
+            [
+              76.08574480925182,
+              12.96784134823436
+            ],
+            [
+              76.08575811819021,
+              12.968592679530643
+            ],
+            [
+              76.08500883881108,
+              12.968592679530643
+            ],
+            [
+              76.08504869032784,
+              12.967832045235099
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1010",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.09005949185872,
+              12.961112486562179
+            ],
+            [
+              76.09094351760375,
+              12.961160161807735
+            ],
+            [
+              76.09104320213488,
+              12.961955492423913
+            ],
+            [
+              76.09005770186072,
+              12.961955492423913
+            ],
+            [
+              76.09005949185872,
+              12.961112486562179
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1011",
+        "district": "Hassan",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.07347516888863,
+              12.973624239840547
+            ],
+            [
+              76.0744607008559,
+              12.973685844225265
+            ],
+            [
+              76.07455030223282,
+              12.974276440927426
+            ],
+            [
+              76.07341702501438,
+              12.974276440927426
+            ],
+            [
+              76.07347516888863,
+              12.973624239840547
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1012",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.10131816801812,
+              12.956187876928373
+            ],
+            [
+              76.10220355301131,
+              12.95620510638243
+            ],
+            [
+              76.10227539602118,
+              12.956775966660949
+            ],
+            [
+              76.10122055013859,
+              12.956775966660949
+            ],
+            [
+              76.10131816801812,
+              12.956187876928373
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1013",
+        "district": "Hassan",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.0952506984887,
+              12.968823007678102
+            ],
+            [
+              76.09602362095364,
+              12.968874925590747
+            ],
+            [
+              76.09609361388405,
+              12.96959841603308
+            ],
+            [
+              76.0952474713118,
+              12.96959841603308
+            ],
+            [
+              76.0952506984887,
+              12.968823007678102
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1014",
+        "district": "Hassan",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.06146538344437,
+              13.044638652601495
+            ],
+            [
+              76.06208775833939,
+              13.044733702140185
+            ],
+            [
+              76.06213205298961,
+              13.045487469791766
+            ],
+            [
+              76.06139778765207,
+              13.045487469791766
+            ],
+            [
+              76.06146538344437,
+              13.044638652601495
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1015",
+        "district": "Hassan",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.14933582445649,
+              12.97936480215133
+            ],
+            [
+              76.14993529784225,
+              12.979407154766747
+            ],
+            [
+              76.14993662430433,
+              12.979865314140413
+            ],
+            [
+              76.14931725276172,
+              12.979865314140413
+            ],
+            [
+              76.14933582445649,
+              12.97936480215133
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1016",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.06621527507265,
+              12.986561131805235
+            ],
+            [
+              76.06720363682452,
+              12.986639024313485
+            ],
+            [
+              76.06728794080027,
+              12.987543886207396
+            ],
+            [
+              76.06621448746823,
+              12.987543886207396
+            ],
+            [
+              76.06621527507265,
+              12.986561131805235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1017",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.13135499615144,
+              12.993776219466017
+            ],
+            [
+              76.13209929607942,
+              12.993831262999498
+            ],
+            [
+              76.13212873125303,
+              12.994338540522222
+            ],
+            [
+              76.13130615791164,
+              12.994338540522222
+            ],
+            [
+              76.13135499615144,
+              12.993776219466017
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1018",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.13518608233048,
+              12.999242460044096
+            ],
+            [
+              76.13601023951864,
+              12.99926587096911
+            ],
+            [
+              76.13604626537563,
+              12.999810631406431
+            ],
+            [
+              76.13514388348268,
+              12.999810631406431
+            ],
+            [
+              76.13518608233048,
+              12.999242460044096
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1019",
+        "district": "Hassan",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.06739651538851,
+              13.044141041137983
+            ],
+            [
+              76.06797522168453,
+              13.044159233947415
+            ],
+            [
+              76.0679928147191,
+              13.044995143296305
+            ],
+            [
+              76.06733861934723,
+              13.044995143296305
+            ],
+            [
+              76.06739651538851,
+              13.044141041137983
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1020",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.05272010705293,
+              13.020712778883524
+            ],
+            [
+              76.05344842996703,
+              13.020758168957814
+            ],
+            [
+              76.05347450509291,
+              13.021527326762369
+            ],
+            [
+              76.0526229549868,
+              13.021527326762369
+            ],
+            [
+              76.05272010705293,
+              13.020712778883524
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1021",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.06081319808705,
+              12.98540986017724
+            ],
+            [
+              76.06145403305624,
+              12.985417859810816
+            ],
+            [
+              76.06150341138246,
+              12.986349358426452
+            ],
+            [
+              76.0607463424217,
+              12.986349358426452
+            ],
+            [
+              76.06081319808705,
+              12.98540986017724
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1022",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.11952917118866,
+              13.012545462764908
+            ],
+            [
+              76.12031008258154,
+              13.012572962188477
+            ],
+            [
+              76.12040386215337,
+              13.01344637292992
+            ],
+            [
+              76.11945178368585,
+              13.01344637292992
+            ],
+            [
+              76.11952917118866,
+              13.012545462764908
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1023",
+        "district": "Hassan",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.06534954142838,
+              12.965954561484265
+            ],
+            [
+              76.06619972420957,
+              12.96595757096534
+            ],
+            [
+              76.06624596422115,
+              12.966909412787135
+            ],
+            [
+              76.06529319458173,
+              12.966909412787135
+            ],
+            [
+              76.06534954142838,
+              12.965954561484265
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1024",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.11697196182254,
+              12.95013353834646
+            ],
+            [
+              76.11784681220166,
+              12.950178473167979
+            ],
+            [
+              76.11793556643475,
+              12.950980440287752
+            ],
+            [
+              76.11694421603715,
+              12.950980440287752
+            ],
+            [
+              76.11697196182254,
+              12.95013353834646
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1025",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.07145022216214,
+              13.048362792065797
+            ],
+            [
+              76.07207503548855,
+              13.048451079067961
+            ],
+            [
+              76.07214271317369,
+              13.049303114014885
+            ],
+            [
+              76.0713863993233,
+              13.049303114014885
+            ],
+            [
+              76.07145022216214,
+              13.048362792065797
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1026",
+        "district": "Hassan",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.1106198809654,
+              12.980030154453093
+            ],
+            [
+              76.11120238018611,
+              12.980113089786025
+            ],
+            [
+              76.11121195571117,
+              12.980725633341299
+            ],
+            [
+              76.11058350700428,
+              12.980725633341299
+            ],
+            [
+              76.1106198809654,
+              12.980030154453093
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1027",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.11146567471458,
+              13.028273206264364
+            ],
+            [
+              76.11214236708177,
+              13.028292849666643
+            ],
+            [
+              76.11215649814469,
+              13.028871498091036
+            ],
+            [
+              76.11143398081225,
+              13.028871498091036
+            ],
+            [
+              76.11146567471458,
+              13.028273206264364
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1028",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.13437701662244,
+              13.016975976578156
+            ],
+            [
+              76.13502651053005,
+              13.016977040755132
+            ],
+            [
+              76.13507248770075,
+              13.017967147502674
+            ],
+            [
+              76.13436260120396,
+              13.017967147502674
+            ],
+            [
+              76.13437701662244,
+              13.016975976578156
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1029",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.13936726213952,
+              13.019279582149757
+            ],
+            [
+              76.14016426587324,
+              13.019346416241765
+            ],
+            [
+              76.140233895034,
+              13.020250615324459
+            ],
+            [
+              76.13934129638965,
+              13.020250615324459
+            ],
+            [
+              76.13936726213952,
+              13.019279582149757
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1030",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.14894771922084,
+              12.98409548907178
+            ],
+            [
+              76.14957238531215,
+              12.98411634387453
+            ],
+            [
+              76.14960706523473,
+              12.984906772642809
+            ],
+            [
+              76.14893471118144,
+              12.984906772642809
+            ],
+            [
+              76.14894771922084,
+              12.98409548907178
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1031",
+        "district": "Hassan",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.06168814291603,
+              12.981364642914308
+            ],
+            [
+              76.06259260745,
+              12.981442861384405
+            ],
+            [
+              76.06261283771677,
+              12.982256759389664
+            ],
+            [
+              76.06166522142642,
+              12.982256759389664
+            ],
+            [
+              76.06168814291603,
+              12.981364642914308
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1032",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.10826282606374,
+              13.040000809753266
+            ],
+            [
+              76.1090722874595,
+              13.040071214576514
+            ],
+            [
+              76.10915076401966,
+              13.04092541897569
+            ],
+            [
+              76.10817610917091,
+              13.04092541897569
+            ],
+            [
+              76.10826282606374,
+              13.040000809753266
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1033",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.1193304497804,
+              12.965981103394459
+            ],
+            [
+              76.12012401609755,
+              12.966028123196509
+            ],
+            [
+              76.12020956418131,
+              12.966556572231537
+            ],
+            [
+              76.11930126725942,
+              12.966556572231537
+            ],
+            [
+              76.1193304497804,
+              12.965981103394459
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1034",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.14564152531675,
+              13.022525382421376
+            ],
+            [
+              76.14656670134903,
+              13.022605960390571
+            ],
+            [
+              76.14665903607191,
+              13.02306472122947
+            ],
+            [
+              76.1456255916569,
+              13.02306472122947
+            ],
+            [
+              76.14564152531675,
+              13.022525382421376
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1035",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.13160198923653,
+              13.01560351708576
+            ],
+            [
+              76.13259362582545,
+              13.015626160595835
+            ],
+            [
+              76.13263873111485,
+              13.016259279578856
+            ],
+            [
+              76.13157377134716,
+              13.016259279578856
+            ],
+            [
+              76.13160198923653,
+              13.01560351708576
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1036",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.11327428124898,
+              13.033987310257885
+            ],
+            [
+              76.11404381526313,
+              13.034062361601444
+            ],
+            [
+              76.11413398100987,
+              13.034586045084323
+            ],
+            [
+              76.11326729181107,
+              13.034586045084323
+            ],
+            [
+              76.11327428124898,
+              13.033987310257885
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1037",
+        "district": "Hassan",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.05284076174313,
+              13.019062224935952
+            ],
+            [
+              76.05383081641673,
+              13.019074173265546
+            ],
+            [
+              76.05384086788375,
+              13.019755921646246
+            ],
+            [
+              76.05279242517032,
+              13.019755921646246
+            ],
+            [
+              76.05284076174313,
+              13.019062224935952
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1038",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.11274651130802,
+              13.037915704128974
+            ],
+            [
+              76.11345064258457,
+              13.037929576959
+            ],
+            [
+              76.11353763965302,
+              13.038769356730489
+            ],
+            [
+              76.1127259963303,
+              13.038769356730489
+            ],
+            [
+              76.11274651130802,
+              13.037915704128974
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1039",
+        "district": "Hassan",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.10999625128726,
+              13.011427486047776
+            ],
+            [
+              76.11070083338743,
+              13.011442305262658
+            ],
+            [
+              76.11073115934016,
+              13.011972413612796
+            ],
+            [
+              76.10991571401398,
+              13.011972413612796
+            ],
+            [
+              76.10999625128726,
+              13.011427486047776
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1040",
+        "district": "Hassan",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.05590417005129,
+              12.960252075097507
+            ],
+            [
+              76.05665024962558,
+              12.960286230793638
+            ],
+            [
+              76.05672881603701,
+              12.961221179397928
+            ],
+            [
+              76.05583941067627,
+              12.961221179397928
+            ],
+            [
+              76.05590417005129,
+              12.960252075097507
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1041",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.05114903156345,
+              13.0336204549149
+            ],
+            [
+              76.05214060024339,
+              13.03367124353129
+            ],
+            [
+              76.05222012392382,
+              13.034389610213562
+            ],
+            [
+              76.05109589480627,
+              13.034389610213562
+            ],
+            [
+              76.05114903156345,
+              13.0336204549149
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1042",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.13260825235058,
+              12.951624267104187
+            ],
+            [
+              76.13334066933986,
+              12.95169307797366
+            ],
+            [
+              76.13338450420099,
+              12.952229266232424
+            ],
+            [
+              76.13257286636488,
+              12.952229266232424
+            ],
+            [
+              76.13260825235058,
+              12.951624267104187
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1043",
+        "district": "Hassan",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.10536203611788,
+              12.98496525327145
+            ],
+            [
+              76.10633759247445,
+              12.985009196323125
+            ],
+            [
+              76.10642982567256,
+              12.98569868421755
+            ],
+            [
+              76.1053414327488,
+              12.98569868421755
+            ],
+            [
+              76.10536203611788,
+              12.98496525327145
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1044",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.10576012330105,
+              13.018598275511811
+            ],
+            [
+              76.1065904189215,
+              13.018611943981258
+            ],
+            [
+              76.1066803344718,
+              13.019402484026385
+            ],
+            [
+              76.10573906404058,
+              13.019402484026385
+            ],
+            [
+              76.10576012330105,
+              13.018598275511811
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1045",
+        "district": "Hassan",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.11627797814081,
+              13.041180385236059
+            ],
+            [
+              76.11724958057891,
+              13.041278127129345
+            ],
+            [
+              76.11726144416411,
+              13.041971843942052
+            ],
+            [
+              76.11625090926961,
+              13.041971843942052
+            ],
+            [
+              76.11627797814081,
+              13.041180385236059
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1046",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.1443987990024,
+              12.965042703588255
+            ],
+            [
+              76.14512964746598,
+              12.965077803735799
+            ],
+            [
+              76.14514015655885,
+              12.965714465822433
+            ],
+            [
+              76.14437878606358,
+              12.965714465822433
+            ],
+            [
+              76.1443987990024,
+              12.965042703588255
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1047",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.07308023234651,
+              12.971162766287314
+            ],
+            [
+              76.07398464844461,
+              12.971244013387782
+            ],
+            [
+              76.07399263708946,
+              12.971818898855002
+            ],
+            [
+              76.07306343090697,
+              12.971818898855002
+            ],
+            [
+              76.07308023234651,
+              12.971162766287314
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1048",
+        "district": "Hassan",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.1135453323535,
+              12.992043758311505
+            ],
+            [
+              76.11420442289067,
+              12.99206812429314
+            ],
+            [
+              76.11426435396096,
+              12.992758140804996
+            ],
+            [
+              76.11345811420368,
+              12.992758140804996
+            ],
+            [
+              76.1135453323535,
+              12.992043758311505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1049",
+        "district": "Hassan",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.08323870646078,
+              12.982070157199432
+            ],
+            [
+              76.08408380604797,
+              12.982161583744473
+            ],
+            [
+              76.08413926578508,
+              12.982711899113523
+            ],
+            [
+              76.08318799304807,
+              12.982711899113523
+            ],
+            [
+              76.08323870646078,
+              12.982070157199432
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1050",
+        "district": "Hassan",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.08168413117309,
+              12.998118864280357
+            ],
+            [
+              76.08237090399561,
+              12.998180573852057
+            ],
+            [
+              76.08243872888248,
+              12.998973494179543
+            ],
+            [
+              76.08159637038821,
+              12.998973494179543
+            ],
+            [
+              76.08168413117309,
+              12.998118864280357
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1051",
+        "district": "Hassan",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.14754725080216,
+              12.987254659499978
+            ],
+            [
+              76.14834560220869,
+              12.987290194650365
+            ],
+            [
+              76.14842250683765,
+              12.987838094102203
+            ],
+            [
+              76.14750470585814,
+              12.987838094102203
+            ],
+            [
+              76.14754725080216,
+              12.987254659499978
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1052",
+        "district": "Hassan",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.05840555980359,
+              13.00486350663079
+            ],
+            [
+              76.05935826147295,
+              13.004939212591456
+            ],
+            [
+              76.05937202330783,
+              13.005732476407402
+            ],
+            [
+              76.05831366181546,
+              13.005732476407402
+            ],
+            [
+              76.05840555980359,
+              13.00486350663079
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1053",
+        "district": "Hassan",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.08404040628746,
+              12.989190575236602
+            ],
+            [
+              76.0848464175116,
+              12.989221706543795
+            ],
+            [
+              76.08488616793848,
+              12.990029218172198
+            ],
+            [
+              76.0840333434045,
+              12.990029218172198
+            ],
+            [
+              76.08404040628746,
+              12.989190575236602
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1054",
+        "district": "Hassan",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.11807321000047,
+              13.025953625917163
+            ],
+            [
+              76.11882186966828,
+              13.026016029675054
+            ],
+            [
+              76.11885059521796,
+              13.02685090183332
+            ],
+            [
+              76.11806306926074,
+              13.02685090183332
+            ],
+            [
+              76.11807321000047,
+              13.025953625917163
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1055",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.09809545637567,
+              12.955335912787568
+            ],
+            [
+              76.0990511401675,
+              12.955344989304907
+            ],
+            [
+              76.0991476962999,
+              12.956218276450533
+            ],
+            [
+              76.0980116323872,
+              12.956218276450533
+            ],
+            [
+              76.09809545637567,
+              12.955335912787568
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1056",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.0934534483386,
+              12.976156389751939
+            ],
+            [
+              76.0940933809375,
+              12.976156438771355
+            ],
+            [
+              76.09416252546077,
+              12.977050825870895
+            ],
+            [
+              76.0934015960672,
+              12.977050825870895
+            ],
+            [
+              76.0934534483386,
+              12.976156389751939
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1057",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.10776426321422,
+              12.994923643453504
+            ],
+            [
+              76.10857394069727,
+              12.994950890139478
+            ],
+            [
+              76.1086278614334,
+              12.995788686554242
+            ],
+            [
+              76.10770832680068,
+              12.995788686554242
+            ],
+            [
+              76.10776426321422,
+              12.994923643453504
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1058",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.09920023790175,
+              12.954486147960994
+            ],
+            [
+              76.09991131047099,
+              12.954567307269278
+            ],
+            [
+              76.09998386331361,
+              12.954994884708364
+            ],
+            [
+              76.09913309585167,
+              12.954994884708364
+            ],
+            [
+              76.09920023790175,
+              12.954486147960994
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1059",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.12083867479743,
+              13.042679560989392
+            ],
+            [
+              76.12177583988836,
+              13.042777386409446
+            ],
+            [
+              76.12178141476997,
+              13.043528341946965
+            ],
+            [
+              76.12079108880712,
+              13.043528341946965
+            ],
+            [
+              76.12083867479743,
+              13.042679560989392
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1060",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.05955117674061,
+              12.957147658894732
+            ],
+            [
+              76.06054384032572,
+              12.957174855832706
+            ],
+            [
+              76.06062167538771,
+              12.957656195458897
+            ],
+            [
+              76.0595059758704,
+              12.957656195458897
+            ],
+            [
+              76.05955117674061,
+              12.957147658894732
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1061",
+        "district": "Hassan",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.09856316833698,
+              12.990304869199308
+            ],
+            [
+              76.09909208346357,
+              12.990360620948461
+            ],
+            [
+              76.09914815877693,
+              12.991166703654693
+            ],
+            [
+              76.09846784717405,
+              12.991166703654693
+            ],
+            [
+              76.09856316833698,
+              12.990304869199308
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1062",
+        "district": "Hassan",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.13829681012996,
+              12.96228005826048
+            ],
+            [
+              76.13917135626942,
+              12.962285331991865
+            ],
+            [
+              76.13924897120798,
+              12.963073658803447
+            ],
+            [
+              76.13822456816129,
+              12.963073658803447
+            ],
+            [
+              76.13829681012996,
+              12.96228005826048
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1063",
+        "district": "Hassan",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.11301659903329,
+              13.033778799797059
+            ],
+            [
+              76.11368171848493,
+              13.033832722712072
+            ],
+            [
+              76.11375908081416,
+              13.034442325024694
+            ],
+            [
+              76.11293303778555,
+              13.034442325024694
+            ],
+            [
+              76.11301659903329,
+              13.033778799797059
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1064",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.10561425311245,
+              12.979193385291884
+            ],
+            [
+              76.10637340148965,
+              12.97922398663059
+            ],
+            [
+              76.10642050508382,
+              12.980013359856876
+            ],
+            [
+              76.10551962557996,
+              12.980013359856876
+            ],
+            [
+              76.10561425311245,
+              12.979193385291884
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1065",
+        "district": "Hassan",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.09901566395536,
+              12.970756904651289
+            ],
+            [
+              76.09971590880265,
+              12.970810720287275
+            ],
+            [
+              76.09974868114115,
+              12.97163572555087
+            ],
+            [
+              76.09896090913047,
+              12.97163572555087
+            ],
+            [
+              76.09901566395536,
+              12.970756904651289
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1066",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.05349797475714,
+              13.014796299206427
+            ],
+            [
+              76.05433676932975,
+              13.014883544565661
+            ],
+            [
+              76.05438503049906,
+              13.015393947086597
+            ],
+            [
+              76.05341331995932,
+              13.015393947086597
+            ],
+            [
+              76.05349797475714,
+              13.014796299206427
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1067",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.07628816785873,
+              12.957040101246927
+            ],
+            [
+              76.07704037600531,
+              12.957138302462301
+            ],
+            [
+              76.07705248569195,
+              12.957771368930104
+            ],
+            [
+              76.07621527972798,
+              12.957771368930104
+            ],
+            [
+              76.07628816785873,
+              12.957040101246927
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1068",
+        "district": "Hassan",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.05982382569185,
+              13.020546537672859
+            ],
+            [
+              76.06069214924085,
+              13.020574847834705
+            ],
+            [
+              76.06072124596373,
+              13.021362371136641
+            ],
+            [
+              76.0597800337313,
+              13.021362371136641
+            ],
+            [
+              76.05982382569185,
+              13.020546537672859
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1069",
+        "district": "Hassan",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.13362845167308,
+              12.991496333751082
+            ],
+            [
+              76.13448313448002,
+              12.99154491444874
+            ],
+            [
+              76.13453776048526,
+              12.992356961038064
+            ],
+            [
+              76.13353798754963,
+              12.992356961038064
+            ],
+            [
+              76.13362845167308,
+              12.991496333751082
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1070",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.08757280540253,
+              12.96381617604936
+            ],
+            [
+              76.0881913545622,
+              12.963874491430335
+            ],
+            [
+              76.0881943362014,
+              12.964318415001136
+            ],
+            [
+              76.08750854122499,
+              12.964318415001136
+            ],
+            [
+              76.08757280540253,
+              12.96381617604936
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1071",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.1084180458957,
+              12.955011333201353
+            ],
+            [
+              76.10929498053721,
+              12.955029463835073
+            ],
+            [
+              76.1093174906886,
+              12.95578903609629
+            ],
+            [
+              76.10838804126257,
+              12.95578903609629
+            ],
+            [
+              76.1084180458957,
+              12.955011333201353
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1072",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.13662819127913,
+              12.995867444343363
+            ],
+            [
+              76.1374019478072,
+              12.995875701372418
+            ],
+            [
+              76.13744046340676,
+              12.99664602223135
+            ],
+            [
+              76.136557204902,
+              12.99664602223135
+            ],
+            [
+              76.13662819127913,
+              12.995867444343363
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1073",
+        "district": "Hassan",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.14759043976126,
+              12.980202080532225
+            ],
+            [
+              76.14809421455146,
+              12.980205145006401
+            ],
+            [
+              76.14816044376951,
+              12.98095783610698
+            ],
+            [
+              76.14750908528701,
+              12.98095783610698
+            ],
+            [
+              76.14759043976126,
+              12.980202080532225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1074",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.14039567905424,
+              13.044849151191949
+            ],
+            [
+              76.14138702571555,
+              13.04488499124061
+            ],
+            [
+              76.14140064439826,
+              13.045684678943992
+            ],
+            [
+              76.1403808059008,
+              13.045684678943992
+            ],
+            [
+              76.14039567905424,
+              13.044849151191949
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1075",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.14837932567794,
+              12.967665845727224
+            ],
+            [
+              76.14908590730305,
+              12.967764087989124
+            ],
+            [
+              76.14917824224,
+              12.96827849020432
+            ],
+            [
+              76.14832356302006,
+              12.96827849020432
+            ],
+            [
+              76.14837932567794,
+              12.967665845727224
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1076",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.10850920495557,
+              12.981806628277685
+            ],
+            [
+              76.10911277317844,
+              12.981878080958994
+            ],
+            [
+              76.10915165079517,
+              12.98259827996345
+            ],
+            [
+              76.10843503522466,
+              12.98259827996345
+            ],
+            [
+              76.10850920495557,
+              12.981806628277685
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1077",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.13116100233414,
+              12.954818881294791
+            ],
+            [
+              76.13196749450258,
+              12.954820650155272
+            ],
+            [
+              76.132032413862,
+              12.955582480087868
+            ],
+            [
+              76.13108210167819,
+              12.955582480087868
+            ],
+            [
+              76.13116100233414,
+              12.954818881294791
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1078",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.0716635652747,
+              12.950719577102221
+            ],
+            [
+              76.07249007226129,
+              12.950720126404173
+            ],
+            [
+              76.07249238039081,
+              12.951420451614293
+            ],
+            [
+              76.07162626630215,
+              12.951420451614293
+            ],
+            [
+              76.0716635652747,
+              12.950719577102221
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1079",
+        "district": "Hassan",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.0569112295717,
+              12.955064400802154
+            ],
+            [
+              76.0575620759063,
+              12.955155312306688
+            ],
+            [
+              76.05757567455618,
+              12.956052841148457
+            ],
+            [
+              76.05685878296686,
+              12.956052841148457
+            ],
+            [
+              76.0569112295717,
+              12.955064400802154
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1080",
+        "district": "Hassan",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.08996504800326,
+              13.023677091325474
+            ],
+            [
+              76.09076675241543,
+              13.0236995633366
+            ],
+            [
+              76.09081001273233,
+              13.024341769582081
+            ],
+            [
+              76.08992059720879,
+              13.024341769582081
+            ],
+            [
+              76.08996504800326,
+              13.023677091325474
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1081",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.0959965438373,
+              12.97031585716402
+            ],
+            [
+              76.09686470440921,
+              12.970326113909582
+            ],
+            [
+              76.09687026038404,
+              12.970966108053153
+            ],
+            [
+              76.09594168134937,
+              12.970966108053153
+            ],
+            [
+              76.0959965438373,
+              12.97031585716402
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1082",
+        "district": "Hassan",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.05966921683597,
+              12.954624852382704
+            ],
+            [
+              76.06055694822581,
+              12.954710855353541
+            ],
+            [
+              76.06056502033924,
+              12.955363994036055
+            ],
+            [
+              76.05961897480036,
+              12.955363994036055
+            ],
+            [
+              76.05966921683597,
+              12.954624852382704
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1083",
+        "district": "Hassan",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.05569166580287,
+              13.036513841948793
+            ],
+            [
+              76.05647876532792,
+              13.03659453833437
+            ],
+            [
+              76.05652100093387,
+              13.037470581809858
+            ],
+            [
+              76.05564697218132,
+              13.037470581809858
+            ],
+            [
+              76.05569166580287,
+              13.036513841948793
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1084",
+        "district": "Hassan",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.0914210191816,
+              12.962813340268731
+            ],
+            [
+              76.09223108269128,
+              12.962833791567187
+            ],
+            [
+              76.09224308554457,
+              12.963618043759626
+            ],
+            [
+              76.0913508393136,
+              12.963618043759626
+            ],
+            [
+              76.0914210191816,
+              12.962813340268731
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1085",
+        "district": "Hassan",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.14519758760443,
+              13.015329312158196
+            ],
+            [
+              76.14590214039322,
+              13.01537194059349
+            ],
+            [
+              76.1459993401498,
+              13.01610386626065
+            ],
+            [
+              76.14519074252757,
+              13.01610386626065
+            ],
+            [
+              76.14519758760443,
+              13.015329312158196
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1086",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.13409120225667,
+              13.003140010883264
+            ],
+            [
+              76.13496731222233,
+              13.003152122647538
+            ],
+            [
+              76.13499441356583,
+              13.003871448439776
+            ],
+            [
+              76.13403053879675,
+              13.003871448439776
+            ],
+            [
+              76.13409120225667,
+              13.003140010883264
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1087",
+        "district": "Hassan",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.05393212548454,
+              13.020175604704882
+            ],
+            [
+              76.05473854022158,
+              13.02022858523914
+            ],
+            [
+              76.05477213080195,
+              13.020988816421779
+            ],
+            [
+              76.05385170716838,
+              13.020988816421779
+            ],
+            [
+              76.05393212548454,
+              13.020175604704882
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1088",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.12114459485753,
+              12.958403789614907
+            ],
+            [
+              76.12198500102008,
+              12.958421717157309
+            ],
+            [
+              76.12200055095039,
+              12.95910698752964
+            ],
+            [
+              76.12109955614501,
+              12.95910698752964
+            ],
+            [
+              76.12114459485753,
+              12.958403789614907
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1089",
+        "district": "Hassan",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.07682525557064,
+              12.980042231585161
+            ],
+            [
+              76.07765685971387,
+              12.980061445960482
+            ],
+            [
+              76.07774042996853,
+              12.98056438833142
+            ],
+            [
+              76.07674363578138,
+              12.98056438833142
+            ],
+            [
+              76.07682525557064,
+              12.980042231585161
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1090",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.09128685761779,
+              12.989774704749165
+            ],
+            [
+              76.09201331928034,
+              12.98982738796602
+            ],
+            [
+              76.0920383753996,
+              12.990306498610163
+            ],
+            [
+              76.09127753987843,
+              12.990306498610163
+            ],
+            [
+              76.09128685761779,
+              12.989774704749165
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1091",
+        "district": "Hassan",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.07494410590363,
+              12.965253920538881
+            ],
+            [
+              76.07583691099012,
+              12.965255831004493
+            ],
+            [
+              76.07588257855379,
+              12.965781286003718
+            ],
+            [
+              76.07486200333483,
+              12.965781286003718
+            ],
+            [
+              76.07494410590363,
+              12.965253920538881
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1092",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.05276983677619,
+              12.983505060336778
+            ],
+            [
+              76.05371043236288,
+              12.983505768424429
+            ],
+            [
+              76.05380354978395,
+              12.984328544286665
+            ],
+            [
+              76.05275816371737,
+              12.984328544286665
+            ],
+            [
+              76.05276983677619,
+              12.983505060336778
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1093",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.08480479851072,
+              13.011871411941302
+            ],
+            [
+              76.08569158928343,
+              13.011893254820077
+            ],
+            [
+              76.08570017455602,
+              13.012705511037876
+            ],
+            [
+              76.08478510781113,
+              13.012705511037876
+            ],
+            [
+              76.08480479851072,
+              13.011871411941302
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1094",
+        "district": "Hassan",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.10011771738878,
+              12.98919876964723
+            ],
+            [
+              76.10070569958603,
+              12.989223013103523
+            ],
+            [
+              76.10075562715986,
+              12.990159205728496
+            ],
+            [
+              76.10004648712697,
+              12.990159205728496
+            ],
+            [
+              76.10011771738878,
+              12.98919876964723
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1095",
+        "district": "Hassan",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.08343751095822,
+              13.027720469761698
+            ],
+            [
+              76.08412744909553,
+              13.027727174107108
+            ],
+            [
+              76.08418499802632,
+              13.028503187808987
+            ],
+            [
+              76.08338231140267,
+              13.028503187808987
+            ],
+            [
+              76.08343751095822,
+              13.027720469761698
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1096",
+        "district": "Hassan",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.08003955706707,
+              12.950965542926172
+            ],
+            [
+              76.08088798009106,
+              12.95102152196125
+            ],
+            [
+              76.08098371433317,
+              12.951694806000525
+            ],
+            [
+              76.0799691329068,
+              12.951694806000525
+            ],
+            [
+              76.08003955706707,
+              12.950965542926172
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1097",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.07607825639076,
+              12.952959774109432
+            ],
+            [
+              76.07665673439138,
+              12.953031079723697
+            ],
+            [
+              76.07672540217277,
+              12.953683853086472
+            ],
+            [
+              76.0760582029964,
+              12.953683853086472
+            ],
+            [
+              76.07607825639076,
+              12.952959774109432
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1098",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.06023373111753,
+              13.013300354676996
+            ],
+            [
+              76.0612042926859,
+              13.0133706788161
+            ],
+            [
+              76.0613017599266,
+              13.014132794735723
+            ],
+            [
+              76.0601454092689,
+              13.014132794735723
+            ],
+            [
+              76.06023373111753,
+              13.013300354676996
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "HASS_DEMO_1099",
+        "district": "Hassan",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Hassan District",
+        "survey_date": "2026-10-05"
+      }
+    }
+  ]
+}

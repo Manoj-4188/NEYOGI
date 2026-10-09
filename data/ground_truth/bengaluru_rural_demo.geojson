@@ -1,0 +1,3705 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.56255629255178,
+              13.2066198391725
+            ],
+            [
+              77.56325105112644,
+              13.2066369569754
+            ],
+            [
+              77.56330677565083,
+              13.207611317203051
+            ],
+            [
+              77.56250052825663,
+              13.207611317203051
+            ],
+            [
+              77.56255629255178,
+              13.2066198391725
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1000",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.53433230073432,
+              13.229346466947723
+            ],
+            [
+              77.53507542703964,
+              13.22937518279274
+            ],
+            [
+              77.5351294420764,
+              13.229966395694769
+            ],
+            [
+              77.53432366312475,
+              13.229966395694769
+            ],
+            [
+              77.53433230073432,
+              13.229346466947723
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1001",
+        "district": "Bengaluru Rural",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.55580173643222,
+              13.204796123298388
+            ],
+            [
+              77.55672031779544,
+              13.204893155898281
+            ],
+            [
+              77.55674283477417,
+              13.20546260797395
+            ],
+            [
+              77.5557263363124,
+              13.20546260797395
+            ],
+            [
+              77.55580173643222,
+              13.204796123298388
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1002",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.61922373979992,
+              13.226406361711811
+            ],
+            [
+              77.62000235847334,
+              13.226503392830535
+            ],
+            [
+              77.62002006417322,
+              13.227225141646535
+            ],
+            [
+              77.61918904947422,
+              13.227225141646535
+            ],
+            [
+              77.61922373979992,
+              13.226406361711811
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1003",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.53770217187794,
+              13.187509344048179
+            ],
+            [
+              77.53822008867552,
+              13.187592058474998
+            ],
+            [
+              77.53827440638842,
+              13.188105911996209
+            ],
+            [
+              77.53760566066178,
+              13.188105911996209
+            ],
+            [
+              77.53770217187794,
+              13.187509344048179
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1004",
+        "district": "Bengaluru Rural",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.55387992424394,
+              13.238159492490684
+            ],
+            [
+              77.5548056878728,
+              13.238168573899923
+            ],
+            [
+              77.55486832730125,
+              13.238975418148595
+            ],
+            [
+              77.55379548029201,
+              13.238975418148595
+            ],
+            [
+              77.55387992424394,
+              13.238159492490684
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1005",
+        "district": "Bengaluru Rural",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.53462955921347,
+              13.199492199488024
+            ],
+            [
+              77.53536064915606,
+              13.199538466343494
+            ],
+            [
+              77.53540604548175,
+              13.200066519463855
+            ],
+            [
+              77.53455657263936,
+              13.200066519463855
+            ],
+            [
+              77.53462955921347,
+              13.199492199488024
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1006",
+        "district": "Bengaluru Rural",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.60773217691795,
+              13.239725930337753
+            ],
+            [
+              77.6085259931548,
+              13.239753712955322
+            ],
+            [
+              77.60859268153959,
+              13.240405917653188
+            ],
+            [
+              77.60770626055094,
+              13.240405917653188
+            ],
+            [
+              77.60773217691795,
+              13.239725930337753
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1007",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.52518918539526,
+              13.228125801039129
+            ],
+            [
+              77.52590766525243,
+              13.228138452312326
+            ],
+            [
+              77.52591510417442,
+              13.228885479485623
+            ],
+            [
+              77.52516631759967,
+              13.228885479485623
+            ],
+            [
+              77.52518918539526,
+              13.228125801039129
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1008",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.57476465005188,
+              13.264379881353
+            ],
+            [
+              77.5755924194059,
+              13.264396584214875
+            ],
+            [
+              77.57563326608545,
+              13.265338028046784
+            ],
+            [
+              77.57473702285604,
+              13.265338028046784
+            ],
+            [
+              77.57476465005188,
+              13.264379881353
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1009",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.54726315772967,
+              13.272774214277389
+            ],
+            [
+              77.54825028348431,
+              13.272793103457268
+            ],
+            [
+              77.5482653271426,
+              13.273561300570014
+            ],
+            [
+              77.54721414969545,
+              13.273561300570014
+            ],
+            [
+              77.54726315772967,
+              13.272774214277389
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1010",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.54828945434268,
+              13.182682666559261
+            ],
+            [
+              77.5491245223124,
+              13.182781530797723
+            ],
+            [
+              77.54919943537098,
+              13.183524829230526
+            ],
+            [
+              77.54819971232952,
+              13.183524829230526
+            ],
+            [
+              77.54828945434268,
+              13.182682666559261
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1011",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.6073378150237,
+              13.20936339579818
+            ],
+            [
+              77.60791083215518,
+              13.209432115779313
+            ],
+            [
+              77.60798390274593,
+              13.210141436476903
+            ],
+            [
+              77.60726999847391,
+              13.210141436476903
+            ],
+            [
+              77.6073378150237,
+              13.20936339579818
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1012",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.52653269917592,
+              13.264842267769012
+            ],
+            [
+              77.52750284287002,
+              13.264863292841792
+            ],
+            [
+              77.52756237314931,
+              13.26582559158291
+            ],
+            [
+              77.52653034114716,
+              13.26582559158291
+            ],
+            [
+              77.52653269917592,
+              13.264842267769012
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1013",
+        "district": "Bengaluru Rural",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.56045886967888,
+              13.21997695909748
+            ],
+            [
+              77.56134879840656,
+              13.220026815517224
+            ],
+            [
+              77.56140537378698,
+              13.220645524588452
+            ],
+            [
+              77.56038893400316,
+              13.220645524588452
+            ],
+            [
+              77.56045886967888,
+              13.21997695909748
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1014",
+        "district": "Bengaluru Rural",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.59859359541977,
+              13.188197184357815
+            ],
+            [
+              77.59955007976133,
+              13.188269269906566
+            ],
+            [
+              77.59955943813202,
+              13.189078284540802
+            ],
+            [
+              77.59849675019483,
+              13.189078284540802
+            ],
+            [
+              77.59859359541977,
+              13.188197184357815
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1015",
+        "district": "Bengaluru Rural",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.56115954194728,
+              13.27921501556191
+            ],
+            [
+              77.56169240941219,
+              13.279248397273129
+            ],
+            [
+              77.5617545171935,
+              13.280107907837762
+            ],
+            [
+              77.5611577117542,
+              13.280107907837762
+            ],
+            [
+              77.56115954194728,
+              13.27921501556191
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1016",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.52033697065202,
+              13.185878788450992
+            ],
+            [
+              77.52133664868339,
+              13.185903099017438
+            ],
+            [
+              77.52137754894534,
+              13.186843650677412
+            ],
+            [
+              77.52033235308689,
+              13.186843650677412
+            ],
+            [
+              77.52033697065202,
+              13.185878788450992
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1017",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.60246894142874,
+              13.230886744049869
+            ],
+            [
+              77.60297153190801,
+              13.230954794844033
+            ],
+            [
+              77.6029937519586,
+              13.23182831195713
+            ],
+            [
+              77.6024161259578,
+              13.23182831195713
+            ],
+            [
+              77.60246894142874,
+              13.230886744049869
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1018",
+        "district": "Bengaluru Rural",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.60119996309231,
+              13.222597541203765
+            ],
+            [
+              77.60212365356422,
+              13.222601326541673
+            ],
+            [
+              77.60217876691814,
+              13.223314360765508
+            ],
+            [
+              77.60110903503637,
+              13.223314360765508
+            ],
+            [
+              77.60119996309231,
+              13.222597541203765
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1019",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.54172945227884,
+              13.237165370709539
+            ],
+            [
+              77.54270883326548,
+              13.237229354327873
+            ],
+            [
+              77.54277586687502,
+              13.237875427937889
+            ],
+            [
+              77.54165964735077,
+              13.237875427937889
+            ],
+            [
+              77.54172945227884,
+              13.237165370709539
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1020",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.58228562882724,
+              13.230947884927414
+            ],
+            [
+              77.58294596872969,
+              13.231037416555903
+            ],
+            [
+              77.58301844982844,
+              13.231525410172548
+            ],
+            [
+              77.58219791239613,
+              13.231525410172548
+            ],
+            [
+              77.58228562882724,
+              13.230947884927414
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1021",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.5708660656958,
+              13.256841254985021
+            ],
+            [
+              77.57159369189544,
+              13.256883530252743
+            ],
+            [
+              77.57159663607585,
+              13.257636266570035
+            ],
+            [
+              77.57085543736778,
+              13.257636266570035
+            ],
+            [
+              77.5708660656958,
+              13.256841254985021
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1022",
+        "district": "Bengaluru Rural",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.60526505606678,
+              13.250171468170395
+            ],
+            [
+              77.60609211751631,
+              13.250178081203632
+            ],
+            [
+              77.6061275974609,
+              13.25087331870079
+            ],
+            [
+              77.60523801358998,
+              13.25087331870079
+            ],
+            [
+              77.60526505606678,
+              13.250171468170395
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1023",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.60340618000123,
+              13.203380081561525
+            ],
+            [
+              77.60394755249688,
+              13.203417123730047
+            ],
+            [
+              77.60395034593857,
+              13.203968828326403
+            ],
+            [
+              77.60334053605304,
+              13.203968828326403
+            ],
+            [
+              77.60340618000123,
+              13.203380081561525
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1024",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.59295852754903,
+              13.18822562736229
+            ],
+            [
+              77.59359966769904,
+              13.188228546835019
+            ],
+            [
+              77.59369781587061,
+              13.188801571010591
+            ],
+            [
+              77.59293825193829,
+              13.188801571010591
+            ],
+            [
+              77.59295852754903,
+              13.18822562736229
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1025",
+        "district": "Bengaluru Rural",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.5240339083413,
+              13.233435857487803
+            ],
+            [
+              77.52466726119731,
+              13.233440546655034
+            ],
+            [
+              77.52467902336895,
+              13.234256590864215
+            ],
+            [
+              77.52394321009628,
+              13.234256590864215
+            ],
+            [
+              77.5240339083413,
+              13.233435857487803
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1026",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.57721428042449,
+              13.26375819968434
+            ],
+            [
+              77.57813663899888,
+              13.263857716109136
+            ],
+            [
+              77.57822203234075,
+              13.26471863710136
+            ],
+            [
+              77.5771700093733,
+              13.26471863710136
+            ],
+            [
+              77.57721428042449,
+              13.26375819968434
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1027",
+        "district": "Bengaluru Rural",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.59351256837164,
+              13.255442720906652
+            ],
+            [
+              77.59441502904211,
+              13.255446860656258
+            ],
+            [
+              77.59447876097711,
+              13.256058792132965
+            ],
+            [
+              77.59343276828308,
+              13.256058792132965
+            ],
+            [
+              77.59351256837164,
+              13.255442720906652
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1028",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.52676114382423,
+              13.2049661563678
+            ],
+            [
+              77.52766840933624,
+              13.2050181883524
+            ],
+            [
+              77.52768654775296,
+              13.205821497954275
+            ],
+            [
+              77.52668409407602,
+              13.205821497954275
+            ],
+            [
+              77.52676114382423,
+              13.2049661563678
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1029",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.55021951716479,
+              13.226822470931214
+            ],
+            [
+              77.55111261783648,
+              13.22691464794253
+            ],
+            [
+              77.55112428841076,
+              13.227601641456982
+            ],
+            [
+              77.55013080392523,
+              13.227601641456982
+            ],
+            [
+              77.55021951716479,
+              13.226822470931214
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1030",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.61037767552145,
+              13.252031052784224
+            ],
+            [
+              77.61126925500628,
+              13.252044792071855
+            ],
+            [
+              77.6112912841988,
+              13.252758145823634
+            ],
+            [
+              77.61028581234471,
+              13.252758145823634
+            ],
+            [
+              77.61037767552145,
+              13.252031052784224
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1031",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.61089811423287,
+              13.209540928442406
+            ],
+            [
+              77.61150387461747,
+              13.209610806287515
+            ],
+            [
+              77.61156685435893,
+              13.210148969159299
+            ],
+            [
+              77.6108304004361,
+              13.210148969159299
+            ],
+            [
+              77.61089811423287,
+              13.209540928442406
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1032",
+        "district": "Bengaluru Rural",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.53432252721092,
+              13.2794674788664
+            ],
+            [
+              77.53496522883927,
+              13.279563162051609
+            ],
+            [
+              77.53500016966787,
+              13.28035408588475
+            ],
+            [
+              77.53431005391914,
+              13.28035408588475
+            ],
+            [
+              77.53432252721092,
+              13.2794674788664
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1033",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.55940413240903,
+              13.216307671742351
+            ],
+            [
+              77.55998641275991,
+              13.216351573622507
+            ],
+            [
+              77.56003375433005,
+              13.217275251189623
+            ],
+            [
+              77.55937262898522,
+              13.217275251189623
+            ],
+            [
+              77.55940413240903,
+              13.216307671742351
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1034",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.5641973745137,
+              13.265841075084975
+            ],
+            [
+              77.56516184082685,
+              13.265864301696162
+            ],
+            [
+              77.56516695929078,
+              13.2665622463979
+            ],
+            [
+              77.56413178368229,
+              13.2665622463979
+            ],
+            [
+              77.5641973745137,
+              13.265841075084975
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1035",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.53266037509667,
+              13.259641183474725
+            ],
+            [
+              77.53334934516165,
+              13.259738282056023
+            ],
+            [
+              77.53338247706304,
+              13.260409332258279
+            ],
+            [
+              77.53256398674269,
+              13.260409332258279
+            ],
+            [
+              77.53266037509667,
+              13.259641183474725
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1036",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.53709874089012,
+              13.181677258338718
+            ],
+            [
+              77.53772510398363,
+              13.181679448710275
+            ],
+            [
+              77.53775062198837,
+              13.182457578757342
+            ],
+            [
+              77.53703515544767,
+              13.182457578757342
+            ],
+            [
+              77.53709874089012,
+              13.181677258338718
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1037",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.53727264132455,
+              13.249729823707472
+            ],
+            [
+              77.53808998354472,
+              13.249762213257245
+            ],
+            [
+              77.53817086177251,
+              13.250319498458689
+            ],
+            [
+              77.53727000439089,
+              13.250319498458689
+            ],
+            [
+              77.53727264132455,
+              13.249729823707472
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1038",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.56723185434767,
+              13.211132982746363
+            ],
+            [
+              77.56819427493917,
+              13.211203870849822
+            ],
+            [
+              77.56821975363479,
+              13.212046075630067
+            ],
+            [
+              77.56714156473035,
+              13.212046075630067
+            ],
+            [
+              77.56723185434767,
+              13.211132982746363
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1039",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.54566088111686,
+              13.269289443852358
+            ],
+            [
+              77.54652229956656,
+              13.269345287263057
+            ],
+            [
+              77.54656955398798,
+              13.27001427649599
+            ],
+            [
+              77.54557316868915,
+              13.27001427649599
+            ],
+            [
+              77.54566088111686,
+              13.269289443852358
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1040",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.59196935771169,
+              13.279547293171959
+            ],
+            [
+              77.59272504070405,
+              13.279567633016747
+            ],
+            [
+              77.59279554309965,
+              13.280215131865678
+            ],
+            [
+              77.59196306232086,
+              13.280215131865678
+            ],
+            [
+              77.59196935771169,
+              13.279547293171959
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1041",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.58203437552326,
+              13.265861698364763
+            ],
+            [
+              77.58262581191295,
+              13.265945696694994
+            ],
+            [
+              77.58269011456927,
+              13.266528337949616
+            ],
+            [
+              77.58198153010646,
+              13.266528337949616
+            ],
+            [
+              77.58203437552326,
+              13.265861698364763
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1042",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.59418865089644,
+              13.196160283389455
+            ],
+            [
+              77.59472483087139,
+              13.196248461393722
+            ],
+            [
+              77.59475302264174,
+              13.196945575294613
+            ],
+            [
+              77.59409500820297,
+              13.196945575294613
+            ],
+            [
+              77.59418865089644,
+              13.196160283389455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1043",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.58359358164468,
+              13.259946145021367
+            ],
+            [
+              77.58446083475529,
+              13.259982592350548
+            ],
+            [
+              77.58449210902593,
+              13.260903693733969
+            ],
+            [
+              77.5835443790791,
+              13.260903693733969
+            ],
+            [
+              77.58359358164468,
+              13.259946145021367
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1044",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.61654622504254,
+              13.198595183274358
+            ],
+            [
+              77.61723897374927,
+              13.198623568103093
+            ],
+            [
+              77.61729338501225,
+              13.199096162829202
+            ],
+            [
+              77.61649809489414,
+              13.199096162829202
+            ],
+            [
+              77.61654622504254,
+              13.198595183274358
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1045",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.59196119219142,
+              13.22208046953602
+            ],
+            [
+              77.59272892766319,
+              13.222125540073822
+            ],
+            [
+              77.5927451917148,
+              13.222999815597877
+            ],
+            [
+              77.59187118141801,
+              13.222999815597877
+            ],
+            [
+              77.59196119219142,
+              13.22208046953602
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1046",
+        "district": "Bengaluru Rural",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.60930055493735,
+              13.213377488367943
+            ],
+            [
+              77.61020762143632,
+              13.213389545914563
+            ],
+            [
+              77.6102338121083,
+              13.214046656520527
+            ],
+            [
+              77.60929780115663,
+              13.214046656520527
+            ],
+            [
+              77.60930055493735,
+              13.213377488367943
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1047",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.5564395127836,
+              13.26078453857412
+            ],
+            [
+              77.55717697147455,
+              13.26086777024488
+            ],
+            [
+              77.55721364266583,
+              13.261555534073798
+            ],
+            [
+              77.55643256835845,
+              13.261555534073798
+            ],
+            [
+              77.5564395127836,
+              13.26078453857412
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1048",
+        "district": "Bengaluru Rural",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.58579020325084,
+              13.255055221926398
+            ],
+            [
+              77.58641511422753,
+              13.255065284711808
+            ],
+            [
+              77.58641671474291,
+              13.255976671741372
+            ],
+            [
+              77.5857355493333,
+              13.255976671741372
+            ],
+            [
+              77.58579020325084,
+              13.255055221926398
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1049",
+        "district": "Bengaluru Rural",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.56263605095504,
+              13.225451201989182
+            ],
+            [
+              77.56361811869223,
+              13.225483241330332
+            ],
+            [
+              77.5636565301138,
+              13.226034402040323
+            ],
+            [
+              77.56256726819001,
+              13.226034402040323
+            ],
+            [
+              77.56263605095504,
+              13.225451201989182
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1050",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.54392255261546,
+              13.262987153427908
+            ],
+            [
+              77.54485446889814,
+              13.262990503772656
+            ],
+            [
+              77.54486079951323,
+              13.263693386249715
+            ],
+            [
+              77.54387927661583,
+              13.263693386249715
+            ],
+            [
+              77.54392255261546,
+              13.262987153427908
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1051",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.61239328306594,
+              13.203276006374848
+            ],
+            [
+              77.61296628071513,
+              13.203303047360185
+            ],
+            [
+              77.61305152067966,
+              13.203828511547092
+            ],
+            [
+              77.61237287315943,
+              13.203828511547092
+            ],
+            [
+              77.61239328306594,
+              13.203276006374848
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1052",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.53544017328736,
+              13.197265927077463
+            ],
+            [
+              77.53604408624032,
+              13.197329697815494
+            ],
+            [
+              77.53610609267805,
+              13.198095429525235
+            ],
+            [
+              77.53536742623864,
+              13.198095429525235
+            ],
+            [
+              77.53544017328736,
+              13.197265927077463
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1053",
+        "district": "Bengaluru Rural",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.59072260890397,
+              13.223135760118643
+            ],
+            [
+              77.59140033730995,
+              13.223186648466019
+            ],
+            [
+              77.59141764260053,
+              13.224091233743518
+            ],
+            [
+              77.59071507818719,
+              13.224091233743518
+            ],
+            [
+              77.59072260890397,
+              13.223135760118643
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1054",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.56309214838913,
+              13.215932355038621
+            ],
+            [
+              77.56402135177014,
+              13.215948509379842
+            ],
+            [
+              77.56403949361994,
+              13.216768646439686
+            ],
+            [
+              77.56308274390786,
+              13.216768646439686
+            ],
+            [
+              77.56309214838913,
+              13.215932355038621
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1055",
+        "district": "Bengaluru Rural",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.53486443039044,
+              13.243400283676232
+            ],
+            [
+              77.53557972140517,
+              13.24349385225465
+            ],
+            [
+              77.53558917103499,
+              13.24398678243569
+            ],
+            [
+              77.53484875531085,
+              13.24398678243569
+            ],
+            [
+              77.53486443039044,
+              13.243400283676232
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1056",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.53270336579274,
+              13.270265768685368
+            ],
+            [
+              77.53335208619656,
+              13.270343218881747
+            ],
+            [
+              77.53337983194388,
+              13.270997896489767
+            ],
+            [
+              77.5326655065336,
+              13.270997896489767
+            ],
+            [
+              77.53270336579274,
+              13.270265768685368
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1057",
+        "district": "Bengaluru Rural",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.59606136501337,
+              13.196746548284933
+            ],
+            [
+              77.59681864675332,
+              13.196804390009456
+            ],
+            [
+              77.59690345009486,
+              13.197413290934115
+            ],
+            [
+              77.59600210990835,
+              13.197413290934115
+            ],
+            [
+              77.59606136501337,
+              13.196746548284933
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1058",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.61470926797456,
+              13.181967387383702
+            ],
+            [
+              77.6152838875676,
+              13.181998474745805
+            ],
+            [
+              77.6153238540211,
+              13.182494034529086
+            ],
+            [
+              77.61468949728133,
+              13.182494034529086
+            ],
+            [
+              77.61470926797456,
+              13.181967387383702
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1059",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.5910416837772,
+              13.262590910730237
+            ],
+            [
+              77.59192168258306,
+              13.262644755385764
+            ],
+            [
+              77.59193582354885,
+              13.263169578972308
+            ],
+            [
+              77.59098188495967,
+              13.263169578972308
+            ],
+            [
+              77.5910416837772,
+              13.262590910730237
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1060",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.52796291982119,
+              13.205775705528024
+            ],
+            [
+              77.52875449630285,
+              13.205864555049825
+            ],
+            [
+              77.52882534832446,
+              13.206458627586226
+            ],
+            [
+              77.52794284312021,
+              13.206458627586226
+            ],
+            [
+              77.52796291982119,
+              13.205775705528024
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1061",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.5428664844381,
+              13.184994440833881
+            ],
+            [
+              77.54378369159387,
+              13.185056531452084
+            ],
+            [
+              77.54381352281611,
+              13.185953018583568
+            ],
+            [
+              77.54286254372794,
+              13.185953018583568
+            ],
+            [
+              77.5428664844381,
+              13.184994440833881
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1062",
+        "district": "Bengaluru Rural",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.58572772254186,
+              13.201881575197342
+            ],
+            [
+              77.586493219192,
+              13.201896141816919
+            ],
+            [
+              77.58649453240619,
+              13.202821795459183
+            ],
+            [
+              77.58564014774457,
+              13.202821795459183
+            ],
+            [
+              77.58572772254186,
+              13.201881575197342
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1063",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.5989359124134,
+              13.248060471626246
+            ],
+            [
+              77.59974248060145,
+              13.248089352391066
+            ],
+            [
+              77.59981571555141,
+              13.24899100198642
+            ],
+            [
+              77.59888552834298,
+              13.24899100198642
+            ],
+            [
+              77.5989359124134,
+              13.248060471626246
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1064",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.54215169148543,
+              13.181761999890853
+            ],
+            [
+              77.54304363534806,
+              13.181770666028699
+            ],
+            [
+              77.54304494598861,
+              13.18239314462973
+            ],
+            [
+              77.54207056237799,
+              13.18239314462973
+            ],
+            [
+              77.54215169148543,
+              13.181761999890853
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1065",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.57636619402678,
+              13.227403917151594
+            ],
+            [
+              77.57735199771783,
+              13.227443698939323
+            ],
+            [
+              77.57741402528788,
+              13.228156831754378
+            ],
+            [
+              77.57632815400159,
+              13.228156831754378
+            ],
+            [
+              77.57636619402678,
+              13.227403917151594
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1066",
+        "district": "Bengaluru Rural",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.5292334589129,
+              13.278274376926936
+            ],
+            [
+              77.53015325852752,
+              13.278277256969329
+            ],
+            [
+              77.53019909558512,
+              13.278909800735484
+            ],
+            [
+              77.52914417582488,
+              13.278909800735484
+            ],
+            [
+              77.5292334589129,
+              13.278274376926936
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1067",
+        "district": "Bengaluru Rural",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.59947176875488,
+              13.230198405379962
+            ],
+            [
+              77.60029889932193,
+              13.23027249676953
+            ],
+            [
+              77.6003405654504,
+              13.23080400878067
+            ],
+            [
+              77.59945591194405,
+              13.23080400878067
+            ],
+            [
+              77.59947176875488,
+              13.230198405379962
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1068",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.52700557805223,
+              13.184007394190115
+            ],
+            [
+              77.52789821432002,
+              13.184079205094015
+            ],
+            [
+              77.52798673362933,
+              13.184811925971763
+            ],
+            [
+              77.52695989038918,
+              13.184811925971763
+            ],
+            [
+              77.52700557805223,
+              13.184007394190115
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1069",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.60391927668108,
+              13.266600346661223
+            ],
+            [
+              77.60452165798657,
+              13.266623806307681
+            ],
+            [
+              77.60452766728724,
+              13.267406030848417
+            ],
+            [
+              77.6038389884388,
+              13.267406030848417
+            ],
+            [
+              77.60391927668108,
+              13.266600346661223
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1070",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.53804335486024,
+              13.27593393797422
+            ],
+            [
+              77.53876909087829,
+              13.275942296956858
+            ],
+            [
+              77.53878733867805,
+              13.276612067210582
+            ],
+            [
+              77.5379947124331,
+              13.276612067210582
+            ],
+            [
+              77.53804335486024,
+              13.27593393797422
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1071",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.59190305556312,
+              13.194852951204878
+            ],
+            [
+              77.59256190668526,
+              13.194916877438429
+            ],
+            [
+              77.59261079454005,
+              13.195418094560194
+            ],
+            [
+              77.59184227109793,
+              13.195418094560194
+            ],
+            [
+              77.59190305556312,
+              13.194852951204878
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1072",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.61663451613458,
+              13.274184452768532
+            ],
+            [
+              77.6171506281074,
+              13.274225769421212
+            ],
+            [
+              77.61721445538981,
+              13.275080767575291
+            ],
+            [
+              77.61656929334546,
+              13.275080767575291
+            ],
+            [
+              77.61663451613458,
+              13.274184452768532
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1073",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.5286837012485,
+              13.27622801588004
+            ],
+            [
+              77.52920491768697,
+              13.276253142615436
+            ],
+            [
+              77.52921719738471,
+              13.276733559150866
+            ],
+            [
+              77.52860942978312,
+              13.276733559150866
+            ],
+            [
+              77.5286837012485,
+              13.27622801588004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1074",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.55538017276706,
+              13.225008370411711
+            ],
+            [
+              77.55617497930265,
+              13.225044105515593
+            ],
+            [
+              77.55622751179577,
+              13.22587229073548
+            ],
+            [
+              77.55529461729058,
+              13.22587229073548
+            ],
+            [
+              77.55538017276706,
+              13.225008370411711
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1075",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.53662763961157,
+              13.240174442339969
+            ],
+            [
+              77.5373019998224,
+              13.240189002868126
+            ],
+            [
+              77.53731906321067,
+              13.240880324210117
+            ],
+            [
+              77.5365345431153,
+              13.240880324210117
+            ],
+            [
+              77.53662763961157,
+              13.240174442339969
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1076",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.59818420095725,
+              13.257479093362445
+            ],
+            [
+              77.59871499870508,
+              13.25750724147397
+            ],
+            [
+              77.59881177326878,
+              13.258273620799386
+            ],
+            [
+              77.59809533040111,
+              13.258273620799386
+            ],
+            [
+              77.59818420095725,
+              13.257479093362445
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1077",
+        "district": "Bengaluru Rural",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.57147546513487,
+              13.246690673346876
+            ],
+            [
+              77.57216578601985,
+              13.246771682561448
+            ],
+            [
+              77.57224126741117,
+              13.24763824865064
+            ],
+            [
+              77.5714186062218,
+              13.24763824865064
+            ],
+            [
+              77.57147546513487,
+              13.246690673346876
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1078",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.5321392958355,
+              13.221402405075626
+            ],
+            [
+              77.53275392910135,
+              13.221498175526001
+            ],
+            [
+              77.53284658017019,
+              13.221969702799031
+            ],
+            [
+              77.5320394201772,
+              13.221969702799031
+            ],
+            [
+              77.5321392958355,
+              13.221402405075626
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1079",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.5865660546016,
+              13.233193495674055
+            ],
+            [
+              77.58714613031022,
+              13.233258555305826
+            ],
+            [
+              77.5871986942588,
+              13.233994313716275
+            ],
+            [
+              77.58654609441247,
+              13.233994313716275
+            ],
+            [
+              77.5865660546016,
+              13.233193495674055
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1080",
+        "district": "Bengaluru Rural",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.53899313043812,
+              13.26411343257505
+            ],
+            [
+              77.53992829296651,
+              13.26416183792462
+            ],
+            [
+              77.54001685511571,
+              13.265062531974795
+            ],
+            [
+              77.5389684872579,
+              13.265062531974795
+            ],
+            [
+              77.53899313043812,
+              13.26411343257505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1081",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.56931167140918,
+              13.274707633271584
+            ],
+            [
+              77.5700635366078,
+              13.274788383132359
+            ],
+            [
+              77.57007733984665,
+              13.275416928724114
+            ],
+            [
+              77.56927206959904,
+              13.275416928724114
+            ],
+            [
+              77.56931167140918,
+              13.274707633271584
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1082",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.59226115077284,
+              13.253442823030818
+            ],
+            [
+              77.59283360136736,
+              13.253525471768041
+            ],
+            [
+              77.59289972198148,
+              13.254043424497123
+            ],
+            [
+              77.59216514344608,
+              13.254043424497123
+            ],
+            [
+              77.59226115077284,
+              13.253442823030818
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1083",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.53699997618392,
+              13.240745208822553
+            ],
+            [
+              77.53778500394209,
+              13.240770892322315
+            ],
+            [
+              77.53779507298248,
+              13.241332229487071
+            ],
+            [
+              77.5369449466266,
+              13.241332229487071
+            ],
+            [
+              77.53699997618392,
+              13.240745208822553
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1084",
+        "district": "Bengaluru Rural",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.60202993815437,
+              13.182331001356218
+            ],
+            [
+              77.60267405457141,
+              13.182395777679242
+            ],
+            [
+              77.60267511677436,
+              13.183144444572557
+            ],
+            [
+              77.60200758468157,
+              13.183144444572557
+            ],
+            [
+              77.60202993815437,
+              13.182331001356218
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1085",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.6144308176335,
+              13.22979987971694
+            ],
+            [
+              77.61516026633932,
+              13.229805902272298
+            ],
+            [
+              77.61517903991248,
+              13.230623798887194
+            ],
+            [
+              77.61436063939252,
+              13.230623798887194
+            ],
+            [
+              77.6144308176335,
+              13.22979987971694
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1086",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.57432500417838,
+              13.19043148357892
+            ],
+            [
+              77.57524114610175,
+              13.190466000508247
+            ],
+            [
+              77.57533616109734,
+              13.19096580691053
+            ],
+            [
+              77.57427572981587,
+              13.19096580691053
+            ],
+            [
+              77.57432500417838,
+              13.19043148357892
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1087",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.52846875474222,
+              13.23528042055574
+            ],
+            [
+              77.52936525032324,
+              13.23529285246192
+            ],
+            [
+              77.52945676354524,
+              13.235918565111978
+            ],
+            [
+              77.52839999553407,
+              13.235918565111978
+            ],
+            [
+              77.52846875474222,
+              13.23528042055574
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1088",
+        "district": "Bengaluru Rural",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.61796381777229,
+              13.220377114538236
+            ],
+            [
+              77.61891078043195,
+              13.220449535617183
+            ],
+            [
+              77.61892536728485,
+              13.220910595649373
+            ],
+            [
+              77.61795183233869,
+              13.220910595649373
+            ],
+            [
+              77.61796381777229,
+              13.220377114538236
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1089",
+        "district": "Bengaluru Rural",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.57523751495486,
+              13.219131935824228
+            ],
+            [
+              77.5759721832278,
+              13.21923153457911
+            ],
+            [
+              77.57605642453022,
+              13.220129448930416
+            ],
+            [
+              77.57514412751458,
+              13.220129448930416
+            ],
+            [
+              77.57523751495486,
+              13.219131935824228
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1090",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.61860084604264,
+              13.234525446661632
+            ],
+            [
+              77.61945277293012,
+              13.234569664064914
+            ],
+            [
+              77.61947871031663,
+              13.235257467829213
+            ],
+            [
+              77.61852305649231,
+              13.235257467829213
+            ],
+            [
+              77.61860084604264,
+              13.234525446661632
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1091",
+        "district": "Bengaluru Rural",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.59329581466021,
+              13.271354524662016
+            ],
+            [
+              77.59411891475604,
+              13.27142043375819
+            ],
+            [
+              77.59416406130471,
+              13.272285446121854
+            ],
+            [
+              77.5932672013503,
+              13.272285446121854
+            ],
+            [
+              77.59329581466021,
+              13.271354524662016
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1092",
+        "district": "Bengaluru Rural",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.55790563047759,
+              13.217038665757551
+            ],
+            [
+              77.55870575119032,
+              13.217125675864901
+            ],
+            [
+              77.55874428411501,
+              13.217816615378526
+            ],
+            [
+              77.55783093558853,
+              13.217816615378526
+            ],
+            [
+              77.55790563047759,
+              13.217038665757551
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1093",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.54284993393524,
+              13.207403172193471
+            ],
+            [
+              77.54360588166361,
+              13.20749785377206
+            ],
+            [
+              77.54368949465622,
+              13.208181158794758
+            ],
+            [
+              77.54284126477987,
+              13.208181158794758
+            ],
+            [
+              77.54284993393524,
+              13.207403172193471
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1094",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.58262991772203,
+              13.186669139768334
+            ],
+            [
+              77.58353825572767,
+              13.186677145226687
+            ],
+            [
+              77.58363013942969,
+              13.187377217561181
+            ],
+            [
+              77.5825903616303,
+              13.187377217561181
+            ],
+            [
+              77.58262991772203,
+              13.186669139768334
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1095",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.59486442783853,
+              13.252872238800416
+            ],
+            [
+              77.59582501114662,
+              13.252921724100277
+            ],
+            [
+              77.59587660397682,
+              13.253668531711575
+            ],
+            [
+              77.59476628586674,
+              13.253668531711575
+            ],
+            [
+              77.59486442783853,
+              13.252872238800416
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1096",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.61900203727555,
+              13.238349058680331
+            ],
+            [
+              77.61960031364444,
+              13.23843656366993
+            ],
+            [
+              77.61960219015741,
+              13.239008887859791
+            ],
+            [
+              77.6189311654267,
+              13.239008887859791
+            ],
+            [
+              77.61900203727555,
+              13.238349058680331
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1097",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.53034289133112,
+              13.202585475102847
+            ],
+            [
+              77.53110006735112,
+              13.202601519182101
+            ],
+            [
+              77.5311132376272,
+              13.203154302424013
+            ],
+            [
+              77.5303406227678,
+              13.203154302424013
+            ],
+            [
+              77.53034289133112,
+              13.202585475102847
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1098",
+        "district": "Bengaluru Rural",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.56235166121239,
+              13.273798610123722
+            ],
+            [
+              77.56294811922706,
+              13.273856908320374
+            ],
+            [
+              77.56298763987733,
+              13.274523491606379
+            ],
+            [
+              77.56233133991759,
+              13.274523491606379
+            ],
+            [
+              77.56235166121239,
+              13.273798610123722
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BENG_DEMO_1099",
+        "district": "Bengaluru Rural",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Bengaluru Rural",
+        "survey_date": "2026-10-05"
+      }
+    }
+  ]
+}

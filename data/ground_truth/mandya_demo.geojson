@@ -1,0 +1,3705 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.88119870857051,
+              12.553310333624278
+            ],
+            [
+              76.88198111929242,
+              12.553351845334712
+            ],
+            [
+              76.88198419596335,
+              12.553926719035415
+            ],
+            [
+              76.88113283306541,
+              12.553926719035415
+            ],
+            [
+              76.88119870857051,
+              12.553310333624278
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1000",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.89728497201446,
+              12.488347768043614
+            ],
+            [
+              76.89827247326042,
+              12.488367896354315
+            ],
+            [
+              76.89832465088998,
+              12.489073374819256
+            ],
+            [
+              76.89723376418713,
+              12.489073374819256
+            ],
+            [
+              76.89728497201446,
+              12.488347768043614
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1001",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.88996468936503,
+              12.54809849472959
+            ],
+            [
+              76.89068884473585,
+              12.548165603984549
+            ],
+            [
+              76.89071678054083,
+              12.5490165250189
+            ],
+            [
+              76.88995157179279,
+              12.5490165250189
+            ],
+            [
+              76.88996468936503,
+              12.54809849472959
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1002",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.90139185168799,
+              12.480136288543893
+            ],
+            [
+              76.90213459996812,
+              12.480144625006444
+            ],
+            [
+              76.902179739196,
+              12.480810350864537
+            ],
+            [
+              76.90135516896211,
+              12.480810350864537
+            ],
+            [
+              76.90139185168799,
+              12.480136288543893
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1003",
+        "district": "Mandya",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.93461075161264,
+              12.50760314007084
+            ],
+            [
+              76.93548037915552,
+              12.507666941278558
+            ],
+            [
+              76.93552496219182,
+              12.508534051970926
+            ],
+            [
+              76.93452848991691,
+              12.508534051970926
+            ],
+            [
+              76.93461075161264,
+              12.50760314007084
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1004",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.90437017547498,
+              12.553639430713899
+            ],
+            [
+              76.90494623155598,
+              12.553718466046318
+            ],
+            [
+              76.9050144227622,
+              12.554635451160582
+            ],
+            [
+              76.90435561141355,
+              12.554635451160582
+            ],
+            [
+              76.90437017547498,
+              12.553639430713899
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1005",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8913951242771,
+              12.538907817663018
+            ],
+            [
+              76.89235593914701,
+              12.538924262756344
+            ],
+            [
+              76.89240748584395,
+              12.539497923817105
+            ],
+            [
+              76.89135432601242,
+              12.539497923817105
+            ],
+            [
+              76.8913951242771,
+              12.538907817663018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1006",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.85447601105436,
+              12.536558234056232
+            ],
+            [
+              76.8554416316648,
+              12.53657835239733
+            ],
+            [
+              76.85545637630197,
+              12.537224620140242
+            ],
+            [
+              76.85447179284382,
+              12.537224620140242
+            ],
+            [
+              76.85447601105436,
+              12.536558234056232
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1007",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94660542819197,
+              12.566316430231131
+            ],
+            [
+              76.94759213689676,
+              12.566347280586541
+            ],
+            [
+              76.94768686751617,
+              12.567223894409413
+            ],
+            [
+              76.94651480482744,
+              12.567223894409413
+            ],
+            [
+              76.94660542819197,
+              12.566316430231131
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1008",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.89293563142613,
+              12.48601384641068
+            ],
+            [
+              76.8937862637197,
+              12.486038209481965
+            ],
+            [
+              76.89382497085165,
+              12.486770127456309
+            ],
+            [
+              76.89289732155396,
+              12.486770127456309
+            ],
+            [
+              76.89293563142613,
+              12.48601384641068
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1009",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.88185752437744,
+              12.542254987815761
+            ],
+            [
+              76.88279457410307,
+              12.542348451692739
+            ],
+            [
+              76.88286675910058,
+              12.543011860629745
+            ],
+            [
+              76.8818158349759,
+              12.543011860629745
+            ],
+            [
+              76.88185752437744,
+              12.542254987815761
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1010",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.93461207560486,
+              12.53450818871915
+            ],
+            [
+              76.93518983095142,
+              12.534567010195138
+            ],
+            [
+              76.93524682880533,
+              12.535343916345484
+            ],
+            [
+              76.93451824117346,
+              12.535343916345484
+            ],
+            [
+              76.93461207560486,
+              12.53450818871915
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1011",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.90048195578964,
+              12.48153014385904
+            ],
+            [
+              76.90120091550598,
+              12.481560500660912
+            ],
+            [
+              76.90125479602915,
+              12.482032751201537
+            ],
+            [
+              76.90046609912729,
+              12.482032751201537
+            ],
+            [
+              76.90048195578964,
+              12.48153014385904
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1012",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.90143495467488,
+              12.47017693835135
+            ],
+            [
+              76.90210186743609,
+              12.4702058924976
+            ],
+            [
+              76.90211377425746,
+              12.471146289474017
+            ],
+            [
+              76.90141730327205,
+              12.471146289474017
+            ],
+            [
+              76.90143495467488,
+              12.47017693835135
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1013",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.88855875902838,
+              12.49293147936331
+            ],
+            [
+              76.88931972555129,
+              12.492939791985123
+            ],
+            [
+              76.88932473172717,
+              12.493910073331337
+            ],
+            [
+              76.88854570615551,
+              12.493910073331337
+            ],
+            [
+              76.88855875902838,
+              12.49293147936331
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1014",
+        "district": "Mandya",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.87003847538169,
+              12.48491992396746
+            ],
+            [
+              76.8707736579678,
+              12.485002484333677
+            ],
+            [
+              76.8708475576103,
+              12.48570824247062
+            ],
+            [
+              76.86995023335182,
+              12.48570824247062
+            ],
+            [
+              76.87003847538169,
+              12.48491992396746
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1015",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.88070534658442,
+              12.554137722703661
+            ],
+            [
+              76.88166683013708,
+              12.554175114641112
+            ],
+            [
+              76.88167852857227,
+              12.554867511819593
+            ],
+            [
+              76.88060675618505,
+              12.554867511819593
+            ],
+            [
+              76.88070534658442,
+              12.554137722703661
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1016",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9241901703355,
+              12.559514455490017
+            ],
+            [
+              76.92475398036386,
+              12.559606632031274
+            ],
+            [
+              76.92484905114365,
+              12.560339044628474
+            ],
+            [
+              76.92412171142468,
+              12.560339044628474
+            ],
+            [
+              76.9241901703355,
+              12.559514455490017
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1017",
+        "district": "Mandya",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.88167409033488,
+              12.543339767203879
+            ],
+            [
+              76.88265637702357,
+              12.543365278185803
+            ],
+            [
+              76.88269765713233,
+              12.544142253405822
+            ],
+            [
+              76.88160909838244,
+              12.544142253405822
+            ],
+            [
+              76.88167409033488,
+              12.543339767203879
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1018",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.93518959728375,
+              12.497580627995676
+            ],
+            [
+              76.93576522460401,
+              12.497622948305471
+            ],
+            [
+              76.93577865573808,
+              12.498485414276605
+            ],
+            [
+              76.93512087700724,
+              12.498485414276605
+            ],
+            [
+              76.93518959728375,
+              12.497580627995676
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1019",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.89700751214015,
+              12.511448672375948
+            ],
+            [
+              76.89769898430234,
+              12.51148390525651
+            ],
+            [
+              76.89771640896875,
+              12.511960926180326
+            ],
+            [
+              76.89691807006068,
+              12.511960926180326
+            ],
+            [
+              76.89700751214015,
+              12.511448672375948
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1020",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.89505090799958,
+              12.489063809460092
+            ],
+            [
+              76.8956603631643,
+              12.489124924917162
+            ],
+            [
+              76.89575275031955,
+              12.490037125327797
+            ],
+            [
+              76.8950093559323,
+              12.490037125327797
+            ],
+            [
+              76.89505090799958,
+              12.489063809460092
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1021",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.87130174280222,
+              12.549117118819593
+            ],
+            [
+              76.87218153007902,
+              12.549186781205
+            ],
+            [
+              76.87221729057624,
+              12.549901118612286
+            ],
+            [
+              76.87122779928487,
+              12.549901118612286
+            ],
+            [
+              76.87130174280222,
+              12.549117118819593
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1022",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.90715483336628,
+              12.55013258152382
+            ],
+            [
+              76.90798162232001,
+              12.550205488263972
+            ],
+            [
+              76.9080127202404,
+              12.55099457237248
+            ],
+            [
+              76.90706642166866,
+              12.55099457237248
+            ],
+            [
+              76.90715483336628,
+              12.55013258152382
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1023",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.85350948234304,
+              12.475438835225123
+            ],
+            [
+              76.85448010923035,
+              12.475451995404196
+            ],
+            [
+              76.85454858207237,
+              12.476123819540422
+            ],
+            [
+              76.85345352583793,
+              12.476123819540422
+            ],
+            [
+              76.85350948234304,
+              12.475438835225123
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1024",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.86806189600685,
+              12.517690579480984
+            ],
+            [
+              76.86879987508824,
+              12.517783904570644
+            ],
+            [
+              76.86884870894676,
+              12.518582964557542
+            ],
+            [
+              76.86796798303041,
+              12.518582964557542
+            ],
+            [
+              76.86806189600685,
+              12.517690579480984
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1025",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94354824844199,
+              12.532891947337705
+            ],
+            [
+              76.94420833898064,
+              12.532914309464074
+            ],
+            [
+              76.9442859464873,
+              12.53354674742062
+            ],
+            [
+              76.9435390164675,
+              12.53354674742062
+            ],
+            [
+              76.94354824844199,
+              12.532891947337705
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1026",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9270933029221,
+              12.52147554659238
+            ],
+            [
+              76.92786882755398,
+              12.521538298574182
+            ],
+            [
+              76.9279549564152,
+              12.522432105161183
+            ],
+            [
+              76.92705610393128,
+              12.522432105161183
+            ],
+            [
+              76.9270933029221,
+              12.52147554659238
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1027",
+        "district": "Mandya",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.93945610177568,
+              12.504433065120322
+            ],
+            [
+              76.94026193969843,
+              12.504457331811482
+            ],
+            [
+              76.9403068480824,
+              12.505391614954615
+            ],
+            [
+              76.939395400276,
+              12.505391614954615
+            ],
+            [
+              76.93945610177568,
+              12.504433065120322
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1028",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.92670255020415,
+              12.486498873185186
+            ],
+            [
+              76.92725879520772,
+              12.486512021031011
+            ],
+            [
+              76.92728593807404,
+              12.487460952848291
+            ],
+            [
+              76.9266434560373,
+              12.487460952848291
+            ],
+            [
+              76.92670255020415,
+              12.486498873185186
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1029",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.89446145815333,
+              12.525642125721262
+            ],
+            [
+              76.89542508067356,
+              12.525707414954212
+            ],
+            [
+              76.89548360886276,
+              12.526414717390285
+            ],
+            [
+              76.89438772598446,
+              12.526414717390285
+            ],
+            [
+              76.89446145815333,
+              12.525642125721262
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1030",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.92196228241943,
+              12.559226995919714
+            ],
+            [
+              76.92284641664884,
+              12.559274198096032
+            ],
+            [
+              76.92288618195371,
+              12.559834210172912
+            ],
+            [
+              76.92194788204097,
+              12.559834210172912
+            ],
+            [
+              76.92196228241943,
+              12.559226995919714
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1031",
+        "district": "Mandya",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.89913570725398,
+              12.565315878424817
+            ],
+            [
+              76.9000243504263,
+              12.565408869548738
+            ],
+            [
+              76.90008187982303,
+              12.565849375929814
+            ],
+            [
+              76.89907334848371,
+              12.565849375929814
+            ],
+            [
+              76.89913570725398,
+              12.565315878424817
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1032",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.93835259682027,
+              12.54241261054759
+            ],
+            [
+              76.93907881173504,
+              12.54250222872896
+            ],
+            [
+              76.93914503042075,
+              12.543245912689951
+            ],
+            [
+              76.93825735997355,
+              12.543245912689951
+            ],
+            [
+              76.93835259682027,
+              12.54241261054759
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1033",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.91178368794029,
+              12.492235173536768
+            ],
+            [
+              76.91261094849722,
+              12.492248002274977
+            ],
+            [
+              76.91266191332511,
+              12.492998364611276
+            ],
+            [
+              76.91177486211826,
+              12.492998364611276
+            ],
+            [
+              76.91178368794029,
+              12.492235173536768
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1034",
+        "district": "Mandya",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.87594415599432,
+              12.555435274574112
+            ],
+            [
+              76.8767130042921,
+              12.555505465586142
+            ],
+            [
+              76.87678761783515,
+              12.555964409161465
+            ],
+            [
+              76.87587811025962,
+              12.555964409161465
+            ],
+            [
+              76.87594415599432,
+              12.555435274574112
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1035",
+        "district": "Mandya",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.88683583646083,
+              12.53046597389274
+            ],
+            [
+              76.88739753752138,
+              12.530552247582689
+            ],
+            [
+              76.88744275847577,
+              12.531406391289412
+            ],
+            [
+              76.88681174897344,
+              12.531406391289412
+            ],
+            [
+              76.88683583646083,
+              12.53046597389274
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1036",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.92569160732707,
+              12.552057250505612
+            ],
+            [
+              76.92652844123151,
+              12.55212171605262
+            ],
+            [
+              76.92655411668304,
+              12.55264926020996
+            ],
+            [
+              76.92559484716354,
+              12.55264926020996
+            ],
+            [
+              76.92569160732707,
+              12.552057250505612
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1037",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.90931542009278,
+              12.490471818310255
+            ],
+            [
+              76.90982111571023,
+              12.490553072385799
+            ],
+            [
+              76.90986450701536,
+              12.491382119404749
+            ],
+            [
+              76.90926993950718,
+              12.491382119404749
+            ],
+            [
+              76.90931542009278,
+              12.490471818310255
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1038",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.85652060240344,
+              12.485974484750631
+            ],
+            [
+              76.8570517685744,
+              12.485979888041129
+            ],
+            [
+              76.85714401992084,
+              12.486741219109135
+            ],
+            [
+              76.85649295384539,
+              12.486741219109135
+            ],
+            [
+              76.85652060240344,
+              12.485974484750631
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1039",
+        "district": "Mandya",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.87088826642191,
+              12.51264478742281
+            ],
+            [
+              76.87184905458761,
+              12.512669312665345
+            ],
+            [
+              76.87187307008416,
+              12.513465529300628
+            ],
+            [
+              76.87079129518027,
+              12.513465529300628
+            ],
+            [
+              76.87088826642191,
+              12.51264478742281
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1040",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.93575137210223,
+              12.515849789835436
+            ],
+            [
+              76.93637111263382,
+              12.515868984092503
+            ],
+            [
+              76.93645292360657,
+              12.516615960739585
+            ],
+            [
+              76.93573850542059,
+              12.516615960739585
+            ],
+            [
+              76.93575137210223,
+              12.515849789835436
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1041",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.90940141417379,
+              12.519485242136918
+            ],
+            [
+              76.90993809227564,
+              12.519511935286065
+            ],
+            [
+              76.90996455312026,
+              12.520345962471415
+            ],
+            [
+              76.90933149285384,
+              12.520345962471415
+            ],
+            [
+              76.90940141417379,
+              12.519485242136918
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1042",
+        "district": "Mandya",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94463306830667,
+              12.527387102902601
+            ],
+            [
+              76.9455535861243,
+              12.527395839015552
+            ],
+            [
+              76.94562484448937,
+              12.528145570872681
+            ],
+            [
+              76.94458701101544,
+              12.528145570872681
+            ],
+            [
+              76.94463306830667,
+              12.527387102902601
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1043",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.85683505553307,
+              12.526192222742317
+            ],
+            [
+              76.85761086938115,
+              12.526193999098355
+            ],
+            [
+              76.8576296955192,
+              12.526896730458452
+            ],
+            [
+              76.85678964539056,
+              12.526896730458452
+            ],
+            [
+              76.85683505553307,
+              12.526192222742317
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1044",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9008025197853,
+              12.473464817777156
+            ],
+            [
+              76.90150706033472,
+              12.473518278497831
+            ],
+            [
+              76.90159385579346,
+              12.474025779084101
+            ],
+            [
+              76.90079547736669,
+              12.474025779084101
+            ],
+            [
+              76.9008025197853,
+              12.473464817777156
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1045",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.88943035763197,
+              12.513198603972517
+            ],
+            [
+              76.89038368399669,
+              12.513242734670287
+            ],
+            [
+              76.8904470522065,
+              12.51388780153925
+            ],
+            [
+              76.88933996065644,
+              12.51388780153925
+            ],
+            [
+              76.88943035763197,
+              12.513198603972517
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1046",
+        "district": "Mandya",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.86947461750052,
+              12.478134158119394
+            ],
+            [
+              76.87025552779339,
+              12.478223532953637
+            ],
+            [
+              76.87029111638557,
+              12.479111901971622
+            ],
+            [
+              76.86942048955144,
+              12.479111901971622
+            ],
+            [
+              76.86947461750052,
+              12.478134158119394
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1047",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94344705388237,
+              12.559649869560086
+            ],
+            [
+              76.94431836778394,
+              12.559716808058113
+            ],
+            [
+              76.94438877679012,
+              12.56048854222515
+            ],
+            [
+              76.9433633925732,
+              12.56048854222515
+            ],
+            [
+              76.94344705388237,
+              12.559649869560086
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1048",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.93123831793942,
+              12.516125200225181
+            ],
+            [
+              76.93177209959144,
+              12.516197969581212
+            ],
+            [
+              76.93178985932113,
+              12.516955758112282
+            ],
+            [
+              76.93123366972645,
+              12.516955758112282
+            ],
+            [
+              76.93123831793942,
+              12.516125200225181
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1049",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.89290449521418,
+              12.569969811523228
+            ],
+            [
+              76.89372664526422,
+              12.57005906347909
+            ],
+            [
+              76.89379661026402,
+              12.570932402587035
+            ],
+            [
+              76.89282625846434,
+              12.570932402587035
+            ],
+            [
+              76.89290449521418,
+              12.569969811523228
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1050",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.85721407695056,
+              12.519134541826629
+            ],
+            [
+              76.85810443337263,
+              12.519178691968401
+            ],
+            [
+              76.85819182972104,
+              12.51968632078227
+            ],
+            [
+              76.8571881139068,
+              12.51968632078227
+            ],
+            [
+              76.85721407695056,
+              12.519134541826629
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1051",
+        "district": "Mandya",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.86401008890904,
+              12.491383197415145
+            ],
+            [
+              76.86481389816284,
+              12.491401851853857
+            ],
+            [
+              76.86489325312492,
+              12.492371480988444
+            ],
+            [
+              76.86399276774574,
+              12.492371480988444
+            ],
+            [
+              76.86401008890904,
+              12.491383197415145
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1052",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.87679085599811,
+              12.473256629551159
+            ],
+            [
+              76.8774412409672,
+              12.47331561298567
+            ],
+            [
+              76.87745396401428,
+              12.47420687135611
+            ],
+            [
+              76.8767001628002,
+              12.47420687135611
+            ],
+            [
+              76.87679085599811,
+              12.473256629551159
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1053",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.86154346510148,
+              12.523002282411717
+            ],
+            [
+              76.86232614942848,
+              12.523064742965248
+            ],
+            [
+              76.86240324140793,
+              12.52369703325355
+            ],
+            [
+              76.8615034681833,
+              12.52369703325355
+            ],
+            [
+              76.86154346510148,
+              12.523002282411717
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1054",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94097678943194,
+              12.50848627038038
+            ],
+            [
+              76.94174488373683,
+              12.508570303813709
+            ],
+            [
+              76.94174677210657,
+              12.509431463590555
+            ],
+            [
+              76.94091221186005,
+              12.509431463590555
+            ],
+            [
+              76.94097678943194,
+              12.50848627038038
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1055",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.86731274906138,
+              12.56610638185065
+            ],
+            [
+              76.8679630888425,
+              12.566150954153178
+            ],
+            [
+              76.86805288961601,
+              12.566732303295973
+            ],
+            [
+              76.86725115791573,
+              12.566732303295973
+            ],
+            [
+              76.86731274906138,
+              12.56610638185065
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1056",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.92308687097184,
+              12.534911714772901
+            ],
+            [
+              76.92365937906953,
+              12.534976262081651
+            ],
+            [
+              76.92371457252291,
+              12.535829070443123
+            ],
+            [
+              76.92299285138813,
+              12.535829070443123
+            ],
+            [
+              76.92308687097184,
+              12.534911714772901
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1057",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.85340450121187,
+              12.552992782286546
+            ],
+            [
+              76.85408154872653,
+              12.553045634751223
+            ],
+            [
+              76.85415521840083,
+              12.553934405822266
+            ],
+            [
+              76.85339548176043,
+              12.553934405822266
+            ],
+            [
+              76.85340450121187,
+              12.552992782286546
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1058",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8526713761863,
+              12.556514429102002
+            ],
+            [
+              76.85358954806709,
+              12.556550137745171
+            ],
+            [
+              76.85362859615418,
+              12.557215269085594
+            ],
+            [
+              76.85266101141035,
+              12.557215269085594
+            ],
+            [
+              76.8526713761863,
+              12.556514429102002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1059",
+        "district": "Mandya",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.92870657625762,
+              12.51623953554618
+            ],
+            [
+              76.92962675241232,
+              12.516274206236062
+            ],
+            [
+              76.9297202644527,
+              12.517171819084336
+            ],
+            [
+              76.92869758128356,
+              12.517171819084336
+            ],
+            [
+              76.92870657625762,
+              12.51623953554618
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1060",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.91196299916588,
+              12.539728267049279
+            ],
+            [
+              76.91273463428199,
+              12.539765369548245
+            ],
+            [
+              76.91280701771633,
+              12.54063288357505
+            ],
+            [
+              76.91187067634803,
+              12.54063288357505
+            ],
+            [
+              76.91196299916588,
+              12.539728267049279
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1061",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9131990105018,
+              12.563604374782855
+            ],
+            [
+              76.91389299733814,
+              12.563672781437417
+            ],
+            [
+              76.91389891282115,
+              12.564143328867091
+            ],
+            [
+              76.91315268603118,
+              12.564143328867091
+            ],
+            [
+              76.9131990105018,
+              12.563604374782855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1062",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9199994275878,
+              12.521435021963354
+            ],
+            [
+              76.92061024154278,
+              12.521506942351067
+            ],
+            [
+              76.92063370881824,
+              12.522100986865908
+            ],
+            [
+              76.91997649904314,
+              12.522100986865908
+            ],
+            [
+              76.9199994275878,
+              12.521435021963354
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1063",
+        "district": "Mandya",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94501409054854,
+              12.545013908070127
+            ],
+            [
+              76.94564587918487,
+              12.545101356013918
+            ],
+            [
+              76.94566507498307,
+              12.545800808340022
+            ],
+            [
+              76.94493017451491,
+              12.545800808340022
+            ],
+            [
+              76.94501409054854,
+              12.545013908070127
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1064",
+        "district": "Mandya",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.85164101034526,
+              12.557449246975242
+            ],
+            [
+              76.85238837031068,
+              12.55751113981789
+            ],
+            [
+              76.85239377239911,
+              12.558107685128428
+            ],
+            [
+              76.85157059122768,
+              12.558107685128428
+            ],
+            [
+              76.85164101034526,
+              12.557449246975242
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1065",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.85968026684701,
+              12.504014927465944
+            ],
+            [
+              76.86059021482966,
+              12.504051019803958
+            ],
+            [
+              76.86065515668095,
+              12.504784915195357
+            ],
+            [
+              76.85959759210141,
+              12.504784915195357
+            ],
+            [
+              76.85968026684701,
+              12.504014927465944
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1066",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9306308467016,
+              12.518396956746571
+            ],
+            [
+              76.93121203020641,
+              12.5184834714818
+            ],
+            [
+              76.9312651468357,
+              12.5192960447433
+            ],
+            [
+              76.9305374033361,
+              12.5192960447433
+            ],
+            [
+              76.9306308467016,
+              12.518396956746571
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1067",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.91011121341826,
+              12.511262666033053
+            ],
+            [
+              76.91107897906944,
+              12.511325679233524
+            ],
+            [
+              76.91110349663658,
+              12.511809157472461
+            ],
+            [
+              76.91002773787777,
+              12.511809157472461
+            ],
+            [
+              76.91011121341826,
+              12.511262666033053
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1068",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.85111900105638,
+              12.500584667681322
+            ],
+            [
+              76.85183181047606,
+              12.500591627299604
+            ],
+            [
+              76.85183883850691,
+              12.501527131963094
+            ],
+            [
+              76.8510424607805,
+              12.501527131963094
+            ],
+            [
+              76.85111900105638,
+              12.500584667681322
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1069",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.92193457313887,
+              12.500478318819093
+            ],
+            [
+              76.92270475194648,
+              12.500516011989411
+            ],
+            [
+              76.9227878181148,
+              12.501169394545961
+            ],
+            [
+              76.9219219566154,
+              12.501169394545961
+            ],
+            [
+              76.92193457313887,
+              12.500478318819093
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1070",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.92474946155654,
+              12.524945023107223
+            ],
+            [
+              76.92552540732623,
+              12.52497641313483
+            ],
+            [
+              76.92559026265616,
+              12.525449202227934
+            ],
+            [
+              76.92471649611255,
+              12.525449202227934
+            ],
+            [
+              76.92474946155654,
+              12.524945023107223
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1071",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.92900152698716,
+              12.539875088535519
+            ],
+            [
+              76.92990568117135,
+              12.539951052296212
+            ],
+            [
+              76.92991269656095,
+              12.540508612356163
+            ],
+            [
+              76.9289128901265,
+              12.540508612356163
+            ],
+            [
+              76.92900152698716,
+              12.539875088535519
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1072",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94020500857347,
+              12.544708228867474
+            ],
+            [
+              76.94117379664104,
+              12.544771780236534
+            ],
+            [
+              76.94118837909473,
+              12.545357457640302
+            ],
+            [
+              76.94017940986217,
+              12.545357457640302
+            ],
+            [
+              76.94020500857347,
+              12.544708228867474
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1073",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.90296683616002,
+              12.490187807526578
+            ],
+            [
+              76.90394029865804,
+              12.490261799621587
+            ],
+            [
+              76.90400940963498,
+              12.490956764577808
+            ],
+            [
+              76.90291956829769,
+              12.490956764577808
+            ],
+            [
+              76.90296683616002,
+              12.490187807526578
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1074",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.88024193695504,
+              12.491991273566857
+            ],
+            [
+              76.880969783376,
+              12.492070070123557
+            ],
+            [
+              76.88097398756518,
+              12.492607347574417
+            ],
+            [
+              76.88016952191614,
+              12.492607347574417
+            ],
+            [
+              76.88024193695504,
+              12.491991273566857
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1075",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.87848196098673,
+              12.518176494275329
+            ],
+            [
+              76.87920911759686,
+              12.51820168053821
+            ],
+            [
+              76.87923344197085,
+              12.51893176691021
+            ],
+            [
+              76.87840008353335,
+              12.51893176691021
+            ],
+            [
+              76.87848196098673,
+              12.518176494275329
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1076",
+        "district": "Mandya",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.93378079598658,
+              12.55487333728959
+            ],
+            [
+              76.93466926837654,
+              12.554895958268254
+            ],
+            [
+              76.9347579276755,
+              12.555579828414707
+            ],
+            [
+              76.93369240180223,
+              12.555579828414707
+            ],
+            [
+              76.93378079598658,
+              12.55487333728959
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1077",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.87988364358401,
+              12.526254862404512
+            ],
+            [
+              76.88066426282009,
+              12.526346993211119
+            ],
+            [
+              76.88067407531987,
+              12.52702629327853
+            ],
+            [
+              76.8798233259893,
+              12.52702629327853
+            ],
+            [
+              76.87988364358401,
+              12.526254862404512
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1078",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.91028153258026,
+              12.496910502025207
+            ],
+            [
+              76.91096302271524,
+              12.496926187856285
+            ],
+            [
+              76.91106255540868,
+              12.497552582993622
+            ],
+            [
+              76.91018481628728,
+              12.497552582993622
+            ],
+            [
+              76.91028153258026,
+              12.496910502025207
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1079",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94450507272255,
+              12.510990426671704
+            ],
+            [
+              76.94504163734162,
+              12.511075889799153
+            ],
+            [
+              76.94511693276006,
+              12.511701097783863
+            ],
+            [
+              76.94445442142909,
+              12.511701097783863
+            ],
+            [
+              76.94450507272255,
+              12.510990426671704
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1080",
+        "district": "Mandya",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.93038226370653,
+              12.540161823568601
+            ],
+            [
+              76.93119026211488,
+              12.540227121337841
+            ],
+            [
+              76.93125654927397,
+              12.540679629092129
+            ],
+            [
+              76.93033239456673,
+              12.540679629092129
+            ],
+            [
+              76.93038226370653,
+              12.540161823568601
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1081",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.91250309382887,
+              12.521017221980182
+            ],
+            [
+              76.91310622983573,
+              12.521045118633692
+            ],
+            [
+              76.91316645826788,
+              12.521884466606487
+            ],
+            [
+              76.9124044893463,
+              12.521884466606487
+            ],
+            [
+              76.91250309382887,
+              12.521017221980182
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1082",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.86657230774455,
+              12.501006639137863
+            ],
+            [
+              76.86709024687646,
+              12.501092027267523
+            ],
+            [
+              76.86713650645116,
+              12.501958841591723
+            ],
+            [
+              76.86654720320975,
+              12.501958841591723
+            ],
+            [
+              76.86657230774455,
+              12.501006639137863
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1083",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.91801702582913,
+              12.533153973820644
+            ],
+            [
+              76.91877350262126,
+              12.533155244476804
+            ],
+            [
+              76.91884631566364,
+              12.53397002156634
+            ],
+            [
+              76.9179509132225,
+              12.53397002156634
+            ],
+            [
+              76.91801702582913,
+              12.533153973820644
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1084",
+        "district": "Mandya",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.86977743247569,
+              12.505572000802399
+            ],
+            [
+              76.87033151323301,
+              12.505654316058273
+            ],
+            [
+              76.87040152962088,
+              12.506194124701526
+            ],
+            [
+              76.86974836283662,
+              12.506194124701526
+            ],
+            [
+              76.86977743247569,
+              12.505572000802399
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1085",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.850949738446,
+              12.501179725056133
+            ],
+            [
+              76.85186660585687,
+              12.501237618758507
+            ],
+            [
+              76.85193392259322,
+              12.501786338694314
+            ],
+            [
+              76.85093494490332,
+              12.501786338694314
+            ],
+            [
+              76.850949738446,
+              12.501179725056133
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1086",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.85374584707479,
+              12.491414214474835
+            ],
+            [
+              76.85443198382306,
+              12.49151214274708
+            ],
+            [
+              76.85451338059369,
+              12.491975337375731
+            ],
+            [
+              76.85371948883126,
+              12.491975337375731
+            ],
+            [
+              76.85374584707479,
+              12.491414214474835
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1087",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94111785239998,
+              12.557785668534303
+            ],
+            [
+              76.94184137902141,
+              12.557853491429055
+            ],
+            [
+              76.9419356557573,
+              12.558505915840925
+            ],
+            [
+              76.94111733960969,
+              12.558505915840925
+            ],
+            [
+              76.94111785239998,
+              12.557785668534303
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1088",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.86811654624385,
+              12.530108755806834
+            ],
+            [
+              76.86879718330455,
+              12.530200992644964
+            ],
+            [
+              76.86883540373316,
+              12.530863402151425
+            ],
+            [
+              76.86805665817153,
+              12.530863402151425
+            ],
+            [
+              76.86811654624385,
+              12.530108755806834
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1089",
+        "district": "Mandya",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.88580222395944,
+              12.543844570412054
+            ],
+            [
+              76.88636192976385,
+              12.543943036159328
+            ],
+            [
+              76.88639514215072,
+              12.544739701936312
+            ],
+            [
+              76.8857874581141,
+              12.544739701936312
+            ],
+            [
+              76.88580222395944,
+              12.543844570412054
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1090",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8743797790215,
+              12.483501403385109
+            ],
+            [
+              76.8750505616597,
+              12.48357993624363
+            ],
+            [
+              76.87512253528227,
+              12.484325692536578
+            ],
+            [
+              76.87431983725861,
+              12.484325692536578
+            ],
+            [
+              76.8743797790215,
+              12.483501403385109
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1091",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.91747973798255,
+              12.489083628559532
+            ],
+            [
+              76.91846784143928,
+              12.489110087626129
+            ],
+            [
+              76.91848643861395,
+              12.489762548328642
+            ],
+            [
+              76.91743862161321,
+              12.489762548328642
+            ],
+            [
+              76.91747973798255,
+              12.489083628559532
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1092",
+        "district": "Mandya",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.90565569696547,
+              12.50896094425297
+            ],
+            [
+              76.90624427894788,
+              12.508987416913847
+            ],
+            [
+              76.90632017556942,
+              12.509804355042833
+            ],
+            [
+              76.90557108755347,
+              12.509804355042833
+            ],
+            [
+              76.90565569696547,
+              12.50896094425297
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1093",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.93502294344044,
+              12.55114386015436
+            ],
+            [
+              76.93601463386005,
+              12.551183735878826
+            ],
+            [
+              76.93609335834668,
+              12.551789669710098
+            ],
+            [
+              76.93494094568777,
+              12.551789669710098
+            ],
+            [
+              76.93502294344044,
+              12.55114386015436
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1094",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.89452659354156,
+              12.475522094105962
+            ],
+            [
+              76.89510078394119,
+              12.475560489771677
+            ],
+            [
+              76.89516477604853,
+              12.476103620592147
+            ],
+            [
+              76.89445189926549,
+              12.476103620592147
+            ],
+            [
+              76.89452659354156,
+              12.475522094105962
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1095",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8942781750642,
+              12.487254335550086
+            ],
+            [
+              76.89488221366251,
+              12.48733207522612
+            ],
+            [
+              76.89489985987488,
+              12.487792324728234
+            ],
+            [
+              76.89426814776398,
+              12.487792324728234
+            ],
+            [
+              76.8942781750642,
+              12.487254335550086
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1096",
+        "district": "Mandya",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.93572155401445,
+              12.50806371474463
+            ],
+            [
+              76.9363343059855,
+              12.508146596181192
+            ],
+            [
+              76.93636071929792,
+              12.508921474613135
+            ],
+            [
+              76.93565222638244,
+              12.508921474613135
+            ],
+            [
+              76.93572155401445,
+              12.50806371474463
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1097",
+        "district": "Mandya",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94794552943807,
+              12.502147729398253
+            ],
+            [
+              76.9485617886072,
+              12.502180405692965
+            ],
+            [
+              76.94865088967815,
+              12.502736110250426
+            ],
+            [
+              76.94791069183317,
+              12.502736110250426
+            ],
+            [
+              76.94794552943807,
+              12.502147729398253
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1098",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9224793820976,
+              12.484440847680164
+            ],
+            [
+              76.9234734069049,
+              12.484481411782888
+            ],
+            [
+              76.9235240453077,
+              12.485001210012236
+            ],
+            [
+              76.9224616440915,
+              12.485001210012236
+            ],
+            [
+              76.9224793820976,
+              12.484440847680164
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MAND_DEMO_1099",
+        "district": "Mandya",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Research Station, Mandya",
+        "survey_date": "2026-10-05"
+      }
+    }
+  ]
+}

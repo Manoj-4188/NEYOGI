@@ -1,0 +1,3705 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1083910967427,
+              13.311327094589812
+            ],
+            [
+              77.10930624150481,
+              13.31137787864644
+            ],
+            [
+              77.10931674872504,
+              13.312276984101782
+            ],
+            [
+              77.10838576159011,
+              13.312276984101782
+            ],
+            [
+              77.1083910967427,
+              13.311327094589812
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1000",
+        "district": "Tumakuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.13478701501458,
+              13.375600891751915
+            ],
+            [
+              77.13549466537751,
+              13.37566200453139
+            ],
+            [
+              77.13551565562354,
+              13.376321568121243
+            ],
+            [
+              77.13474882840592,
+              13.376321568121243
+            ],
+            [
+              77.13478701501458,
+              13.375600891751915
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1001",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.06433234019883,
+              13.35462042152038
+            ],
+            [
+              77.06499337390248,
+              13.35469705243112
+            ],
+            [
+              77.06502340878495,
+              13.355507645868373
+            ],
+            [
+              77.06431750455553,
+              13.355507645868373
+            ],
+            [
+              77.06433234019883,
+              13.35462042152038
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1002",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1208504346594,
+              13.367145144046162
+            ],
+            [
+              77.12170523196471,
+              13.367187371850406
+            ],
+            [
+              77.12174205037476,
+              13.367937644772294
+            ],
+            [
+              77.12080469636902,
+              13.367937644772294
+            ],
+            [
+              77.1208504346594,
+              13.367145144046162
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1003",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.14452028685811,
+              13.317258594906484
+            ],
+            [
+              77.14534768198415,
+              13.317311765346595
+            ],
+            [
+              77.14538615241388,
+              13.317989958317831
+            ],
+            [
+              77.14449042109425,
+              13.317989958317831
+            ],
+            [
+              77.14452028685811,
+              13.317258594906484
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1004",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.13743551244107,
+              13.299229847782739
+            ],
+            [
+              77.13836213291022,
+              13.299262620657947
+            ],
+            [
+              77.13844706662775,
+              13.30010449048577
+            ],
+            [
+              77.13741414790384,
+              13.30010449048577
+            ],
+            [
+              77.13743551244107,
+              13.299229847782739
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1005",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08352953590924,
+              13.3165827576435
+            ],
+            [
+              77.08436548142988,
+              13.316680308259238
+            ],
+            [
+              77.08436824501332,
+              13.317447747149965
+            ],
+            [
+              77.0835197321261,
+              13.317447747149965
+            ],
+            [
+              77.08352953590924,
+              13.3165827576435
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1006",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.06248490150818,
+              13.378253920504108
+            ],
+            [
+              77.0634462838845,
+              13.378322414767764
+            ],
+            [
+              77.0634789807276,
+              13.37902634648702
+            ],
+            [
+              77.06244231512889,
+              13.37902634648702
+            ],
+            [
+              77.06248490150818,
+              13.378253920504108
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1007",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08217972397124,
+              13.37222288666253
+            ],
+            [
+              77.08308694281976,
+              13.372273126432086
+            ],
+            [
+              77.08313241294634,
+              13.372960608345421
+            ],
+            [
+              77.08217712568454,
+              13.372960608345421
+            ],
+            [
+              77.08217972397124,
+              13.37222288666253
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1008",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.13319776858573,
+              13.302143667458807
+            ],
+            [
+              77.13389846454432,
+              13.302167155053954
+            ],
+            [
+              77.13394725627319,
+              13.302855145359315
+            ],
+            [
+              77.13311785983473,
+              13.302855145359315
+            ],
+            [
+              77.13319776858573,
+              13.302143667458807
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1009",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.05818576555752,
+              13.29860842309193
+            ],
+            [
+              77.05876975541959,
+              13.298645161706336
+            ],
+            [
+              77.05877816854866,
+              13.299375606609496
+            ],
+            [
+              77.05815215543115,
+              13.299375606609496
+            ],
+            [
+              77.05818576555752,
+              13.29860842309193
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1010",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.09187429912913,
+              13.301173659810813
+            ],
+            [
+              77.09248359000266,
+              13.301230366925203
+            ],
+            [
+              77.09249016121211,
+              13.301749279854832
+            ],
+            [
+              77.09186043126357,
+              13.301749279854832
+            ],
+            [
+              77.09187429912913,
+              13.301173659810813
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1011",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.05001174769133,
+              13.332315269408303
+            ],
+            [
+              77.0505431252097,
+              13.332409140314075
+            ],
+            [
+              77.05060375793104,
+              13.333204975864414
+            ],
+            [
+              77.04994191956536,
+              13.333204975864414
+            ],
+            [
+              77.05001174769133,
+              13.332315269408303
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1012",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.14199106679105,
+              13.365660895943497
+            ],
+            [
+              77.14252410378171,
+              13.36572110275594
+            ],
+            [
+              77.14258244660981,
+              13.366411445595926
+            ],
+            [
+              77.1419548244522,
+              13.366411445595926
+            ],
+            [
+              77.14199106679105,
+              13.365660895943497
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1013",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08394277883153,
+              13.320656100005182
+            ],
+            [
+              77.0846003658287,
+              13.320696878680765
+            ],
+            [
+              77.08461527519604,
+              13.321488137051015
+            ],
+            [
+              77.08388377529317,
+              13.321488137051015
+            ],
+            [
+              77.08394277883153,
+              13.320656100005182
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1014",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.12614127759201,
+              13.352443263490972
+            ],
+            [
+              77.12683923602177,
+              13.352462938591813
+            ],
+            [
+              77.12686471547437,
+              13.353140559867844
+            ],
+            [
+              77.12613432592677,
+              13.353140559867844
+            ],
+            [
+              77.12614127759201,
+              13.352443263490972
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1015",
+        "district": "Tumakuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.06831548576413,
+              13.304329227874277
+            ],
+            [
+              77.06928041858062,
+              13.304339562261804
+            ],
+            [
+              77.06931818861341,
+              13.305161982839216
+            ],
+            [
+              77.06825080854736,
+              13.305161982839216
+            ],
+            [
+              77.06831548576413,
+              13.304329227874277
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1016",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.09404755211241,
+              13.322766536767098
+            ],
+            [
+              77.09498997536043,
+              13.322804049282814
+            ],
+            [
+              77.0950102516618,
+              13.323755193878704
+            ],
+            [
+              77.09403640292635,
+              13.323755193878704
+            ],
+            [
+              77.09404755211241,
+              13.322766536767098
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1017",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08229022292768,
+              13.384113011380942
+            ],
+            [
+              77.08311248300055,
+              13.384211763710132
+            ],
+            [
+              77.08315661362963,
+              13.385019010097544
+            ],
+            [
+              77.08227180462468,
+              13.385019010097544
+            ],
+            [
+              77.08229022292768,
+              13.384113011380942
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1018",
+        "district": "Tumakuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.05974806132376,
+              13.33004175652752
+            ],
+            [
+              77.0602635107737,
+              13.330127718749516
+            ],
+            [
+              77.06027051108474,
+              13.330777907143942
+            ],
+            [
+              77.05974690520912,
+              13.330777907143942
+            ],
+            [
+              77.05974806132376,
+              13.33004175652752
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1019",
+        "district": "Tumakuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0875533445424,
+              13.294760289657594
+            ],
+            [
+              77.08853825207042,
+              13.29476776710525
+            ],
+            [
+              77.08857839383906,
+              13.295691918097187
+            ],
+            [
+              77.08750516649711,
+              13.295691918097187
+            ],
+            [
+              77.0875533445424,
+              13.294760289657594
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1020",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.06881215968265,
+              13.369732475005277
+            ],
+            [
+              77.06974774987012,
+              13.369800592971703
+            ],
+            [
+              77.06974864645866,
+              13.370363488405102
+            ],
+            [
+              77.06872417323972,
+              13.370363488405102
+            ],
+            [
+              77.06881215968265,
+              13.369732475005277
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1021",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08579747086254,
+              13.33365223020929
+            ],
+            [
+              77.08666437992667,
+              13.333698865471248
+            ],
+            [
+              77.08674219885603,
+              13.334322385840013
+            ],
+            [
+              77.08572455719343,
+              13.334322385840013
+            ],
+            [
+              77.08579747086254,
+              13.33365223020929
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1022",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08766335845306,
+              13.323353014749005
+            ],
+            [
+              77.08856029276454,
+              13.323421992265963
+            ],
+            [
+              77.08860235804966,
+              13.32431726172814
+            ],
+            [
+              77.08763372117757,
+              13.32431726172814
+            ],
+            [
+              77.08766335845306,
+              13.323353014749005
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1023",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.06596201924874,
+              13.334385705002498
+            ],
+            [
+              77.06678957575322,
+              13.334405385627436
+            ],
+            [
+              77.06682715145564,
+              13.33535942231815
+            ],
+            [
+              77.06594413307596,
+              13.33535942231815
+            ],
+            [
+              77.06596201924874,
+              13.334385705002498
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1024",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08150876484889,
+              13.312840346945213
+            ],
+            [
+              77.08205417249265,
+              13.312896159436226
+            ],
+            [
+              77.08207866277723,
+              13.313579654767542
+            ],
+            [
+              77.08150552681325,
+              13.313579654767542
+            ],
+            [
+              77.08150876484889,
+              13.312840346945213
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1025",
+        "district": "Tumakuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.13000184797087,
+              13.292554051016575
+            ],
+            [
+              77.13068458669336,
+              13.292578664343642
+            ],
+            [
+              77.13077953317173,
+              13.29352908099707
+            ],
+            [
+              77.1299438255234,
+              13.29352908099707
+            ],
+            [
+              77.13000184797087,
+              13.292554051016575
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1026",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.06995603842952,
+              13.340105795700023
+            ],
+            [
+              77.07051492043372,
+              13.340194935602193
+            ],
+            [
+              77.07057161172054,
+              13.340921924899837
+            ],
+            [
+              77.06990989680197,
+              13.340921924899837
+            ],
+            [
+              77.06995603842952,
+              13.340105795700023
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1027",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.05539732092166,
+              13.338622177189356
+            ],
+            [
+              77.05614695726206,
+              13.338693546486635
+            ],
+            [
+              77.05619767235797,
+              13.339169160127414
+            ],
+            [
+              77.05535475704673,
+              13.339169160127414
+            ],
+            [
+              77.05539732092166,
+              13.338622177189356
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1028",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08721418038877,
+              13.341036689608504
+            ],
+            [
+              77.08808159749995,
+              13.34103935416795
+            ],
+            [
+              77.08810833444144,
+              13.341892874133283
+            ],
+            [
+              77.08719428412618,
+              13.341892874133283
+            ],
+            [
+              77.08721418038877,
+              13.341036689608504
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1029",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.09253201116148,
+              13.314809723575557
+            ],
+            [
+              77.09319735387099,
+              13.314881595606991
+            ],
+            [
+              77.09329547001947,
+              13.315428428714275
+            ],
+            [
+              77.09243265432187,
+              13.315428428714275
+            ],
+            [
+              77.09253201116148,
+              13.314809723575557
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1030",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.05521752419394,
+              13.362677632635533
+            ],
+            [
+              77.05601618708907,
+              13.362703644436609
+            ],
+            [
+              77.05610961330025,
+              13.363574562158089
+            ],
+            [
+              77.05514349498446,
+              13.363574562158089
+            ],
+            [
+              77.05521752419394,
+              13.362677632635533
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1031",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.13589166526435,
+              13.330683709777043
+            ],
+            [
+              77.13652412000816,
+              13.33076276604681
+            ],
+            [
+              77.13655708317953,
+              13.331396400239905
+            ],
+            [
+              77.13588760223915,
+              13.331396400239905
+            ],
+            [
+              77.13589166526435,
+              13.330683709777043
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1032",
+        "district": "Tumakuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.09766103924994,
+              13.36370283790683
+            ],
+            [
+              77.0982655798644,
+              13.363763781257989
+            ],
+            [
+              77.09834289805961,
+              13.364351287269017
+            ],
+            [
+              77.09761099074886,
+              13.364351287269017
+            ],
+            [
+              77.09766103924994,
+              13.36370283790683
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1033",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.14805252085736,
+              13.321073821698347
+            ],
+            [
+              77.14871829992451,
+              13.32116046501345
+            ],
+            [
+              77.14877149094333,
+              13.321875978686995
+            ],
+            [
+              77.14798916720854,
+              13.321875978686995
+            ],
+            [
+              77.14805252085736,
+              13.321073821698347
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1034",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.09846736180418,
+              13.354302491769865
+            ],
+            [
+              77.09908500247502,
+              13.354309058060371
+            ],
+            [
+              77.09916505586688,
+              13.355042165794861
+            ],
+            [
+              77.09845732824981,
+              13.355042165794861
+            ],
+            [
+              77.09846736180418,
+              13.354302491769865
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1035",
+        "district": "Tumakuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.10471916962358,
+              13.364844996548404
+            ],
+            [
+              77.10562515228284,
+              13.364889383400147
+            ],
+            [
+              77.10571107546097,
+              13.365541420100795
+            ],
+            [
+              77.104678010832,
+              13.365541420100795
+            ],
+            [
+              77.10471916962358,
+              13.364844996548404
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1036",
+        "district": "Tumakuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0843168907578,
+              13.326788742720735
+            ],
+            [
+              77.08485763216717,
+              13.326804552804747
+            ],
+            [
+              77.08491414407462,
+              13.327632441017217
+            ],
+            [
+              77.08423739411258,
+              13.327632441017217
+            ],
+            [
+              77.0843168907578,
+              13.326788742720735
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1037",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.13637571762114,
+              13.362408092867554
+            ],
+            [
+              77.13723163656398,
+              13.362447084251938
+            ],
+            [
+              77.13726393629463,
+              13.363194782441889
+            ],
+            [
+              77.13633112915994,
+              13.363194782441889
+            ],
+            [
+              77.13637571762114,
+              13.362408092867554
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1038",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.07751453539521,
+              13.299749606056503
+            ],
+            [
+              77.07849810252301,
+              13.299790395786843
+            ],
+            [
+              77.07858734155856,
+              13.300262407366544
+            ],
+            [
+              77.07745316537712,
+              13.300262407366544
+            ],
+            [
+              77.07751453539521,
+              13.299749606056503
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1039",
+        "district": "Tumakuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.06156692596966,
+              13.365221310677285
+            ],
+            [
+              77.0622167499779,
+              13.36525691560137
+            ],
+            [
+              77.06224307881146,
+              13.3661212722732
+            ],
+            [
+              77.06155928202557,
+              13.3661212722732
+            ],
+            [
+              77.06156692596966,
+              13.365221310677285
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1040",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.13950693783993,
+              13.376879027176406
+            ],
+            [
+              77.14005167497515,
+              13.376928736259826
+            ],
+            [
+              77.1400702766555,
+              13.37740809394889
+            ],
+            [
+              77.13950101111409,
+              13.37740809394889
+            ],
+            [
+              77.13950693783993,
+              13.376879027176406
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1041",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.05302949351993,
+              13.308371220084268
+            ],
+            [
+              77.05394051056517,
+              13.308377013628185
+            ],
+            [
+              77.05396688431357,
+              13.308910223197417
+            ],
+            [
+              77.05302872684437,
+              13.308910223197417
+            ],
+            [
+              77.05302949351993,
+              13.308371220084268
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1042",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.06027093595425,
+              13.31386949481641
+            ],
+            [
+              77.06115169323327,
+              13.31388336775351
+            ],
+            [
+              77.0612372406833,
+              13.314575378842079
+            ],
+            [
+              77.06025373543301,
+              13.314575378842079
+            ],
+            [
+              77.06027093595425,
+              13.31386949481641
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1043",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0697808295838,
+              13.318763579237686
+            ],
+            [
+              77.07056956550709,
+              13.318859482679605
+            ],
+            [
+              77.07059622730854,
+              13.319299561813175
+            ],
+            [
+              77.06974335309339,
+              13.319299561813175
+            ],
+            [
+              77.0697808295838,
+              13.318763579237686
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1044",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1111717634791,
+              13.304726757722301
+            ],
+            [
+              77.1116864787569,
+              13.304767417586957
+            ],
+            [
+              77.11174509752577,
+              13.305284506037218
+            ],
+            [
+              77.11109286321066,
+              13.305284506037218
+            ],
+            [
+              77.1111717634791,
+              13.304726757722301
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1045",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.05271367777974,
+              13.30034953127077
+            ],
+            [
+              77.05329732892334,
+              13.300402958213628
+            ],
+            [
+              77.05334834551432,
+              13.301266850714835
+            ],
+            [
+              77.05269282421487,
+              13.301266850714835
+            ],
+            [
+              77.05271367777974,
+              13.30034953127077
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1046",
+        "district": "Tumakuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.14772436912209,
+              13.33988482977462
+            ],
+            [
+              77.14828346921828,
+              13.339942445335463
+            ],
+            [
+              77.14838223063003,
+              13.340499744365555
+            ],
+            [
+              77.14768111402323,
+              13.340499744365555
+            ],
+            [
+              77.14772436912209,
+              13.33988482977462
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1047",
+        "district": "Tumakuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.09526028744679,
+              13.369192697377402
+            ],
+            [
+              77.09618265843181,
+              13.369247149571178
+            ],
+            [
+              77.09618493260528,
+              13.369729149898363
+            ],
+            [
+              77.09516546234119,
+              13.369729149898363
+            ],
+            [
+              77.09526028744679,
+              13.369192697377402
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1048",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.13975012031041,
+              13.29300990255263
+            ],
+            [
+              77.14026611150241,
+              13.293073784790895
+            ],
+            [
+              77.14027467289841,
+              13.293619270309904
+            ],
+            [
+              77.13970898353843,
+              13.293619270309904
+            ],
+            [
+              77.13975012031041,
+              13.29300990255263
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1049",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.12951497029542,
+              13.357941422378063
+            ],
+            [
+              77.13022236646711,
+              13.357974621605308
+            ],
+            [
+              77.1302937721516,
+              13.358539527911631
+            ],
+            [
+              77.12948374124734,
+              13.358539527911631
+            ],
+            [
+              77.12951497029542,
+              13.357941422378063
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1050",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.13127689846843,
+              13.333161998502323
+            ],
+            [
+              77.13208934225993,
+              13.333247763724826
+            ],
+            [
+              77.13216971873229,
+              13.333940537251546
+            ],
+            [
+              77.13121387972545,
+              13.333940537251546
+            ],
+            [
+              77.13127689846843,
+              13.333161998502323
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1051",
+        "district": "Tumakuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.09717091733448,
+              13.361439694035333
+            ],
+            [
+              77.09779124172566,
+              13.361506518876933
+            ],
+            [
+              77.09788267084487,
+              13.362226604229075
+            ],
+            [
+              77.09709007159186,
+              13.362226604229075
+            ],
+            [
+              77.09717091733448,
+              13.361439694035333
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1052",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.06332025731453,
+              13.302739997830683
+            ],
+            [
+              77.06424558589734,
+              13.3028005677574
+            ],
+            [
+              77.06434054078602,
+              13.303442945088083
+            ],
+            [
+              77.06327037078113,
+              13.303442945088083
+            ],
+            [
+              77.06332025731453,
+              13.302739997830683
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1053",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.05595851990206,
+              13.329248897211695
+            ],
+            [
+              77.05675044302629,
+              13.329265010245056
+            ],
+            [
+              77.05682474159447,
+              13.329808497433618
+            ],
+            [
+              77.05595233648197,
+              13.329808497433618
+            ],
+            [
+              77.05595851990206,
+              13.329248897211695
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1054",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.12015649698593,
+              13.309651405704148
+            ],
+            [
+              77.12073401724713,
+              13.309718779873315
+            ],
+            [
+              77.12080786903567,
+              13.310275269076158
+            ],
+            [
+              77.12008550886213,
+              13.310275269076158
+            ],
+            [
+              77.12015649698593,
+              13.309651405704148
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1055",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.11266394782598,
+              13.312661178346126
+            ],
+            [
+              77.11334430992966,
+              13.312730463453565
+            ],
+            [
+              77.1134231171095,
+              13.31358199367077
+            ],
+            [
+              77.11256881419949,
+              13.31358199367077
+            ],
+            [
+              77.11266394782598,
+              13.312661178346126
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1056",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.07489152255975,
+              13.362905903348462
+            ],
+            [
+              77.07570132656497,
+              13.362939953625888
+            ],
+            [
+              77.07573523505356,
+              13.363847225511721
+            ],
+            [
+              77.07480893310704,
+              13.363847225511721
+            ],
+            [
+              77.07489152255975,
+              13.362905903348462
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1057",
+        "district": "Tumakuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.07265469949324,
+              13.292272388321082
+            ],
+            [
+              77.07332691926295,
+              13.292320829766988
+            ],
+            [
+              77.07336057250247,
+              13.293079592318293
+            ],
+            [
+              77.07256239214246,
+              13.293079592318293
+            ],
+            [
+              77.07265469949324,
+              13.292272388321082
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1058",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1341933580161,
+              13.328479103896358
+            ],
+            [
+              77.13494330139521,
+              13.328484669504848
+            ],
+            [
+              77.13497389781531,
+              13.329279762416707
+            ],
+            [
+              77.13417817095541,
+              13.329279762416707
+            ],
+            [
+              77.1341933580161,
+              13.328479103896358
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1059",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.06504100141798,
+              13.318301907743237
+            ],
+            [
+              77.0655607258114,
+              13.318338541337928
+            ],
+            [
+              77.06564159379452,
+              13.319020017120714
+            ],
+            [
+              77.06496647322763,
+              13.319020017120714
+            ],
+            [
+              77.06504100141798,
+              13.318301907743237
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1060",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.09228082728394,
+              13.31801223201081
+            ],
+            [
+              77.09293155276438,
+              13.318092908583617
+            ],
+            [
+              77.09301865142034,
+              13.318919008721144
+            ],
+            [
+              77.0922137188362,
+              13.318919008721144
+            ],
+            [
+              77.09228082728394,
+              13.31801223201081
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1061",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.11937401384169,
+              13.348529186275167
+            ],
+            [
+              77.12008277282835,
+              13.348556574786155
+            ],
+            [
+              77.12011250978685,
+              13.349325061102379
+            ],
+            [
+              77.11928311901828,
+              13.349325061102379
+            ],
+            [
+              77.11937401384169,
+              13.348529186275167
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1062",
+        "district": "Tumakuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.11153547517996,
+              13.3047309190332
+            ],
+            [
+              77.11219316323545,
+              13.304780719696748
+            ],
+            [
+              77.11227805034379,
+              13.305537978952067
+            ],
+            [
+              77.11149600148865,
+              13.305537978952067
+            ],
+            [
+              77.11153547517996,
+              13.3047309190332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1063",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.13827115623734,
+              13.37712370679079
+            ],
+            [
+              77.13896043797718,
+              13.377163190640697
+            ],
+            [
+              77.1389968645966,
+              13.377700135302636
+            ],
+            [
+              77.13820150221035,
+              13.377700135302636
+            ],
+            [
+              77.13827115623734,
+              13.37712370679079
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1064",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.10749807044579,
+              13.333924671936783
+            ],
+            [
+              77.10828756251676,
+              13.333973572535736
+            ],
+            [
+              77.10829961748794,
+              13.334905942315597
+            ],
+            [
+              77.10740108170937,
+              13.334905942315597
+            ],
+            [
+              77.10749807044579,
+              13.333924671936783
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1065",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.10114773502706,
+              13.346622875038632
+            ],
+            [
+              77.10167383659679,
+              13.346711042620433
+            ],
+            [
+              77.1017694568154,
+              13.347458271311442
+            ],
+            [
+              77.10112274762875,
+              13.347458271311442
+            ],
+            [
+              77.10114773502706,
+              13.346622875038632
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1066",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.05754454913222,
+              13.358961162457467
+            ],
+            [
+              77.05839319154622,
+              13.35898837564806
+            ],
+            [
+              77.05846018262027,
+              13.359569693631338
+            ],
+            [
+              77.05745804233551,
+              13.359569693631338
+            ],
+            [
+              77.05754454913222,
+              13.358961162457467
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1067",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.12838168990476,
+              13.358197154134446
+            ],
+            [
+              77.12916124170796,
+              13.358243194921672
+            ],
+            [
+              77.12922710544552,
+              13.358714860033544
+            ],
+            [
+              77.12829433166958,
+              13.358714860033544
+            ],
+            [
+              77.12838168990476,
+              13.358197154134446
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1068",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1153265765122,
+              13.33254600880034
+            ],
+            [
+              77.11583360419061,
+              13.332556185147503
+            ],
+            [
+              77.11592912390648,
+              13.333133103877898
+            ],
+            [
+              77.1152572482332,
+              13.333133103877898
+            ],
+            [
+              77.1153265765122,
+              13.33254600880034
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1069",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.13044842202397,
+              13.33839577567924
+            ],
+            [
+              77.13095993647592,
+              13.338442331262288
+            ],
+            [
+              77.13100854286816,
+              13.339260730063934
+            ],
+            [
+              77.1304434454327,
+              13.339260730063934
+            ],
+            [
+              77.13044842202397,
+              13.33839577567924
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1070",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.05914964105695,
+              13.347117806346281
+            ],
+            [
+              77.06004930971092,
+              13.347135740750215
+            ],
+            [
+              77.06012438298772,
+              13.347835896849832
+            ],
+            [
+              77.05906813059644,
+              13.347835896849832
+            ],
+            [
+              77.05914964105695,
+              13.347117806346281
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1071",
+        "district": "Tumakuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.11590619888558,
+              13.336567928996061
+            ],
+            [
+              77.11666266015389,
+              13.336656335867461
+            ],
+            [
+              77.11669040321179,
+              13.337200404704191
+            ],
+            [
+              77.11584453621046,
+              13.337200404704191
+            ],
+            [
+              77.11590619888558,
+              13.336567928996061
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1072",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.05558348230349,
+              13.33207748182572
+            ],
+            [
+              77.05615108391689,
+              13.332117274480005
+            ],
+            [
+              77.05620677899053,
+              13.333021464525958
+            ],
+            [
+              77.05551156105491,
+              13.333021464525958
+            ],
+            [
+              77.05558348230349,
+              13.33207748182572
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1073",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.10366263999103,
+              13.323565521105351
+            ],
+            [
+              77.10464690002371,
+              13.323591793828003
+            ],
+            [
+              77.10467707271243,
+              13.324416447386563
+            ],
+            [
+              77.10362193844445,
+              13.324416447386563
+            ],
+            [
+              77.10366263999103,
+              13.323565521105351
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1074",
+        "district": "Tumakuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.14456078396391,
+              13.384113065522776
+            ],
+            [
+              77.14516050597348,
+              13.384123273645697
+            ],
+            [
+              77.14516639916916,
+              13.3848804804254
+            ],
+            [
+              77.14453508538715,
+              13.3848804804254
+            ],
+            [
+              77.14456078396391,
+              13.384113065522776
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1075",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0634230377482,
+              13.333566465498885
+            ],
+            [
+              77.0642271445506,
+              13.333579379718563
+            ],
+            [
+              77.0642887958934,
+              13.334082160750315
+            ],
+            [
+              77.06334227098331,
+              13.334082160750315
+            ],
+            [
+              77.0634230377482,
+              13.333566465498885
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1076",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.10992866829831,
+              13.357402374741765
+            ],
+            [
+              77.11077683624953,
+              13.357467682675928
+            ],
+            [
+              77.1108120490528,
+              13.358268095288235
+            ],
+            [
+              77.10987255519868,
+              13.358268095288235
+            ],
+            [
+              77.10992866829831,
+              13.357402374741765
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1077",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.07678345003553,
+              13.384253117872102
+            ],
+            [
+              77.07754557520126,
+              13.384318760740198
+            ],
+            [
+              77.07756670795922,
+              13.384996085630421
+            ],
+            [
+              77.0767676022749,
+              13.384996085630421
+            ],
+            [
+              77.07678345003553,
+              13.384253117872102
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1078",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0813961232673,
+              13.30613849170278
+            ],
+            [
+              77.08230689019166,
+              13.306206062917852
+            ],
+            [
+              77.08239091086965,
+              13.307103079624929
+            ],
+            [
+              77.08133296016715,
+              13.307103079624929
+            ],
+            [
+              77.0813961232673,
+              13.30613849170278
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1079",
+        "district": "Tumakuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.09613664164384,
+              13.294479619370769
+            ],
+            [
+              77.09683682361668,
+              13.294494559330357
+            ],
+            [
+              77.09686521569438,
+              13.29520236828264
+            ],
+            [
+              77.09607400414181,
+              13.29520236828264
+            ],
+            [
+              77.09613664164384,
+              13.294479619370769
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1080",
+        "district": "Tumakuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.09101806110331,
+              13.2941308865405
+            ],
+            [
+              77.09189022587597,
+              13.294179148967089
+            ],
+            [
+              77.09194620790495,
+              13.294852864547078
+            ],
+            [
+              77.09098610124333,
+              13.294852864547078
+            ],
+            [
+              77.09101806110331,
+              13.2941308865405
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1081",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.14451151678558,
+              13.34766842747963
+            ],
+            [
+              77.14519104670357,
+              13.347749891799017
+            ],
+            [
+              77.14522390409272,
+              13.348445545460333
+            ],
+            [
+              77.14442748812885,
+              13.348445545460333
+            ],
+            [
+              77.14451151678558,
+              13.34766842747963
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1082",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.14440846876565,
+              13.37370583425823
+            ],
+            [
+              77.14535825656635,
+              13.373720815999706
+            ],
+            [
+              77.14542940989293,
+              13.374599558958712
+            ],
+            [
+              77.14432126352315,
+              13.374599558958712
+            ],
+            [
+              77.14440846876565,
+              13.37370583425823
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1083",
+        "district": "Tumakuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0867945518668,
+              13.304189279743547
+            ],
+            [
+              77.08747646594726,
+              13.304287354410329
+            ],
+            [
+              77.08751228732123,
+              13.30474925887857
+            ],
+            [
+              77.0867834576803,
+              13.30474925887857
+            ],
+            [
+              77.0867945518668,
+              13.304189279743547
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1084",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.13640002107505,
+              13.313226543958905
+            ],
+            [
+              77.13706992346546,
+              13.313233771883713
+            ],
+            [
+              77.13715862390004,
+              13.313945277813476
+            ],
+            [
+              77.13638261845556,
+              13.313945277813476
+            ],
+            [
+              77.13640002107505,
+              13.313226543958905
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1085",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.05365842714859,
+              13.364748483047526
+            ],
+            [
+              77.05462641795572,
+              13.364844814503105
+            ],
+            [
+              77.05471386980356,
+              13.365551549437363
+            ],
+            [
+              77.05362474626699,
+              13.365551549437363
+            ],
+            [
+              77.05365842714859,
+              13.364748483047526
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1086",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.11965210107972,
+              13.312458533604367
+            ],
+            [
+              77.12032659801083,
+              13.312484644180909
+            ],
+            [
+              77.1203525797737,
+              13.313155009789359
+            ],
+            [
+              77.11957484853123,
+              13.313155009789359
+            ],
+            [
+              77.11965210107972,
+              13.312458533604367
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1087",
+        "district": "Tumakuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.09555032932205,
+              13.38488252141297
+            ],
+            [
+              77.09605775243571,
+              13.38495786590255
+            ],
+            [
+              77.09608883522117,
+              13.38578650210028
+            ],
+            [
+              77.09545292870652,
+              13.38578650210028
+            ],
+            [
+              77.09555032932205,
+              13.38488252141297
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1088",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.12912658309887,
+              13.336146206283347
+            ],
+            [
+              77.12971248510637,
+              13.336222447538411
+            ],
+            [
+              77.12972519337234,
+              13.337132849585762
+            ],
+            [
+              77.12908968458582,
+              13.337132849585762
+            ],
+            [
+              77.12912658309887,
+              13.336146206283347
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1089",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.10783930574117,
+              13.374555197099708
+            ],
+            [
+              77.10844138295847,
+              13.374623615453816
+            ],
+            [
+              77.10852858800327,
+              13.375385158801157
+            ],
+            [
+              77.10777160068953,
+              13.375385158801157
+            ],
+            [
+              77.10783930574117,
+              13.374555197099708
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1090",
+        "district": "Tumakuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08920970950462,
+              13.298900336297107
+            ],
+            [
+              77.09012310897813,
+              13.298946462774282
+            ],
+            [
+              77.09021525933154,
+              13.299699185057923
+            ],
+            [
+              77.08911223390199,
+              13.299699185057923
+            ],
+            [
+              77.08920970950462,
+              13.298900336297107
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1091",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.09817678377814,
+              13.336755281056686
+            ],
+            [
+              77.09907595734182,
+              13.336765317703815
+            ],
+            [
+              77.09908959090423,
+              13.337457951752084
+            ],
+            [
+              77.09817521769108,
+              13.337457951752084
+            ],
+            [
+              77.09817678377814,
+              13.336755281056686
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1092",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.10359848542322,
+              13.300861550499743
+            ],
+            [
+              77.10431166919973,
+              13.300940363150298
+            ],
+            [
+              77.10435145042159,
+              13.30167752045647
+            ],
+            [
+              77.10354796989235,
+              13.30167752045647
+            ],
+            [
+              77.10359848542322,
+              13.300861550499743
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1093",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.09906135324243,
+              13.305465305632982
+            ],
+            [
+              77.09957479952652,
+              13.305565191758527
+            ],
+            [
+              77.0995821177204,
+              13.306448421021516
+            ],
+            [
+              77.09904322914495,
+              13.306448421021516
+            ],
+            [
+              77.09906135324243,
+              13.305465305632982
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1094",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.09647513401443,
+              13.342480152094103
+            ],
+            [
+              77.09746238402772,
+              13.34250805567381
+            ],
+            [
+              77.09749378331782,
+              13.343449300518602
+            ],
+            [
+              77.09638739982802,
+              13.343449300518602
+            ],
+            [
+              77.09647513401443,
+              13.342480152094103
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1095",
+        "district": "Tumakuru",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.10141076072142,
+              13.355761759017557
+            ],
+            [
+              77.10232573092422,
+              13.355809268027018
+            ],
+            [
+              77.1023597724496,
+              13.356449737894014
+            ],
+            [
+              77.10132467681348,
+              13.356449737894014
+            ],
+            [
+              77.10141076072142,
+              13.355761759017557
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1096",
+        "district": "Tumakuru",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.09636475041329,
+              13.379125637051223
+            ],
+            [
+              77.09691622579544,
+              13.379175908687193
+            ],
+            [
+              77.09699025302538,
+              13.380097053924075
+            ],
+            [
+              77.09629368916734,
+              13.380097053924075
+            ],
+            [
+              77.09636475041329,
+              13.379125637051223
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1097",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.14993718319725,
+              13.362759874787576
+            ],
+            [
+              77.15064341839133,
+              13.362849454046632
+            ],
+            [
+              77.15071789789215,
+              13.363290405534748
+            ],
+            [
+              77.14984411135032,
+              13.363290405534748
+            ],
+            [
+              77.14993718319725,
+              13.362759874787576
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1098",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.13484675390248,
+              13.299194702539339
+            ],
+            [
+              77.1358164262093,
+              13.29926119366147
+            ],
+            [
+              77.1358783237616,
+              13.30018755572126
+            ],
+            [
+              77.1347543080678,
+              13.30018755572126
+            ],
+            [
+              77.13484675390248,
+              13.299194702539339
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "TUMA_DEMO_1099",
+        "district": "Tumakuru",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Marketing Board, Tumakuru",
+        "survey_date": "2026-10-05"
+      }
+    }
+  ]
+}

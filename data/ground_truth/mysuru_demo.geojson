@@ -1,0 +1,3705 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.5914701769098,
+              12.304982777999653
+            ],
+            [
+              76.59218535459657,
+              12.30502740796681
+            ],
+            [
+              76.59222945223766,
+              12.305791966811524
+            ],
+            [
+              76.59142385119085,
+              12.305791966811524
+            ],
+            [
+              76.5914701769098,
+              12.304982777999653
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1000",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.62149000294225,
+              12.335273156633805
+            ],
+            [
+              76.62209957868086,
+              12.335318665039297
+            ],
+            [
+              76.62216151672531,
+              12.336217504324194
+            ],
+            [
+              76.62145242072404,
+              12.336217504324194
+            ],
+            [
+              76.62149000294225,
+              12.335273156633805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1001",
+        "district": "Mysuru",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.67688000130875,
+              12.313992418151788
+            ],
+            [
+              76.6773832822143,
+              12.314050477085605
+            ],
+            [
+              76.67741769604025,
+              12.314741513991454
+            ],
+            [
+              76.67686398826245,
+              12.314741513991454
+            ],
+            [
+              76.67688000130875,
+              12.313992418151788
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1002",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.66067733837153,
+              12.318216854122273
+            ],
+            [
+              76.66145226385636,
+              12.318222553645105
+            ],
+            [
+              76.66145474973746,
+              12.319068986208956
+            ],
+            [
+              76.66063106441169,
+              12.319068986208956
+            ],
+            [
+              76.66067733837153,
+              12.318216854122273
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1003",
+        "district": "Mysuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.65001464206004,
+              12.283304051067532
+            ],
+            [
+              76.65083914860048,
+              12.283322034345117
+            ],
+            [
+              76.65086173673512,
+              12.284215401741495
+            ],
+            [
+              76.64996650366244,
+              12.284215401741495
+            ],
+            [
+              76.65001464206004,
+              12.283304051067532
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1004",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.68919324600111,
+              12.326358275539585
+            ],
+            [
+              76.68970581576978,
+              12.326414248716315
+            ],
+            [
+              76.68980156835465,
+              12.32721784957298
+            ],
+            [
+              76.68910046536732,
+              12.32721784957298
+            ],
+            [
+              76.68919324600111,
+              12.326358275539585
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1005",
+        "district": "Mysuru",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.63159865715772,
+              12.254475892169316
+            ],
+            [
+              76.63240958324498,
+              12.254544003582428
+            ],
+            [
+              76.63243898838182,
+              12.255204646905977
+            ],
+            [
+              76.63154814133915,
+              12.255204646905977
+            ],
+            [
+              76.63159865715772,
+              12.254475892169316
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1006",
+        "district": "Mysuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64038706044992,
+              12.341436355206053
+            ],
+            [
+              76.64126391444162,
+              12.341449264369128
+            ],
+            [
+              76.64134995232722,
+              12.342221960116593
+            ],
+            [
+              76.64038141450163,
+              12.342221960116593
+            ],
+            [
+              76.64038706044992,
+              12.341436355206053
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1007",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.61788352315347,
+              12.293163442967868
+            ],
+            [
+              76.61848606463472,
+              12.293259839334567
+            ],
+            [
+              76.61853777583046,
+              12.293766327470278
+            ],
+            [
+              76.61783917648572,
+              12.293766327470278
+            ],
+            [
+              76.61788352315347,
+              12.293163442967868
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1008",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.61139124615724,
+              12.293831500087514
+            ],
+            [
+              76.6123397396612,
+              12.293882878990544
+            ],
+            [
+              76.61239308171325,
+              12.294823915318844
+            ],
+            [
+              76.61130566039017,
+              12.294823915318844
+            ],
+            [
+              76.61139124615724,
+              12.293831500087514
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1009",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.61683898133917,
+              12.278224398169375
+            ],
+            [
+              76.61770560566677,
+              12.278281057900163
+            ],
+            [
+              76.61774075159613,
+              12.278813152440758
+            ],
+            [
+              76.61676773466155,
+              12.278813152440758
+            ],
+            [
+              76.61683898133917,
+              12.278224398169375
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1010",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.68989995470817,
+              12.314475928546504
+            ],
+            [
+              76.69084823069139,
+              12.314554334295199
+            ],
+            [
+              76.6908898315566,
+              12.31533516798446
+            ],
+            [
+              76.68983587779306,
+              12.31533516798446
+            ],
+            [
+              76.68989995470817,
+              12.314475928546504
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1011",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64610977753303,
+              12.320706507439638
+            ],
+            [
+              76.64681278783995,
+              12.320791406576381
+            ],
+            [
+              76.64688511967412,
+              12.321513173415328
+            ],
+            [
+              76.64607765507994,
+              12.321513173415328
+            ],
+            [
+              76.64610977753303,
+              12.320706507439638
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1012",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.6800082197007,
+              12.308445597690076
+            ],
+            [
+              76.68081066433442,
+              12.308470782590463
+            ],
+            [
+              76.68084986080265,
+              12.309422849123933
+            ],
+            [
+              76.67996128221127,
+              12.309422849123933
+            ],
+            [
+              76.6800082197007,
+              12.308445597690076
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1013",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.66253412409274,
+              12.33454284922194
+            ],
+            [
+              76.66306151852537,
+              12.334632044628155
+            ],
+            [
+              76.66313274212852,
+              12.335405070046276
+            ],
+            [
+              76.66246688489662,
+              12.335405070046276
+            ],
+            [
+              76.66253412409274,
+              12.33454284922194
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1014",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.63345255968957,
+              12.287338291558495
+            ],
+            [
+              76.63417942551105,
+              12.28737873853828
+            ],
+            [
+              76.63422776029869,
+              12.287873014906523
+            ],
+            [
+              76.63342455709854,
+              12.287873014906523
+            ],
+            [
+              76.63345255968957,
+              12.287338291558495
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1015",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.63613470246248,
+              12.251386125587324
+            ],
+            [
+              76.63685145924454,
+              12.251454868749613
+            ],
+            [
+              76.63685461982494,
+              12.252267941221655
+            ],
+            [
+              76.636078061234,
+              12.252267941221655
+            ],
+            [
+              76.63613470246248,
+              12.251386125587324
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1016",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.67288594646816,
+              12.264736981340114
+            ],
+            [
+              76.67346522947102,
+              12.264740440016254
+            ],
+            [
+              76.67347532020631,
+              12.265450945788853
+            ],
+            [
+              76.67284995038072,
+              12.265450945788853
+            ],
+            [
+              76.67288594646816,
+              12.264736981340114
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1017",
+        "district": "Mysuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.66399625268802,
+              12.344435300452526
+            ],
+            [
+              76.66452944923637,
+              12.344500406403782
+            ],
+            [
+              76.6646102799861,
+              12.345153199933737
+            ],
+            [
+              76.6639491941158,
+              12.345153199933737
+            ],
+            [
+              76.66399625268802,
+              12.344435300452526
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1018",
+        "district": "Mysuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.60031387710754,
+              12.309040719239604
+            ],
+            [
+              76.60107028870581,
+              12.309049242284601
+            ],
+            [
+              76.60110442880612,
+              12.309952217554187
+            ],
+            [
+              76.60027421702178,
+              12.309952217554187
+            ],
+            [
+              76.60031387710754,
+              12.309040719239604
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1019",
+        "district": "Mysuru",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.68973281047703,
+              12.298261831817506
+            ],
+            [
+              76.69063050979945,
+              12.298331468153656
+            ],
+            [
+              76.6906800545787,
+              12.299014650854469
+            ],
+            [
+              76.68966160710299,
+              12.299014650854469
+            ],
+            [
+              76.68973281047703,
+              12.298261831817506
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1020",
+        "district": "Mysuru",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.65090759432678,
+              12.26496769181838
+            ],
+            [
+              76.6514262141083,
+              12.26503001092431
+            ],
+            [
+              76.65149637625288,
+              12.265954520591293
+            ],
+            [
+              76.65090377691962,
+              12.265954520591293
+            ],
+            [
+              76.65090759432678,
+              12.26496769181838
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1021",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.59138198219708,
+              12.267869179572976
+            ],
+            [
+              76.59211739464183,
+              12.267920987892404
+            ],
+            [
+              76.5921828596268,
+              12.268494185758733
+            ],
+            [
+              76.59136230024026,
+              12.268494185758733
+            ],
+            [
+              76.59138198219708,
+              12.267869179572976
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1022",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64417243004706,
+              12.270588168401531
+            ],
+            [
+              76.64475687593017,
+              12.270650230479378
+            ],
+            [
+              76.64480231213528,
+              12.27126567538222
+            ],
+            [
+              76.64410866058638,
+              12.27126567538222
+            ],
+            [
+              76.64417243004706,
+              12.270588168401531
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1023",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.68604481172208,
+              12.295852160307467
+            ],
+            [
+              76.68700108473422,
+              12.295880471138481
+            ],
+            [
+              76.68703397334484,
+              12.296573842274652
+            ],
+            [
+              76.68603305491565,
+              12.296573842274652
+            ],
+            [
+              76.68604481172208,
+              12.295852160307467
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1024",
+        "district": "Mysuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.6557384807747,
+              12.298716726100066
+            ],
+            [
+              76.65669934686062,
+              12.298783371079406
+            ],
+            [
+              76.65674395020109,
+              12.299325906999783
+            ],
+            [
+              76.6557304634462,
+              12.299325906999783
+            ],
+            [
+              76.6557384807747,
+              12.298716726100066
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1025",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.61317828852295,
+              12.263683623868824
+            ],
+            [
+              76.61390840652165,
+              12.263767054125037
+            ],
+            [
+              76.61394795701293,
+              12.26465332982425
+            ],
+            [
+              76.61316086835242,
+              12.26465332982425
+            ],
+            [
+              76.61317828852295,
+              12.263683623868824
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1026",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.66282361559608,
+              12.294513519352199
+            ],
+            [
+              76.66377374767629,
+              12.294567159113289
+            ],
+            [
+              76.66378520692733,
+              12.295304785245042
+            ],
+            [
+              76.6628076004737,
+              12.295304785245042
+            ],
+            [
+              76.66282361559608,
+              12.294513519352199
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1027",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.62485513432385,
+              12.334683726537296
+            ],
+            [
+              76.62542187733409,
+              12.334702040476907
+            ],
+            [
+              76.6254958247659,
+              12.33524946812265
+            ],
+            [
+              76.62480763959442,
+              12.33524946812265
+            ],
+            [
+              76.62485513432385,
+              12.334683726537296
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1028",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.60943313853409,
+              12.29274931029774
+            ],
+            [
+              76.60996584714282,
+              12.292782070280703
+            ],
+            [
+              76.61001969117419,
+              12.293654502054453
+            ],
+            [
+              76.60941461573249,
+              12.293654502054453
+            ],
+            [
+              76.60943313853409,
+              12.29274931029774
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1029",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.66350718611402,
+              12.272654623143241
+            ],
+            [
+              76.66415576449481,
+              12.27273578573654
+            ],
+            [
+              76.66420101480932,
+              12.27321293972035
+            ],
+            [
+              76.66348881052596,
+              12.27321293972035
+            ],
+            [
+              76.66350718611402,
+              12.272654623143241
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1030",
+        "district": "Mysuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64593298859876,
+              12.25981230964953
+            ],
+            [
+              76.64662992100247,
+              12.259851713812166
+            ],
+            [
+              76.64666958030806,
+              12.260796183607248
+            ],
+            [
+              76.64588369592947,
+              12.260796183607248
+            ],
+            [
+              76.64593298859876,
+              12.25981230964953
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1031",
+        "district": "Mysuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.60051104432952,
+              12.274668827225588
+            ],
+            [
+              76.60130534973523,
+              12.274756103034992
+            ],
+            [
+              76.60134086816412,
+              12.275316512999927
+            ],
+            [
+              76.60046478023189,
+              12.275316512999927
+            ],
+            [
+              76.60051104432952,
+              12.274668827225588
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1032",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64020965112498,
+              12.318089382073325
+            ],
+            [
+              76.64075320989032,
+              12.318187094270453
+            ],
+            [
+              76.64078684212711,
+              12.318771096035617
+            ],
+            [
+              76.64016301863126,
+              12.318771096035617
+            ],
+            [
+              76.64020965112498,
+              12.318089382073325
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1033",
+        "district": "Mysuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.6602060637344,
+              12.293226038049005
+            ],
+            [
+              76.66074776299799,
+              12.29329731160591
+            ],
+            [
+              76.66079968400963,
+              12.294089091178497
+            ],
+            [
+              76.66016457011527,
+              12.294089091178497
+            ],
+            [
+              76.6602060637344,
+              12.293226038049005
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1034",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.60648145148726,
+              12.34405144332694
+            ],
+            [
+              76.60710070803536,
+              12.344129512323063
+            ],
+            [
+              76.60716652636322,
+              12.344758966236336
+            ],
+            [
+              76.60648034240012,
+              12.344758966236336
+            ],
+            [
+              76.60648145148726,
+              12.34405144332694
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1035",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.6549931197953,
+              12.250284085916018
+            ],
+            [
+              76.6557706755549,
+              12.250304577275564
+            ],
+            [
+              76.65577441918283,
+              12.250980635259857
+            ],
+            [
+              76.65492776564578,
+              12.250980635259857
+            ],
+            [
+              76.6549931197953,
+              12.250284085916018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1036",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.6572130685979,
+              12.312860879535847
+            ],
+            [
+              76.65792388293177,
+              12.312877456447687
+            ],
+            [
+              76.65797255300001,
+              12.313723762632456
+            ],
+            [
+              76.65720466346207,
+              12.313723762632456
+            ],
+            [
+              76.6572130685979,
+              12.312860879535847
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1037",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64895299885539,
+              12.32035930782268
+            ],
+            [
+              76.6495731827984,
+              12.320434845750249
+            ],
+            [
+              76.64958914484646,
+              12.32091793799549
+            ],
+            [
+              76.64891334140523,
+              12.32091793799549
+            ],
+            [
+              76.64895299885539,
+              12.32035930782268
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1038",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.61903746939537,
+              12.342855902963855
+            ],
+            [
+              76.61964964163744,
+              12.342859439644391
+            ],
+            [
+              76.61967613117288,
+              12.343771471737096
+            ],
+            [
+              76.61902626743661,
+              12.343771471737096
+            ],
+            [
+              76.61903746939537,
+              12.342855902963855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1039",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.62687151419635,
+              12.317727624923718
+            ],
+            [
+              76.62756169392182,
+              12.317732129345245
+            ],
+            [
+              76.62764254621075,
+              12.318312869677532
+            ],
+            [
+              76.62682434745669,
+              12.318312869677532
+            ],
+            [
+              76.62687151419635,
+              12.317727624923718
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1040",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.63159573346219,
+              12.28523861097566
+            ],
+            [
+              76.63237081671177,
+              12.285323930104958
+            ],
+            [
+              76.63244605833331,
+              12.285741662284844
+            ],
+            [
+              76.6315845515265,
+              12.285741662284844
+            ],
+            [
+              76.63159573346219,
+              12.28523861097566
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1041",
+        "district": "Mysuru",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64878434026495,
+              12.323534367308627
+            ],
+            [
+              76.64942345303106,
+              12.323611862449024
+            ],
+            [
+              76.64944538588851,
+              12.3244670718913
+            ],
+            [
+              76.64877951784136,
+              12.3244670718913
+            ],
+            [
+              76.64878434026495,
+              12.323534367308627
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1042",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.61545540938387,
+              12.34041980054528
+            ],
+            [
+              76.61606100937503,
+              12.340459754341767
+            ],
+            [
+              76.61613639586716,
+              12.341318610949148
+            ],
+            [
+              76.61545519333461,
+              12.341318610949148
+            ],
+            [
+              76.61545540938387,
+              12.34041980054528
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1043",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64098273954725,
+              12.30559824745274
+            ],
+            [
+              76.64170532949217,
+              12.305621972263445
+            ],
+            [
+              76.6417800257227,
+              12.30626531773985
+            ],
+            [
+              76.64088843704862,
+              12.30626531773985
+            ],
+            [
+              76.64098273954725,
+              12.30559824745274
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1044",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.66738803244581,
+              12.347845012716444
+            ],
+            [
+              76.66826575784343,
+              12.347907784848967
+            ],
+            [
+              76.66834168014834,
+              12.348766364476571
+            ],
+            [
+              76.66733663167018,
+              12.348766364476571
+            ],
+            [
+              76.66738803244581,
+              12.347845012716444
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1045",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.68658953327795,
+              12.315248785127501
+            ],
+            [
+              76.68740024866996,
+              12.315255981860647
+            ],
+            [
+              76.68746948491956,
+              12.316120381036384
+            ],
+            [
+              76.68656315374372,
+              12.316120381036384
+            ],
+            [
+              76.68658953327795,
+              12.315248785127501
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1046",
+        "district": "Mysuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.62595512293264,
+              12.253224722197867
+            ],
+            [
+              76.62691281930232,
+              12.253246008507302
+            ],
+            [
+              76.6269196659877,
+              12.254115525605828
+            ],
+            [
+              76.62594956371329,
+              12.254115525605828
+            ],
+            [
+              76.62595512293264,
+              12.253224722197867
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1047",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64685719791062,
+              12.317106516511869
+            ],
+            [
+              76.64770259631378,
+              12.317136203344415
+            ],
+            [
+              76.64772581078832,
+              12.317946772368483
+            ],
+            [
+              76.64681464868129,
+              12.317946772368483
+            ],
+            [
+              76.64685719791062,
+              12.317106516511869
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1048",
+        "district": "Mysuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.62588677502035,
+              12.31483292937336
+            ],
+            [
+              76.62684626222973,
+              12.314877568072573
+            ],
+            [
+              76.62686128529944,
+              12.315385487071365
+            ],
+            [
+              76.62583331287611,
+              12.315385487071365
+            ],
+            [
+              76.62588677502035,
+              12.31483292937336
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1049",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.66557867210648,
+              12.277977526632052
+            ],
+            [
+              76.66637578530609,
+              12.27801354691729
+            ],
+            [
+              76.66638507010592,
+              12.278812622671744
+            ],
+            [
+              76.66550744910766,
+              12.278812622671744
+            ],
+            [
+              76.66557867210648,
+              12.277977526632052
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1050",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.6564292469115,
+              12.337999354985223
+            ],
+            [
+              76.65698034960647,
+              12.338030018510931
+            ],
+            [
+              76.65700535186619,
+              12.338859844272578
+            ],
+            [
+              76.65636389216144,
+              12.338859844272578
+            ],
+            [
+              76.6564292469115,
+              12.337999354985223
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1051",
+        "district": "Mysuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.61731283682205,
+              12.270249735143539
+            ],
+            [
+              76.61793253944015,
+              12.270344325221687
+            ],
+            [
+              76.61793500983373,
+              12.27081412450685
+            ],
+            [
+              76.61728572759185,
+              12.27081412450685
+            ],
+            [
+              76.61731283682205,
+              12.270249735143539
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1052",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.66973637024142,
+              12.26933045364014
+            ],
+            [
+              76.67034328613269,
+              12.26937738537972
+            ],
+            [
+              76.67040891662212,
+              12.269913842385758
+            ],
+            [
+              76.66966486371498,
+              12.269913842385758
+            ],
+            [
+              76.66973637024142,
+              12.26933045364014
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1053",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.62176959484185,
+              12.305008894398968
+            ],
+            [
+              76.6227005566179,
+              12.305099717611954
+            ],
+            [
+              76.62276063724403,
+              12.305881655967516
+            ],
+            [
+              76.62173372895803,
+              12.305881655967516
+            ],
+            [
+              76.62176959484185,
+              12.305008894398968
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1054",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.67384652560183,
+              12.277566470747121
+            ],
+            [
+              76.67457930468173,
+              12.27764126327414
+            ],
+            [
+              76.67462108440506,
+              12.278109684397323
+            ],
+            [
+              76.67382377654039,
+              12.278109684397323
+            ],
+            [
+              76.67384652560183,
+              12.277566470747121
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1055",
+        "district": "Mysuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.61878910713493,
+              12.333077897591203
+            ],
+            [
+              76.61967438038644,
+              12.33313532095392
+            ],
+            [
+              76.61972619187088,
+              12.333763602938442
+            ],
+            [
+              76.61878414127841,
+              12.333763602938442
+            ],
+            [
+              76.61878910713493,
+              12.333077897591203
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1056",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.59141823542899,
+              12.29387254162804
+            ],
+            [
+              76.5922203088589,
+              12.293926199038985
+            ],
+            [
+              76.59229683346891,
+              12.29484468264315
+            ],
+            [
+              76.5913758539502,
+              12.29484468264315
+            ],
+            [
+              76.59141823542899,
+              12.29387254162804
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1057",
+        "district": "Mysuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.65710597099299,
+              12.289931755813157
+            ],
+            [
+              76.65792582869497,
+              12.289960630780316
+            ],
+            [
+              76.65801278148884,
+              12.290834980877408
+            ],
+            [
+              76.65701057940325,
+              12.290834980877408
+            ],
+            [
+              76.65710597099299,
+              12.289931755813157
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1058",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.63854443398192,
+              12.321814500916021
+            ],
+            [
+              76.63939943687531,
+              12.321889686813277
+            ],
+            [
+              76.6394627767396,
+              12.322805261926236
+            ],
+            [
+              76.63848798039851,
+              12.322805261926236
+            ],
+            [
+              76.63854443398192,
+              12.321814500916021
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1059",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.62806676219165,
+              12.290164732674835
+            ],
+            [
+              76.62883640932787,
+              12.290245302894858
+            ],
+            [
+              76.62884697079787,
+              12.291026400863352
+            ],
+            [
+              76.62799574125225,
+              12.291026400863352
+            ],
+            [
+              76.62806676219165,
+              12.290164732674835
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1060",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.61701259555784,
+              12.25303448300953
+            ],
+            [
+              76.61755668636846,
+              12.253042637247844
+            ],
+            [
+              76.61761944471961,
+              12.253711596374112
+            ],
+            [
+              76.61698312494188,
+              12.253711596374112
+            ],
+            [
+              76.61701259555784,
+              12.25303448300953
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1061",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.67136565501714,
+              12.310006173132637
+            ],
+            [
+              76.67217776456499,
+              12.310104650429228
+            ],
+            [
+              76.67226703737799,
+              12.310792489678446
+            ],
+            [
+              76.67127545274344,
+              12.310792489678446
+            ],
+            [
+              76.67136565501714,
+              12.310006173132637
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1062",
+        "district": "Mysuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.65539791666792,
+              12.298746515593988
+            ],
+            [
+              76.656333647551,
+              12.298825539067634
+            ],
+            [
+              76.65637806545367,
+              12.299613371240982
+            ],
+            [
+              76.65533692148374,
+              12.299613371240982
+            ],
+            [
+              76.65539791666792,
+              12.298746515593988
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1063",
+        "district": "Mysuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64703094792202,
+              12.255804945479161
+            ],
+            [
+              76.64801451318148,
+              12.25582682650879
+            ],
+            [
+              76.64805167585341,
+              12.25642538059578
+            ],
+            [
+              76.64697327790094,
+              12.25642538059578
+            ],
+            [
+              76.64703094792202,
+              12.255804945479161
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1064",
+        "district": "Mysuru",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.62272287998641,
+              12.324413577829331
+            ],
+            [
+              76.62368815989082,
+              12.324430651555696
+            ],
+            [
+              76.62374295599166,
+              12.325108103583538
+            ],
+            [
+              76.62271670134416,
+              12.325108103583538
+            ],
+            [
+              76.62272287998641,
+              12.324413577829331
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1065",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.59126570246549,
+              12.317776830864902
+            ],
+            [
+              76.59214243693751,
+              12.317852794340364
+            ],
+            [
+              76.59223606339293,
+              12.318471973890563
+            ],
+            [
+              76.59117749731129,
+              12.318471973890563
+            ],
+            [
+              76.59126570246549,
+              12.317776830864902
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1066",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.6694396182586,
+              12.34753069714661
+            ],
+            [
+              76.67040327463371,
+              12.347534807037382
+            ],
+            [
+              76.67041563749933,
+              12.348216028374141
+            ],
+            [
+              76.66934440532388,
+              12.348216028374141
+            ],
+            [
+              76.6694396182586,
+              12.34753069714661
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1067",
+        "district": "Mysuru",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.67698520387474,
+              12.259355381879244
+            ],
+            [
+              76.67777542908028,
+              12.259431189261933
+            ],
+            [
+              76.67784275338607,
+              12.259983906398185
+            ],
+            [
+              76.67693157288035,
+              12.259983906398185
+            ],
+            [
+              76.67698520387474,
+              12.259355381879244
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1068",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.65943764200347,
+              12.28801732631097
+            ],
+            [
+              76.66036153275846,
+              12.288070287236728
+            ],
+            [
+              76.66042983219943,
+              12.288572412149625
+            ],
+            [
+              76.6593591307845,
+              12.288572412149625
+            ],
+            [
+              76.65943764200347,
+              12.28801732631097
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1069",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64574293054669,
+              12.346502556202035
+            ],
+            [
+              76.64629231280051,
+              12.346550063660096
+            ],
+            [
+              76.64630910854876,
+              12.34749962253335
+            ],
+            [
+              76.64565568935272,
+              12.34749962253335
+            ],
+            [
+              76.64574293054669,
+              12.346502556202035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1070",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.66005984401927,
+              12.340606268105034
+            ],
+            [
+              76.66085184256892,
+              12.340668823397458
+            ],
+            [
+              76.66085197394867,
+              12.34139374950879
+            ],
+            [
+              76.6600377349129,
+              12.34139374950879
+            ],
+            [
+              76.66005984401927,
+              12.340606268105034
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1071",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.68919063362357,
+              12.324375777850392
+            ],
+            [
+              76.68994655250286,
+              12.32441500072191
+            ],
+            [
+              76.69003158126385,
+              12.325048874114215
+            ],
+            [
+              76.68915333095242,
+              12.325048874114215
+            ],
+            [
+              76.68919063362357,
+              12.324375777850392
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1072",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.61315013902589,
+              12.335851073512897
+            ],
+            [
+              76.61378159350575,
+              12.335910414389557
+            ],
+            [
+              76.61383120437586,
+              12.336634980459733
+            ],
+            [
+              76.61307564020166,
+              12.336634980459733
+            ],
+            [
+              76.61315013902589,
+              12.335851073512897
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1073",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.68043827975804,
+              12.300118577541628
+            ],
+            [
+              76.68141305648669,
+              12.300197435504893
+            ],
+            [
+              76.68146989979105,
+              12.300860445063861
+            ],
+            [
+              76.68040930176393,
+              12.300860445063861
+            ],
+            [
+              76.68043827975804,
+              12.300118577541628
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1074",
+        "district": "Mysuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.59583370667926,
+              12.2890935405358
+            ],
+            [
+              76.59637879485268,
+              12.289151051619854
+            ],
+            [
+              76.59644826936457,
+              12.289876893483536
+            ],
+            [
+              76.59580234575138,
+              12.289876893483536
+            ],
+            [
+              76.59583370667926,
+              12.2890935405358
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1075",
+        "district": "Mysuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.62856093690968,
+              12.26665492237041
+            ],
+            [
+              76.62945180497195,
+              12.266700802301512
+            ],
+            [
+              76.62955083278071,
+              12.267339856787851
+            ],
+            [
+              76.62851097890974,
+              12.267339856787851
+            ],
+            [
+              76.62856093690968,
+              12.26665492237041
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1076",
+        "district": "Mysuru",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.65891635952715,
+              12.276768137612272
+            ],
+            [
+              76.65978964328667,
+              12.276810213516685
+            ],
+            [
+              76.65985856163576,
+              12.277363663435915
+            ],
+            [
+              76.6588876552207,
+              12.277363663435915
+            ],
+            [
+              76.65891635952715,
+              12.276768137612272
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1077",
+        "district": "Mysuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.61034590469089,
+              12.31458390362421
+            ],
+            [
+              76.6110351345923,
+              12.31467744734964
+            ],
+            [
+              76.61113137139263,
+              12.315130638561747
+            ],
+            [
+              76.610269078759,
+              12.315130638561747
+            ],
+            [
+              76.61034590469089,
+              12.31458390362421
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1078",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.62461849227934,
+              12.284283686179199
+            ],
+            [
+              76.62540463496579,
+              12.28437431598121
+            ],
+            [
+              76.62547426420592,
+              12.285244935446473
+            ],
+            [
+              76.62456590303577,
+              12.285244935446473
+            ],
+            [
+              76.62461849227934,
+              12.284283686179199
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1079",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.67524587685409,
+              12.334563331925098
+            ],
+            [
+              76.67576527236399,
+              12.334645773334442
+            ],
+            [
+              76.67577527173482,
+              12.335221929733487
+            ],
+            [
+              76.67518892693313,
+              12.335221929733487
+            ],
+            [
+              76.67524587685409,
+              12.334563331925098
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1080",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.6842626924853,
+              12.300654024248086
+            ],
+            [
+              76.68489726317455,
+              12.300705183572402
+            ],
+            [
+              76.68494971462728,
+              12.30161728001968
+            ],
+            [
+              76.68416827036077,
+              12.30161728001968
+            ],
+            [
+              76.6842626924853,
+              12.300654024248086
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1081",
+        "district": "Mysuru",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.68995943195654,
+              12.289147778689783
+            ],
+            [
+              76.690563373081,
+              12.289198234528213
+            ],
+            [
+              76.69059482277176,
+              12.290081641974437
+            ],
+            [
+              76.6898732086772,
+              12.290081641974437
+            ],
+            [
+              76.68995943195654,
+              12.289147778689783
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1082",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.6342957802061,
+              12.260626743576038
+            ],
+            [
+              76.63498949865965,
+              12.260715605719565
+            ],
+            [
+              76.63507201297209,
+              12.261607623415038
+            ],
+            [
+              76.63428494139649,
+              12.261607623415038
+            ],
+            [
+              76.6342957802061,
+              12.260626743576038
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1083",
+        "district": "Mysuru",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.61183068138604,
+              12.274377202466656
+            ],
+            [
+              76.61236056526283,
+              12.274388138527891
+            ],
+            [
+              76.61236808660368,
+              12.275201416640552
+            ],
+            [
+              76.61173381207283,
+              12.275201416640552
+            ],
+            [
+              76.61183068138604,
+              12.274377202466656
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1084",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64025452703798,
+              12.29498010792834
+            ],
+            [
+              76.64097141568959,
+              12.295053387807679
+            ],
+            [
+              76.64102398690697,
+              12.295777413258351
+            ],
+            [
+              76.6402309628243,
+              12.295777413258351
+            ],
+            [
+              76.64025452703798,
+              12.29498010792834
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1085",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.61905378993487,
+              12.33567293364457
+            ],
+            [
+              76.61971750173056,
+              12.335734070684698
+            ],
+            [
+              76.6197363834637,
+              12.336406680749889
+            ],
+            [
+              76.61903241626129,
+              12.336406680749889
+            ],
+            [
+              76.61905378993487,
+              12.33567293364457
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1086",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.63334272500127,
+              12.312035884057233
+            ],
+            [
+              76.63416121603113,
+              12.312125718622358
+            ],
+            [
+              76.63423919828124,
+              12.313022280031248
+            ],
+            [
+              76.6332961306458,
+              12.313022280031248
+            ],
+            [
+              76.63334272500127,
+              12.312035884057233
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1087",
+        "district": "Mysuru",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.68191724833636,
+              12.320279222100119
+            ],
+            [
+              76.68244180982084,
+              12.320286966247684
+            ],
+            [
+              76.68247970275412,
+              12.321042587440724
+            ],
+            [
+              76.68184447496405,
+              12.321042587440724
+            ],
+            [
+              76.68191724833636,
+              12.320279222100119
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1088",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.59570982786792,
+              12.325151295578932
+            ],
+            [
+              76.59644710285335,
+              12.325216511568106
+            ],
+            [
+              76.59650303772554,
+              12.325873526913655
+            ],
+            [
+              76.59569262596787,
+              12.325873526913655
+            ],
+            [
+              76.59570982786792,
+              12.325151295578932
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1089",
+        "district": "Mysuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.63051229862734,
+              12.33494808939135
+            ],
+            [
+              76.63112602545705,
+              12.335037388549734
+            ],
+            [
+              76.63114938224349,
+              12.33589201706488
+            ],
+            [
+              76.630424820154,
+              12.33589201706488
+            ],
+            [
+              76.63051229862734,
+              12.33494808939135
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1090",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.68374389574326,
+              12.2534245094206
+            ],
+            [
+              76.68427766450765,
+              12.253495014348903
+            ],
+            [
+              76.6842935065763,
+              12.253960034028847
+            ],
+            [
+              76.68366775142418,
+              12.253960034028847
+            ],
+            [
+              76.68374389574326,
+              12.2534245094206
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1091",
+        "district": "Mysuru",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.63943370018163,
+              12.267606895834763
+            ],
+            [
+              76.64004935997296,
+              12.267676540813826
+            ],
+            [
+              76.64005423525644,
+              12.268327834374826
+            ],
+            [
+              76.63940705203868,
+              12.268327834374826
+            ],
+            [
+              76.63943370018163,
+              12.267606895834763
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1092",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.68069064473353,
+              12.33887635572379
+            ],
+            [
+              76.68154205167284,
+              12.338974421304124
+            ],
+            [
+              76.68154959137995,
+              12.339692509961992
+            ],
+            [
+              76.68068141439707,
+              12.339692509961992
+            ],
+            [
+              76.68069064473353,
+              12.33887635572379
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1093",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.59790575858784,
+              12.303313878820363
+            ],
+            [
+              76.59874803326187,
+              12.303317250993574
+            ],
+            [
+              76.5988184443439,
+              12.304114632310283
+            ],
+            [
+              76.59783445891335,
+              12.304114632310283
+            ],
+            [
+              76.59790575858784,
+              12.303313878820363
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1094",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64878106805081,
+              12.303814070875312
+            ],
+            [
+              76.64934541432659,
+              12.303823371868791
+            ],
+            [
+              76.64936970587792,
+              12.304580694252923
+            ],
+            [
+              76.6487744125154,
+              12.304580694252923
+            ],
+            [
+              76.64878106805081,
+              12.303814070875312
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1095",
+        "district": "Mysuru",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.61404750504144,
+              12.265446668925184
+            ],
+            [
+              76.61462433502001,
+              12.265474049616516
+            ],
+            [
+              76.61471217827723,
+              12.266391370971046
+            ],
+            [
+              76.61401597150575,
+              12.266391370971046
+            ],
+            [
+              76.61404750504144,
+              12.265446668925184
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1096",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.6106409397638,
+              12.297683802095177
+            ],
+            [
+              76.6116357411928,
+              12.297727553288782
+            ],
+            [
+              76.61166653334622,
+              12.298239478849613
+            ],
+            [
+              76.61057168087096,
+              12.298239478849613
+            ],
+            [
+              76.6106409397638,
+              12.297683802095177
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1097",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.63665092452996,
+              12.29007110109879
+            ],
+            [
+              76.6374009028783,
+              12.290090374433687
+            ],
+            [
+              76.63747259894383,
+              12.29093975780275
+            ],
+            [
+              76.63660195432944,
+              12.29093975780275
+            ],
+            [
+              76.63665092452996,
+              12.29007110109879
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1098",
+        "district": "Mysuru",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.61588106362107,
+              12.308010079121061
+            ],
+            [
+              76.6166062715107,
+              12.308029770702598
+            ],
+            [
+              76.61665295327764,
+              12.308711181178634
+            ],
+            [
+              76.6158792421516,
+              12.308711181178634
+            ],
+            [
+              76.61588106362107,
+              12.308010079121061
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "MYSU_DEMO_1099",
+        "district": "Mysuru",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Horticulture, Mysuru",
+        "survey_date": "2026-10-05"
+      }
+    }
+  ]
+}

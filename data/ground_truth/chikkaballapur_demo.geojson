@@ -1,0 +1,3705 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.77745126469904,
+              13.397556834928219
+            ],
+            [
+              77.77811462932304,
+              13.39761019750926
+            ],
+            [
+              77.77818798113601,
+              13.39816254133265
+            ],
+            [
+              77.77740815501328,
+              13.39816254133265
+            ],
+            [
+              77.77745126469904,
+              13.397556834928219
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1000",
+        "district": "Chikkaballapur",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.74060613729318,
+              13.4039935305854
+            ],
+            [
+              77.74114232067923,
+              13.404008047897081
+            ],
+            [
+              77.74123362244873,
+              13.404841103223529
+            ],
+            [
+              77.74059288008262,
+              13.404841103223529
+            ],
+            [
+              77.74060613729318,
+              13.4039935305854
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1001",
+        "district": "Chikkaballapur",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.6970457984942,
+              13.47969880610683
+            ],
+            [
+              77.69775919280615,
+              13.479784893879717
+            ],
+            [
+              77.69777492914838,
+              13.480334506315474
+            ],
+            [
+              77.69696048960604,
+              13.480334506315474
+            ],
+            [
+              77.6970457984942,
+              13.47969880610683
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1002",
+        "district": "Chikkaballapur",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.71378109652572,
+              13.403574450737379
+            ],
+            [
+              77.71466702756972,
+              13.403577690963282
+            ],
+            [
+              77.7147085687239,
+              13.404252981462033
+            ],
+            [
+              77.71368545563826,
+              13.404252981462033
+            ],
+            [
+              77.71378109652572,
+              13.403574450737379
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1003",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.72254142560956,
+              13.476036198634606
+            ],
+            [
+              77.7230683238355,
+              13.476060804277015
+            ],
+            [
+              77.72308046825056,
+              13.476564393848905
+            ],
+            [
+              77.72245340036855,
+              13.476564393848905
+            ],
+            [
+              77.72254142560956,
+              13.476036198634606
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1004",
+        "district": "Chikkaballapur",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.70435112331991,
+              13.41397648622074
+            ],
+            [
+              77.70531366556251,
+              13.41403270384301
+            ],
+            [
+              77.70540091646866,
+              13.414723482885872
+            ],
+            [
+              77.70434139081694,
+              13.414723482885872
+            ],
+            [
+              77.70435112331991,
+              13.41397648622074
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1005",
+        "district": "Chikkaballapur",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.77890313485047,
+              13.437820120589544
+            ],
+            [
+              77.77962246272064,
+              13.437906404323657
+            ],
+            [
+              77.77965177225092,
+              13.43881206138111
+            ],
+            [
+              77.77886459676884,
+              13.43881206138111
+            ],
+            [
+              77.77890313485047,
+              13.437820120589544
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1006",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.76456505318674,
+              13.394438059821956
+            ],
+            [
+              77.76540881118672,
+              13.394506588463186
+            ],
+            [
+              77.76549016961165,
+              13.395154570625655
+            ],
+            [
+              77.76452915855208,
+              13.395154570625655
+            ],
+            [
+              77.76456505318674,
+              13.394438059821956
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1007",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.77860464931692,
+              13.438975844459948
+            ],
+            [
+              77.7791593742716,
+              13.439042852224993
+            ],
+            [
+              77.77920684816075,
+              13.439796478801124
+            ],
+            [
+              77.7785414749742,
+              13.439796478801124
+            ],
+            [
+              77.77860464931692,
+              13.438975844459948
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1008",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.68224432630151,
+              13.452682927339968
+            ],
+            [
+              77.68275788778087,
+              13.452767775186796
+            ],
+            [
+              77.6827892998542,
+              13.45364213138181
+            ],
+            [
+              77.68220067536042,
+              13.45364213138181
+            ],
+            [
+              77.68224432630151,
+              13.452682927339968
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1009",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.69777911416475,
+              13.46005733789542
+            ],
+            [
+              77.69844770086884,
+              13.460156674150062
+            ],
+            [
+              77.69850015032259,
+              13.46062165474372
+            ],
+            [
+              77.69772641523281,
+              13.46062165474372
+            ],
+            [
+              77.69777911416475,
+              13.46005733789542
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1010",
+        "district": "Chikkaballapur",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.76122867503993,
+              13.428365806131268
+            ],
+            [
+              77.76174024523698,
+              13.42839641841694
+            ],
+            [
+              77.7618240690469,
+              13.42914189347479
+            ],
+            [
+              77.76119914804143,
+              13.42914189347479
+            ],
+            [
+              77.76122867503993,
+              13.428365806131268
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1011",
+        "district": "Chikkaballapur",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.74124531446756,
+              13.41308083505345
+            ],
+            [
+              77.74182775972723,
+              13.41317694687649
+            ],
+            [
+              77.74189197695303,
+              13.413932659663079
+            ],
+            [
+              77.74121966516454,
+              13.413932659663079
+            ],
+            [
+              77.74124531446756,
+              13.41308083505345
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1012",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.77782984115407,
+              13.38929392322606
+            ],
+            [
+              77.77881442545383,
+              13.389391486260893
+            ],
+            [
+              77.77886426728027,
+              13.390264500095626
+            ],
+            [
+              77.77779262926204,
+              13.390264500095626
+            ],
+            [
+              77.77782984115407,
+              13.38929392322606
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1013",
+        "district": "Chikkaballapur",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.71629172971166,
+              13.456084641621834
+            ],
+            [
+              77.71679293805602,
+              13.456170588097862
+            ],
+            [
+              77.71685047080747,
+              13.456627006740394
+            ],
+            [
+              77.71620472659771,
+              13.456627006740394
+            ],
+            [
+              77.71629172971166,
+              13.456084641621834
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1014",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.6949057347285,
+              13.420825313558254
+            ],
+            [
+              77.69584179070637,
+              13.420865810549625
+            ],
+            [
+              77.69590664096165,
+              13.421369836399919
+            ],
+            [
+              77.69488471428983,
+              13.421369836399919
+            ],
+            [
+              77.6949057347285,
+              13.420825313558254
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1015",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.74374155636137,
+              13.417493317710699
+            ],
+            [
+              77.74444127657281,
+              13.417548294209078
+            ],
+            [
+              77.74449946927308,
+              13.418075396786584
+            ],
+            [
+              77.74372927407796,
+              13.418075396786584
+            ],
+            [
+              77.74374155636137,
+              13.417493317710699
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1016",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.7188484127641,
+              13.454071861390094
+            ],
+            [
+              77.71957652382498,
+              13.454072486263131
+            ],
+            [
+              77.71958690891131,
+              13.454789571999028
+            ],
+            [
+              77.71877519037116,
+              13.454789571999028
+            ],
+            [
+              77.7188484127641,
+              13.454071861390094
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1017",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.7707512938988,
+              13.462302655782166
+            ],
+            [
+              77.77145133197223,
+              13.462313770898076
+            ],
+            [
+              77.77148711219209,
+              13.463213150146128
+            ],
+            [
+              77.77065995204441,
+              13.463213150146128
+            ],
+            [
+              77.7707512938988,
+              13.462302655782166
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1018",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.75846419365189,
+              13.456363387705064
+            ],
+            [
+              77.75904711468775,
+              13.456412703693477
+            ],
+            [
+              77.75906332541797,
+              13.45697475028255
+            ],
+            [
+              77.75840251312606,
+              13.45697475028255
+            ],
+            [
+              77.75846419365189,
+              13.456363387705064
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1019",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.74037457326511,
+              13.453140133058529
+            ],
+            [
+              77.74115922954948,
+              13.453186627412428
+            ],
+            [
+              77.74124805458327,
+              13.4536716454257
+            ],
+            [
+              77.74033531898306,
+              13.4536716454257
+            ],
+            [
+              77.74037457326511,
+              13.453140133058529
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1020",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.7450205788442,
+              13.472171562961991
+            ],
+            [
+              77.7458025080229,
+              13.4722100406435
+            ],
+            [
+              77.74587159998288,
+              13.473140545664858
+            ],
+            [
+              77.74492167287075,
+              13.473140545664858
+            ],
+            [
+              77.7450205788442,
+              13.472171562961991
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1021",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.7125142514421,
+              13.407917889880878
+            ],
+            [
+              77.7131338244861,
+              13.407933178182269
+            ],
+            [
+              77.7132191821807,
+              13.408467102475221
+            ],
+            [
+              77.71248068211467,
+              13.408467102475221
+            ],
+            [
+              77.7125142514421,
+              13.407917889880878
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1022",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.7337439353845,
+              13.384418746900202
+            ],
+            [
+              77.73441043767234,
+              13.384509217952411
+            ],
+            [
+              77.73445906552246,
+              13.384965503465065
+            ],
+            [
+              77.73369146983481,
+              13.384965503465065
+            ],
+            [
+              77.7337439353845,
+              13.384418746900202
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1023",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.77110025534846,
+              13.421965220394963
+            ],
+            [
+              77.77201128121646,
+              13.422014660638037
+            ],
+            [
+              77.7720980565025,
+              13.422503847836287
+            ],
+            [
+              77.77103365783788,
+              13.422503847836287
+            ],
+            [
+              77.77110025534846,
+              13.421965220394963
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1024",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.72275884148381,
+              13.433608898602902
+            ],
+            [
+              77.72327357989403,
+              13.433698959369373
+            ],
+            [
+              77.72330109710538,
+              13.434352563171851
+            ],
+            [
+              77.72266039086587,
+              13.434352563171851
+            ],
+            [
+              77.72275884148381,
+              13.433608898602902
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1025",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.77621849199451,
+              13.414665537659477
+            ],
+            [
+              77.776940645359,
+              13.414729356184424
+            ],
+            [
+              77.77695941319055,
+              13.41548594218474
+            ],
+            [
+              77.77614260300658,
+              13.41548594218474
+            ],
+            [
+              77.77621849199451,
+              13.414665537659477
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1026",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.68007738898682,
+              13.448063728748577
+            ],
+            [
+              77.68105409771357,
+              13.44806916299135
+            ],
+            [
+              77.6810728539195,
+              13.448792431360571
+            ],
+            [
+              77.68004281088527,
+              13.448792431360571
+            ],
+            [
+              77.68007738898682,
+              13.448063728748577
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1027",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.69912674427925,
+              13.429681086108031
+            ],
+            [
+              77.69964609068766,
+              13.429759316763626
+            ],
+            [
+              77.6997035437409,
+              13.430431022030382
+            ],
+            [
+              77.69908589949273,
+              13.430431022030382
+            ],
+            [
+              77.69912674427925,
+              13.429681086108031
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1028",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.76103254597501,
+              13.414191288865375
+            ],
+            [
+              77.76192696931798,
+              13.414280730155319
+            ],
+            [
+              77.7620210905988,
+              13.4150379642122
+            ],
+            [
+              77.76102239634803,
+              13.4150379642122
+            ],
+            [
+              77.76103254597501,
+              13.414191288865375
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1029",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.68443392087443,
+              13.475932330490727
+            ],
+            [
+              77.68522547087429,
+              13.475975697972743
+            ],
+            [
+              77.68529761602635,
+              13.476433899119861
+            ],
+            [
+              77.68442182894047,
+              13.476433899119861
+            ],
+            [
+              77.68443392087443,
+              13.475932330490727
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1030",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.71804126437097,
+              13.40120745627664
+            ],
+            [
+              77.71893447508302,
+              13.401248083880981
+            ],
+            [
+              77.71901104927417,
+              13.401903157605844
+            ],
+            [
+              77.71802901020084,
+              13.401903157605844
+            ],
+            [
+              77.71804126437097,
+              13.40120745627664
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1031",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.73470691843346,
+              13.437902112786237
+            ],
+            [
+              77.73559307358674,
+              13.437928383787987
+            ],
+            [
+              77.73567027068722,
+              13.438752687707636
+            ],
+            [
+              77.73460723652343,
+              13.438752687707636
+            ],
+            [
+              77.73470691843346,
+              13.437902112786237
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1032",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.68426286886391,
+              13.47569841314713
+            ],
+            [
+              77.68494288647817,
+              13.47576958967038
+            ],
+            [
+              77.68497152598884,
+              13.476301016874192
+            ],
+            [
+              77.68424750942057,
+              13.476301016874192
+            ],
+            [
+              77.68426286886391,
+              13.47569841314713
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1033",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.73674792315676,
+              13.45787626531065
+            ],
+            [
+              77.73735616902664,
+              13.45795323677528
+            ],
+            [
+              77.73741154541999,
+              13.458660194989008
+            ],
+            [
+              77.73667510151144,
+              13.458660194989008
+            ],
+            [
+              77.73674792315676,
+              13.45787626531065
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1034",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.76229319262708,
+              13.389506246929908
+            ],
+            [
+              77.7631693335666,
+              13.389577878566438
+            ],
+            [
+              77.76326059487762,
+              13.390125475389226
+            ],
+            [
+              77.76227253768036,
+              13.390125475389226
+            ],
+            [
+              77.76229319262708,
+              13.389506246929908
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1035",
+        "district": "Chikkaballapur",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.69637801880214,
+              13.420672331621041
+            ],
+            [
+              77.6970398691781,
+              13.42071152122957
+            ],
+            [
+              77.69708919622346,
+              13.421276966878198
+            ],
+            [
+              77.69632651392801,
+              13.421276966878198
+            ],
+            [
+              77.69637801880214,
+              13.420672331621041
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1036",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.6826996507974,
+              13.412340720299
+            ],
+            [
+              77.683439264343,
+              13.412373742289159
+            ],
+            [
+              77.68349230895258,
+              13.413099348310737
+            ],
+            [
+              77.68264389435058,
+              13.413099348310737
+            ],
+            [
+              77.6826996507974,
+              13.412340720299
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1037",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.74333029720496,
+              13.475780759412094
+            ],
+            [
+              77.74392657498281,
+              13.475838003611246
+            ],
+            [
+              77.74393477011755,
+              13.4767283018937
+            ],
+            [
+              77.74323146751007,
+              13.4767283018937
+            ],
+            [
+              77.74333029720496,
+              13.475780759412094
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1038",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.71936273335247,
+              13.398589120523642
+            ],
+            [
+              77.72023816138174,
+              13.398625649701225
+            ],
+            [
+              77.7202731373301,
+              13.399342024986916
+            ],
+            [
+              77.71933316641169,
+              13.399342024986916
+            ],
+            [
+              77.71936273335247,
+              13.398589120523642
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1039",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.68880210803833,
+              13.382025611002705
+            ],
+            [
+              77.68945909300912,
+              13.382113922600382
+            ],
+            [
+              77.6894744382385,
+              13.382941461540142
+            ],
+            [
+              77.6887646885307,
+              13.382941461540142
+            ],
+            [
+              77.68880210803833,
+              13.382025611002705
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1040",
+        "district": "Chikkaballapur",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.76108048999265,
+              13.479335427308403
+            ],
+            [
+              77.76161767541514,
+              13.479374938125618
+            ],
+            [
+              77.76162383619231,
+              13.480175148230206
+            ],
+            [
+              77.76106009111089,
+              13.480175148230206
+            ],
+            [
+              77.76108048999265,
+              13.479335427308403
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1041",
+        "district": "Chikkaballapur",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.77476273957535,
+              13.410557298725884
+            ],
+            [
+              77.77572353202773,
+              13.410640013685464
+            ],
+            [
+              77.77577808256449,
+              13.411163127563665
+            ],
+            [
+              77.77467778330086,
+              13.411163127563665
+            ],
+            [
+              77.77476273957535,
+              13.410557298725884
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1042",
+        "district": "Chikkaballapur",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.70077502180962,
+              13.478209602023957
+            ],
+            [
+              77.701552660048,
+              13.47830880374823
+            ],
+            [
+              77.70162063416049,
+              13.479196267032364
+            ],
+            [
+              77.70070321767102,
+              13.479196267032364
+            ],
+            [
+              77.70077502180962,
+              13.478209602023957
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1043",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.70103106552288,
+              13.41156153692521
+            ],
+            [
+              77.70174106551401,
+              13.411603428828656
+            ],
+            [
+              77.70183356878637,
+              13.412420159890138
+            ],
+            [
+              77.70098029209225,
+              13.412420159890138
+            ],
+            [
+              77.70103106552288,
+              13.41156153692521
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1044",
+        "district": "Chikkaballapur",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.75243745879119,
+              13.43927114859955
+            ],
+            [
+              77.75330535912296,
+              13.439287629634126
+            ],
+            [
+              77.75337696691886,
+              13.439818925928348
+            ],
+            [
+              77.75241280827619,
+              13.439818925928348
+            ],
+            [
+              77.75243745879119,
+              13.43927114859955
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1045",
+        "district": "Chikkaballapur",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.73597098428691,
+              13.40440912537137
+            ],
+            [
+              77.73665222652481,
+              13.404453391875114
+            ],
+            [
+              77.73672882626259,
+              13.405384232190263
+            ],
+            [
+              77.73592216445066,
+              13.405384232190263
+            ],
+            [
+              77.73597098428691,
+              13.40440912537137
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1046",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.72700096781656,
+              13.398693517433315
+            ],
+            [
+              77.72798482360108,
+              13.398722048624457
+            ],
+            [
+              77.72800124453765,
+              13.399271449816334
+            ],
+            [
+              77.72690329576132,
+              13.399271449816334
+            ],
+            [
+              77.72700096781656,
+              13.398693517433315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1047",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.69320467009169,
+              13.452993285469057
+            ],
+            [
+              77.6940869128774,
+              13.45309079907401
+            ],
+            [
+              77.69411772666761,
+              13.453887117751478
+            ],
+            [
+              77.6931229753359,
+              13.453887117751478
+            ],
+            [
+              77.69320467009169,
+              13.452993285469057
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1048",
+        "district": "Chikkaballapur",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.7590839268583,
+              13.463375019665765
+            ],
+            [
+              77.75978484164555,
+              13.46339839865001
+            ],
+            [
+              77.75985959180672,
+              13.464247218338102
+            ],
+            [
+              77.7590529786699,
+              13.464247218338102
+            ],
+            [
+              77.7590839268583,
+              13.463375019665765
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1049",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.71829593528743,
+              13.475728706044588
+            ],
+            [
+              77.71901249323886,
+              13.475770686195657
+            ],
+            [
+              77.71901304807766,
+              13.476427981337114
+            ],
+            [
+              77.71821935313756,
+              13.476427981337114
+            ],
+            [
+              77.71829593528743,
+              13.475728706044588
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1050",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.70321946713227,
+              13.446930095124015
+            ],
+            [
+              77.70406080434175,
+              13.446969840452498
+            ],
+            [
+              77.70412536835083,
+              13.447848418246656
+            ],
+            [
+              77.7031949744137,
+              13.447848418246656
+            ],
+            [
+              77.70321946713227,
+              13.446930095124015
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1051",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.74299965923773,
+              13.466322763811734
+            ],
+            [
+              77.7438808623893,
+              13.466399821535937
+            ],
+            [
+              77.74393901912525,
+              13.467088121614786
+            ],
+            [
+              77.74298587104123,
+              13.467088121614786
+            ],
+            [
+              77.74299965923773,
+              13.466322763811734
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1052",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.7153376121486,
+              13.468558091785036
+            ],
+            [
+              77.71583791057307,
+              13.468640716069766
+            ],
+            [
+              77.71591051418727,
+              13.469305392933784
+            ],
+            [
+              77.71524874968937,
+              13.469305392933784
+            ],
+            [
+              77.7153376121486,
+              13.468558091785036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1053",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.77367021290638,
+              13.441415974956222
+            ],
+            [
+              77.77424844153234,
+              13.441419878612304
+            ],
+            [
+              77.77431811975386,
+              13.441923731671181
+            ],
+            [
+              77.77364523702579,
+              13.441923731671181
+            ],
+            [
+              77.77367021290638,
+              13.441415974956222
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1054",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.72725685627987,
+              13.388596191300637
+            ],
+            [
+              77.72824920053446,
+              13.388629059734782
+            ],
+            [
+              77.72834752534365,
+              13.38939194796907
+            ],
+            [
+              77.7271955575319,
+              13.38939194796907
+            ],
+            [
+              77.72725685627987,
+              13.388596191300637
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1055",
+        "district": "Chikkaballapur",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.69691959054576,
+              13.39781254539294
+            ],
+            [
+              77.69751598718189,
+              13.397901163865352
+            ],
+            [
+              77.69754756526082,
+              13.398601739637588
+            ],
+            [
+              77.69682190293602,
+              13.398601739637588
+            ],
+            [
+              77.69691959054576,
+              13.39781254539294
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1056",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.76628073908999,
+              13.428649975968463
+            ],
+            [
+              77.76718266343639,
+              13.42868415323159
+            ],
+            [
+              77.76727103890174,
+              13.42935926000601
+            ],
+            [
+              77.76621552233654,
+              13.42935926000601
+            ],
+            [
+              77.76628073908999,
+              13.428649975968463
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1057",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.72558463542843,
+              13.382639889140913
+            ],
+            [
+              77.7261373903712,
+              13.382681483495936
+            ],
+            [
+              77.72619676316634,
+              13.383571935394416
+            ],
+            [
+              77.72549160674815,
+              13.383571935394416
+            ],
+            [
+              77.72558463542843,
+              13.382639889140913
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1058",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.7138129488602,
+              13.436056280683804
+            ],
+            [
+              77.71444916817302,
+              13.436078050632302
+            ],
+            [
+              77.71452363745543,
+              13.436893198798417
+            ],
+            [
+              77.71374007689492,
+              13.436893198798417
+            ],
+            [
+              77.7138129488602,
+              13.436056280683804
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1059",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.75216073201275,
+              13.384997491260815
+            ],
+            [
+              77.75284124520371,
+              13.385017611561052
+            ],
+            [
+              77.75287032667774,
+              13.385684851021344
+            ],
+            [
+              77.75214946566152,
+              13.385684851021344
+            ],
+            [
+              77.75216073201275,
+              13.384997491260815
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1060",
+        "district": "Chikkaballapur",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.73767603600702,
+              13.469263487604572
+            ],
+            [
+              77.7384335322561,
+              13.469327466051746
+            ],
+            [
+              77.73849572423079,
+              13.469829555918938
+            ],
+            [
+              77.73763591377224,
+              13.469829555918938
+            ],
+            [
+              77.73767603600702,
+              13.469263487604572
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1061",
+        "district": "Chikkaballapur",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.77264418419347,
+              13.388832368222769
+            ],
+            [
+              77.77322197388418,
+              13.388886015345559
+            ],
+            [
+              77.77322422921074,
+              13.38960275092509
+            ],
+            [
+              77.7726232203304,
+              13.38960275092509
+            ],
+            [
+              77.77264418419347,
+              13.388832368222769
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1062",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.70818367808926,
+              13.394789363398598
+            ],
+            [
+              77.70899885981143,
+              13.394846402890648
+            ],
+            [
+              77.70908537395566,
+              13.395450690152773
+            ],
+            [
+              77.70809888555286,
+              13.395450690152773
+            ],
+            [
+              77.70818367808926,
+              13.394789363398598
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1063",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.71825741837411,
+              13.381471312422523
+            ],
+            [
+              77.71891677320116,
+              13.381542809116732
+            ],
+            [
+              77.71900927882467,
+              13.382469246946595
+            ],
+            [
+              77.71825294093172,
+              13.382469246946595
+            ],
+            [
+              77.71825741837411,
+              13.381471312422523
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1064",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.68916823437362,
+              13.453996806146359
+            ],
+            [
+              77.68971356035037,
+              13.454008785651803
+            ],
+            [
+              77.6897416425832,
+              13.454728089455205
+            ],
+            [
+              77.68913446370574,
+              13.454728089455205
+            ],
+            [
+              77.68916823437362,
+              13.453996806146359
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1065",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.77424365074481,
+              13.433173230789775
+            ],
+            [
+              77.77498972366463,
+              13.433193570860835
+            ],
+            [
+              77.7750228550813,
+              13.433960820583923
+            ],
+            [
+              77.77416430712414,
+              13.433960820583923
+            ],
+            [
+              77.77424365074481,
+              13.433173230789775
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1066",
+        "district": "Chikkaballapur",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.76146136803845,
+              13.392957252994037
+            ],
+            [
+              77.76206341670817,
+              13.39304649497098
+            ],
+            [
+              77.76208898185027,
+              13.393800366629533
+            ],
+            [
+              77.76142186455145,
+              13.393800366629533
+            ],
+            [
+              77.76146136803845,
+              13.392957252994037
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1067",
+        "district": "Chikkaballapur",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.76662163308897,
+              13.43319363602822
+            ],
+            [
+              77.7673469505102,
+              13.433220305355297
+            ],
+            [
+              77.76740642423583,
+              13.434138148503878
+            ],
+            [
+              77.766609776254,
+              13.434138148503878
+            ],
+            [
+              77.76662163308897,
+              13.43319363602822
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1068",
+        "district": "Chikkaballapur",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.71689592404492,
+              13.401277448384048
+            ],
+            [
+              77.71749949785195,
+              13.401359010719847
+            ],
+            [
+              77.7175585040305,
+              13.40192537371576
+            ],
+            [
+              77.71684585455085,
+              13.40192537371576
+            ],
+            [
+              77.71689592404492,
+              13.401277448384048
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1069",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.71527885804151,
+              13.449734798388603
+            ],
+            [
+              77.71602218757114,
+              13.449742480538083
+            ],
+            [
+              77.71603726633273,
+              13.45059443757379
+            ],
+            [
+              77.71527087873187,
+              13.45059443757379
+            ],
+            [
+              77.71527885804151,
+              13.449734798388603
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1070",
+        "district": "Chikkaballapur",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.71341415314929,
+              13.428324120429592
+            ],
+            [
+              77.71414426312053,
+              13.42841214047117
+            ],
+            [
+              77.71414970782214,
+              13.429293288938705
+            ],
+            [
+              77.71337346930844,
+              13.429293288938705
+            ],
+            [
+              77.71341415314929,
+              13.428324120429592
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1071",
+        "district": "Chikkaballapur",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.77047688635088,
+              13.440867625133555
+            ],
+            [
+              77.77117647835973,
+              13.440883265962148
+            ],
+            [
+              77.77123617069705,
+              13.44159438254285
+            ],
+            [
+              77.77042432930223,
+              13.44159438254285
+            ],
+            [
+              77.77047688635088,
+              13.440867625133555
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1072",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.70733098915048,
+              13.393584664741363
+            ],
+            [
+              77.70797865452948,
+              13.393641730264507
+            ],
+            [
+              77.70804713162836,
+              13.394201881767481
+            ],
+            [
+              77.70730898619733,
+              13.394201881767481
+            ],
+            [
+              77.70733098915048,
+              13.393584664741363
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1073",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.77685925455009,
+              13.45588759144881
+            ],
+            [
+              77.77780918713803,
+              13.455974902381744
+            ],
+            [
+              77.7778860012988,
+              13.456638034755265
+            ],
+            [
+              77.77680130882833,
+              13.456638034755265
+            ],
+            [
+              77.77685925455009,
+              13.45588759144881
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1074",
+        "district": "Chikkaballapur",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.69870510811573,
+              13.472673662358144
+            ],
+            [
+              77.69955137227542,
+              13.472702165299285
+            ],
+            [
+              77.69958803223507,
+              13.473473979094177
+            ],
+            [
+              77.69869869080505,
+              13.473473979094177
+            ],
+            [
+              77.69870510811573,
+              13.472673662358144
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1075",
+        "district": "Chikkaballapur",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.76664231786052,
+              13.468170520308833
+            ],
+            [
+              77.76731937501427,
+              13.468257103495198
+            ],
+            [
+              77.76732949390707,
+              13.468735680186343
+            ],
+            [
+              77.76654929251023,
+              13.468735680186343
+            ],
+            [
+              77.76664231786052,
+              13.468170520308833
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1076",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.73119632598699,
+              13.468146887595863
+            ],
+            [
+              77.73180066116171,
+              13.468180031734192
+            ],
+            [
+              77.7318295439613,
+              13.469131862539603
+            ],
+            [
+              77.73115021946053,
+              13.469131862539603
+            ],
+            [
+              77.73119632598699,
+              13.468146887595863
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1077",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.68304734325773,
+              13.4483318658129
+            ],
+            [
+              77.68392658014233,
+              13.448426723708446
+            ],
+            [
+              77.68394400968869,
+              13.449203790304953
+            ],
+            [
+              77.6829670815376,
+              13.449203790304953
+            ],
+            [
+              77.68304734325773,
+              13.4483318658129
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1078",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.74250119458998,
+              13.408455730720554
+            ],
+            [
+              77.74316112334493,
+              13.408463482140368
+            ],
+            [
+              77.74322780020495,
+              13.409264847928014
+            ],
+            [
+              77.74245286685921,
+              13.409264847928014
+            ],
+            [
+              77.74250119458998,
+              13.408455730720554
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1079",
+        "district": "Chikkaballapur",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.72342929967218,
+              13.422636298815576
+            ],
+            [
+              77.72406851587495,
+              13.422664918045658
+            ],
+            [
+              77.724124452348,
+              13.423603529685328
+            ],
+            [
+              77.72338562459615,
+              13.423603529685328
+            ],
+            [
+              77.72342929967218,
+              13.422636298815576
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1080",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.75819884313539,
+              13.432213648655384
+            ],
+            [
+              77.7588094962197,
+              13.432231247462562
+            ],
+            [
+              77.75884380491124,
+              13.433142434454295
+            ],
+            [
+              77.75817271283478,
+              13.433142434454295
+            ],
+            [
+              77.75819884313539,
+              13.432213648655384
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1081",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.70896141495187,
+              13.426754902447778
+            ],
+            [
+              77.70994983497104,
+              13.426821706209333
+            ],
+            [
+              77.70998251939879,
+              13.427497195416693
+            ],
+            [
+              77.70889355398673,
+              13.427497195416693
+            ],
+            [
+              77.70896141495187,
+              13.426754902447778
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1082",
+        "district": "Chikkaballapur",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.73460069751745,
+              13.38746695509422
+            ],
+            [
+              77.73521105548684,
+              13.38756503826594
+            ],
+            [
+              77.73530769741842,
+              13.388389257821206
+            ],
+            [
+              77.73459288738228,
+              13.388389257821206
+            ],
+            [
+              77.73460069751745,
+              13.38746695509422
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1083",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.70381996057604,
+              13.405435259898152
+            ],
+            [
+              77.70445783736159,
+              13.405447159274841
+            ],
+            [
+              77.70455737512465,
+              13.405942131106178
+            ],
+            [
+              77.70377731677495,
+              13.405942131106178
+            ],
+            [
+              77.70381996057604,
+              13.405435259898152
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1084",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.68324204134939,
+              13.415897402528874
+            ],
+            [
+              77.68400759980372,
+              13.415950639939181
+            ],
+            [
+              77.68401981682528,
+              13.416664675403286
+            ],
+            [
+              77.683229205376,
+              13.416664675403286
+            ],
+            [
+              77.68324204134939,
+              13.415897402528874
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1085",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.76240448779404,
+              13.452846282199301
+            ],
+            [
+              77.76291822804455,
+              13.452925023995585
+            ],
+            [
+              77.76293563997274,
+              13.453542476534917
+            ],
+            [
+              77.76237163786675,
+              13.453542476534917
+            ],
+            [
+              77.76240448779404,
+              13.452846282199301
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1086",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.75431982460485,
+              13.461219303986242
+            ],
+            [
+              77.75497570848172,
+              13.461294090881227
+            ],
+            [
+              77.75499082020261,
+              13.461850648197752
+            ],
+            [
+              77.75427212625848,
+              13.461850648197752
+            ],
+            [
+              77.75431982460485,
+              13.461219303986242
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1087",
+        "district": "Chikkaballapur",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.72888351935488,
+              13.43029955558433
+            ],
+            [
+              77.72955887207578,
+              13.430366985745392
+            ],
+            [
+              77.72957951431168,
+              13.43084664026912
+            ],
+            [
+              77.72887087816196,
+              13.43084664026912
+            ],
+            [
+              77.72888351935488,
+              13.43029955558433
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1088",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.76312118319773,
+              13.391854690972787
+            ],
+            [
+              77.7640409950867,
+              13.391904942273285
+            ],
+            [
+              77.76407650272783,
+              13.392500113806342
+            ],
+            [
+              77.76311315483987,
+              13.392500113806342
+            ],
+            [
+              77.76312118319773,
+              13.391854690972787
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1089",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.74224393822357,
+              13.401641750558273
+            ],
+            [
+              77.7428049291301,
+              13.401733526533173
+            ],
+            [
+              77.74286800784557,
+              13.40250906504004
+            ],
+            [
+              77.74215627617168,
+              13.40250906504004
+            ],
+            [
+              77.74224393822357,
+              13.401641750558273
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1090",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.76585030619955,
+              13.396620533899409
+            ],
+            [
+              77.76676377910977,
+              13.396662604635635
+            ],
+            [
+              77.76676592344587,
+              13.39723325737102
+            ],
+            [
+              77.7658406583861,
+              13.39723325737102
+            ],
+            [
+              77.76585030619955,
+              13.396620533899409
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1091",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.72968954881961,
+              13.39446769337558
+            ],
+            [
+              77.73039233176776,
+              13.394551913845948
+            ],
+            [
+              77.73045851416455,
+              13.395429004303718
+            ],
+            [
+              77.72967614236296,
+              13.395429004303718
+            ],
+            [
+              77.72968954881961,
+              13.39446769337558
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1092",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.74691900622074,
+              13.454086888395961
+            ],
+            [
+              77.74752032248038,
+              13.45414186289524
+            ],
+            [
+              77.74758546818917,
+              13.454815170583153
+            ],
+            [
+              77.74689494867847,
+              13.454815170583153
+            ],
+            [
+              77.74691900622074,
+              13.454086888395961
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1093",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.69876610519586,
+              13.405529180218805
+            ],
+            [
+              77.69954759074966,
+              13.405560492604184
+            ],
+            [
+              77.69959635870906,
+              13.406188147408328
+            ],
+            [
+              77.69873784807682,
+              13.406188147408328
+            ],
+            [
+              77.69876610519586,
+              13.405529180218805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1094",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.70669786189283,
+              13.479938748786537
+            ],
+            [
+              77.70735230743546,
+              13.4800272760489
+            ],
+            [
+              77.70741101881794,
+              13.480926457123822
+            ],
+            [
+              77.70660655941003,
+              13.480926457123822
+            ],
+            [
+              77.70669786189283,
+              13.479938748786537
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1095",
+        "district": "Chikkaballapur",
+        "crop_label": "Tomato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.68464179458957,
+              13.463706347775613
+            ],
+            [
+              77.68539888245756,
+              13.46373647931199
+            ],
+            [
+              77.68547539960645,
+              13.4643859037485
+            ],
+            [
+              77.6845580775816,
+              13.4643859037485
+            ],
+            [
+              77.68464179458957,
+              13.463706347775613
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1096",
+        "district": "Chikkaballapur",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.69346323245333,
+              13.456645492902247
+            ],
+            [
+              77.69400817174446,
+              13.456744971433723
+            ],
+            [
+              77.6940310215347,
+              13.457571992832502
+            ],
+            [
+              77.69340114462918,
+              13.457571992832502
+            ],
+            [
+              77.69346323245333,
+              13.456645492902247
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1097",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.77409689047565,
+              13.427742767815845
+            ],
+            [
+              77.7750435563792,
+              13.427782295490521
+            ],
+            [
+              77.77511487131473,
+              13.428438030405452
+            ],
+            [
+              77.77402095687822,
+              13.428438030405452
+            ],
+            [
+              77.77409689047565,
+              13.427742767815845
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1098",
+        "district": "Chikkaballapur",
+        "crop_label": "Potato",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.75104628888906,
+              13.455265633985745
+            ],
+            [
+              77.75163155866251,
+              13.45534702724684
+            ],
+            [
+              77.75166119074363,
+              13.455845979919046
+            ],
+            [
+              77.75095625120998,
+              13.455845979919046
+            ],
+            [
+              77.75104628888906,
+              13.455265633985745
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "CHIK_DEMO_1099",
+        "district": "Chikkaballapur",
+        "crop_label": "Onion",
+        "verified_by": "Agricultural Extension, Chikkaballapur",
+        "survey_date": "2026-10-05"
+      }
+    }
+  ]
+}

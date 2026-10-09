@@ -1,0 +1,3705 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.15447892149848,
+              13.076654944331183
+            ],
+            [
+              78.15506633677087,
+              13.076709437142677
+            ],
+            [
+              78.1551163810197,
+              13.077387229477052
+            ],
+            [
+              78.15446863915616,
+              13.077387229477052
+            ],
+            [
+              78.15447892149848,
+              13.076654944331183
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1000",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.19958151425432,
+              13.06131934957856
+            ],
+            [
+              78.20058076291386,
+              13.061405201591189
+            ],
+            [
+              78.20060759033346,
+              13.06196854416555
+            ],
+            [
+              78.19949621942808,
+              13.06196854416555
+            ],
+            [
+              78.19958151425432,
+              13.06131934957856
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1001",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.18635545208069,
+              13.107211810881294
+            ],
+            [
+              78.18686225376592,
+              13.107212590959616
+            ],
+            [
+              78.18693056285157,
+              13.108184530276006
+            ],
+            [
+              78.18626229645368,
+              13.108184530276006
+            ],
+            [
+              78.18635545208069,
+              13.107211810881294
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1002",
+        "district": "Kolar",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1106080416071,
+              13.058147640396518
+            ],
+            [
+              78.11120640886782,
+              13.058236734905881
+            ],
+            [
+              78.11125370500643,
+              13.05885283171999
+            ],
+            [
+              78.11057114947573,
+              13.05885283171999
+            ],
+            [
+              78.1106080416071,
+              13.058147640396518
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1003",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.18535425182783,
+              13.10857938347197
+            ],
+            [
+              78.18615033720391,
+              13.108595705639493
+            ],
+            [
+              78.18618283147742,
+              13.109236417834445
+            ],
+            [
+              78.18534727160399,
+              13.109236417834445
+            ],
+            [
+              78.18535425182783,
+              13.10857938347197
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1004",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.14148992073484,
+              13.134472738862799
+            ],
+            [
+              78.14235336685424,
+              13.134526521532838
+            ],
+            [
+              78.14236991637168,
+              13.135423164293698
+            ],
+            [
+              78.14141534457241,
+              13.135423164293698
+            ],
+            [
+              78.14148992073484,
+              13.134472738862799
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1005",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.17241559644027,
+              13.07039254634371
+            ],
+            [
+              78.17323479886329,
+              13.07042378902108
+            ],
+            [
+              78.17328373690373,
+              13.07116181414941
+            ],
+            [
+              78.17238031564685,
+              13.07116181414941
+            ],
+            [
+              78.17241559644027,
+              13.07039254634371
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1006",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.16762745466747,
+              13.085737916675145
+            ],
+            [
+              78.16860183696515,
+              13.085818897504403
+            ],
+            [
+              78.16867432386854,
+              13.086624780807728
+            ],
+            [
+              78.16753767714613,
+              13.086624780807728
+            ],
+            [
+              78.16762745466747,
+              13.085737916675145
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1007",
+        "district": "Kolar",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1845003949351,
+              13.104896633901138
+            ],
+            [
+              78.18538510783782,
+              13.104918768088343
+            ],
+            [
+              78.18543390193531,
+              13.105638747196023
+            ],
+            [
+              78.18447707891042,
+              13.105638747196023
+            ],
+            [
+              78.1845003949351,
+              13.104896633901138
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1008",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.14154769954075,
+              13.07732671971602
+            ],
+            [
+              78.14239623859935,
+              13.07734901902469
+            ],
+            [
+              78.14247453423499,
+              13.078153732567378
+            ],
+            [
+              78.14152536891544,
+              13.078153732567378
+            ],
+            [
+              78.14154769954075,
+              13.07732671971602
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1009",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1413260456256,
+              13.149236267785085
+            ],
+            [
+              78.14207342206615,
+              13.149275345889869
+            ],
+            [
+              78.14216642514857,
+              13.149975820907587
+            ],
+            [
+              78.14130144046655,
+              13.149975820907587
+            ],
+            [
+              78.1413260456256,
+              13.149236267785085
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1010",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.14381887985829,
+              13.120713813002403
+            ],
+            [
+              78.14476741978072,
+              13.120779719241266
+            ],
+            [
+              78.1448431485116,
+              13.121544442314333
+            ],
+            [
+              78.14380984473071,
+              13.121544442314333
+            ],
+            [
+              78.14381887985829,
+              13.120713813002403
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1011",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.15167569409175,
+              13.114356850688589
+            ],
+            [
+              78.15266510469326,
+              13.114393790104897
+            ],
+            [
+              78.15273427855439,
+              13.115000043193367
+            ],
+            [
+              78.15163795387356,
+              13.115000043193367
+            ],
+            [
+              78.15167569409175,
+              13.114356850688589
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1012",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.16285980466026,
+              13.131615515420108
+            ],
+            [
+              78.16381098543627,
+              13.131683371869864
+            ],
+            [
+              78.1638552304847,
+              13.13219679769294
+            ],
+            [
+              78.16285275552607,
+              13.13219679769294
+            ],
+            [
+              78.16285980466026,
+              13.131615515420108
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1013",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.13644244866687,
+              13.074100719731879
+            ],
+            [
+              78.13715707463759,
+              13.07414666622213
+            ],
+            [
+              78.13723935437557,
+              13.075069320875066
+            ],
+            [
+              78.13639780041017,
+              13.075069320875066
+            ],
+            [
+              78.13644244866687,
+              13.074100719731879
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1014",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1157442513697,
+              13.125955536222907
+            ],
+            [
+              78.11660259698183,
+              13.126052613563921
+            ],
+            [
+              78.11666212175682,
+              13.126597122258772
+            ],
+            [
+              78.1157431176084,
+              13.126597122258772
+            ],
+            [
+              78.1157442513697,
+              13.125955536222907
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1015",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.12858451162838,
+              13.1334781794788
+            ],
+            [
+              78.12910690661792,
+              13.13354931740979
+            ],
+            [
+              78.1291281587216,
+              13.134325939361124
+            ],
+            [
+              78.12851054623621,
+              13.134325939361124
+            ],
+            [
+              78.12858451162838,
+              13.1334781794788
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1016",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.16614981634972,
+              13.090219327290345
+            ],
+            [
+              78.16665416656066,
+              13.090310910937331
+            ],
+            [
+              78.16674879877841,
+              13.090823210203482
+            ],
+            [
+              78.16609137229125,
+              13.090823210203482
+            ],
+            [
+              78.16614981634972,
+              13.090219327290345
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1017",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1461425949418,
+              13.132570336800036
+            ],
+            [
+              78.14678617549384,
+              13.132592721062784
+            ],
+            [
+              78.14684473179763,
+              13.13320154332899
+            ],
+            [
+              78.14610319729299,
+              13.13320154332899
+            ],
+            [
+              78.1461425949418,
+              13.132570336800036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1018",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.15754537941042,
+              13.067217076452247
+            ],
+            [
+              78.15844414675733,
+              13.067265171904541
+            ],
+            [
+              78.15845714933803,
+              13.068088838694223
+            ],
+            [
+              78.15751889615812,
+              13.068088838694223
+            ],
+            [
+              78.15754537941042,
+              13.067217076452247
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1019",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.14062352472469,
+              13.105630589111307
+            ],
+            [
+              78.14154700262392,
+              13.105686018223112
+            ],
+            [
+              78.14163591044033,
+              13.106573788245163
+            ],
+            [
+              78.14055418587058,
+              13.106573788245163
+            ],
+            [
+              78.14062352472469,
+              13.105630589111307
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1020",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.18892485844403,
+              13.13302490388989
+            ],
+            [
+              78.18988433299565,
+              13.133121497303378
+            ],
+            [
+              78.18989779115414,
+              13.133597168050061
+            ],
+            [
+              78.18886425603384,
+              13.133597168050061
+            ],
+            [
+              78.18892485844403,
+              13.13302490388989
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1021",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1070238769212,
+              13.096753568880418
+            ],
+            [
+              78.10762045723502,
+              13.096769848991842
+            ],
+            [
+              78.10763492923594,
+              13.0975238345593
+            ],
+            [
+              78.10692578684395,
+              13.0975238345593
+            ],
+            [
+              78.1070238769212,
+              13.096753568880418
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1022",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.15364742957617,
+              13.072126962230515
+            ],
+            [
+              78.1546274793011,
+              13.07221617889843
+            ],
+            [
+              78.1546400610901,
+              13.07291900125077
+            ],
+            [
+              78.15364288292245,
+              13.07291900125077
+            ],
+            [
+              78.15364742957617,
+              13.072126962230515
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1023",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.11665997631883,
+              13.085268085474073
+            ],
+            [
+              78.11762307270575,
+              13.085284060304248
+            ],
+            [
+              78.11771999515751,
+              13.086019225442106
+            ],
+            [
+              78.11659489499503,
+              13.086019225442106
+            ],
+            [
+              78.11665997631883,
+              13.085268085474073
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1024",
+        "district": "Kolar",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.191867265598,
+              13.076726556807428
+            ],
+            [
+              78.19266189600708,
+              13.076798987341606
+            ],
+            [
+              78.19270273979271,
+              13.077511183675504
+            ],
+            [
+              78.19179125922996,
+              13.077511183675504
+            ],
+            [
+              78.191867265598,
+              13.076726556807428
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1025",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.11993334537719,
+              13.136688124158015
+            ],
+            [
+              78.12071810069281,
+              13.136764657438436
+            ],
+            [
+              78.12080463260152,
+              13.137571220593838
+            ],
+            [
+              78.1199305571657,
+              13.137571220593838
+            ],
+            [
+              78.11993334537719,
+              13.136688124158015
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1026",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.18382314761305,
+              13.136046082749015
+            ],
+            [
+              78.18451910749009,
+              13.136090117170063
+            ],
+            [
+              78.18453573361761,
+              13.136933385477327
+            ],
+            [
+              78.1837558011971,
+              13.136933385477327
+            ],
+            [
+              78.18382314761305,
+              13.136046082749015
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1027",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.10821590587774,
+              13.115959829110464
+            ],
+            [
+              78.1087917792638,
+              13.115969520931786
+            ],
+            [
+              78.10886243909992,
+              13.11682333582008
+            ],
+            [
+              78.10817215567995,
+              13.11682333582008
+            ],
+            [
+              78.10821590587774,
+              13.115959829110464
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1028",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.12421099182968,
+              13.110100510048683
+            ],
+            [
+              78.12494711876762,
+              13.110155461369963
+            ],
+            [
+              78.12500106932507,
+              13.111051737627305
+            ],
+            [
+              78.12416030415129,
+              13.111051737627305
+            ],
+            [
+              78.12421099182968,
+              13.110100510048683
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1029",
+        "district": "Kolar",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.14645046686393,
+              13.075152358576249
+            ],
+            [
+              78.1472620731769,
+              13.075234297253912
+            ],
+            [
+              78.14730423256161,
+              13.076117727038367
+            ],
+            [
+              78.14637569836844,
+              13.076117727038367
+            ],
+            [
+              78.14645046686393,
+              13.075152358576249
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1030",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.15727557692679,
+              13.074066921261172
+            ],
+            [
+              78.15787980050152,
+              13.074094232273193
+            ],
+            [
+              78.15795303872417,
+              13.07476892527737
+            ],
+            [
+              78.15723061616565,
+              13.07476892527737
+            ],
+            [
+              78.15727557692679,
+              13.074066921261172
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1031",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.10372693182984,
+              13.117548399355098
+            ],
+            [
+              78.10431005649997,
+              13.117617621064653
+            ],
+            [
+              78.1043224706229,
+              13.118480953745845
+            ],
+            [
+              78.10372203465812,
+              13.118480953745845
+            ],
+            [
+              78.10372693182984,
+              13.117548399355098
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1032",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.16120229236286,
+              13.058856428743773
+            ],
+            [
+              78.16208477412341,
+              13.058867914807497
+            ],
+            [
+              78.16212045503995,
+              13.059392082770996
+            ],
+            [
+              78.16111624596626,
+              13.059392082770996
+            ],
+            [
+              78.16120229236286,
+              13.058856428743773
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1033",
+        "district": "Kolar",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1368327721966,
+              13.099909144370521
+            ],
+            [
+              78.13760895833744,
+              13.09995040261429
+            ],
+            [
+              78.13765565461931,
+              13.100801408169882
+            ],
+            [
+              78.13674789233293,
+              13.100801408169882
+            ],
+            [
+              78.1368327721966,
+              13.099909144370521
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1034",
+        "district": "Kolar",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.11790864759051,
+              13.086102059890784
+            ],
+            [
+              78.11871792846055,
+              13.086178413722168
+            ],
+            [
+              78.11874028581296,
+              13.086736699970276
+            ],
+            [
+              78.11788461569795,
+              13.086736699970276
+            ],
+            [
+              78.11790864759051,
+              13.086102059890784
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1035",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.16569118808361,
+              13.111661817851983
+            ],
+            [
+              78.16651561517381,
+              13.111741411490392
+            ],
+            [
+              78.16652992450516,
+              13.11260202849938
+            ],
+            [
+              78.16559241616277,
+              13.11260202849938
+            ],
+            [
+              78.16569118808361,
+              13.111661817851983
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1036",
+        "district": "Kolar",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.16733050839854,
+              13.067255904261621
+            ],
+            [
+              78.16795934333246,
+              13.067269469956106
+            ],
+            [
+              78.16803694535801,
+              13.068236983798654
+            ],
+            [
+              78.16731807699871,
+              13.068236983798654
+            ],
+            [
+              78.16733050839854,
+              13.067255904261621
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1037",
+        "district": "Kolar",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.12922890606153,
+              13.098705603749199
+            ],
+            [
+              78.12987190526324,
+              13.098773556174974
+            ],
+            [
+              78.12991946278261,
+              13.099618577419037
+            ],
+            [
+              78.12917069955742,
+              13.099618577419037
+            ],
+            [
+              78.12922890606153,
+              13.098705603749199
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1038",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.16492444568365,
+              13.106720620705314
+            ],
+            [
+              78.16588306089743,
+              13.106806677653742
+            ],
+            [
+              78.1659761444656,
+              13.107471691196531
+            ],
+            [
+              78.16487261208178,
+              13.107471691196531
+            ],
+            [
+              78.16492444568365,
+              13.106720620705314
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1039",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.10237484503516,
+              13.124414787033713
+            ],
+            [
+              78.10311357948034,
+              13.12444233232637
+            ],
+            [
+              78.1031404739856,
+              13.125203878915334
+            ],
+            [
+              78.10233803720338,
+              13.125203878915334
+            ],
+            [
+              78.10237484503516,
+              13.124414787033713
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1040",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.16979022340604,
+              13.055968865226985
+            ],
+            [
+              78.17050123195563,
+              13.056053989547799
+            ],
+            [
+              78.17059631508516,
+              13.056950250851525
+            ],
+            [
+              78.16972771679166,
+              13.056950250851525
+            ],
+            [
+              78.16979022340604,
+              13.055968865226985
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1041",
+        "district": "Kolar",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.17357865742522,
+              13.121528851612274
+            ],
+            [
+              78.17428512738681,
+              13.12158914114274
+            ],
+            [
+              78.1743306335254,
+              13.122461946465219
+            ],
+            [
+              78.17357619439788,
+              13.122461946465219
+            ],
+            [
+              78.17357865742522,
+              13.121528851612274
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1042",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.10895125515232,
+              13.148190020787505
+            ],
+            [
+              78.10947659940571,
+              13.148239097824682
+            ],
+            [
+              78.10951133509053,
+              13.148863538565093
+            ],
+            [
+              78.108926442503,
+              13.148863538565093
+            ],
+            [
+              78.10895125515232,
+              13.148190020787505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1043",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.10325956644702,
+              13.12355973948572
+            ],
+            [
+              78.10417979236122,
+              13.123605983297068
+            ],
+            [
+              78.10424820164147,
+              13.124163240628786
+            ],
+            [
+              78.103229889929,
+              13.124163240628786
+            ],
+            [
+              78.10325956644702,
+              13.12355973948572
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1044",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.12905429995642,
+              13.078562116669914
+            ],
+            [
+              78.12989880727744,
+              13.078630214061796
+            ],
+            [
+              78.12995613227456,
+              13.079357776243235
+            ],
+            [
+              78.12895641825685,
+              13.079357776243235
+            ],
+            [
+              78.12905429995642,
+              13.078562116669914
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1045",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.16481284611525,
+              13.076122264448914
+            ],
+            [
+              78.16542056897106,
+              13.076208864214793
+            ],
+            [
+              78.16544089427123,
+              13.077101814340303
+            ],
+            [
+              78.16476606064154,
+              13.077101814340303
+            ],
+            [
+              78.16481284611525,
+              13.076122264448914
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1046",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.10073374132446,
+              13.096381954835758
+            ],
+            [
+              78.10170914836328,
+              13.096391119728677
+            ],
+            [
+              78.1017448215625,
+              13.097381116054043
+            ],
+            [
+              78.10063944598318,
+              13.097381116054043
+            ],
+            [
+              78.10073374132446,
+              13.096381954835758
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1047",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.16613026494888,
+              13.059069838131677
+            ],
+            [
+              78.16705946980427,
+              13.059146637722648
+            ],
+            [
+              78.16707828030401,
+              13.05976177146651
+            ],
+            [
+              78.16607490172292,
+              13.05976177146651
+            ],
+            [
+              78.16613026494888,
+              13.059069838131677
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1048",
+        "district": "Kolar",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.11030462184773,
+              13.10457700901606
+            ],
+            [
+              78.11124161226222,
+              13.104676643893324
+            ],
+            [
+              78.11133795672174,
+              13.105357789389227
+            ],
+            [
+              78.11027619313336,
+              13.105357789389227
+            ],
+            [
+              78.11030462184773,
+              13.10457700901606
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1049",
+        "district": "Kolar",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.17949517035107,
+              13.087126977089108
+            ],
+            [
+              78.18042384656049,
+              13.087223839385457
+            ],
+            [
+              78.18051538539856,
+              13.087664531906135
+            ],
+            [
+              78.17942513226606,
+              13.087664531906135
+            ],
+            [
+              78.17949517035107,
+              13.087126977089108
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1050",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.10883244098865,
+              13.133018724357916
+            ],
+            [
+              78.10981028721797,
+              13.133114957378451
+            ],
+            [
+              78.10983190529366,
+              13.133558608854734
+            ],
+            [
+              78.10876872520686,
+              13.133558608854734
+            ],
+            [
+              78.10883244098865,
+              13.133018724357916
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1051",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.16067995067614,
+              13.109780010928022
+            ],
+            [
+              78.16123145623979,
+              13.109866601946756
+            ],
+            [
+              78.16123873061487,
+              13.110511600078642
+            ],
+            [
+              78.16066770872037,
+              13.110511600078642
+            ],
+            [
+              78.16067995067614,
+              13.109780010928022
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1052",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.12474581464186,
+              13.062131593256243
+            ],
+            [
+              78.1255177916174,
+              13.062147216089464
+            ],
+            [
+              78.12553507062125,
+              13.062981772509028
+            ],
+            [
+              78.12470942792388,
+              13.062981772509028
+            ],
+            [
+              78.12474581464186,
+              13.062131593256243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1053",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.14339672303576,
+              13.13639861169084
+            ],
+            [
+              78.1440208441822,
+              13.136443598153585
+            ],
+            [
+              78.14409564471677,
+              13.137304126634554
+            ],
+            [
+              78.14334161199572,
+              13.137304126634554
+            ],
+            [
+              78.14339672303576,
+              13.13639861169084
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1054",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.16138684882839,
+              13.097487907898048
+            ],
+            [
+              78.16235831835493,
+              13.097542547115328
+            ],
+            [
+              78.16242501759577,
+              13.098206931743768
+            ],
+            [
+              78.16131063389484,
+              13.098206931743768
+            ],
+            [
+              78.16138684882839,
+              13.097487907898048
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1055",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.19147559605122,
+              13.051033055576024
+            ],
+            [
+              78.19245852186118,
+              13.051076965062082
+            ],
+            [
+              78.19250234228439,
+              13.05182810171909
+            ],
+            [
+              78.19145566787653,
+              13.05182810171909
+            ],
+            [
+              78.19147559605122,
+              13.051033055576024
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1056",
+        "district": "Kolar",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.10376670866881,
+              13.142032473088904
+            ],
+            [
+              78.1045488570458,
+              13.142089560448632
+            ],
+            [
+              78.10458874748011,
+              13.142805472202696
+            ],
+            [
+              78.10370646938355,
+              13.142805472202696
+            ],
+            [
+              78.10376670866881,
+              13.142032473088904
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1057",
+        "district": "Kolar",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.17307828998162,
+              13.105544641742892
+            ],
+            [
+              78.17380367188731,
+              13.105627071562857
+            ],
+            [
+              78.17385192040422,
+              13.106171403869967
+            ],
+            [
+              78.1730297446585,
+              13.106171403869967
+            ],
+            [
+              78.17307828998162,
+              13.105544641742892
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1058",
+        "district": "Kolar",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1952851765221,
+              13.098399925176938
+            ],
+            [
+              78.19602532673709,
+              13.098452307001228
+            ],
+            [
+              78.19607494938882,
+              13.099308989765925
+            ],
+            [
+              78.195241203245,
+              13.099308989765925
+            ],
+            [
+              78.1952851765221,
+              13.098399925176938
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1059",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1026840087439,
+              13.073448959371778
+            ],
+            [
+              78.1033919327627,
+              13.073531929301764
+            ],
+            [
+              78.10339330432757,
+              13.074232049202253
+            ],
+            [
+              78.10267030406382,
+              13.074232049202253
+            ],
+            [
+              78.1026840087439,
+              13.073448959371778
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1060",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.10742199559101,
+              13.108611870118514
+            ],
+            [
+              78.10838265106251,
+              13.10865071451695
+            ],
+            [
+              78.10841211309337,
+              13.109544169809155
+            ],
+            [
+              78.10738751633808,
+              13.109544169809155
+            ],
+            [
+              78.10742199559101,
+              13.108611870118514
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1061",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.15623603993215,
+              13.14222341534543
+            ],
+            [
+              78.15673738903543,
+              13.142263306790097
+            ],
+            [
+              78.1567874592207,
+              13.143039083448583
+            ],
+            [
+              78.15616455806824,
+              13.143039083448583
+            ],
+            [
+              78.15623603993215,
+              13.14222341534543
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1062",
+        "district": "Kolar",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.11580017265679,
+              13.13566121850446
+            ],
+            [
+              78.11648908265803,
+              13.135715868429415
+            ],
+            [
+              78.11656291025454,
+              13.136390724268962
+            ],
+            [
+              78.11578199618465,
+              13.136390724268962
+            ],
+            [
+              78.11580017265679,
+              13.13566121850446
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1063",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.16491365327597,
+              13.140165421785625
+            ],
+            [
+              78.165474545118,
+              13.14021445215535
+            ],
+            [
+              78.16548132152862,
+              13.141022402039432
+            ],
+            [
+              78.1648965076327,
+              13.141022402039432
+            ],
+            [
+              78.16491365327597,
+              13.140165421785625
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1064",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.12875138089592,
+              13.058808538163422
+            ],
+            [
+              78.12957693603506,
+              13.05889951280799
+            ],
+            [
+              78.12959198878099,
+              13.059667177180183
+            ],
+            [
+              78.12874766667377,
+              13.059667177180183
+            ],
+            [
+              78.12875138089592,
+              13.058808538163422
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1065",
+        "district": "Kolar",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.14319175743822,
+              13.141101651837406
+            ],
+            [
+              78.1441204840743,
+              13.141150181654288
+            ],
+            [
+              78.14412592395762,
+              13.142008836116094
+            ],
+            [
+              78.14316295335585,
+              13.142008836116094
+            ],
+            [
+              78.14319175743822,
+              13.141101651837406
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1066",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1722960440252,
+              13.09283212333745
+            ],
+            [
+              78.17285912887381,
+              13.092896134223343
+            ],
+            [
+              78.1729389418885,
+              13.09335116756671
+            ],
+            [
+              78.17224792996204,
+              13.09335116756671
+            ],
+            [
+              78.1722960440252,
+              13.09283212333745
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1067",
+        "district": "Kolar",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.14826473978088,
+              13.118810506182772
+            ],
+            [
+              78.148826791114,
+              13.11888252476597
+            ],
+            [
+              78.14886237889623,
+              13.119660283745432
+            ],
+            [
+              78.14820735647994,
+              13.119660283745432
+            ],
+            [
+              78.14826473978088,
+              13.118810506182772
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1068",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.15193423501618,
+              13.13652684268615
+            ],
+            [
+              78.15272892728622,
+              13.136566059864727
+            ],
+            [
+              78.15273331322106,
+              13.137035198064217
+            ],
+            [
+              78.1518614169093,
+              13.137035198064217
+            ],
+            [
+              78.15193423501618,
+              13.13652684268615
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1069",
+        "district": "Kolar",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.13130360891314,
+              13.143043831826276
+            ],
+            [
+              78.13200558044147,
+              13.143049993396495
+            ],
+            [
+              78.13207609296792,
+              13.143973732785316
+            ],
+            [
+              78.13130283497638,
+              13.143973732785316
+            ],
+            [
+              78.13130360891314,
+              13.143043831826276
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1070",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1759805197935,
+              13.08686625253494
+            ],
+            [
+              78.17659860483464,
+              13.086924160776308
+            ],
+            [
+              78.17669582224447,
+              13.087577976767095
+            ],
+            [
+              78.17597817022488,
+              13.087577976767095
+            ],
+            [
+              78.1759805197935,
+              13.08686625253494
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1071",
+        "district": "Kolar",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.16410262052102,
+              13.075930582564732
+            ],
+            [
+              78.16474003272381,
+              13.0760200624088
+            ],
+            [
+              78.16481099441344,
+              13.076711911878816
+            ],
+            [
+              78.16403619211195,
+              13.076711911878816
+            ],
+            [
+              78.16410262052102,
+              13.075930582564732
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1072",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.17256101853089,
+              13.076841776066553
+            ],
+            [
+              78.17341021888014,
+              13.076881268653784
+            ],
+            [
+              78.17344242103782,
+              13.07752701160855
+            ],
+            [
+              78.17255120730029,
+              13.07752701160855
+            ],
+            [
+              78.17256101853089,
+              13.076841776066553
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1073",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.11678836596596,
+              13.111554986648008
+            ],
+            [
+              78.1172965337589,
+              13.111557726770508
+            ],
+            [
+              78.11736998159766,
+              13.112063938818093
+            ],
+            [
+              78.11671793146465,
+              13.112063938818093
+            ],
+            [
+              78.11678836596596,
+              13.111554986648008
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1074",
+        "district": "Kolar",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.13709841052655,
+              13.140537667766626
+            ],
+            [
+              78.13773071060035,
+              13.140543054279222
+            ],
+            [
+              78.13780678622818,
+              13.141520975873231
+            ],
+            [
+              78.13704084526849,
+              13.141520975873231
+            ],
+            [
+              78.13709841052655,
+              13.140537667766626
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1075",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.148800655462,
+              13.144742539002186
+            ],
+            [
+              78.14935927552354,
+              13.144762523515505
+            ],
+            [
+              78.149402279383,
+              13.145287919563398
+            ],
+            [
+              78.14875416346437,
+              13.145287919563398
+            ],
+            [
+              78.148800655462,
+              13.144742539002186
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1076",
+        "district": "Kolar",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.15895458619123,
+              13.11433555865853
+            ],
+            [
+              78.15988530408526,
+              13.114420323818154
+            ],
+            [
+              78.15996525767011,
+              13.115130745715694
+            ],
+            [
+              78.15886366186693,
+              13.115130745715694
+            ],
+            [
+              78.15895458619123,
+              13.11433555865853
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1077",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.19714703450417,
+              13.146734330262067
+            ],
+            [
+              78.1979127018535,
+              13.146747395553426
+            ],
+            [
+              78.19795294030766,
+              13.147438707092395
+            ],
+            [
+              78.1971465633176,
+              13.147438707092395
+            ],
+            [
+              78.19714703450417,
+              13.146734330262067
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1078",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.18658534441367,
+              13.065066345416458
+            ],
+            [
+              78.18728941392288,
+              13.065150657710902
+            ],
+            [
+              78.18730216582944,
+              13.065818644437151
+            ],
+            [
+              78.18652222348665,
+              13.065818644437151
+            ],
+            [
+              78.18658534441367,
+              13.065066345416458
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1079",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.16006003332863,
+              13.142991059708917
+            ],
+            [
+              78.16083955416747,
+              13.143065968805388
+            ],
+            [
+              78.16090172628978,
+              13.143777396469924
+            ],
+            [
+              78.16001106290625,
+              13.143777396469924
+            ],
+            [
+              78.16006003332863,
+              13.142991059708917
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1080",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.18028312175933,
+              13.090282218080354
+            ],
+            [
+              78.18082433236307,
+              13.090368897388085
+            ],
+            [
+              78.18086703153179,
+              13.091160182642781
+            ],
+            [
+              78.18027360900646,
+              13.091160182642781
+            ],
+            [
+              78.18028312175933,
+              13.090282218080354
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1081",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.19397608031409,
+              13.14711215482452
+            ],
+            [
+              78.19450193864685,
+              13.147152853394
+            ],
+            [
+              78.19455208170221,
+              13.14802110268693
+            ],
+            [
+              78.19389468405043,
+              13.14802110268693
+            ],
+            [
+              78.19397608031409,
+              13.14711215482452
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1082",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.12243549065093,
+              13.139878284411994
+            ],
+            [
+              78.12321760046532,
+              13.139917364429609
+            ],
+            [
+              78.12325408664123,
+              13.14074029350554
+            ],
+            [
+              78.122431701462,
+              13.14074029350554
+            ],
+            [
+              78.12243549065093,
+              13.139878284411994
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1083",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1283185509422,
+              13.098464150004256
+            ],
+            [
+              78.12931298343311,
+              13.098515727657091
+            ],
+            [
+              78.1293254793649,
+              13.09928153851127
+            ],
+            [
+              78.1282450941531,
+              13.09928153851127
+            ],
+            [
+              78.1283185509422,
+              13.098464150004256
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1084",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.12009831535278,
+              13.104066644047546
+            ],
+            [
+              78.12085651808854,
+              13.104072529048798
+            ],
+            [
+              78.12095625017139,
+              13.105032376649756
+            ],
+            [
+              78.12004843502444,
+              13.105032376649756
+            ],
+            [
+              78.12009831535278,
+              13.104066644047546
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1085",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.14519016787965,
+              13.051510794168902
+            ],
+            [
+              78.14583617305924,
+              13.051566027050589
+            ],
+            [
+              78.14587299220231,
+              13.052199973928571
+            ],
+            [
+              78.14512359738714,
+              13.052199973928571
+            ],
+            [
+              78.14519016787965,
+              13.051510794168902
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1086",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.16335178445684,
+              13.08879175382174
+            ],
+            [
+              78.16405351900353,
+              13.088889880381476
+            ],
+            [
+              78.16407158825689,
+              13.089360466726568
+            ],
+            [
+              78.16325808611461,
+              13.089360466726568
+            ],
+            [
+              78.16335178445684,
+              13.08879175382174
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1087",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.13528863700238,
+              13.139656164955612
+            ],
+            [
+              78.13620498864553,
+              13.139686238639255
+            ],
+            [
+              78.13623570550781,
+              13.140308884469384
+            ],
+            [
+              78.13526301972831,
+              13.140308884469384
+            ],
+            [
+              78.13528863700238,
+              13.139656164955612
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1088",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.18930981512374,
+              13.123307408762246
+            ],
+            [
+              78.19016391141342,
+              13.123332007414167
+            ],
+            [
+              78.19016391441602,
+              13.123900047341527
+            ],
+            [
+              78.18923162800459,
+              13.123900047341527
+            ],
+            [
+              78.18930981512374,
+              13.123307408762246
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1089",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.19159797051613,
+              13.112719827614711
+            ],
+            [
+              78.19245495370097,
+              13.112786723270025
+            ],
+            [
+              78.1924586414034,
+              13.113422468275116
+            ],
+            [
+              78.19157997437937,
+              13.113422468275116
+            ],
+            [
+              78.19159797051613,
+              13.112719827614711
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1090",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.13960036500835,
+              13.10808503419167
+            ],
+            [
+              78.14021262839918,
+              13.108181787363076
+            ],
+            [
+              78.14023862974024,
+              13.108947328935406
+            ],
+            [
+              78.13956581795698,
+              13.108947328935406
+            ],
+            [
+              78.13960036500835,
+              13.10808503419167
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1091",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.14561953241713,
+              13.072208683846249
+            ],
+            [
+              78.14632861133374,
+              13.07225076838424
+            ],
+            [
+              78.14640722115381,
+              13.073031684746597
+            ],
+            [
+              78.1455229515235,
+              13.073031684746597
+            ],
+            [
+              78.14561953241713,
+              13.072208683846249
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1092",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1492574641296,
+              13.124202395290238
+            ],
+            [
+              78.15021383102454,
+              13.124203829291949
+            ],
+            [
+              78.15022229285142,
+              13.125010375446376
+            ],
+            [
+              78.14918946121887,
+              13.125010375446376
+            ],
+            [
+              78.1492574641296,
+              13.124202395290238
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1093",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.18608455612377,
+              13.110933463048926
+            ],
+            [
+              78.18679402716484,
+              13.11094247500468
+            ],
+            [
+              78.18687147834586,
+              13.111465200504405
+            ],
+            [
+              78.1859919357622,
+              13.111465200504405
+            ],
+            [
+              78.18608455612377,
+              13.110933463048926
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1094",
+        "district": "Kolar",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.17928870213595,
+              13.125399838535742
+            ],
+            [
+              78.18014325835594,
+              13.125488193284289
+            ],
+            [
+              78.18016003119943,
+              13.126044529456047
+            ],
+            [
+              78.17926979020174,
+              13.126044529456047
+            ],
+            [
+              78.17928870213595,
+              13.125399838535742
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1095",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.12321554137068,
+              13.08564862856489
+            ],
+            [
+              78.12389635898022,
+              13.085692338208737
+            ],
+            [
+              78.12392967705875,
+              13.086635455010686
+            ],
+            [
+              78.12315614494162,
+              13.086635455010686
+            ],
+            [
+              78.12321554137068,
+              13.08564862856489
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1096",
+        "district": "Kolar",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.18267807792566,
+              13.06451643394206
+            ],
+            [
+              78.18362940708636,
+              13.064572191643203
+            ],
+            [
+              78.18368699450234,
+              13.065257621442878
+            ],
+            [
+              78.18258675720001,
+              13.065257621442878
+            ],
+            [
+              78.18267807792566,
+              13.06451643394206
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1097",
+        "district": "Kolar",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.12856662189776,
+              13.119311797028805
+            ],
+            [
+              78.12943377984665,
+              13.119387705508823
+            ],
+            [
+              78.12947362046489,
+              13.12000374330759
+            ],
+            [
+              78.1284895111373,
+              13.12000374330759
+            ],
+            [
+              78.12856662189776,
+              13.119311797028805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1098",
+        "district": "Kolar",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.15303166467194,
+              13.098538600689253
+            ],
+            [
+              78.15398722533153,
+              13.098549705072442
+            ],
+            [
+              78.15404721075231,
+              13.099327945620017
+            ],
+            [
+              78.15303108090484,
+              13.099327945620017
+            ],
+            [
+              78.15303166467194,
+              13.098538600689253
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "KOLAR_DEMO_1099",
+        "district": "Kolar",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Kolar (Viva Demo Dataset)",
+        "survey_date": "2026-10-01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,3705 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.50874475865709,
+              15.842873075736996
+            ],
+            [
+              74.50955545700421,
+              15.84292394072082
+            ],
+            [
+              74.5095953636215,
+              15.843812090725066
+            ],
+            [
+              74.50867402298653,
+              15.843812090725066
+            ],
+            [
+              74.50874475865709,
+              15.842873075736996
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1000",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.54681378091131,
+              15.856682599341157
+            ],
+            [
+              74.54739767790679,
+              15.856682772379454
+            ],
+            [
+              74.54742328786863,
+              15.857247145624251
+            ],
+            [
+              74.54679786188919,
+              15.857247145624251
+            ],
+            [
+              74.54681378091131,
+              15.856682599341157
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1001",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.53469353796442,
+              15.872728794325676
+            ],
+            [
+              74.5353658645346,
+              15.872811618887944
+            ],
+            [
+              74.53545689326823,
+              15.873620748473561
+            ],
+            [
+              74.53467786249053,
+              15.873620748473561
+            ],
+            [
+              74.53469353796442,
+              15.872728794325676
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1002",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.52706806080218,
+              15.898948586051604
+            ],
+            [
+              74.52782776421851,
+              15.898976228462011
+            ],
+            [
+              74.52789041078752,
+              15.899898144093386
+            ],
+            [
+              74.52701967712702,
+              15.899898144093386
+            ],
+            [
+              74.52706806080218,
+              15.898948586051604
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1003",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.51924833007439,
+              15.87563656557311
+            ],
+            [
+              74.5200827740226,
+              15.875672227272432
+            ],
+            [
+              74.52015246799314,
+              15.87644619274086
+            ],
+            [
+              74.51924510605592,
+              15.87644619274086
+            ],
+            [
+              74.51924833007439,
+              15.87563656557311
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1004",
+        "district": "Belagavi",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.52520970568928,
+              15.892113974124534
+            ],
+            [
+              74.5261018926944,
+              15.892114915583381
+            ],
+            [
+              74.52613600366504,
+              15.893035308222695
+            ],
+            [
+              74.52516102671191,
+              15.893035308222695
+            ],
+            [
+              74.52520970568928,
+              15.892113974124534
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1005",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.51998746578808,
+              15.840365945804432
+            ],
+            [
+              74.5208771020398,
+              15.840423946509157
+            ],
+            [
+              74.52091445194382,
+              15.841110661278083
+            ],
+            [
+              74.51989467113258,
+              15.841110661278083
+            ],
+            [
+              74.51998746578808,
+              15.840365945804432
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1006",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.46037895914682,
+              15.807378050645193
+            ],
+            [
+              74.46137443008251,
+              15.807408900709634
+            ],
+            [
+              74.46138997765033,
+              15.808076853153473
+            ],
+            [
+              74.46031011237183,
+              15.808076853153473
+            ],
+            [
+              74.46037895914682,
+              15.807378050645193
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1007",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.49838058068389,
+              15.828356071065386
+            ],
+            [
+              74.49927809806914,
+              15.828428580373892
+            ],
+            [
+              74.49937310219099,
+              15.828965393507021
+            ],
+            [
+              74.49830795991332,
+              15.828965393507021
+            ],
+            [
+              74.49838058068389,
+              15.828356071065386
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1008",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.47726609258746,
+              15.877043598622114
+            ],
+            [
+              74.47800939516793,
+              15.87704368092564
+            ],
+            [
+              74.47801314776615,
+              15.877975299386728
+            ],
+            [
+              74.47717237313918,
+              15.877975299386728
+            ],
+            [
+              74.47726609258746,
+              15.877043598622114
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1009",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.45720214639225,
+              15.817570817768345
+            ],
+            [
+              74.45796466782348,
+              15.81766922903143
+            ],
+            [
+              74.45797303123746,
+              15.818238826392605
+            ],
+            [
+              74.45714550558796,
+              15.818238826392605
+            ],
+            [
+              74.45720214639225,
+              15.817570817768345
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1010",
+        "district": "Belagavi",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.51657141511997,
+              15.824561105554428
+            ],
+            [
+              74.51739056645671,
+              15.824653943582435
+            ],
+            [
+              74.51742232953109,
+              15.825389618165872
+            ],
+            [
+              74.51656916602452,
+              15.825389618165872
+            ],
+            [
+              74.51657141511997,
+              15.824561105554428
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1011",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.49780157977993,
+              15.894562162430583
+            ],
+            [
+              74.4987208646256,
+              15.89465774212263
+            ],
+            [
+              74.4987914643223,
+              15.895230828924158
+            ],
+            [
+              74.49770167971425,
+              15.895230828924158
+            ],
+            [
+              74.49780157977993,
+              15.894562162430583
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1012",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.49959353820279,
+              15.88408189234057
+            ],
+            [
+              74.5004337709762,
+              15.884143207519864
+            ],
+            [
+              74.50045267586866,
+              15.884888631002509
+            ],
+            [
+              74.49958080090906,
+              15.884888631002509
+            ],
+            [
+              74.49959353820279,
+              15.88408189234057
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1013",
+        "district": "Belagavi",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.50749214597444,
+              15.856247181844578
+            ],
+            [
+              74.50816380826777,
+              15.85631431051223
+            ],
+            [
+              74.50819346331035,
+              15.857190200392957
+            ],
+            [
+              74.5074372810781,
+              15.857190200392957
+            ],
+            [
+              74.50749214597444,
+              15.856247181844578
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1014",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.48325111958795,
+              15.844538038713486
+            ],
+            [
+              74.4842028275772,
+              15.844546155526759
+            ],
+            [
+              74.48430237191093,
+              15.845193491492916
+            ],
+            [
+              74.48318018834325,
+              15.845193491492916
+            ],
+            [
+              74.48325111958795,
+              15.844538038713486
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1015",
+        "district": "Belagavi",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.45188620234853,
+              15.897806987761598
+            ],
+            [
+              74.45278908399658,
+              15.897896791582333
+            ],
+            [
+              74.45285220612386,
+              15.898521642242493
+            ],
+            [
+              74.45187827299357,
+              15.898521642242493
+            ],
+            [
+              74.45188620234853,
+              15.897806987761598
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1016",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.53840362081601,
+              15.848480222909
+            ],
+            [
+              74.53939434398352,
+              15.848501108240505
+            ],
+            [
+              74.53947713566711,
+              15.849275910551723
+            ],
+            [
+              74.53830479770203,
+              15.849275910551723
+            ],
+            [
+              74.53840362081601,
+              15.848480222909
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1017",
+        "district": "Belagavi",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.51873027264321,
+              15.80717441309051
+            ],
+            [
+              74.51968890273173,
+              15.807224233159129
+            ],
+            [
+              74.51977792855038,
+              15.808034427994583
+            ],
+            [
+              74.51871384012308,
+              15.808034427994583
+            ],
+            [
+              74.51873027264321,
+              15.80717441309051
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1018",
+        "district": "Belagavi",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.52891590223676,
+              15.867708678914777
+            ],
+            [
+              74.52950883599645,
+              15.867795087660772
+            ],
+            [
+              74.52959942989455,
+              15.86864645288326
+            ],
+            [
+              74.52885208778179,
+              15.86864645288326
+            ],
+            [
+              74.52891590223676,
+              15.867708678914777
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1019",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.4507868821002,
+              15.855896732013013
+            ],
+            [
+              74.45131903693448,
+              15.85592458367749
+            ],
+            [
+              74.4513963105273,
+              15.856679207798575
+            ],
+            [
+              74.4507501609388,
+              15.856679207798575
+            ],
+            [
+              74.4507868821002,
+              15.855896732013013
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1020",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.5448594481196,
+              15.800441038856443
+            ],
+            [
+              74.54565848668206,
+              15.800455648352951
+            ],
+            [
+              74.54572412967458,
+              15.8009749810643
+            ],
+            [
+              74.54484201790787,
+              15.8009749810643
+            ],
+            [
+              74.5448594481196,
+              15.800441038856443
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1021",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.49681405560739,
+              15.848070952151929
+            ],
+            [
+              74.49772808989366,
+              15.848080442174282
+            ],
+            [
+              74.49777449319511,
+              15.848906156785038
+            ],
+            [
+              74.49679427255204,
+              15.848906156785038
+            ],
+            [
+              74.49681405560739,
+              15.848070952151929
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1022",
+        "district": "Belagavi",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.51025028193833,
+              15.8285706010177
+            ],
+            [
+              74.51118869010601,
+              15.828646075152083
+            ],
+            [
+              74.51122979134489,
+              15.82946049857039
+            ],
+            [
+              74.5101951176565,
+              15.82946049857039
+            ],
+            [
+              74.51025028193833,
+              15.8285706010177
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1023",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.52743880074131,
+              15.878284392660209
+            ],
+            [
+              74.52828873574971,
+              15.878288759638892
+            ],
+            [
+              74.52835089317581,
+              15.878825772068446
+            ],
+            [
+              74.52735331195714,
+              15.878825772068446
+            ],
+            [
+              74.52743880074131,
+              15.878284392660209
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1024",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.48549316417616,
+              15.812917857092762
+            ],
+            [
+              74.48611822930197,
+              15.812980272788023
+            ],
+            [
+              74.48615895466229,
+              15.813525658121732
+            ],
+            [
+              74.4854860839192,
+              15.813525658121732
+            ],
+            [
+              74.48549316417616,
+              15.812917857092762
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1025",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.45522064499364,
+              15.814237812847699
+            ],
+            [
+              74.45595928871042,
+              15.81428148686363
+            ],
+            [
+              74.45597909083425,
+              15.815229977364135
+            ],
+            [
+              74.45519216794989,
+              15.815229977364135
+            ],
+            [
+              74.45522064499364,
+              15.814237812847699
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1026",
+        "district": "Belagavi",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.5228845138873,
+              15.841853262991863
+            ],
+            [
+              74.5235657457917,
+              15.841854963461461
+            ],
+            [
+              74.52361437535508,
+              15.842363616522917
+            ],
+            [
+              74.52285460840307,
+              15.842363616522917
+            ],
+            [
+              74.5228845138873,
+              15.841853262991863
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1027",
+        "district": "Belagavi",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.45901752386465,
+              15.812001845584359
+            ],
+            [
+              74.45951860955046,
+              15.81201920862638
+            ],
+            [
+              74.45960571663548,
+              15.812866854765772
+            ],
+            [
+              74.45897217298132,
+              15.812866854765772
+            ],
+            [
+              74.45901752386465,
+              15.812001845584359
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1028",
+        "district": "Belagavi",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.54088534709477,
+              15.856493763522487
+            ],
+            [
+              74.541774473942,
+              15.856593343243658
+            ],
+            [
+              74.54184797635114,
+              15.857194852927066
+            ],
+            [
+              74.5408345203659,
+              15.857194852927066
+            ],
+            [
+              74.54088534709477,
+              15.856493763522487
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1029",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.54595473561379,
+              15.837251718705597
+            ],
+            [
+              74.54683838356509,
+              15.837273349292907
+            ],
+            [
+              74.5469051833391,
+              15.838013414989902
+            ],
+            [
+              74.54590850808856,
+              15.838013414989902
+            ],
+            [
+              74.54595473561379,
+              15.837251718705597
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1030",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.4974138800889,
+              15.832468498307342
+            ],
+            [
+              74.49825210679938,
+              15.83254677421802
+            ],
+            [
+              74.49827289217204,
+              15.833249513488347
+            ],
+            [
+              74.49738689739044,
+              15.833249513488347
+            ],
+            [
+              74.4974138800889,
+              15.832468498307342
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1031",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.52738055815706,
+              15.895570677103851
+            ],
+            [
+              74.52795891058723,
+              15.895598547370362
+            ],
+            [
+              74.52797396283702,
+              15.896310110149543
+            ],
+            [
+              74.52732898555068,
+              15.896310110149543
+            ],
+            [
+              74.52738055815706,
+              15.895570677103851
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1032",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.45649612656139,
+              15.852110720135641
+            ],
+            [
+              74.45705983048695,
+              15.852188298189509
+            ],
+            [
+              74.45709395281038,
+              15.85304637374776
+            ],
+            [
+              74.4564201998131,
+              15.85304637374776
+            ],
+            [
+              74.45649612656139,
+              15.852110720135641
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1033",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.51725175910867,
+              15.802027414704105
+            ],
+            [
+              74.51799882317104,
+              15.802057567834508
+            ],
+            [
+              74.51800113130432,
+              15.80299745300497
+            ],
+            [
+              74.51715456657011,
+              15.80299745300497
+            ],
+            [
+              74.51725175910867,
+              15.802027414704105
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1034",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.51754155509157,
+              15.804091550481719
+            ],
+            [
+              74.51816346355596,
+              15.80417058729607
+            ],
+            [
+              74.51824019979719,
+              15.805055098603592
+            ],
+            [
+              74.51752650746266,
+              15.805055098603592
+            ],
+            [
+              74.51754155509157,
+              15.804091550481719
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1035",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.47549076847879,
+              15.837594556852729
+            ],
+            [
+              74.47636163490009,
+              15.837664002219578
+            ],
+            [
+              74.47644901404819,
+              15.838134562722498
+            ],
+            [
+              74.47548376174421,
+              15.838134562722498
+            ],
+            [
+              74.47549076847879,
+              15.837594556852729
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1036",
+        "district": "Belagavi",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.53195620969088,
+              15.8075621143441
+            ],
+            [
+              74.53295081898534,
+              15.807588552049673
+            ],
+            [
+              74.53299883704929,
+              15.80846680171161
+            ],
+            [
+              74.53189331164712,
+              15.80846680171161
+            ],
+            [
+              74.53195620969088,
+              15.8075621143441
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1037",
+        "district": "Belagavi",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.45783790144307,
+              15.850248230310717
+            ],
+            [
+              74.45860612297028,
+              15.850264896331355
+            ],
+            [
+              74.4587017120547,
+              15.850985892098931
+            ],
+            [
+              74.45778749234897,
+              15.850985892098931
+            ],
+            [
+              74.45783790144307,
+              15.850248230310717
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1038",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.45644555732572,
+              15.862879896153459
+            ],
+            [
+              74.45704109666983,
+              15.862912979531487
+            ],
+            [
+              74.45708686229698,
+              15.863728982916697
+            ],
+            [
+              74.4564373606474,
+              15.863728982916697
+            ],
+            [
+              74.45644555732572,
+              15.862879896153459
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1039",
+        "district": "Belagavi",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.51872569208236,
+              15.881301894198323
+            ],
+            [
+              74.5192755974352,
+              15.881355656495987
+            ],
+            [
+              74.51930464929652,
+              15.881890781602676
+            ],
+            [
+              74.51867687883272,
+              15.881890781602676
+            ],
+            [
+              74.51872569208236,
+              15.881301894198323
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1040",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.46618782043511,
+              15.841476748326292
+            ],
+            [
+              74.4669676203947,
+              15.841517187044197
+            ],
+            [
+              74.46704817744127,
+              15.842160721031604
+            ],
+            [
+              74.46616896294702,
+              15.842160721031604
+            ],
+            [
+              74.46618782043511,
+              15.841476748326292
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1041",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.45344410751594,
+              15.859767954105738
+            ],
+            [
+              74.45405684233819,
+              15.859832962040048
+            ],
+            [
+              74.45412893226036,
+              15.860572475044034
+            ],
+            [
+              74.4533529559213,
+              15.860572475044034
+            ],
+            [
+              74.45344410751594,
+              15.859767954105738
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1042",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.47257785774072,
+              15.847252991052885
+            ],
+            [
+              74.47321145889755,
+              15.847334525085989
+            ],
+            [
+              74.47326867400265,
+              15.847818179175777
+            ],
+            [
+              74.47257677497558,
+              15.847818179175777
+            ],
+            [
+              74.47257785774072,
+              15.847252991052885
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1043",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.52336852246405,
+              15.884532165732658
+            ],
+            [
+              74.52426486631882,
+              15.884584202216967
+            ],
+            [
+              74.52428261042922,
+              15.885344371400056
+            ],
+            [
+              74.52327004977174,
+              15.885344371400056
+            ],
+            [
+              74.52336852246405,
+              15.884532165732658
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1044",
+        "district": "Belagavi",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.52884324037079,
+              15.819077141286517
+            ],
+            [
+              74.52938443626249,
+              15.819110744364405
+            ],
+            [
+              74.52945655621339,
+              15.819833377273529
+            ],
+            [
+              74.52881674404196,
+              15.819833377273529
+            ],
+            [
+              74.52884324037079,
+              15.819077141286517
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1045",
+        "district": "Belagavi",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.52834084928853,
+              15.838411686808431
+            ],
+            [
+              74.5292193502523,
+              15.838487017316336
+            ],
+            [
+              74.52931533198316,
+              15.839366505158884
+            ],
+            [
+              74.52831991590655,
+              15.839366505158884
+            ],
+            [
+              74.52834084928853,
+              15.838411686808431
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1046",
+        "district": "Belagavi",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.49673072763937,
+              15.873197500192845
+            ],
+            [
+              74.49765423247742,
+              15.87323194611586
+            ],
+            [
+              74.49774222378085,
+              15.874048291393395
+            ],
+            [
+              74.49665127148926,
+              15.874048291393395
+            ],
+            [
+              74.49673072763937,
+              15.873197500192845
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1047",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.54904683014684,
+              15.834965368734721
+            ],
+            [
+              74.54999449839377,
+              15.835004475263835
+            ],
+            [
+              74.55006659047895,
+              15.835496031618367
+            ],
+            [
+              74.54900195073446,
+              15.835496031618367
+            ],
+            [
+              74.54904683014684,
+              15.834965368734721
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1048",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.53046838909823,
+              15.898513311617053
+            ],
+            [
+              74.53105987552702,
+              15.898571358508866
+            ],
+            [
+              74.53111922858302,
+              15.899101716217237
+            ],
+            [
+              74.53038021816252,
+              15.899101716217237
+            ],
+            [
+              74.53046838909823,
+              15.898513311617053
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1049",
+        "district": "Belagavi",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.54024837266597,
+              15.827473759296543
+            ],
+            [
+              74.54109273307921,
+              15.827489994011913
+            ],
+            [
+              74.54110461941445,
+              15.828178631393225
+            ],
+            [
+              74.54018441968016,
+              15.828178631393225
+            ],
+            [
+              74.54024837266597,
+              15.827473759296543
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1050",
+        "district": "Belagavi",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.47701049103316,
+              15.850469397458642
+            ],
+            [
+              74.47761133554513,
+              15.850506655050284
+            ],
+            [
+              74.47761779489736,
+              15.851186313436832
+            ],
+            [
+              74.47693856428074,
+              15.851186313436832
+            ],
+            [
+              74.47701049103316,
+              15.850469397458642
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1051",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.46151218108098,
+              15.878181720368016
+            ],
+            [
+              74.46248377067553,
+              15.878255964792062
+            ],
+            [
+              74.46252983122737,
+              15.87900687353901
+            ],
+            [
+              74.46147634661465,
+              15.87900687353901
+            ],
+            [
+              74.46151218108098,
+              15.878181720368016
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1052",
+        "district": "Belagavi",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.50983738790823,
+              15.854793607769238
+            ],
+            [
+              74.5108199119958,
+              15.854802847008651
+            ],
+            [
+              74.5109136853271,
+              15.8553966420586
+            ],
+            [
+              74.50982836458775,
+              15.8553966420586
+            ],
+            [
+              74.50983738790823,
+              15.854793607769238
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1053",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.48039371300467,
+              15.851872314040262
+            ],
+            [
+              74.48098537187344,
+              15.851877774306152
+            ],
+            [
+              74.48098928756089,
+              15.852834476542656
+            ],
+            [
+              74.48035764939617,
+              15.852834476542656
+            ],
+            [
+              74.48039371300467,
+              15.851872314040262
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1054",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.48356439957641,
+              15.813848189314283
+            ],
+            [
+              74.48452471526106,
+              15.813891438416748
+            ],
+            [
+              74.48457783016684,
+              15.814472490623038
+            ],
+            [
+              74.48350512304879,
+              15.814472490623038
+            ],
+            [
+              74.48356439957641,
+              15.813848189314283
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1055",
+        "district": "Belagavi",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.54155648892564,
+              15.867818946731761
+            ],
+            [
+              74.54249094344932,
+              15.867859797733708
+            ],
+            [
+              74.5425120170386,
+              15.86863949125637
+            ],
+            [
+              74.54153150336919,
+              15.86863949125637
+            ],
+            [
+              74.54155648892564,
+              15.867818946731761
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1056",
+        "district": "Belagavi",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.53135568389217,
+              15.85930043646471
+            ],
+            [
+              74.53214628433595,
+              15.859360196399914
+            ],
+            [
+              74.53218914548711,
+              15.85980407715337
+            ],
+            [
+              74.53130426904328,
+              15.85980407715337
+            ],
+            [
+              74.53135568389217,
+              15.85930043646471
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1057",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.5423849117148,
+              15.82387185004693
+            ],
+            [
+              74.54336594692127,
+              15.82389560713814
+            ],
+            [
+              74.54338256522443,
+              15.824648440542001
+            ],
+            [
+              74.54231465657722,
+              15.824648440542001
+            ],
+            [
+              74.5423849117148,
+              15.82387185004693
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1058",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.50551359079927,
+              15.884870812509494
+            ],
+            [
+              74.50628053433097,
+              15.884902441153104
+            ],
+            [
+              74.50634843910458,
+              15.885540762084108
+            ],
+            [
+              74.50545454694469,
+              15.885540762084108
+            ],
+            [
+              74.50551359079927,
+              15.884870812509494
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1059",
+        "district": "Belagavi",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.51140947998266,
+              15.883590181768723
+            ],
+            [
+              74.5121244316934,
+              15.883673590827996
+            ],
+            [
+              74.51212604721044,
+              15.884152665565836
+            ],
+            [
+              74.51140824215959,
+              15.884152665565836
+            ],
+            [
+              74.51140947998266,
+              15.883590181768723
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1060",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.53251393238729,
+              15.826368241093014
+            ],
+            [
+              74.53337271702487,
+              15.826389818914857
+            ],
+            [
+              74.53340381061135,
+              15.827340154069654
+            ],
+            [
+              74.53242795499285,
+              15.827340154069654
+            ],
+            [
+              74.53251393238729,
+              15.826368241093014
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1061",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.50628744890601,
+              15.805694715022467
+            ],
+            [
+              74.50697039194756,
+              15.80577397251164
+            ],
+            [
+              74.5070313795564,
+              15.8066856029573
+            ],
+            [
+              74.50622611939653,
+              15.8066856029573
+            ],
+            [
+              74.50628744890601,
+              15.805694715022467
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1062",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.51520694945616,
+              15.8068945024659
+            ],
+            [
+              74.5158855703443,
+              15.80697958348721
+            ],
+            [
+              74.51589378558258,
+              15.807749991851292
+            ],
+            [
+              74.51515161782312,
+              15.807749991851292
+            ],
+            [
+              74.51520694945616,
+              15.8068945024659
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1063",
+        "district": "Belagavi",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.45068213415408,
+              15.893541733539314
+            ],
+            [
+              74.45129868586153,
+              15.893575210274165
+            ],
+            [
+              74.45131564966657,
+              15.894460930963414
+            ],
+            [
+              74.45065861997722,
+              15.894460930963414
+            ],
+            [
+              74.45068213415408,
+              15.893541733539314
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1064",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.47307754725176,
+              15.849169311207604
+            ],
+            [
+              74.47393890942585,
+              15.84919464160658
+            ],
+            [
+              74.47403039683259,
+              15.850088955929747
+            ],
+            [
+              74.47306018911681,
+              15.850088955929747
+            ],
+            [
+              74.47307754725176,
+              15.849169311207604
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1065",
+        "district": "Belagavi",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.45272191057009,
+              15.841244453600849
+            ],
+            [
+              74.45335038568575,
+              15.841334955588298
+            ],
+            [
+              74.45341554424316,
+              15.841838822233925
+            ],
+            [
+              74.45267943803654,
+              15.841838822233925
+            ],
+            [
+              74.45272191057009,
+              15.841244453600849
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1066",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.52747083199331,
+              15.875065389982245
+            ],
+            [
+              74.52812970998328,
+              15.875134050277572
+            ],
+            [
+              74.52821546164776,
+              15.875892429954401
+            ],
+            [
+              74.5274246178389,
+              15.875892429954401
+            ],
+            [
+              74.52747083199331,
+              15.875065389982245
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1067",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.52746119996105,
+              15.86138734326682
+            ],
+            [
+              74.52796196835692,
+              15.861479441785573
+            ],
+            [
+              74.52805816759968,
+              15.862122355009824
+            ],
+            [
+              74.52745561158214,
+              15.862122355009824
+            ],
+            [
+              74.52746119996105,
+              15.86138734326682
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1068",
+        "district": "Belagavi",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.4579650788596,
+              15.88682725098737
+            ],
+            [
+              74.4585125152129,
+              15.886854941561467
+            ],
+            [
+              74.45859707560047,
+              15.887690692871834
+            ],
+            [
+              74.45789567864452,
+              15.887690692871834
+            ],
+            [
+              74.4579650788596,
+              15.88682725098737
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1069",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.52193687875916,
+              15.816348955119045
+            ],
+            [
+              74.5225749110348,
+              15.816367891277899
+            ],
+            [
+              74.52263778645666,
+              15.817314684332125
+            ],
+            [
+              74.52190456457899,
+              15.817314684332125
+            ],
+            [
+              74.52193687875916,
+              15.816348955119045
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1070",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.46067564023605,
+              15.830537921712452
+            ],
+            [
+              74.46134484726929,
+              15.830614375285226
+            ],
+            [
+              74.46143892864822,
+              15.831205768614728
+            ],
+            [
+              74.46066545359272,
+              15.831205768614728
+            ],
+            [
+              74.46067564023605,
+              15.830537921712452
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1071",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.46164508432673,
+              15.871513011388734
+            ],
+            [
+              74.46233731071744,
+              15.871561118540486
+            ],
+            [
+              74.46237541160738,
+              15.872424067891826
+            ],
+            [
+              74.46163154083486,
+              15.872424067891826
+            ],
+            [
+              74.46164508432673,
+              15.871513011388734
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1072",
+        "district": "Belagavi",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.52120746617591,
+              15.867586945622932
+            ],
+            [
+              74.52212754876493,
+              15.867669289603002
+            ],
+            [
+              74.52216643195457,
+              15.868465002258883
+            ],
+            [
+              74.52115090092398,
+              15.868465002258883
+            ],
+            [
+              74.52120746617591,
+              15.867586945622932
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1073",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.48619296854886,
+              15.827222192554348
+            ],
+            [
+              74.48685161271906,
+              15.82723666380422
+            ],
+            [
+              74.48694374808032,
+              15.827967433240408
+            ],
+            [
+              74.48613739161311,
+              15.827967433240408
+            ],
+            [
+              74.48619296854886,
+              15.827222192554348
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1074",
+        "district": "Belagavi",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.45270744011356,
+              15.883337599752362
+            ],
+            [
+              74.45332133981164,
+              15.883367670975915
+            ],
+            [
+              74.45340999522894,
+              15.884199675724494
+            ],
+            [
+              74.45266159208822,
+              15.884199675724494
+            ],
+            [
+              74.45270744011356,
+              15.883337599752362
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1075",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.52681812889055,
+              15.842721658521423
+            ],
+            [
+              74.52744554485278,
+              15.842792656089502
+            ],
+            [
+              74.52747843475584,
+              15.843323869743267
+            ],
+            [
+              74.52677253142167,
+              15.843323869743267
+            ],
+            [
+              74.52681812889055,
+              15.842721658521423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1076",
+        "district": "Belagavi",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.5292347457701,
+              15.81708165305801
+            ],
+            [
+              74.52991086219544,
+              15.817181582751468
+            ],
+            [
+              74.53000682124382,
+              15.817792977015413
+            ],
+            [
+              74.52915071636492,
+              15.817792977015413
+            ],
+            [
+              74.5292347457701,
+              15.81708165305801
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1077",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.46042423653043,
+              15.850921573623575
+            ],
+            [
+              74.46129528926599,
+              15.850964493653969
+            ],
+            [
+              74.46134119948337,
+              15.851748136184483
+            ],
+            [
+              74.46041125710654,
+              15.851748136184483
+            ],
+            [
+              74.46042423653043,
+              15.850921573623575
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1078",
+        "district": "Belagavi",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.49359498715853,
+              15.812562463917624
+            ],
+            [
+              74.49431170489166,
+              15.812623934879637
+            ],
+            [
+              74.49436428430563,
+              15.813552757464542
+            ],
+            [
+              74.49351976734064,
+              15.813552757464542
+            ],
+            [
+              74.49359498715853,
+              15.812562463917624
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1079",
+        "district": "Belagavi",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.49277737979816,
+              15.83109368701375
+            ],
+            [
+              74.4934243913515,
+              15.831146603035558
+            ],
+            [
+              74.49343862406802,
+              15.831647671683905
+            ],
+            [
+              74.4927548144821,
+              15.831647671683905
+            ],
+            [
+              74.49277737979816,
+              15.83109368701375
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1080",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.49140444293114,
+              15.880211709442897
+            ],
+            [
+              74.49231469788043,
+              15.880296368811326
+            ],
+            [
+              74.49238641855453,
+              15.880898769628965
+            ],
+            [
+              74.49138308054997,
+              15.880898769628965
+            ],
+            [
+              74.49140444293114,
+              15.880211709442897
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1081",
+        "district": "Belagavi",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.5478479497336,
+              15.890124827424852
+            ],
+            [
+              74.54840080721706,
+              15.890217695611284
+            ],
+            [
+              74.54842854063024,
+              15.891098334418304
+            ],
+            [
+              74.54775680244425,
+              15.891098334418304
+            ],
+            [
+              74.5478479497336,
+              15.890124827424852
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1082",
+        "district": "Belagavi",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.53671446921145,
+              15.8276313009195
+            ],
+            [
+              74.53721825677786,
+              15.82766348205465
+            ],
+            [
+              74.53726672722948,
+              15.828508935183454
+            ],
+            [
+              74.53666094064971,
+              15.828508935183454
+            ],
+            [
+              74.53671446921145,
+              15.8276313009195
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1083",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.46278618866089,
+              15.853219245525253
+            ],
+            [
+              74.4635874394079,
+              15.853307603453072
+            ],
+            [
+              74.46368229395546,
+              15.854065473353714
+            ],
+            [
+              74.46274032459412,
+              15.854065473353714
+            ],
+            [
+              74.46278618866089,
+              15.853219245525253
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1084",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.54855099731806,
+              15.840127507306194
+            ],
+            [
+              74.54954608204707,
+              15.840147173209434
+            ],
+            [
+              74.54962277136453,
+              15.840974757326931
+            ],
+            [
+              74.54851379127868,
+              15.840974757326931
+            ],
+            [
+              74.54855099731806,
+              15.840127507306194
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1085",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.52998844103584,
+              15.876408661857367
+            ],
+            [
+              74.5308985499853,
+              15.87646130480366
+            ],
+            [
+              74.53096885831725,
+              15.87721096254444
+            ],
+            [
+              74.5299017538395,
+              15.87721096254444
+            ],
+            [
+              74.52998844103584,
+              15.876408661857367
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1086",
+        "district": "Belagavi",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.51595409723691,
+              15.865121857827532
+            ],
+            [
+              74.51658379651177,
+              15.865158026168984
+            ],
+            [
+              74.51659717967554,
+              15.865839491970663
+            ],
+            [
+              74.51592417166073,
+              15.865839491970663
+            ],
+            [
+              74.51595409723691,
+              15.865121857827532
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1087",
+        "district": "Belagavi",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.49994548560488,
+              15.887601454306802
+            ],
+            [
+              74.50061663230733,
+              15.887639222749621
+            ],
+            [
+              74.5006586285616,
+              15.888454798380266
+            ],
+            [
+              74.4998595689429,
+              15.888454798380266
+            ],
+            [
+              74.49994548560488,
+              15.887601454306802
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1088",
+        "district": "Belagavi",
+        "crop_label": "Potato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.46541601021592,
+              15.83063721932595
+            ],
+            [
+              74.46606023657849,
+              15.830708052198329
+            ],
+            [
+              74.46611778348553,
+              15.831621642154778
+            ],
+            [
+              74.46537982520591,
+              15.831621642154778
+            ],
+            [
+              74.46541601021592,
+              15.83063721932595
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1089",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.49909893160441,
+              15.882405962244734
+            ],
+            [
+              74.49964363163006,
+              15.882442480981403
+            ],
+            [
+              74.49965602446319,
+              15.883017872336959
+            ],
+            [
+              74.49902363442102,
+              15.883017872336959
+            ],
+            [
+              74.49909893160441,
+              15.882405962244734
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1090",
+        "district": "Belagavi",
+        "crop_label": "Fallow/Non-Crop",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.54070677950338,
+              15.852103338730481
+            ],
+            [
+              74.54137272444504,
+              15.852191123266792
+            ],
+            [
+              74.54139749215386,
+              15.852751899224668
+            ],
+            [
+              74.54068449432556,
+              15.852751899224668
+            ],
+            [
+              74.54070677950338,
+              15.852103338730481
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1091",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.51798727593952,
+              15.825741094446789
+            ],
+            [
+              74.51866722374533,
+              15.825816472672571
+            ],
+            [
+              74.51867709111443,
+              15.826638380078306
+            ],
+            [
+              74.51797266845405,
+              15.826638380078306
+            ],
+            [
+              74.51798727593952,
+              15.825741094446789
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1092",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.52561756083107,
+              15.867483182848181
+            ],
+            [
+              74.52625079620732,
+              15.867520510965921
+            ],
+            [
+              74.5262979629854,
+              15.868432004125152
+            ],
+            [
+              74.52553126258192,
+              15.868432004125152
+            ],
+            [
+              74.52561756083107,
+              15.867483182848181
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1093",
+        "district": "Belagavi",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.46616737238492,
+              15.839656624734529
+            ],
+            [
+              74.46694699197784,
+              15.839685762086313
+            ],
+            [
+              74.46697341728397,
+              15.840406144271478
+            ],
+            [
+              74.46613604590785,
+              15.840406144271478
+            ],
+            [
+              74.46616737238492,
+              15.839656624734529
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1094",
+        "district": "Belagavi",
+        "crop_label": "Tomato",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.47402422670278,
+              15.851071601586774
+            ],
+            [
+              74.47494425451426,
+              15.851085174134461
+            ],
+            [
+              74.47496742462599,
+              15.851899427946098
+            ],
+            [
+              74.47393864905987,
+              15.851899427946098
+            ],
+            [
+              74.47402422670278,
+              15.851071601586774
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1095",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.45833748302691,
+              15.867407863988129
+            ],
+            [
+              74.45905886353239,
+              15.867456518787069
+            ],
+            [
+              74.45907785374843,
+              15.867913263334355
+            ],
+            [
+              74.45831329544924,
+              15.867913263334355
+            ],
+            [
+              74.45833748302691,
+              15.867407863988129
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1096",
+        "district": "Belagavi",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.48409721313199,
+              15.885132521452544
+            ],
+            [
+              74.48463932989893,
+              15.885230676093254
+            ],
+            [
+              74.4847035093579,
+              15.886096447597913
+            ],
+            [
+              74.48407695166787,
+              15.886096447597913
+            ],
+            [
+              74.48409721313199,
+              15.885132521452544
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1097",
+        "district": "Belagavi",
+        "crop_label": "Onion",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.46319013181406,
+              15.853892692379558
+            ],
+            [
+              74.46384397036354,
+              15.853980066122194
+            ],
+            [
+              74.46386113805255,
+              15.854518537430339
+            ],
+            [
+              74.46309447419279,
+              15.854518537430339
+            ],
+            [
+              74.46319013181406,
+              15.853892692379558
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1098",
+        "district": "Belagavi",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.47995465269454,
+              15.876182179939494
+            ],
+            [
+              74.48077023206443,
+              15.876185715057638
+            ],
+            [
+              74.48084560495771,
+              15.876906584158386
+            ],
+            [
+              74.47989202116229,
+              15.876906584158386
+            ],
+            [
+              74.47995465269454,
+              15.876182179939494
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uid": "BELA_DEMO_1099",
+        "district": "Belagavi",
+        "crop_label": "Leafy Greens",
+        "verified_by": "Dept of Agriculture, Belagavi Division",
+        "survey_date": "2026-10-05"
+      }
+    }
+  ]
+}
