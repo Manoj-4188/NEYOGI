@@ -1,0 +1,11 @@
+node_modules
+.venv
+venv
+__pycache__
+.git
+.claude
+data/cache
+data/models/*.joblib
+data/models/*.pkl
+dist
+.pytest_cache

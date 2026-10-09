@@ -8,10 +8,12 @@
  * says which one, rather than showing a number with a silent hole in it.
  */
 
+import { useLanguage } from '../i18n/LanguageContext.jsx';
+
 const LEVELS = [
-  { max: 1.0, label: 'BALANCED', color: '#2ea84a' },
-  { max: 1.25, label: 'MODERATE', color: '#d4882a' },
-  { max: Infinity, label: 'HIGH RISK', color: '#c0392b' },
+  { max: 1.0, key: 'balanced', color: '#2ea84a' },
+  { max: 1.25, key: 'moderate', color: '#d4882a' },
+  { max: Infinity, key: 'highRisk', color: '#c0392b' },
 ];
 
 function levelFor(ratio) {
@@ -24,70 +26,65 @@ function headlineCrop(crops) {
 }
 
 export default function SupplyPressureCard({ payload, loading, district }) {
+  const { t } = useLanguage();
   const crops = payload?.crops || [];
   const headline = headlineCrop(crops);
-
-  // Nothing computable: explain which input is missing, using the status the
-  // API already assigned rather than guessing at it here.
   const blocked = !headline && crops.length > 0 ? crops[0] : null;
+
+  const currentLevel = headline ? levelFor(headline.oversupply_ratio) : null;
+  const levelLabel = currentLevel ? t.supply[currentLevel.key] : '';
 
   return (
     <section className="p-5">
-      <h2 className="card-title">Supply Pressure</h2>
+      <h2 className="card-title">{t.supply.title}</h2>
       <p className="card-sub">
-        {district || '—'}
+        {t.districts?.[district] || district || '—'}
         {payload?.window?.start ? ` · since ${payload.window.start}` : ''}
       </p>
 
       {loading ? (
-        <p className="mt-4 text-base text-muted">Loading…</p>
+        <p className="mt-4 text-base text-muted">{t.status.loading}</p>
       ) : headline ? (
         <>
           <p
             className="mt-4 text-4xl font-bold leading-none tnum"
-            style={{ color: levelFor(headline.oversupply_ratio).color }}
+            style={{ color: currentLevel.color }}
           >
             {headline.oversupply_ratio.toFixed(2)}×
           </p>
           <p
-            className="caps mt-2"
-            style={{ color: levelFor(headline.oversupply_ratio).color }}
+            className="caps mt-2 font-bold"
+            style={{ color: currentLevel.color }}
           >
-            {levelFor(headline.oversupply_ratio).label}
+            {levelLabel}
           </p>
 
           <p className="mt-3 text-sm leading-relaxed text-muted">
             {headline.oversupply_ratio > 1
-              ? `Regional ${headline.crop.toLowerCase()} supply exceeds recent mandi
-                 absorption by ${Math.round((headline.oversupply_ratio - 1) * 100)}%.
-                 Harvest coordination recommended.`
-              : `Regional ${headline.crop.toLowerCase()} supply is within recent
-                 mandi absorption.`}
+              ? t.supply.excessDesc(
+                  t.crops[headline.crop] || headline.crop,
+                  Math.round((headline.oversupply_ratio - 1) * 100)
+                )
+              : t.supply.balancedDesc(t.crops[headline.crop] || headline.crop)}
           </p>
 
           <p className="mt-3 text-xs text-muted">
-            {Math.round(headline.weekly_arrival_mt ?? 0).toLocaleString()} MT/wk arriving ·{' '}
-            {Math.round(headline.weekly_absorption_mt ?? 0).toLocaleString()} MT/wk absorbed
+            {Math.round(headline.weekly_arrival_mt ?? 0).toLocaleString()} {t.supply.arriving} ·{' '}
+            {Math.round(headline.weekly_absorption_mt ?? 0).toLocaleString()} {t.supply.absorbed}
           </p>
 
-          {/* Which denominator produced the ratio changes how much weight it
-              carries, so it is stated rather than left to the reader. */}
           {headline.demand_basis === 'district_absorption' ? (
             <p className="mt-1 text-xs" style={{ color: '#d4882a' }}>
-              Denominator is the district&rsquo;s reference market throughput, not observed
-              arrivals — AGMARKNET published none for this window.
+              {t.supply.denominatorNotice}
             </p>
           ) : null}
         </>
       ) : (
         <>
           <p className="mt-4 text-4xl font-bold leading-none text-muted tnum">—</p>
-          <p className="caps mt-2 text-muted">NOT COMPUTABLE</p>
+          <p className="caps mt-2 text-muted">{t.supply.notComputable}</p>
           <p className="mt-3 text-sm leading-relaxed text-muted">
-            {blocked?.detail ||
-              payload?.notes?.[0] ||
-              `No classified area or mandi arrivals for ${district || 'this district'}, so
-               the supply-to-demand ratio has no basis.`}
+            {blocked?.detail || payload?.notes?.[0] || 'No classified area or arrivals'}
           </p>
         </>
       )}

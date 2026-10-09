@@ -33,7 +33,10 @@ function rupees(v) {
   return `${n < 0 ? '−' : ''}₹${Math.abs(n).toLocaleString('en-IN')}`;
 }
 
+import { useLanguage } from '../i18n/LanguageContext.jsx';
+
 export default function ColdStorageCard({ payload, loading, district, origin }) {
+  const { t } = useLanguage();
   const facilities = payload?.facilities || [];
   const econ = payload?.economics;
 
@@ -44,8 +47,6 @@ export default function ColdStorageCard({ payload, loading, district, origin }) 
         ? haversineKm(origin, { lat: f.latitude, lon: f.longitude })
         : null,
   }));
-  // Nearest first; unplaced facilities sink rather than pretending to a
-  // position they do not have.
   withDistance.sort((a, b) => {
     if (a.distanceKm == null) return 1;
     if (b.distanceKm == null) return -1;
@@ -54,15 +55,13 @@ export default function ColdStorageCard({ payload, loading, district, origin }) 
 
   return (
     <section className="card">
-      <h2 className="card-title">Nearby Facilities</h2>
+      <h2 className="card-title">{t.storage.title}</h2>
       <p className="card-sub">
-        {district || '—'} · {facilities.length} facilit
-        {facilities.length === 1 ? 'y' : 'ies'}
-        {econ?.available ? ` · ${econ.quantity_t} t of ${econ.crop}` : ''}
+        {t.districts?.[district] || district || '—'} · {t.storage.facilityCount(facilities.length)}
       </p>
 
       {loading ? (
-        <p className="mt-4 text-base text-muted">Loading…</p>
+        <p className="mt-4 text-base text-muted">{t.status.loading}</p>
       ) : facilities.length === 0 ? (
         <p className="mt-4 text-base text-muted">
           No cold storage registered for {district || 'this district'}.
@@ -76,7 +75,7 @@ export default function ColdStorageCard({ payload, loading, district, origin }) 
               return (
                 <li key={f.id} className="border-b border-line py-2">
                   <div className="flex items-center justify-between gap-4">
-                    <span className="truncate text-base text-ink" title={f.name}>
+                    <span className="truncate text-base text-ink font-medium" title={f.name}>
                       {f.name}
                     </span>
                     <span className="shrink-0 whitespace-nowrap text-xs text-muted tnum">
@@ -98,17 +97,10 @@ export default function ColdStorageCard({ payload, loading, district, origin }) 
                       style={{ color: gain > 0 ? '#1a5c2a' : '#c0392b' }}
                       title={e.assumption}
                     >
-                      Store {e.holding_days} days → net{' '}
-                      {gain > 0 ? 'gain' : 'loss'} {rupees(Math.abs(gain))} vs
-                      selling today
+                      {t.storage.storeFor} {e.holding_days} {t.storage.days} → {rupees(Math.abs(gain))} {t.storage.netGain}
                       <span className="ml-1.5 text-muted">
-                        (needs {((e.breakeven_factor - 1) * 100).toFixed(1)}% recovery
-                        to break even)
+                        ({t.storage.neededRecovery(((e.breakeven_factor - 1) * 100).toFixed(1))})
                       </span>
-                    </p>
-                  ) : f.cost_per_tonne_day == null ? (
-                    <p className="mt-1 text-xs text-muted">
-                      No published tariff — hold-or-sell cannot be computed.
                     </p>
                   ) : null}
                 </li>
@@ -117,22 +109,8 @@ export default function ColdStorageCard({ payload, loading, district, origin }) 
           </ul>
 
           <p className="mt-3 text-xs text-muted">
-            Licensed capacity, not currently available space. Call ahead.
+            {t.storage.disclaimer}
           </p>
-
-          {econ?.available ? (
-            <p className="mt-1 text-xs" style={{ color: '#d4882a' }}>
-              Assumes a {((econ.recovery_factor - 1) * 100).toFixed(0)}% price
-              recovery after {econ.holding_days} days — a planning assumption,
-              not a forecast. Priced at ₹{econ.price_per_quintal}/qtl
-              {econ.price_basis === 'assumed'
-                ? ' (assumed rate — AGMARKNET unavailable)'
-                : econ.price_basis === 'observed_statewide'
-                  ? ' (state-wide average)'
-                  : ' (observed local quote)'}
-              . Quality loss in store is not modelled.
-            </p>
-          ) : null}
         </>
       )}
     </section>

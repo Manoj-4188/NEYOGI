@@ -11,16 +11,19 @@
  * to it.
  */
 
+import { useLanguage } from '../i18n/LanguageContext.jsx';
+
 export default function CropClassificationCard({ payload, loading, error, district }) {
+  const { t } = useLanguage();
   const crops = payload?.crops || [];
 
   return (
     <section className="card">
-      <h2 className="card-title">Crop Classification</h2>
-      <p className="card-sub">Spectral model — field verification pending</p>
+      <h2 className="card-title">{t.classification.title}</h2>
+      <p className="card-sub">{t.classification.subtitle}</p>
 
       {loading ? (
-        <p className="mt-4 text-base text-muted">Running classification…</p>
+        <p className="mt-4 text-base text-muted">{t.status.loading}</p>
       ) : error ? (
         <p className="mt-4 text-base text-high">{error}</p>
       ) : crops.length === 0 ? (
@@ -28,29 +31,23 @@ export default function CropClassificationCard({ payload, loading, error, distri
           <p className="text-base text-muted">
             No classification available for {district || 'this district'}.
           </p>
-          <p className="mt-1 text-xs text-muted">
-            Either no cloud-free imagery was captured in the last composite
-            window, or classification has not been run for this district yet.
-          </p>
         </div>
       ) : (
         <>
           <table className="data-table mt-4">
             <thead>
               <tr>
-                <th>Crop</th>
-                <th className="num">Area (ha)</th>
-                <th className="num">Confidence</th>
+                <th>{t.classification.cropCol}</th>
+                <th className="num">{t.classification.areaCol}</th>
+                <th className="num">{t.classification.confCol}</th>
               </tr>
             </thead>
             <tbody>
               {crops.map((c) => (
                 <tr key={c.crop}>
-                  <td>{c.crop.replace(/_/g, ' ')}</td>
+                  <td className="font-medium">{t.crops[c.crop] || c.crop.replace(/_/g, ' ')}</td>
                   <td className="num">{Math.round(c.area_ha).toLocaleString()}</td>
                   <td className="num">
-                    {/* "other" is a real class, but a confidence for it says
-                        nothing useful about a crop decision. */}
                     {c.crop === 'other' ? (
                       <span className="text-muted">—</span>
                     ) : (
@@ -63,9 +60,9 @@ export default function CropClassificationCard({ payload, loading, error, distri
           </table>
 
           <p className="mt-3 text-xs text-muted">
-            {payload.samples_classified} sample points ·{' '}
-            {Math.round(payload.cropland_area_ha).toLocaleString()} ha cropland ·
-            composite {payload.composite_start}
+            {payload.samples_classified} {t.classification.samples} ·{' '}
+            {Math.round(payload.cropland_area_ha).toLocaleString()} {t.classification.cropland} ·{' '}
+            {t.classification.composite} {payload.composite_start}
           </p>
         </>
       )}

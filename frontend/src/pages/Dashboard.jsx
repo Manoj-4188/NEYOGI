@@ -190,7 +190,7 @@ export default function Dashboard() {
 
       <main className="flex min-w-0 flex-1 flex-col overflow-y-auto">
         <header className="flex h-topbar shrink-0 items-center justify-between border-b border-line px-5">
-          <h1 className="text-lg font-semibold text-ink">{district || '—'}</h1>
+          <h1 className="text-lg font-semibold text-ink">{t.districts?.[district] || district || '—'}</h1>
           <span className="caps" style={{ color: imageryOk ? '#1a5c2a' : '#d4882a' }}>
             {imageryLabel}
           </span>

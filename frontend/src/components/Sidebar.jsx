@@ -89,7 +89,7 @@ export default function Sidebar({
                                 : 'border-l-2 border-transparent text-ink hover:bg-wash'
                             }`}
               >
-                <span className="truncate">{entry.district}</span>
+                <span className="truncate">{t.districts?.[entry.district] || entry.district}</span>
                 <span
                   className="dot"
                   style={{ backgroundColor: statusColor(districtState(entry)) }}
@@ -107,12 +107,12 @@ export default function Sidebar({
 
       <div className="border-t border-line px-4 py-3">
         <StatusRow
-          label="PostGIS"
+          label={t.status.postgis}
           state={dbOk ? 'ok' : 'error'}
           title={health?.dependencies?.[0]?.detail || 'Spatial database'}
         />
         <StatusRow
-          label="Satellite"
+          label={t.status.satellite}
           state={geeOk ? satelliteState || 'ok' : 'error'}
           title={
             geeOk
@@ -121,7 +121,7 @@ export default function Sidebar({
           }
         />
         <StatusRow
-          label="Agmarknet"
+          label={t.status.agmarknet}
           state={agmarknetOk ? 'degraded' : 'error'}
           title={
             agmarknetOk
@@ -136,7 +136,7 @@ export default function Sidebar({
           to="/officer"
           className="text-xs text-muted underline-offset-2 hover:text-ink hover:underline"
         >
-          Officer console
+          {t.officerConsole}
         </NavLink>
       </div>
     </aside>
