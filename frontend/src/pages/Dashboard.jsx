@@ -22,11 +22,13 @@ import CropClassificationCard from '../components/CropClassificationCard.jsx';
 import CropMapPanel from '../components/CropMapPanel.jsx';
 import DistrictMap from '../components/DistrictMap.jsx';
 import HarvestPanel from '../components/HarvestPanel.jsx';
+import ModelDiagnosticsPanel from '../components/ModelDiagnosticsPanel.jsx';
 import PriceChartCard from '../components/PriceChartCard.jsx';
 import Sidebar from '../components/Sidebar.jsx';
 import SupplyPressureCard from '../components/SupplyPressureCard.jsx';
 import Tabs from '../components/Tabs.jsx';
 import YearComparisonPanel from '../components/YearComparisonPanel.jsx';
+import { useLanguage } from '../i18n/LanguageContext.jsx';
 
 const CENTROIDS = {
   Kolar: { lat: 13.136, lon: 78.129 },
@@ -38,13 +40,6 @@ const CENTROIDS = {
   Mysuru: { lat: 12.295, lon: 76.639 },
   Belagavi: { lat: 15.849, lon: 74.498 },
 };
-
-const TABS = [
-  { id: 'overview', label: 'Overview' },
-  { id: 'map', label: 'Crop map' },
-  { id: 'timing', label: 'Harvest timing' },
-  { id: 'market', label: 'Market' },
-];
 
 function useAsync(loader, deps, enabled = true) {
   const [state, setState] = useState({ data: null, error: null, loading: enabled });
@@ -64,10 +59,22 @@ function useAsync(loader, deps, enabled = true) {
 }
 
 export default function Dashboard() {
+  const { t } = useLanguage();
   const [district, setDistrict] = useState(null);
   const [tab, setTab] = useState('overview');
   const [quintals, setQuintals] = useState(100);
   const [harvestNonce, setHarvestNonce] = useState(0);
+
+  const tabs = useMemo(
+    () => [
+      { id: 'overview', label: t.tabs.overview },
+      { id: 'map', label: t.tabs.map },
+      { id: 'timing', label: t.tabs.timing },
+      { id: 'market', label: t.tabs.market },
+      { id: 'models', label: t.tabs.models },
+    ],
+    [t],
+  );
 
   const healthState = useAsync(() => api.health().catch(() => null), []);
   const districtsState = useAsync(() => api.districts(), []);
@@ -187,12 +194,22 @@ export default function Dashboard() {
           <span className="caps" style={{ color: imageryOk ? '#1a5c2a' : '#d4882a' }}>
             {imageryLabel}
           </span>
-          <span className="text-xs text-muted">
-            {lastSynced ? `Updated ${lastSynced}` : '—'}
-          </span>
+          <div className="flex items-center gap-3">
+            <span className="text-xs text-muted">
+              {lastSynced ? `Updated ${lastSynced}` : '—'}
+            </span>
+            <button
+              type="button"
+              onClick={() => window.print()}
+              className="rounded border border-line bg-wash px-2.5 py-1 text-xs font-medium text-ink hover:border-accent hover:text-accent transition-colors print:hidden"
+              title="Print or Save as PDF"
+            >
+              📄 {t.actions.downloadPdf}
+            </button>
+          </div>
         </header>
 
-        <Tabs tabs={TABS} active={tab} onChange={setTab} />
+        <Tabs tabs={tabs} active={tab} onChange={setTab} />
 
         {tab === 'overview' ? (
           <>
@@ -272,6 +289,8 @@ export default function Dashboard() {
             />
           </div>
         ) : null}
+
+        {tab === 'models' ? <ModelDiagnosticsPanel /> : null}
       </main>
     </div>
   );

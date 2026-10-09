@@ -8,6 +8,7 @@
 import { NavLink, Navigate, Route, Routes } from 'react-router-dom';
 
 import { AuthProvider, RequireOfficer } from './auth/AuthContext.jsx';
+import { LanguageProvider } from './i18n/LanguageContext.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import Login from './pages/Login.jsx';
 import OfficerConsole from './pages/OfficerConsole.jsx';
@@ -26,27 +27,29 @@ function NotFound() {
 export default function App() {
   return (
     <AuthProvider>
-      <div className="h-full bg-white text-ink">
-        <Routes>
-          <Route path="/" element={<Navigate to="/dashboard" replace />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/officer/login" element={<Login />} />
-          <Route
-            path="/officer"
-            element={
-              <RequireOfficer>
-                <OfficerConsole />
-              </RequireOfficer>
-            }
-          />
-          {/* The console used to live at /officer/console; keep that working. */}
-          <Route
-            path="/officer/console"
-            element={<Navigate to="/officer" replace />}
-          />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </div>
+      <LanguageProvider>
+        <div className="h-full bg-white text-ink">
+          <Routes>
+            <Route path="/" element={<Navigate to="/dashboard" replace />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/officer/login" element={<Login />} />
+            <Route
+              path="/officer"
+              element={
+                <RequireOfficer>
+                  <OfficerConsole />
+                </RequireOfficer>
+              }
+            />
+            {/* The console used to live at /officer/console; keep that working. */}
+            <Route
+              path="/officer/console"
+              element={<Navigate to="/officer" replace />}
+            />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+      </LanguageProvider>
     </AuthProvider>
   );
 }

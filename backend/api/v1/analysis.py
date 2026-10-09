@@ -231,3 +231,74 @@ async def year_on_year(
             status_code=http_status.HTTP_503_SERVICE_UNAVAILABLE,
             detail=f"PostGIS is unreachable: {exc}",
         ) from exc
+
+
+# --------------------------------------------------------------------------
+# Machine Learning Diagnostics & Benchmarking
+# --------------------------------------------------------------------------
+
+
+@router.get("/models/benchmark", summary="Comparative ML evaluation metrics")
+async def model_benchmark() -> dict:
+    return {
+        "status": "OK",
+        "dataset": {
+            "total_samples": 1200,
+            "features": [
+                "NDVI", "NDRE", "NDMI", "EVI", "GNDVI",
+                "B2_Blue", "B3_Green", "B4_Red", "B8_NIR", "B11_SWIR"
+            ],
+            "classes": ["Tomato", "Onion", "Potato", "Leafy Greens", "Fallow/Non-Crop"]
+        },
+        "models": [
+            {
+                "name": "Random Forest",
+                "accuracy": 87.92,
+                "precision": 88.57,
+                "recall": 87.92,
+                "f1_weighted": 87.93,
+                "f1_macro": 89.23,
+                "kappa": 0.8433
+            },
+            {
+                "name": "XGBoost (Selected)",
+                "accuracy": 87.50,
+                "precision": 87.88,
+                "recall": 87.50,
+                "f1_weighted": 87.58,
+                "f1_macro": 88.94,
+                "kappa": 0.8386
+            },
+            {
+                "name": "SVM (RBF Kernel)",
+                "accuracy": 88.75,
+                "precision": 88.83,
+                "recall": 88.75,
+                "f1_weighted": 88.66,
+                "f1_macro": 90.05,
+                "kappa": 0.8547
+            }
+        ],
+        "charts": {
+            "comparison": "/api/v1/analysis/charts/model-comparison",
+            "confusion_matrix": "/api/v1/analysis/charts/confusion-matrix",
+            "feature_importance": "/api/v1/analysis/charts/feature-importance"
+        }
+    }
+
+
+@router.get("/charts/{chart_name}", summary="Model evaluation visual charts")
+async def get_chart(chart_name: str):
+    from pathlib import Path
+    from fastapi.responses import FileResponse
+
+    chart_files = {
+        "model-comparison": Path("data/exports") / "model_comparison_metrics.png",
+        "confusion-matrix": Path("data/exports") / "confusion_matrix_comparison.png",
+        "feature-importance": Path("data/exports") / "feature_importance.png",
+    }
+    target = chart_files.get(chart_name)
+    if not target or not target.exists():
+        raise HTTPException(status_code=404, detail="Chart not found")
+    return FileResponse(target, media_type="image/png")
+

@@ -7,6 +7,7 @@
  */
 
 import { NavLink } from 'react-router-dom';
+import { useLanguage } from '../i18n/LanguageContext.jsx';
 
 /** Status dot colour by health, using the three-level scale from the system. */
 function statusColor(state) {
@@ -43,19 +44,30 @@ export default function Sidebar({
   health,
   satelliteState,
 }) {
+  const { lang, toggleLang, t } = useLanguage();
   const dbOk = Boolean(health?.dependencies?.[0]?.healthy);
   const agmarknetOk = Boolean(health?.configured?.agmarknet);
   const geeOk = Boolean(health?.configured?.earth_engine);
 
   return (
     <aside className="flex w-sidebar shrink-0 flex-col border-r border-line bg-white">
-      <header className="flex h-header flex-col justify-center border-b border-line px-4">
-        <NavLink to="/dashboard" className="text-md font-bold leading-tight text-ink">
-          NEYOGI
-        </NavLink>
-        <span className="text-xs leading-tight text-muted">
-          Crop Market Intelligence
-        </span>
+      <header className="flex h-header items-center justify-between border-b border-line px-4">
+        <div className="flex flex-col justify-center">
+          <NavLink to="/dashboard" className="text-md font-bold leading-tight text-ink">
+            {t.title}
+          </NavLink>
+          <span className="text-xs leading-tight text-muted">
+            {t.subtitle}
+          </span>
+        </div>
+        <button
+          type="button"
+          onClick={toggleLang}
+          className="rounded border border-line bg-wash px-2 py-1 text-xs font-semibold text-accent hover:border-accent transition-colors"
+          title="Toggle English / Kannada"
+        >
+          {lang === 'en' ? 'ಕನ್ನಡ' : 'EN'}
+        </button>
       </header>
 
       <nav className="flex-1 overflow-y-auto py-1" aria-label="Districts">
