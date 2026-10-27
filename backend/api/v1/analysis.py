@@ -64,7 +64,7 @@ async def crop_map(
     # available but a 3,000-sample 90-day composite exceeded the request
     # timeout in testing -- Earth Engine has to sample, fit and render
     # before it answers.
-    samples: Annotated[int, Query(ge=500, le=10000)] = 1500,
+    samples: Annotated[int, Query(ge=100, le=10000)] = 500,
     window_days: Annotated[
         int,
         Query(

@@ -81,7 +81,11 @@ async function request(path, { params, method = 'GET', body, auth = false } = {}
     try {
       payload = JSON.parse(text);
     } catch {
-      payload = { detail: text };
+      if (text.includes('504 Gateway Time-out')) {
+        payload = { detail: 'Earth Engine computation timed out (504). The requested satellite pixel analysis took longer than 2 minutes. Try selecting 16 days or another district.' };
+      } else {
+        payload = { detail: text.replace(/<[^>]*>?/gm, '').trim() || 'Request failed' };
+      }
     }
   }
 
@@ -157,7 +161,7 @@ export const api = {
   priceHistory: ({ district, days = 90 }) =>
     request('/api/v1/prices/history', { params: { district, days } }),
 
-  cropMap: ({ district, samples = 3000, windowDays = 16 }) =>
+  cropMap: ({ district, samples = 500, windowDays = 16 }) =>
     request('/api/v1/analysis/crop-map', {
       params: { district, samples, window_days: windowDays },
     }),

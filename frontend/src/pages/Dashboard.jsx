@@ -154,10 +154,13 @@ export default function Dashboard() {
   const imageryOk = satBadge?.severity === 'ok';
 
   const imageryLabel = (() => {
-    if (!satBadge) return hasLive ? 'Imagery loaded' : 'No imagery';
-    if (imageryOk) return 'Recent imagery';
-    if (imageryAge === null) return 'No imagery available';
-    return `Imagery ${imageryAge} days old`;
+    if (!satBadge) return hasLive ? 'Satellite: Live' : 'Satellite: No imagery';
+    if (imageryOk) {
+      const passDate = satBadge.as_of ? ` (${satBadge.as_of})` : '';
+      return `Satellite: Live${passDate}`;
+    }
+    if (imageryAge === null) return 'Satellite: Unavailable';
+    return `Satellite: ${imageryAge}d old`;
   })();
 
   const districtRows = useMemo(
@@ -195,8 +198,8 @@ export default function Dashboard() {
             {imageryLabel}
           </span>
           <div className="flex items-center gap-3">
-            <span className="text-xs text-muted">
-              {lastSynced ? `Updated ${lastSynced}` : '—'}
+            <span className="text-xs text-muted" title="Last district-wide crop classification model run">
+              {lastSynced ? `Classification: ${lastSynced}` : '—'}
             </span>
             <button
               type="button"
