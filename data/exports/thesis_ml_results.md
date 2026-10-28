@@ -10,12 +10,12 @@ To classify perishable crops across Karnataka's vegetable belt (Tomato, Onion, P
 
 | Model Architecture | Accuracy (%) | Precision (%) | Recall (%) | F1-Score (Weighted) (%) | F1-Score (Macro) (%) | Cohen's Kappa |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Random Forest** | 87.92 | 88.57 | 87.92 | 87.93 | 89.23 | 0.8433 |
-| **XGBoost (Selected)** | **87.5** | **87.88** | **87.5** | **87.58** | **88.94** | **0.8386** |
+| **Random Forest (Deployed)** | **87.92** | **88.57** | **87.92** | **87.93** | **89.23** | **0.8433** |
+| **XGBoost** | 87.50 | 87.88 | 87.50 | 87.58 | 88.94 | 0.8386 |
 | **SVM (RBF Kernel)** | 88.75 | 88.83 | 88.75 | 88.66 | 90.05 | 0.8547 |
 
 ## 5.3 Key Findings
-1. **Top Performer:** XGBoost achieved the highest overall Accuracy (87.5%) and Cohen's Kappa (0.8386), demonstrating superior capability in handling non-linear vegetative spectral boundaries.
+1. **Production Architecture:** Random Forest achieved 87.92% Accuracy and 87.93% F1-score, providing optimal trade-offs and native server-side deployment via Google Earth Engine (`smileRandomForest`) without client-side pixel bottlenecks.
 2. **Key Discriminating Features:** NDRE (RedEdge Normalised Difference) and NDVI exhibited the highest information gain, cleanly separating leafy canopies (potatoes, tomatoes) from low-vegetative canopy crops (onions).
 3. **Fallow Land Segregation:** All three architectures achieved near 100% precision on fallow land detection using SWIR and Red spectral bands.
 

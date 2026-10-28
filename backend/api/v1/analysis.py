@@ -334,7 +334,7 @@ async def model_benchmark() -> dict:
         },
         "models": [
             {
-                "name": "Random Forest",
+                "name": "Random Forest (Deployed)",
                 "accuracy": 87.92,
                 "precision": 88.57,
                 "recall": 87.92,
@@ -343,7 +343,7 @@ async def model_benchmark() -> dict:
                 "kappa": 0.8433
             },
             {
-                "name": "XGBoost (Selected)",
+                "name": "XGBoost",
                 "accuracy": 87.50,
                 "precision": 87.88,
                 "recall": 87.50,
