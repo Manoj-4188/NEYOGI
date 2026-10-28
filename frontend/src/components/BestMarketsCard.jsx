@@ -62,10 +62,10 @@ export default function BestMarketsCard({ payload, loading, district, onQuantity
           <table className="data-table mt-4">
             <thead>
               <tr>
-                <th>Market</th>
-                <th className="num">₹/qtl</th>
-                <th className="num">Distance</th>
-                <th className="num">Net profit</th>
+                <th className="w-2/5">Market</th>
+                <th className="num w-1/5">₹/qtl</th>
+                <th className="num w-1/5">Distance</th>
+                <th className="num w-1/5">Net profit</th>
               </tr>
             </thead>
             <tbody>

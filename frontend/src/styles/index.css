@@ -93,8 +93,10 @@
     @apply border-t border-line py-2 text-ink;
   }
 
+  .data-table th.num,
+  .data-table td.num,
   .num {
-    @apply text-right;
+    text-align: right !important;
     font-variant-numeric: tabular-nums;
   }
 }

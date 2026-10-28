@@ -35,11 +35,11 @@ export default function YearComparisonPanel({ payload, loading, district }) {
           <table className="data-table mt-4">
             <thead>
               <tr>
-                <th>Crop</th>
-                <th className="num">Expected now</th>
-                <th className="num">Sold last year</th>
-                <th className="num">Change</th>
-                <th className="num">Price change</th>
+                <th className="w-1/3">Crop</th>
+                <th className="num w-1/6">Expected now</th>
+                <th className="num w-1/6">Sold last year</th>
+                <th className="num w-1/6">Change</th>
+                <th className="num w-1/6">Price change</th>
               </tr>
             </thead>
             <tbody>
