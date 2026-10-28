@@ -206,7 +206,8 @@ def build_crop_map(
     )
 
     columns = feature_columns()
-    available = [c for c in columns if c in composite.bandNames().getInfo()]
+    known_bands = set(SOURCE_BANDS) | {"NDVI", "NDWI", "SAVI", "EVI", "NDRE"}
+    available = [c for c in columns if c in known_bands]
 
     # Cropland screen, matching the district classifier so the two agree about
     # what counts as farmland.

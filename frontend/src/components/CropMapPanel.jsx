@@ -77,12 +77,20 @@ function ScaleBar({ bounds }) {
 export default function CropMapPanel({ district, center }) {
   const [layer, setLayer] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [elapsed, setElapsed] = useState(0);
   const [error, setError] = useState(null);
   const [bounds, setBounds] = useState(null);
-  // A fortnight of monsoon can be entirely cloud, so the compositing
-  // window is adjustable. Longer stacks more passes and fills the holes,
-  // at the cost of blurring anything that changed in between.
-  const [windowDays, setWindowDays] = useState(30);
+  // Default to 16 days (standard revisit cadence) for fast responsive compositing
+  const [windowDays, setWindowDays] = useState(16);
+
+  useEffect(() => {
+    let timer;
+    if (loading) {
+      setElapsed(0);
+      timer = setInterval(() => setElapsed((s) => s + 1), 1000);
+    }
+    return () => clearInterval(timer);
+  }, [loading]);
 
   // A raster belongs to one district; drop it when the selection changes
   // rather than showing Kolar's pixels under Belagavi's name.
@@ -91,12 +99,12 @@ export default function CropMapPanel({ district, center }) {
     setError(null);
   }, [district]);
 
-  const build = useCallback(async () => {
+  const build = useCallback(async (forceRefresh = false) => {
     if (!district) return;
     setLoading(true);
     setError(null);
     try {
-      const result = await api.cropMap({ district, windowDays });
+      const result = await api.cropMap({ district, windowDays, forceRefresh });
       if (result.status === 'OK') setLayer(result);
       else setError(result.detail || result.status);
     } catch (e) {
@@ -111,9 +119,14 @@ export default function CropMapPanel({ district, center }) {
       <div className="flex items-start justify-between gap-4">
         <div>
           <h2 className="card-title">Crop map</h2>
-          <p className="card-sub">
-            Every cropland pixel classified, at 20 m
-            {layer ? ` · composite ${layer.composite_start}` : ''}
+          <p className="card-sub flex items-center gap-2">
+            <span>Every cropland pixel classified, at 20 m</span>
+            {layer ? <span>· composite {layer.composite_start}</span> : null}
+            {layer?.cached ? (
+              <span className="rounded bg-emerald-100 px-1.5 py-0.5 text-2xs font-semibold text-emerald-800">
+                ⚡ Cached
+              </span>
+            ) : null}
           </p>
         </div>
         <div className="flex items-center gap-2">
@@ -130,9 +143,25 @@ export default function CropMapPanel({ district, center }) {
               <option value={90}>90</option>
             </select>
           </label>
-          <button type="button" className="btn" onClick={build} disabled={loading || !district}>
-            {loading ? 'Building…' : layer ? 'Rebuild' : 'Build map'}
+          <button
+            type="button"
+            className="btn"
+            onClick={() => build(false)}
+            disabled={loading || !district}
+          >
+            {loading ? 'Building…' : layer ? 'Refresh' : 'Build map'}
           </button>
+          {layer ? (
+            <button
+              type="button"
+              className="btn btn-secondary text-xs"
+              onClick={() => build(true)}
+              disabled={loading || !district}
+              title="Force recomputation via Earth Engine"
+            >
+              Live GEE
+            </button>
+          ) : null}
         </div>
       </div>
 
@@ -144,16 +173,18 @@ export default function CropMapPanel({ district, center }) {
         <p className="mt-4 max-w-2xl text-base text-muted">
           This classifies each pixel in the district rather than sampling a
           few hundred points, so you can see where crops sit and how fields are
-          laid out. It takes about half a minute to build. During the monsoon a
-          fortnight of imagery is often entirely cloud — widen the window to
-          stack more passes.
+          laid out. Cached rasters render instantly; live Earth Engine composites
+          take about 15–30 seconds.
         </p>
       ) : null}
 
       {loading ? (
-        <p className="mt-4 text-base text-muted">
-          Sampling the district, labelling the points and fitting the map…
-        </p>
+        <div className="mt-4 flex items-center gap-3 rounded bg-sand-50 p-3 text-sm text-ink">
+          <div className="h-4 w-4 animate-spin rounded-full border-2 border-forest border-t-transparent" />
+          <span>
+            Compositing Sentinel-2 satellite passes & classifying cropland pixels… ({elapsed}s)
+          </span>
+        </div>
       ) : null}
 
       {layer ? (
