@@ -205,9 +205,11 @@ def build_crop_map(
         collection.median().clip(geometry), available_bands=SOURCE_BANDS
     )
 
+    from ml_pipeline.feature_engineering import INDEX_SPECS
+
     columns = feature_columns()
-    known_bands = set(SOURCE_BANDS) | {"NDVI", "NDWI", "SAVI", "EVI", "NDRE"}
-    available = [c for c in columns if c in known_bands]
+    all_known_bands = set(SOURCE_BANDS) | {s.name for s in INDEX_SPECS}
+    available = [c for c in columns if c in all_known_bands]
 
     # Cropland screen, matching the district classifier so the two agree about
     # what counts as farmland.
